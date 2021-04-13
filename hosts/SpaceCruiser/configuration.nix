@@ -17,7 +17,7 @@
   networking.useDHCP = false;
   networking.interfaces.enp0s31f6.useDHCP = true;
   networking.interfaces.wlp0s20f3.useDHCP = true;
-  networking.wireless.enable = true;
+  # networking.wireless.enable = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
@@ -40,11 +40,6 @@
   hardware.pulseaudio.enable = true;
   services.xserver.libinput.enable = true;
 
-  users.users.skandix = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-  };
-
   environment.systemPackages = with pkgs; [
     wget vim
     firefox
@@ -59,8 +54,8 @@
     pulsemixer
     alacritty
     i3blocks
-    networkmanager
-    nm-tray
+   # networkmanager
+   # nm-tray
   ];
 
   services.openssh.enable = true;

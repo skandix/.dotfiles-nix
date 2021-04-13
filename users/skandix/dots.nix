@@ -26,12 +26,12 @@ in {
     xdg.cacheHome = "/home/skandix/${relativeXDGCachePath}";
 
     programs.home-manager.enable = true;
-    programs.bat.enbale = true;
+    programs.bat.enable = true;
 
     programs.neovim = {
         enable = true;
         vimAlias = true;
-        extraConfig = bultins.readFile "../../confs/vim/.vimrc"
+        # extraConfig = bultins.readFile "../../confs/vim/.vimrc"
         plugins = with pkgs.vimPlugins; [
             vim-nix
             nerdtree
@@ -49,6 +49,6 @@ in {
             lexima-vim
             vim-wakatime
             gruvbox
-        ]
-    }
+        ];
+    };
 }
