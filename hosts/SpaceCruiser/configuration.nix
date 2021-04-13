@@ -41,19 +41,20 @@
   services.xserver.libinput.enable = true;
 
   environment.systemPackages = with pkgs; [
-    wget vim
-    firefox
-    discord
-    neovim
+    wget
+   # vim
+   # firefox
+   # discord
+   # neovim
     git
     htop
-    rofi
+   # rofi
     neofetch
     spotify
-    pfetch
+   # pfetch
     pulsemixer
-    alacritty
-    i3blocks
+   # alacritty
+   # i3blocks
    # networkmanager
    # nm-tray
   ];

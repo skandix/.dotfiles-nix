@@ -6,6 +6,8 @@ in {
   imports = [
     ./dots.nix
     ./python.nix
+
+    ./confs/vim/default.nix
   ];
 
   programs.home-manager.enable = true;
