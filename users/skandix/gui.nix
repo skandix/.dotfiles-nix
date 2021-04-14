@@ -7,14 +7,27 @@
   ];
 
     home.packages = with pkgs; [
+      # Comms
       slack
-      discord
-      tdesktop
+      unstable.discord
+      unstable.tdesktop
+      unstable.teams
+      zoom
+
+      # Entertainment
       spotify
+      plex-media-player
+      mpv
+
+      # Productivity
       firefox
-      rofi
-      vscode
+
+      # Code
+      unstable.vscode
+
+      # Tools
       pavucontrol
+      unstable.filezilla
     ];
   };
 }

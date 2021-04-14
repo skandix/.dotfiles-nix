@@ -2,9 +2,9 @@
 
 {
   home.packages = with pkgs; [
-    unstable.alacritty
+    unstable.flameshot
   ];
   xdg.configFile = {
-    "alacritty/alacritty.yml".source = ./alacritty.yml;
+    "flameshot/flameshot.ini".source = ./flameshot.ini;
   };
 }

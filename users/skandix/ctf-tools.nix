@@ -3,9 +3,9 @@
 {
   home.packages = with pkgs; [
     binwalk
-    ghidra-bin
+    unstable.ghidra-bin
     sonic-visualiser
     steghide
-    volatility
+    unstable.volatility
   ];
 }

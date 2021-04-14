@@ -1,6 +1,17 @@
 {pkgs, ...}:
 
 {
+  # since i3 is somewhat synonymous with graphical applications, i want to keep all imports here related
+  # to things that need a screen to show things .
+  imports = [
+    ../dunst
+    ../picom
+    ../flameshot
+    ../rofi
+    ../pulse
+    ../alacritty
+  ];
+
   services.xserver = {
     enable = true;
     layout = "no";
@@ -14,15 +25,18 @@
     enable = true;
     package = pkgs.i3;
     extraPackages = with pkgs; [
-      flameshot
       pkg-config
       xclip
       arandr
       autorandr
-      picom
       feh
       i3blocks
     ];
+    /* don't think this is the way it should be done
+    services.xserver.autorun = [
+      picom
+      dunst
+    ]*/
   };
 
 

@@ -2,9 +2,9 @@
 
 {
   home.packages = with pkgs; [
-    traceroute
-    ldns
-    mtr
+    unstable.traceroute
+    unstable.ldns
+    unstable.mtr
     nmap
   ]
 }
