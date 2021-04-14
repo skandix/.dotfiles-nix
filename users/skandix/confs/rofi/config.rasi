@@ -13,5 +13,3 @@ ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
 run-command: "{cmd}";
 hide-scrollbar: true;
 }
-# @import "/usr/share/rofi/themes/solarized_alternate.rasi"
-# Add this theme into the deployments

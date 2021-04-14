@@ -6,5 +6,5 @@
     unstable.ldns
     unstable.mtr
     nmap
-  ]
+  ];
 }

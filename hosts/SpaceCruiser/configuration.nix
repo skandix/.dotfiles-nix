@@ -7,6 +7,7 @@
       ../../users
       ../../users/skandix
       ../../users/skandix/gui.nix
+      #../../users/skandix/confs/i3
     ];
 
   boot.loader.systemd-boot.enable = true;

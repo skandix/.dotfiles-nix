@@ -1,11 +1,15 @@
 { config, pkgs, ... }:
 
 {
-  home-manager.users.skandix = {
-    imports = [
+   imports = [
      ./confs/i3/default.nix
-  ];
 
+    # Common - Repo
+    ../../common/repo/unstable.nix
+    ../../common/repo/master.nix
+   ];
+
+  home-manager.users.skandix = {
     home.packages = with pkgs; [
       # Comms
       slack

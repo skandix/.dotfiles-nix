@@ -8,7 +8,6 @@
     ../picom
     ../flameshot
     ../rofi
-    ../pulse
     ../alacritty
   ];
 

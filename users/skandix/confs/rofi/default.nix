@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, configs, ... }:
 
 {
   home-manager.users.skandix = {
