@@ -9,6 +9,7 @@
     ../flameshot
     ../rofi
     ../alacritty
+    ../mpv
   ];
 
   services.xserver = {

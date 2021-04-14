@@ -4,10 +4,23 @@
   imports =
     [
       ./hardware-configuration.nix
+      <nixos-hardware/lenovo/thinkpad/t490>
+
+      # core dotfiles + graphical things
       ../../users
       ../../users/skandix
       ../../users/skandix/gui.nix
-      #../../users/skandix/confs/i3
+
+      # common
+      ../../common/bluetooth.nix
+      ../../common/briigth.nix
+      #../../common/fingerprint.nix
+      ../../common/fonts.nix
+      ../../common/pulseaudio.nix
+      ../../common/security.nix
+      ../../common/video.nix
+      ../../common/kubernetes.nix
+      ../../common/obs-studio.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -26,9 +39,6 @@
   };
 
   time.timeZone = "Europe/Oslo";
-
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;
 
   services.openssh.enable = true;
   networking.firewall.enable = false;

@@ -2,7 +2,7 @@
 set $mod Mod4
 set $term alacritty
 set $screen flameshot gui
-set $lock xsecurelock
+set $lock dm-tool lock
 
 font pango:DejaVu Sans Mono 8
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork

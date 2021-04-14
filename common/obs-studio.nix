@@ -4,8 +4,8 @@
   home-manager.users.skandix = {
     home.packages = with pkgs; [
       unstable.obs-studio
-      unstable.obs-ndi
+      #unstable.obs-ndi
       obs-linuxbrowser
     ];
-  };   
+  };
 }
