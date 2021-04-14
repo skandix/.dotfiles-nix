@@ -11,11 +11,6 @@ in {
   ];
 
   programs.home-manager.enable = true;
-  
-  nixpkgs.config = {
-  allowBroken = true;
-  allowUnfree = true;
-  };
 
   home.packages = with pkgs; [
     jq
@@ -29,5 +24,16 @@ in {
     ripgrep
     unzip
     comma
+    bat
+    pfetch
+    neofetch
+    htop
+    wget
+    git
   ];
+
+  nixpkgs.config = {
+    allowBroken = true;
+    allowUnfree = true;
+  };
 }

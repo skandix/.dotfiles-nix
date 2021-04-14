@@ -13,8 +13,6 @@
       "video"
       "plugdev"
       "libvirtd"
-      "vboxusers"
-      "adbusers"
       "input"
       "lp"
       "scanner"

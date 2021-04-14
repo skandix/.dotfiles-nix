@@ -1,9 +1,10 @@
 {pkgs, ...}:
 
 {
-  services.xserver= {
+  services.xserver = {
     enable = true;
     layout = "no";
+    autorun = true;
     libinput.enable = true;
   };
 

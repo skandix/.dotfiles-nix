@@ -1,6 +1,5 @@
 # .nix-conf
 > This is my personal nixos-configs.
-> 
 
 ## Hosts
 * ``SpaceCruiser`` - Laptop
