@@ -197,10 +197,13 @@ bindsym $mod+t bar mode toggle
 # Avoid title bar on windows, don't want to waste to much space
 default_border pixel 1
 
-# APPS
+# autostart
 exec --no-startup-id slack
 exec --no-startup-id teams
 exec --no-startup-id discord
+exec --no-startup-id picom
+exec --no-startup-id dunst
+exec --no-startup-id nm-applet
 
 # window Specific Settings
 for_window [class="Slack"] move to workspace $ws10

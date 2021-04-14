@@ -6,5 +6,7 @@
     unstable.ldns
     unstable.mtr
     nmap
+    wireshark
+    tcpdump
   ];
 }

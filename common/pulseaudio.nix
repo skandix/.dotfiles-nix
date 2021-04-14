@@ -1,4 +1,4 @@
-{config, ...}:
+{config, pkgs, ...}:
 
 {
   # Enable sound.
@@ -8,5 +8,10 @@
     extraConfig = ''
       unload-module module-role-cork
     '';
+  };
+  home-manager.users.skandix = {
+    home.packages = with pkgs; [
+      pamixer
+    ];
   };
 }

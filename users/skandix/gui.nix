@@ -16,6 +16,7 @@
       unstable.discord
       unstable.tdesktop
       unstable.teams
+      signal-desktop
       zoom
 
       # Entertainment
@@ -25,13 +26,16 @@
 
       # Productivity
       firefox
+      obsidian
 
       # Code
       unstable.vscode
+      sublime3-dev
 
       # Tools
       pavucontrol
       unstable.filezilla
+      nm-tray
     ];
   };
 }

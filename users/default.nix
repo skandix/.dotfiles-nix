@@ -11,6 +11,7 @@
       "docker"
       "audio"
       "video"
+      "screen"
       "plugdev"
       "libvirtd"
       "input"

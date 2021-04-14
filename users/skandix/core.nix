@@ -40,6 +40,10 @@ in {
     git
     strace
     ltrace
+    ncdu
+    p7zip
+    termdown
+    speedtest-cli
   ];
 
   nixpkgs.config = {

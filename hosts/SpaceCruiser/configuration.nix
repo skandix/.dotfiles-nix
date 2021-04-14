@@ -31,6 +31,7 @@
   networking.useDHCP = false;
   networking.interfaces.enp0s31f6.useDHCP = true;
   networking.interfaces.wlp0s20f3.useDHCP = true;
+  networking.networkmanager.enable = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
