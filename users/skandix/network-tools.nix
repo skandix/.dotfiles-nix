@@ -8,5 +8,7 @@
     nmap
     wireshark
     tcpdump
+    speedtest-cli
+    netcat-gnu
   ];
 }

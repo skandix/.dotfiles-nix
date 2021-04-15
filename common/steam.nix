@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+
   # make steam work
   hardware.opengl = {
     enable = true;
@@ -8,6 +9,7 @@
     extraPackages32 = with pkgs.pkgsi686Linux; [ libva  ];
   };
   hardware.pulseaudio.support32Bit = true;
+  hardware.steam-hardware.enable = true;
   home-manager.users.skandix = {
     home.packages = with pkgs; [
       steam

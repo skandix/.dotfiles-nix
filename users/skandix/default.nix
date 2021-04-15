@@ -3,11 +3,7 @@
 {
   imports = [
     <home-manager/nixos>
+
+    ../../common/nix-pkg-allow.nix
   ];
-
-  nixpkgs.config = {
-    allowBroken = true;
-    allowUnfree = true;
-  };
-
 }

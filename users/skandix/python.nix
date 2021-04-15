@@ -9,6 +9,7 @@
       setuptools
       virtualenv
       pipenv
+      binwalk
   ]))
   ];
 }

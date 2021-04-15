@@ -5,7 +5,9 @@
     ../neofetch
     ../tmux
     ../moc
-    #../git.nix
+    ../git.nix
+
+    ./ls-colors.nix
   ];
 
     home.packages = with pkgs; [
@@ -13,7 +15,7 @@
       bash-completion
       nix-bash-completions
     ];
-    # not sure if this is the rigth way of using option.. :thinking:
+
     home.file.bashrc = {
       source = ./.bashrc;
       target = ".bashrc";

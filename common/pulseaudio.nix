@@ -12,6 +12,7 @@
   home-manager.users.skandix = {
     home.packages = with pkgs; [
       pamixer
+      pasystray
     ];
   };
 }

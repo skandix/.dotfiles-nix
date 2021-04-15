@@ -5,49 +5,22 @@ let
 in {
   imports = [
     # Tools
-    ./dots.nix
     ./python.nix
     ./network-tools.nix
     ./ctf-tools.nix
 
-    # confs
-    ./confs/vim/default.nix
-    ./confs/bashrc/default.nix
-
     # Common - Repo
     ../../common/repo/unstable.nix
     ../../common/repo/master.nix
-
+    ../../common/nix-pkg-allow.nix
   ];
 
-  programs.home-manager.enable = true;
+  # don't think i need this
+  # programs.home-manager.enable = true;
 
-  home.packages = with pkgs; [
-    unstable.jq
-    unstable.ripgrep
-    unstable.htop
-    gcc
-    pavucontrol
-    libnotify
-    lm_sensors
-    screen
-    inotify-tools
-    unzip
-    comma
-    bat
-    pfetch
-    wget
-    git
-    strace
-    ltrace
-    ncdu
-    p7zip
-    termdown
-    speedtest-cli
-  ];
-
-  nixpkgs.config = {
-    allowBroken = true;
-    allowUnfree = true;
-  };
+  home-mananger.users.skandix = {
+    home.packages = with pkgs; [
+      comma # not quite commaai
+    ];
+  }
 }

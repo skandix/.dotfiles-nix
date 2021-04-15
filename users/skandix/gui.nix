@@ -2,6 +2,7 @@
 
 {
    imports = [
+     # Gui
      ./confs/i3/default.nix
 
     # Common - Repo
@@ -36,6 +37,8 @@
       pavucontrol
       unstable.filezilla
       nm-tray
+      unstable.teamviewer
+      torbrowser
     ];
   };
 }

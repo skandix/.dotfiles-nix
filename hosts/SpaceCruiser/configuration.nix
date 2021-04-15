@@ -3,6 +3,7 @@
 {
   imports =
     [
+      # Hardware udev rules
       ./hardware-configuration.nix
       <nixos-hardware/lenovo/thinkpad/t490>
 
@@ -10,8 +11,9 @@
       ../../users
       ../../users/skandix
       ../../users/skandix/gui.nix
+      ../../users/skandix/cli.nix
 
-      # common
+      # Common
       ../../common/bluetooth.nix
       ../../common/briigth.nix
       #../../common/fingerprint.nix
@@ -20,6 +22,7 @@
       ../../common/security.nix
       ../../common/video.nix
       ../../common/kubernetes.nix
+      ../../common/games.nix
       ../../common/obs-studio.nix
     ];
 
