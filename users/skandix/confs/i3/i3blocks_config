@@ -15,10 +15,10 @@ command=echo "${1:-} $(uname -r)"
 interval=5
 color=#ababab
 
-# [battery-poly]
-# command=$HOME/.dotfiles/scripts/blocks/battery-poly
-# LABEL=BAT
-# interval=5
+[battery-poly]
+command=$HOME/.nix-confs/scripts/battery-poly
+LABEL=BAT
+interval=5
 
 [DISK]
 command=df -h / | awk '/\//{ printf("C:/ %4s/%s \n", $4, $2) }'

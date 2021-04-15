@@ -15,12 +15,9 @@ in {
     ../../common/nix-pkg-allow.nix
   ];
 
-  # don't think i need this
-  # programs.home-manager.enable = true;
+  programs.home-manager.enable = true;
 
-  home-mananger.users.skandix = {
     home.packages = with pkgs; [
       comma # not quite commaai
     ];
-  }
 }

@@ -14,5 +14,7 @@ let
   '';
 
 in {
+  home-manager.users.skandix = {
     home.packages = [ ls-colors ];
+  };
 }

@@ -1,4 +1,4 @@
-{config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 {
     imports = [
@@ -11,7 +11,7 @@
         ../../common/repo/master.nix
     ];
 
-    home-mananger.users.skandix = {
+    home-manager.users.skandix = {
         home.packages = with pkgs; [
             # Hardware info
             lm_sensors

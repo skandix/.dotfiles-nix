@@ -5,7 +5,7 @@
     unstable.ghidra-bin
     sonic-visualiser
     unstable.volatility
-    ghidra-bin
+    unstable.ghidra-bin
     hexedit
     strace
     ltrace

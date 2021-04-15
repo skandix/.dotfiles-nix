@@ -2,7 +2,8 @@
 let
   general = builtins.readFile ./vimrc/general.vim;
 in
-{
+  {
+  home-manager.users.skandix = {
   programs.neovim = {
     enable = true;
     vimAlias = true;
@@ -30,4 +31,5 @@ in
       ${general}
     '';
   };
+};
 }

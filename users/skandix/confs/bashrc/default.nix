@@ -1,15 +1,16 @@
-{pkgs, ...}:
+{config, pkgs, ...}:
 
 {
   imports = [
     ../neofetch
     ../tmux
     ../moc
-    ../git.nix
+    #../git.nix
 
     ./ls-colors.nix
   ];
 
+  home-manager.users.skandix = {
     home.packages = with pkgs; [
       bash
       bash-completion
@@ -20,4 +21,5 @@
       source = ./.bashrc;
       target = ".bashrc";
     };
+  };
 }

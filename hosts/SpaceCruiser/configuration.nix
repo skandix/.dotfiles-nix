@@ -22,7 +22,7 @@
       ../../common/security.nix
       ../../common/video.nix
       ../../common/kubernetes.nix
-      ../../common/games.nix
+      #../../common/games.nix
       ../../common/obs-studio.nix
     ];
 
