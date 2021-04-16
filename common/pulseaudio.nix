@@ -5,8 +5,11 @@
   sound.enable = true;
   hardware.pulseaudio = {
     enable = true;
+    package = pkgs.pulseaudioFull;
+    extraModules = [ pkgs.pulseaudio-modules-bt ];
     extraConfig = ''
       unload-module module-role-cork
+      load-module module-switch-on-connect
     '';
   };
   home-manager.users.skandix = {
