@@ -16,7 +16,7 @@ interval=5
 color=#ababab
 
 [battery-poly]
-command=$HOME/.nix-confs/scripts/battery-poly
+command=$HOME/.config/i3blocks/battery-poly
 LABEL=BAT
 interval=5
 

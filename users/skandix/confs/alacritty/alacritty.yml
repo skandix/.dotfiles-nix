@@ -42,7 +42,7 @@ colors:
   primary:
     background: '#18191E'
     foreground: '#FFEE79'
-  
+
   selection:
     text:       '#FF4D00'
     background: '#090B26'

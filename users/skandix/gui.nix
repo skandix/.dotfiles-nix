@@ -39,6 +39,7 @@
       nm-tray
       unstable.teamviewer
       torbrowser
+      gnome3.seahorse
     ];
   };
 }

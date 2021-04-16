@@ -1,4 +1,3 @@
-""" codeformat
 au BufNewFile,BufRead *.py
     \ set tabstop=4
     \| set softtabstop=4
@@ -125,13 +124,6 @@ augroup CloseIfOnlyControlWinLeft
     au!
     au BufEnter * call s:CloseIfOnlyControlWinLeft()
 augroup END
-
-""" ALE (taken from lasseh .vimrc)
-let g:ale_sign_warning = '▲'
-let g:ale_sign_error = '✗'
-let g:ale_use_deprecated_neovim = 1
-highlight link ALEWarningSign String
-highlight link ALEErrorSign Title
 
 """ unbinde the fucking arrow keys also they are broken on my cooler master keyboard ;_;
 noremap <Up> <Nop>

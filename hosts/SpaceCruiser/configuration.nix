@@ -14,16 +14,21 @@
       ../../users/skandix/cli.nix
 
       # Common
+      ../../common/wireguard.nix
+      ../../common/openvpn.nix
+      ../../common/docker.nix
       ../../common/bluetooth.nix
       ../../common/briigth.nix
-      #../../common/fingerprint.nix
       ../../common/fonts.nix
       ../../common/pulseaudio.nix
       ../../common/security.nix
       ../../common/video.nix
       ../../common/kubernetes.nix
-      #../../common/games.nix
-      ../../common/obs-studio.nix
+
+      # CPU Microcode
+      ../../common/cpu/intel.nix
+
+      # GPU Drivers
     ];
 
   boot.loader.systemd-boot.enable = true;
