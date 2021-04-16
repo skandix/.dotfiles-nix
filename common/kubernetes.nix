@@ -5,5 +5,6 @@
     unstable.kubectl
     unstable.kubectx
     unstable.kubernetes-helm
+    unstable.lens
   ];
 }

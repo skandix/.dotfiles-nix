@@ -2,9 +2,9 @@
 
 {
   # Enable nvidia-docker
-  imports = [
-    ../nvidia-docker.nix
-  ];
+  #imports = [
+    #../nvidia-docker.nix
+  #];
 
   # nvidia driver
   nixpkgs.config.allowUnfree = true;

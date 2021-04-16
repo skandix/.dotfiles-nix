@@ -1,5 +1,5 @@
 {config, ...}:
 
 {
-   virtualisation.docker.enableNvidia = true
+   virtualisation.docker.enableNvidia = true;
 }
