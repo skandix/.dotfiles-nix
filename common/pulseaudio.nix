@@ -9,7 +9,8 @@
     extraModules = [ pkgs.pulseaudio-modules-bt ];
     extraConfig = ''
       unload-module module-role-cork
-      load-module module-switch-on-connect
+      unload-module module-switch-on-connect
+      unload-module module-switch-on-port-available
     '';
   };
   home-manager.users.skandix = {

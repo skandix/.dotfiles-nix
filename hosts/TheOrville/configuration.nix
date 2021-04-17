@@ -35,14 +35,10 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Change hostname to what you call your system
-  networking.hostName = "ChangeMe";
-
+  networking.hostName = "TheOrville";
   networking.useDHCP = false;
-
-  # Change interfaces to match your system
-  networking.interfaces.eno1.useDHCP = true;
-
+  networking.interfaces.enp9s0.useDHCP = true;
+  networking.interfaces.wlp7s0.useDHCP = true;
   networking.networkmanager.enable = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";

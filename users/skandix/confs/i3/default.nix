@@ -8,6 +8,7 @@
     ../rofi
     ../alacritty
     ../mpv
+    ../autorandr
   ];
 
   services.xserver = {
@@ -26,7 +27,6 @@
       pkg-config
       xclip
       arandr
-      autorandr
       feh
       i3blocks
     ];
