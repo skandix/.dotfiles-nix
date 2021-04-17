@@ -5,7 +5,11 @@
 * ``SpaceCruiser`` - Laptop
 * ``TheOrville`` - Workstation
 * ``DeathStar`` - Work-Workstatiion
-* ``MillenniumFalcon`` - ???
+
+## Install
+```nix
+????
+```
 
 ## Resources
 * https://github.com/fbegyn/nixos-configuration
