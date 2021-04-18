@@ -9,7 +9,7 @@
     extraModules = [ pkgs.pulseaudio-modules-bt ];
     extraConfig = ''
       unload-module module-role-cork
-      unload-module module-switch-on-connect
+      load-module module-switch-on-connect
       unload-module module-switch-on-port-available
     '';
   };

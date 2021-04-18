@@ -186,7 +186,7 @@ bar {
         position top
         status_command i3blocks
         tray_output primary
-        font pango:DejaVu Sans Mono 12
+        font pango:DejaVu Sans Mono 8
         separator_symbol " λ "
         workspace_buttons yes
 }
@@ -200,7 +200,11 @@ default_border pixel 1
 #exec --no-startup-id slack
 #exec --no-startup-id teams
 #exec --no-startup-id discord
+
+
 exec --no-startup-id picom
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-manager
 exec --no-startup-id dunst
 exec --no-startup-id pasystray
 

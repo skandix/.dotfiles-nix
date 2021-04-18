@@ -6,6 +6,7 @@
     ../tmux
     ../moc
     #../git.nix
+    ../newsboat.nix
 
     ./ls-colors.nix
   ];

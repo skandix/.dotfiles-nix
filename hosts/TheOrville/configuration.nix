@@ -19,7 +19,7 @@
       ../../common/games.nix
       ../../common/kubernetes.nix
       ../../common/obs-studio.nix
-      ../../common/openvpn.nix
+      ../../common/networkmanager.nix
       ../../common/pulseaudio.nix
       ../../common/steam.nix
       ../../common/security.nix

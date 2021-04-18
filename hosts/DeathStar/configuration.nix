@@ -14,8 +14,9 @@
 
       # Common
       ../../common/wireguard.nix
-      ../../common/docker.nix
       ../../common/bluetooth.nix
+      ../../common/docker.nix
+      ../../common/networkmanager.nix
       ../../common/fonts.nix
       ../../common/pulseaudio.nix
       ../../common/security.nix

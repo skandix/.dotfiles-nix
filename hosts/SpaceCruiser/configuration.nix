@@ -15,7 +15,7 @@
 
       # Common
       ../../common/wireguard.nix
-      ../../common/openvpn.nix
+      ../../common/networkmanager.nix
       ../../common/docker.nix
       ../../common/bluetooth.nix
       ../../common/briigth.nix
@@ -29,6 +29,7 @@
       ../../common/cpu/intel.nix
 
       # GPU Drivers
+      ../../common/gpu/intel.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
