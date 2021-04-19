@@ -9,6 +9,9 @@ in {
     ./network-tools.nix
     ./ctf-tools.nix
 
+    # Scripts
+    ./scripts/default.nix
+
     # Common - Repo
     ../../common/repo/unstable.nix
     ../../common/repo/master.nix
