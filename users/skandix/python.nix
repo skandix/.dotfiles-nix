@@ -7,6 +7,7 @@
     (ps: with ps; [
       neovim
       setuptools
+      pip
       virtualenv
       pipenv
       binwalk
