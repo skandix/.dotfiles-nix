@@ -207,7 +207,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id blueman-manager
 exec --no-startup-id dunst
 exec --no-startup-id pasystray
-exec --no-startup-id feh --bg-scale 
+exec --no-startup-id /home/skandix/.nix-conf/users/skandix/confs/i3/rnd_bg.sh
 # window Specific Settings
 for_window [class="Slack"] move to workspace $ws10
 for_window [class="teams"] move to workspace $ws10
