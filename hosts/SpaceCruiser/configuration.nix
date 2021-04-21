@@ -22,7 +22,6 @@
       ../../common/fonts.nix
       ../../common/pulseaudio.nix
       ../../common/security.nix
-      ../../common/video.nix
       ../../common/kubernetes.nix
 
       # CPU Microcode
