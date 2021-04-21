@@ -28,9 +28,6 @@
             # Terminal Multiplexers
             screen
 
-            # iot
-            mosquitto
-
             # Misc Tools
             unstable.jq
             wget

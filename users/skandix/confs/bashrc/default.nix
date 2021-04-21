@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ../neofetch
+    ../pfetch
     ../tmux
     ../moc
     #../git.nix
@@ -16,6 +16,7 @@
       bash
       bash-completion
       nix-bash-completions
+      pfetch
     ];
 
     home.file.bashrc = {
