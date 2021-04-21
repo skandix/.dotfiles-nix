@@ -9,10 +9,13 @@
                 { url = https://blog.jonasbengtson.se/feed.rss; }
                 { url = https://www.matteomalvica.com/index.xml; }
                 { url = https://hexler.net/feed; }
-                { url = https://blog.cloudflare.com/; }
+                { url = https://weekly.nixos.org/feeds/all.rss.xml; }
                 { url = https://hacks.mozilla.org/feed/; }
                 { url = https://news.ycombinator.com/rss; }
-                { url = https://www.cyclingweekly.com/feeds/newsblog.rss; }
+                { url = https://www.nrk.no/toppsaker.rss; }
+                { url = https://telenorsoc.blogspot.com/feeds/posts/default?alt=rss; }
+                { url = https://www.wired.com/feed/rss; }
+                { url = https://www.kode24.no/?lab_viewport=rss; }        
             ];
             autoReload = true;
             reloadTime = 300;
