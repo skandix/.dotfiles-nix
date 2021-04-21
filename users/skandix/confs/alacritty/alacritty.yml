@@ -25,7 +25,7 @@ font:
   normal:
     family: monospace
 
-  size: 9.0
+  size: 8.0
 
   offset:
     x: 0
@@ -37,42 +37,34 @@ font:
   use_thin_strokes: false
 draw_bold_text_with_bright_colors: false
 
+# Colors (Horizon Dark)
 colors:
-  # Default colors
+  # Primary colors
   primary:
-    background: '#18191E'
-    foreground: '#FFEE79'
-
-  selection:
-    text:       '#FF4D00'
-    background: '#090B26'
-
-  # Cursor colors
-  cursor:
-    text:       '#18191E'
-    cursor:     '#FFFF00'
+    background: '0x1c1e26'
+    foreground: '0xe0e0e0'
 
   # Normal colors
   normal:
-    black:      '#18191E'
-    red:        '#FC2929'
-    green:      '#44B273'
-    yellow:     '#E25600'
-    blue:       '#1D918B'
-    magenta:    '#D16BB7'
-    cyan:       '#00BFA4'
-    white:      '#CCCCCC'
+    black: '0x16161c'
+    red: '0xe95678'
+    green: '0x29d398'
+    yellow: '0xfab795'
+    blue: '0x26bbd9'
+    magenta: '0xee64ac'
+    cyan: '0x59e1e3'
+    white: '0xd5d8da'
 
   # Bright colors
   bright:
-    black:      '#21252D'
-    red:        '#FF5050'
-    green:      '#50C16E'
-    yellow:     '#ED722E'
-    blue:       '#47A8A1'
-    magenta:    '#D68EB2'
-    cyan:       '#5AD1AA'
-    white:      '#FFFADE'
+    black: '0x5b5858'
+    red: '0xec6a88'
+    green: '0x3fdaa4'
+    yellow: '0xfbc3a7'
+    blue: '0x3fc4de'
+    magenta: '0xf075b5'
+    cyan: '0x6be4e6'
+    white: '0xd5d8da'
 
 background_opacity: 1.0
 
