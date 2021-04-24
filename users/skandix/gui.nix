@@ -14,7 +14,7 @@
     home.packages = with pkgs; [
       # Comms
       slack
-      unstable.discord
+      discord
       unstable.tdesktop
       unstable.teams
       signal-desktop
@@ -26,7 +26,7 @@
       mpv
 
       # Productivity
-      firefox
+      unstable.firefox
       obsidian
 
       # Code
