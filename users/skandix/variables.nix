@@ -5,6 +5,6 @@
     PAGER = "less";
     BROWSER = "firefox";
     EDITOR = "vim";
-    SHELL = "bash";
+    SHELL = "fish";
   };
 }

@@ -9,6 +9,10 @@ in {
     ./network-tools.nix
     ./ctf-tools.nix
 
+    # Shell
+    ./confs/fish.nix
+    ./confs/fzf.nix
+
     # Scripts
     ./scripts/default.nix
 
@@ -20,7 +24,7 @@ in {
 
   programs.home-manager.enable = true;
 
-    home.packages = with pkgs; [
-      comma # not quite commaai
-    ];
+  home.packages = with pkgs; [
+    comma # not quite commaai
+  ];
 }

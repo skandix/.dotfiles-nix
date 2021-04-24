@@ -2,7 +2,7 @@
 {
     home-manager.users.skandix = {
         home.packages = with pkgs; [
-            autorandr
+            unstable.autorandr
         ];
         xdg.configFile = {
             "autorandr/stack/config".source = ./stack/config;

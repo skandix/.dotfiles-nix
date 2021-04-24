@@ -4,7 +4,10 @@
     imports = [
         # cli
         ./confs/vim/default.nix
-        ./confs/bashrc/default.nix
+        ./confs/tmux/default.nix
+        ./confs/moc/default.nix
+        #./confs/git.nix
+        ./confs/newsboat.nix
 
         # Common - Repo
         ../../common/repo/unstable.nix
@@ -37,6 +40,7 @@
             termdown
             unstable.htop
             xclip
+            pfetch
         ];
     };
 }

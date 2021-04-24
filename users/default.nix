@@ -20,7 +20,7 @@
       "networkmanager"
     ];
     group = "skandix";
-    shell = pkgs.bash;
+    shell = pkgs.fish;
   };
 
   home-manager.users = {
