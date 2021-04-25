@@ -1,9 +1,6 @@
 { pkgs, config, ...}:
 
 {
-#  imports = [
-#
-#  ];
   programs.fish = {
     enable = true;
     package = pkgs.unstable.fish;
@@ -12,7 +9,9 @@
       ".." = "cd ..";
       "ls" = "ls --color";
       "ip" = "ip -c";
-      "pressmd" = "reveal-md --theme solarized --highlight-theme solarized-dark ";
+      "nf" = "set a (pwd);cd && cd .nix-conf && vim && cd $a";
+
+"pressmd" = "reveal-md --theme solarized --highlight-theme solarized-dark ";
     };
     # Colors for shell, not sure if this is the prefered way to do it
     loginShellInit = ''

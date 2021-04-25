@@ -25,6 +25,9 @@
       plex-media-player
       mpv
 
+      # Libs
+      nss_3_44
+
       # Productivity
       unstable.firefox
       obsidian

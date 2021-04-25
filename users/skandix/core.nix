@@ -13,9 +13,6 @@ in {
     ./confs/fish.nix
     ./confs/fzf.nix
 
-    # Scripts
-    ./scripts/default.nix
-
     # Common - Repo
     ../../common/repo/unstable.nix
     ../../common/repo/master.nix

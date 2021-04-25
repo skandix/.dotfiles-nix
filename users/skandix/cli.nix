@@ -31,6 +31,10 @@
             # Terminal Multiplexers
             screen
 
+            # LANG STUFF
+            go
+            gnumake
+
             # Misc Tools
             unstable.jq
             wget
@@ -41,6 +45,7 @@
             unstable.htop
             xclip
             pfetch
+            #lsb_release
         ];
     };
 }

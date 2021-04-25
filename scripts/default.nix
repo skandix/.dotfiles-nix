@@ -1,4 +1,10 @@
 {config, ...}:
+
+
+
+
+
+
 {
     #home-manager.users.skandix = {
          #home.file."diff-hours".source = config.lib.file.mkOutOfStoreSymlink ./diff_hours.py;
