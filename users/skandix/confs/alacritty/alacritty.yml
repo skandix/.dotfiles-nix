@@ -23,7 +23,7 @@ scrolling:
 
 font:
   normal:
-    family: monospace
+    family: DejaVuSansMono
 
   size: 8.0
 

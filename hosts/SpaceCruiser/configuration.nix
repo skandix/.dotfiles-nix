@@ -35,7 +35,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "SpaceCruiser";
-
   networking.useDHCP = false;
   networking.interfaces.enp0s31f6.useDHCP = true;
   networking.interfaces.wlp0s20f3.useDHCP = true;
@@ -49,7 +48,5 @@
 
   time.timeZone = "Europe/Oslo";
 
-  services.openssh.enable = true;
-  networking.firewall.enable = false;
   system.stateVersion = "20.09";
 }

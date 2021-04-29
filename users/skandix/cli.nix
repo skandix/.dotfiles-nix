@@ -45,7 +45,7 @@
             unstable.htop
             xclip
             pfetch
-            #lsb_release
+            minicom
         ];
     };
 }

@@ -8,7 +8,6 @@
     ../rofi
     ../alacritty
     ../mpv
-    ../autorandr
   ];
 
   services.xserver = {

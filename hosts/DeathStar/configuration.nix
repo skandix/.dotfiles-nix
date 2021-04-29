@@ -33,7 +33,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "DeathStar";
-
   networking.useDHCP = false;
   networking.interfaces.eno1.useDHCP = true;
   networking.networkmanager.enable = true;

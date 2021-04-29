@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
-
+with import ../../scripts/default.nix { inherit pkgs; };
 let
   comma = import (builtins.fetchTarball "https://github.com/Shopify/comma/archive/60a4cf8ec5c93104d3cfb9fc5a5bac8fb18cc8e4.tar.gz") { inherit pkgs; };
 in {
@@ -13,6 +13,9 @@ in {
     ./confs/fish.nix
     ./confs/fzf.nix
 
+    # Scripts
+    #../../scripts/default.nix
+
     # Common - Repo
     ../../common/repo/unstable.nix
     ../../common/repo/master.nix
@@ -22,6 +25,11 @@ in {
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
-    comma # not quite commaai
+    _Obsidian
+    _Telegram
+    ch_setup
+    mpvuia
+    comma
+
   ];
 }
