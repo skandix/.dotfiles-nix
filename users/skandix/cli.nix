@@ -46,6 +46,12 @@
             xclip
             pfetch
             minicom
+
+            # rev windows msi
+            msitools
+
+            # git gat
+            lazygit
         ];
     };
 }

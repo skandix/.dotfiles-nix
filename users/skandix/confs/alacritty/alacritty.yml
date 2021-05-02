@@ -3,7 +3,7 @@ env:
 
 window:
   dimensions:
-    columns: 100
+    columns: 75
     lines: 0
   padding:
     x: 15
@@ -22,8 +22,8 @@ scrolling:
   multiplier: 3
 
 font:
-  normal:
-    family: DejaVuSansMono
+  #normal:
+    #family: Fira Code Mono
 
   size: 8.0
 

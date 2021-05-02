@@ -1,56 +1,42 @@
-# SET
+### VARIABLES ###
 set $mod Mod4
 set $term alacritty
 set $screen flameshot gui
 set $lock dm-tool lock
 
-font pango:DejaVu Sans Mono 8
+### FONT ###
+font pango:Fira Code 10
 
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
+### MUTING MICROPHONE ###
+bindsym $mod+t exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send "MUTED?!?"
 
-# Mediakeys (Pamixer don't allow boosting by default ! )
-bindsym XF86AudioRaiseVolume exec --no-startup-id  pamixer --increase 5 && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id  pamixer --decrease 5 && $refresh_i3status
-
-## fucking coolermaster don't have mute button
-bindsym XF86AudioStop exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-
-## Muting the Microphone with the pause button, should give a visual feedback when muted though !
-bindsym Pause exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status && notify-send "MUTED?!?"
-
-## NEXT,PLAYPAUSE,PREV SPOTIFY
+### MEDIA KEYS ###
 bindsym XF86AudioPrev exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 bindsym XF86AudioPlay exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym XF86AudioNext exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym XF86AudioLowerVolume exec --no-startup-id  pamixer --decrease 5
+bindsym XF86AudioRaiseVolume exec --no-startup-id  pamixer --increase 5
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-# No mediakeys, but it has a numpad :thinking:
-bindsym KP_Enter exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym KP_Subtract exec --no-startup-id pamixer --decrease 5
-bindsym KP_Add  exec --no-startup-id pamixer --increase 5
+### NUMPAD MEDIA KEYS ###
 bindsym KP_Left exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 bindsym KP_Begin exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym KP_Right exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym KP_Subtract exec --no-startup-id pamixer --decrease 5
+bindsym KP_Add  exec --no-startup-id pamixer --increase 5
+bindsym KP_Enter exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-# Ligths
+### MISC KEYBINDS ###
+bindsym Print exec --no-startup-id $screen
+bindsym Insert exec --no-startup-id $lock
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
-
-# screenshot
-bindsym Print exec --no-startup-id $screen
-
-# locker
-bindsym Insert exec --no-startup-id $lock
+bindsym $mod+Return exec $term
+bindsym $mod+c kill
+bindsym $mod+r exec rofi -show run
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# start a terminal
-bindsym $mod+Return exec $term
-
-# kill focused window
-bindsym $mod+c kill
 
 # change focus (stolen from kb)
 bindsym $mod+h focus left
@@ -74,18 +60,12 @@ bindsym $mod+b split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-#bindsym $mod+s layout stacking
+bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
-
-# rofi boi
-bindsym $mod+r exec rofi -show run
-
-# change focus between tiling / floating windows
-bindsym $mod+s mode_toggle
 
 mode "move ws" {
  bindsym k move workspace to output up
@@ -144,58 +124,32 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# reload the configuration file
+### I3 SPECIFIC THINGS FOR RELOADING/RESTARTING/KILLING CONFIG ###
 bindsym $mod+Shift+c reload
-
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-
-# exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-        bindsym l resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym h resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
+bindsym $mod+x mode "resize"
+mode "resize" {
+        bindsym l resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym h resize grow width 5 px or 5 ppt
+
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+x mode "default"
 }
-bindsym $mod+x mode "resize"
+
 
 bindsym $mod+Escape workspace back_and_forth
-
-
-#bar {
-    #colors {
-        #background #000000
-        #statusline #ffffff
-        #separator #ff00ff
-
-        #focused_workspace  #4c7899 #285577 #ffffff
-        #active_workspace   #333333 #5f676a #ffffff
-        #inactive_workspace #333333 #222222 #888888
-        #urgent_workspace   #2f343a #900000 #ffffff
-        #binding_mode       #2f343a #900000 #ffffff
-    #}
-        #position top
-        #status_command i3blocks
-        #tray_output primary
-        #font pango:DejaVu Sans Mono 8
-        #separator_symbol " λ "
-        #workspace_buttons yes
-#}
 
 bar {
   colors {
     background #282A36
     statusline #F8F8F2
-    separator  #ff33ff
+    separator  #ff00ff
 
     focused_workspace  #44475A #44475A #F8F8F2
     active_workspace   #282A36 #44475A #F8F8F2
@@ -211,28 +165,28 @@ bar {
     workspace_buttons yes
 }
 
-
-#bindsym $mod+t bar mode toggle
-
 # Avoid title bar on windows, don't want to waste to much space
 default_border pixel 1
 
 # autostart
-#exec --no-startup-id slack
-#exec --no-startup-id teams
-#exec --no-startup-id discord
-exec --no-startup-ip xset dpms 0 0 0
+exec --no-startup-id slack
+exec --no-startup-id teams
+exec --no-startup-id discord
 exec --no-startup-id picom
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id dunst
 exec --no-startup-id pasystray
+
+# Scripts to run on startup
+exec --no-startup-id blanking
 exec --no-startup-id /home/skandix/.screenlayout/default.sh
 exec --no-startup-id /home/skandix/.nix-conf/users/skandix/confs/i3/rnd_bg.sh
 
 # window Specific Settings
 for_window [class="Slack"] move to workspace $ws10
-for_window [class="teams"] move to workspace $ws10
+for_window [ class="^Microsoft Teams" ] floating enable
+for_window [ class="^Microsoft Teams" ] move to workspace $ws10
 for_window [class="discord"] move to workspace $ws10
 
 for_window [class="Pavucontrol"] floating enable
