@@ -14,7 +14,7 @@ window:
 
   title: ¯\_(ツ)_/¯
 class:
-  instance: ¯\_(ツ)_/¯
+
   general: ¯\_(ツ)_/¯
 
 scrolling:
@@ -84,7 +84,6 @@ mouse:
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
-
   save_to_clipboard: false
 
 cursor:

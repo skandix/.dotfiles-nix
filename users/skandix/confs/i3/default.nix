@@ -30,6 +30,16 @@
       i3blocks
     ];
   };
+  services.xserver.extraConfig = ''
+    Section "ServerFlags"
+    Option          "BlankTime"     "0"
+    Option          "StandbyTime"   "0"
+    Option          "SuspendTime"   "0"
+    Option          "OffTime"       "0"
+    Option "dpms" "false"
+
+    EndSection
+  '';
 
   home-manager.users.skandix = {
     xdg.configFile = {
