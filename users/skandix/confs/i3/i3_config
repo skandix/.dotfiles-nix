@@ -5,7 +5,7 @@ set $screen flameshot gui
 set $lock dm-tool lock
 
 ### FONT ###
-font pango:Fira Code 10
+font pango:Fira Code Retina 8
 
 ### MUTING MICROPHONE ###
 bindsym $mod+t exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send "MUTED?!?"
@@ -160,7 +160,7 @@ bar {
     position top
     status_command i3blocks
     tray_output primary
-    font pango:DejaVu Sans Mono 8
+    font pango:Fira Code 10
     separator_symbol " λ "
     workspace_buttons yes
 }
@@ -189,6 +189,7 @@ for_window [ class="^Microsoft Teams" ] floating enable
 for_window [ class="^Microsoft Teams" ] move to workspace $ws10
 for_window [class="discord"] move to workspace $ws10
 
+for_window [class="alacritty"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [class="tor-browser"] floating enable

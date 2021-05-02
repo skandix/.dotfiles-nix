@@ -1,10 +1,4 @@
 markup=none
-
-[usb]
-command=echo "${1:-} $(lsblk -l -o 'TRAN' | grep -c "usb")"
-interval=1
-color=f94a33
-
 [procs]
 command=echo "${1:-} $(ps -U $USER | wc -l)"
 interval=5
@@ -26,7 +20,7 @@ interval=2
 color=#C9E3DB
 
 [MEM]
-command=free -h | awk '/Mem:/ { printf("RAM: %5s/%s \n", $3, $2) }'
+command=free -h | awk '/Mem:/ { printf("Ram: %5s/%s \n", $3, $2) }'
 interval=1
 color=#FEC925
 

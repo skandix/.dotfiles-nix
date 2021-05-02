@@ -10,8 +10,7 @@
       "ls" = "ls --color";
       "ip" = "ip -c";
       "nf" = "set a (pwd);cd && cd .nix-conf && vim && cd $a";
-
-"pressmd" = "reveal-md --theme solarized --highlight-theme solarized-dark ";
+      "pressmd" = "reveal-md --theme solarized --highlight-theme solarized-dark ";
     };
     # Colors for shell, not sure if this is the prefered way to do it
     loginShellInit = ''
