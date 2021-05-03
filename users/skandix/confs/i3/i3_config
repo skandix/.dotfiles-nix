@@ -101,6 +101,8 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+set $ws10 layout tabbed
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -186,7 +188,6 @@ exec --no-startup-id /home/skandix/.nix-conf/users/skandix/confs/i3/rnd_bg.sh
 
 # window Specific Settings
 for_window [class="Slack"] move to workspace $ws10
-for_window [ class="^Microsoft Teams" ] floating enable
 for_window [ class="^Microsoft Teams" ] move to workspace $ws10
 for_window [class="discord"] move to workspace $ws10
 
