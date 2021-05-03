@@ -48,8 +48,7 @@
             minicom
             doge
             ffmpeg
-            keybae
-            jq
+            keybase
             mkdocs
             powertop
             tlp
