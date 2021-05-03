@@ -13,12 +13,12 @@
   home-manager.users.skandix = {
     home.packages = with pkgs; [
       # Comms
-      slack
-      discord
+      unstable.slack
+      unstable.discord
       unstable.tdesktop
       unstable.teams
       signal-desktop
-      zoom
+      zoom-us
 
       # Entertainment
       spotify
@@ -30,6 +30,7 @@
 
       # Productivity
       unstable.firefox
+      torbrowser
       obsidian
 
       # Code

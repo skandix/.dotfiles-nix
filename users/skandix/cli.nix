@@ -46,6 +46,13 @@
             xclip
             pfetch
             minicom
+            doge
+            ffmpeg
+            keybae
+            jq
+            mkdocs
+            powertop
+            tlp
 
             # rev windows msi
             msitools
