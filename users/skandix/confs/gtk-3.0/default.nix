@@ -1,7 +1,9 @@
 {pkgs, ...}:
 
 {
-  xdg.configFile = {
-    "gtk-3.0/settings.ini".source = ./settings.ini;
+  home-manager.users.skandix = {
+    gtk.gtk3.extraConfig = ''
+      gtk-application-prefer-dark-theme = true
+    '';
   };
 }
