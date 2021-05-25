@@ -13,15 +13,17 @@
       ../../users/skandix/cli.nix
 
       # Common
-      ../../common/wireguard.nix
       ../../common/bluetooth.nix
       ../../common/docker.nix
-      ../../common/networkmanager.nix
       ../../common/fonts.nix
-      ../../common/pulseaudio.nix
-      ../../common/security.nix
-      ../../common/kubernetes.nix
       ../../common/games.nix
+      ../../common/kubernetes.nix
+      ../../common/obs-studio.nix
+      ../../common/openvpn.nix
+      ../../common/pulseaudio.nix
+      ../../common/steam.nix
+      ../../common/security.nix
+      ../../common/wireguard.nix
 
       # CPU Microcode
       ../../common/cpu/intel.nix
@@ -30,10 +32,33 @@
       ../../common/gpu/nvidia.nix
     ];
 
+  boot.loader.grub.enable = false;
+  boot.kernelPackages = pkgs.linuxPackages_5_4;
+  boot.kernelParams = [
+    "cma=256M"
+  ];
+  boot.loader.raspberryPi = {
+    enable = true;
+    version = 3;
+    uboot.enable = true;
+    firmwareConfig = ''
+      gpu_mem=256
+    '';
+  };
+
+
+  environment.systemPackages = with pkgs; [
+    raspberrypi-tools
+    vim
+  ];
+
+
+
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "DeathStar";
+  networking.hostName = "ChangeMe";
   networking.useDHCP = false;
   networking.interfaces.eno1.useDHCP = true;
   networking.networkmanager.enable = true;

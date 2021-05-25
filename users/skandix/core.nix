@@ -9,6 +9,7 @@ in {
   imports = [
     # Tools
     ./python.nix
+    ./rust.nix
     ./network-tools.nix
     ./ctf-tools.nix
 

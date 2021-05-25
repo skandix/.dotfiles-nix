@@ -26,7 +26,7 @@
       mpv
 
       # Libs
-      nss_3_44
+      bookworm
 
       # Productivity
       unstable.firefox
