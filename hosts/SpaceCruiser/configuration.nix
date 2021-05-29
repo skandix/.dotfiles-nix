@@ -23,6 +23,7 @@
       ../../common/pulseaudio.nix
       ../../common/security.nix
       ../../common/kubernetes.nix
+      ../../common/networking-extra.nix
 
       # CPU Microcode
       ../../common/cpu/intel.nix

@@ -24,6 +24,7 @@
       ../../common/steam.nix
       ../../common/security.nix
       ../../common/wireguard.nix
+      ../../common/networking-extra.nix
 
       # CPU Microcode
       ../../common/cpu/intel.nix

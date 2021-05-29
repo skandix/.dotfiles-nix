@@ -14,7 +14,7 @@
     home.packages = with pkgs; [
       # Comms
       unstable.slack
-      unstable.discord
+      discord
       unstable.tdesktop
       unstable.teams
       signal-desktop
@@ -35,7 +35,7 @@
 
       # Code
       unstable.vscode
-      sublime3-dev
+      sublime3
 
       # Tools
       pavucontrol

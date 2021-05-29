@@ -7,6 +7,7 @@
             unstable.wine-staging
             minecraft
             multimc
+            unstable.mcrcon
         ];
     };
 }
