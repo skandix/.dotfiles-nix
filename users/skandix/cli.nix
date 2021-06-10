@@ -20,6 +20,7 @@
             lm_sensors
 
             # Archive
+            zip
             unzip
             unrar
             p7zip
@@ -30,6 +31,12 @@
 
             # Terminal Multiplexers
             screen
+
+            # nfc
+            libnfc
+            # Libs
+            #nss_latest
+            nss_3_44
 
             # LANG STUFF
             go
@@ -46,18 +53,11 @@
             xclip
             pfetch
             minicom
-            doge
             ffmpeg
             keybase
             mkdocs
             powertop
             tlp
-
-            # rev windows msi
-            msitools
-
-            # git gat
-            lazygit
         ];
     };
 }
