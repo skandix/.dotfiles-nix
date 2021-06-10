@@ -17,6 +17,7 @@
       ../../common/wireguard.nix
       ../../common/networking-extra.nix
       ../../common/unifi.nix
+      ../../common/ssh.nix
 
       # CPU Microcode
       ../../common/cpu/intel.nix
@@ -32,7 +33,7 @@
       addresses = "192.168.1.5";
       prefixLength = 24;
     }];
-    defaultGateway = 192.168.1.1
+    defaultGateway = "192.168.1.1";
   };
 
   i18n.defaultLocale = "en_GB.UTF-8";
