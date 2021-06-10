@@ -36,7 +36,6 @@
   networking.hostName = "DeathStar";
   networking.useDHCP = false;
   networking.interfaces.eno1.useDHCP = true;
-  networking.networkmanager.enable = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {

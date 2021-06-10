@@ -32,12 +32,6 @@
             # Terminal Multiplexers
             screen
 
-            # nfc
-            libnfc
-            # Libs
-            #nss_latest
-            nss_3_44
-
             # LANG STUFF
             go
             gnumake
@@ -46,7 +40,6 @@
             unstable.jq
             wget
             git
-            bat
             ncdu
             termdown
             unstable.htop
@@ -56,8 +49,6 @@
             ffmpeg
             keybase
             mkdocs
-            powertop
-            tlp
         ];
     };
 }

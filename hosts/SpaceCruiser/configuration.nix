@@ -24,6 +24,7 @@
       ../../common/security.nix
       ../../common/kubernetes.nix
       ../../common/networking-extra.nix
+      ../../common/laptop.nix
 
       # CPU Microcode
       ../../common/cpu/intel.nix
@@ -39,7 +40,6 @@
   networking.useDHCP = false;
   networking.interfaces.enp0s31f6.useDHCP = true;
   networking.interfaces.wlp0s20f3.useDHCP = true;
-  networking.networkmanager.enable = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
