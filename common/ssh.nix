@@ -1,9 +1,7 @@
 {config, pkgs, ...}:
 
 {
-  services.sshd.enable = {
-    startWhenNeeded = true;
-    allowSFTP = true;
-    ports = [3301];
+  services.sshd = {
+    enable = true;
   };
 }
