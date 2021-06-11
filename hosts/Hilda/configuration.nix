@@ -17,6 +17,7 @@
       ../../common/wireguard.nix
       ../../common/networking-extra.nix
       ../../common/unifi.nix
+      ../../common/home-assistant.nix
       ../../common/ssh.nix
 
       # CPU Microcode

@@ -2,6 +2,7 @@
 
 {
   services.home-assistant = {
+    enable = true;
     package = (pkgs.home-assistant.override {
       extraPackages = py: with py; [ psycopg2 ];
     });
