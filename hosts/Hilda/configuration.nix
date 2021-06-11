@@ -29,9 +29,10 @@
 
   # Change hostname to what you call your system
   networking = {
+    usePredictableInterfaceNames = false;
     hostName = "Hilda";
-    interfaces.enp0s25 = [{
-      addresses = "192.168.1.5";
+    interfaces.eth0.ipv4.addresses = [{
+      address = "192.168.1.5";
       prefixLength = 24;
     }];
     defaultGateway = "192.168.1.1";
