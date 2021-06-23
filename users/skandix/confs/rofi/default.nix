@@ -3,7 +3,7 @@
 {
   home-manager.users.skandix = {
     home.packages = with pkgs; [
-      unstable.rofi
+      rofi
     ];
 
     xdg.configFile = {
