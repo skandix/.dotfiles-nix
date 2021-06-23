@@ -9,34 +9,34 @@
       # core dotfiles + graphical things
       ../../users
       ../../users/skandix
-      ../../users/skandix/gui.nix
       ../../users/skandix/cli.nix
 
       # Common
-      ../../common/wireguard.nix
-      ../../common/bluetooth.nix
       ../../common/docker.nix
-      ../../common/networkmanager.nix
-      ../../common/fonts.nix
-      ../../common/pulseaudio.nix
       ../../common/security.nix
-      ../../common/kubernetes.nix
-      ../../common/games.nix
-      ../../common/steam.nix
+      ../../common/wireguard.nix
+      ../../common/networking-extra.nix
+      ../../common/unifi.nix
+      ../../common/home-assistant.nix
+      ../../common/ssh.nix
 
       # CPU Microcode
       ../../common/cpu/intel.nix
-
-      # GPU Drivers
-      ../../common/gpu/nvidia.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "DeathStar";
-  networking.useDHCP = false;
-  networking.interfaces.eno1.useDHCP = true;
+  # Change hostname to what you call your system
+  networking = {
+    usePredictableInterfaceNames = false;
+    hostName = "Hilda";
+    interfaces.eth0.ipv4.addresses = [{
+      address = "192.168.1.5";
+      prefixLength = 24;
+    }];
+    defaultGateway = "192.168.1.1";
+  };
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {

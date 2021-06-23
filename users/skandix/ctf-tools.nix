@@ -9,5 +9,6 @@
     hexedit
     strace
     ltrace
+    msitools
   ];
 }

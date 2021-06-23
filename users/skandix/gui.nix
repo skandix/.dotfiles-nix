@@ -25,9 +25,6 @@
       plex-media-player
       mpv
 
-      # Libs
-      bookworm
-
       # Productivity
       unstable.firefox
       torbrowser
@@ -41,7 +38,6 @@
       pavucontrol
       unstable.filezilla
       nm-tray
-      unstable.teamviewer
       torbrowser
       gnome3.seahorse
       peek

@@ -20,6 +20,7 @@
             lm_sensors
 
             # Archive
+            zip
             unzip
             unrar
             p7zip
@@ -39,25 +40,15 @@
             unstable.jq
             wget
             git
-            bat
             ncdu
             termdown
             unstable.htop
             xclip
             pfetch
             minicom
-            doge
             ffmpeg
             keybase
             mkdocs
-            powertop
-            tlp
-
-            # rev windows msi
-            msitools
-
-            # git gat
-            lazygit
         ];
     };
 }
