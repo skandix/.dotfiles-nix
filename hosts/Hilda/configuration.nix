@@ -24,6 +24,10 @@
       ../../common/cpu/intel.nix
     ];
 
+  #nixpkgs.config.permittedInsecurePackages = [
+    #"homeassistant-0.114.4"
+  #];
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
