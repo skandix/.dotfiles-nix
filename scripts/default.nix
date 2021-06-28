@@ -7,22 +7,9 @@ rec {
     date=$(date | cut -d' ' -f 1-4)
     cd && cd Documents/ && git pull && obsidian && git add . && git commit -s -m " Auto Commit on Close at $host - $date  " && git push
   '';
-  _Telegram = pkgs.writeShellScriptBin "_Telegram" ''
+  _Discord = pkgs.writeShellScriptBin "_Discord" ''
     #!/usr/bin/env bash
-    dirExsists(){
-    echo ""
-      if [ -d $1 ]
-      then
-        echo "[O.K] Found $1"
-      else
-        echo "[Error]: Can't find $1, Creating directory"
-        mkdir -p $1
-      fi
-    }
-
-    dirExsists $HOME/.local/share/TelegramDesktop/$USER
-    exec_tg=$(whereis telegram-desktop -b | cut -d':' -f 2)
-    $exec_tg -workdir $HOME/.local/share/TelegramDesktop/$USER -- %u
+    Discord --multi-instance
   '';
   ch_setup = pkgs.writeShellScriptBin "ch_setup" ''
     #!/usr/bin/env bash

@@ -22,6 +22,7 @@
       ../../common/security.nix
       ../../common/kubernetes.nix
       ../../common/games.nix
+      ../../common/steam.nix
 
       # CPU Microcode
       ../../common/cpu/intel.nix

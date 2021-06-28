@@ -27,7 +27,7 @@ in {
 
   home.packages = with pkgs; [
     _Obsidian
-    _Telegram
+    _Discord
     ch_setup
     blanking
     mpvuia

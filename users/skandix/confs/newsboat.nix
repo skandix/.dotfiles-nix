@@ -21,6 +21,7 @@
                 { url = https://blog.cloudflare.com/rss/; }
                 { url = http://sreweekly.com/feed/; }
                 { url = https://boards.4channel.org/g/index.rss; }
+                { url = https://www.agwa.name/blog/feed; }
             ];
             autoReload = true;
             reloadTime = 300;
