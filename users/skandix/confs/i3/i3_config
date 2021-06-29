@@ -182,10 +182,10 @@ exec --no-startup-id /home/skandix/.screenlayout/default.sh
 exec --no-startup-id /home/skandix/.nix-conf/users/skandix/confs/i3/rnd_bg.sh
 
 # window Specific Settings
-for_window [class="Slack"] move to workspace $ws10
+#for_window [class="Slack"] move to workspace $ws10
 for_window [class="^Microsoft Teams"] move to workspace $ws10
-for_window [class="Discord"] move to workspace $ws10
-for_window [class="Telegram"] move to workspace $ws10
+#for_window [class="Discord"] move to workspace $ws10
+#for_window [class="Telegram"] move to workspace $ws10
 
 for_window [class="alacritty"] floating enable
 for_window [class="Pavucontrol"] floating enable
