@@ -29,4 +29,7 @@
 
   # high-resolution display
   hardware.video.hidpi.enable = lib.mkDefault true;
+
+  # powermgmt performance duude !
+  powerManagement.cpuFreqGovernor = "performance";
 }
