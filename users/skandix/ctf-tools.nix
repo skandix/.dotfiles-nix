@@ -4,7 +4,7 @@
   home.packages = with pkgs; [
     unstable.ghidra-bin
     sonic-visualiser
-    unstable.volatility
+    # unstable.volatility
     unstable.ghidra-bin
     hexedit
     strace

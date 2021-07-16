@@ -12,7 +12,7 @@
       load-module module-switch-on-connect
       unload-module module-switch-on-port-available
     '';
-    daemon.config = { 
+    daemon.config = {
       default-sample-format = "float32le";
       default-sample-rate = "48000";
       default-sample-channels = "2";
