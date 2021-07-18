@@ -41,7 +41,7 @@
       torbrowser
       gnome3.seahorse
       peek
-      keepassx2
+      qalculate-gtk
     ];
   };
 }
