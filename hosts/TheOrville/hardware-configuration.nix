@@ -8,7 +8,7 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
@@ -23,13 +23,18 @@
       fsType = "vfat";
     };
 
+  fileSystems."/mnt/ssd01" =
+    { device = "/dev/disk/by-uuid/07f6f3bb-343e-491a-a2bd-8dea417697a5";
+      fsType = "ext4";
+    };
+
+  fileSystems."/mnt/ssd02" =
+    { device = "/dev/disk/by-uuid/557cf84a-e87b-486f-800d-e39a5d97b1c3";
+      fsType = "ext4";
+    };
+
   swapDevices =
     [ { device = "/dev/disk/by-uuid/80405627-a275-4647-9553-ef52f07b2979"; }
     ];
 
-  # high-resolution display
-  hardware.video.hidpi.enable = lib.mkDefault true;
-
-  # powermgmt performance duude !
-  powerManagement.cpuFreqGovernor = "performance";
 }
