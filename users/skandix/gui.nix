@@ -27,7 +27,6 @@
 
       # Productivity
       unstable.firefox
-      torbrowser
       obsidian
 
       # Code
@@ -38,7 +37,6 @@
       pavucontrol
       unstable.filezilla
       nm-tray
-      torbrowser
       gnome3.seahorse
       peek
       qalculate-gtk
