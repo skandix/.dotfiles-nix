@@ -8,7 +8,12 @@
 
 ## Install
 ```nix
-????
+nix-env -iA nixos.git
+git clone https://github.com/skandix/.nix-conf
+cd .nix-conf/scripts 
+./format.sh /dev/sd? && ./channels_setup.sh
+nixos-generate-config --root /mnt
+# symlink desired host configuration.nix into /mnt/etc/nixos/configuration.nix
 ```
 
 ## Resources
