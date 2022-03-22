@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs;
   [
-    (python310.withPackages
+    (python39.withPackages
       (ps: with ps; [
         neovim
         setuptools

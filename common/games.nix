@@ -5,8 +5,8 @@
         home.packages = with pkgs; [
             lutris-unwrapped
             unstable.wine-staging
-            minecraft
-            multimc
+            gamemode
+            mangohud
         ];
     };
 }

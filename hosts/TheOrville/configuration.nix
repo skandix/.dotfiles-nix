@@ -16,7 +16,7 @@
       ../../common/bluetooth.nix
       ../../common/docker.nix
       ../../common/fonts.nix
-      #../../common/games.nix
+      ../../common/games.nix
       ../../common/kubernetes.nix
       ../../common/obs-studio.nix
       ../../common/networkmanager.nix
