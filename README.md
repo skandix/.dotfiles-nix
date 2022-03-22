@@ -7,7 +7,7 @@
 * ``DeathStar`` - Work-Workstatiion
 
 ## Install
-```nix
+```bash
 nix-env -iA nixos.git
 git clone https://github.com/skandix/.nix-conf
 cd .nix-conf/scripts 
