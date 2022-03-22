@@ -17,6 +17,7 @@
       discord
       unstable.tdesktop
       unstable.teams
+      unstable.notion-app-enhanced
       zoom-us
 
       # Entertainment
