@@ -5,7 +5,7 @@
   home-manager.users.skandix = {
     home.packages = with pkgs; [
         networkmanagerapplet
-        networkmanager_openvpn
+        networkmanager-openvpn
         networkmanager
     ];
   };
