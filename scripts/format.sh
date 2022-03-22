@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 disk=$1
 parted $disk -- mklabel gpt
-parted $disk -- mkpart primary 512MiB -8GiB
+parted $disk -- mkpart primary 512MiB -200MiB
 parted $disk -- mkpart primary linux-swap -200MiB 100%
 parted $disk -- mkpart ESP fat32 1MiB 512MiB
 parted $disk -- set 3 esp on
