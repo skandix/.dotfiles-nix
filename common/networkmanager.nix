@@ -4,7 +4,7 @@
   networking.networkmanager.enable = true;
   home-manager.users.skandix = {
     home.packages = with pkgs; [
-        gnome3.networkmanagerapplet
+        networkmanagerapplet
         networkmanager_openvpn
         networkmanager
     ];
