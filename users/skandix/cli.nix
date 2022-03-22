@@ -48,7 +48,6 @@
             minicom
             ffmpeg
             keybase
-            mkdocs
         ];
     };
 }

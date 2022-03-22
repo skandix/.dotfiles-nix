@@ -21,7 +21,6 @@
       ../../common/briigth.nix
       ../../common/fonts.nix
       ../../common/pulseaudio.nix
-      ../../common/security.nix
       ../../common/kubernetes.nix
       ../../common/networking-extra.nix
       ../../common/laptop.nix

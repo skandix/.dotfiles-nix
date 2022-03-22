@@ -16,13 +16,12 @@
       ../../common/bluetooth.nix
       ../../common/docker.nix
       ../../common/fonts.nix
-      ../../common/games.nix
+      #../../common/games.nix
       ../../common/kubernetes.nix
       ../../common/obs-studio.nix
       ../../common/networkmanager.nix
       ../../common/pulseaudio.nix
       ../../common/steam.nix
-      ../../common/security.nix
       ../../common/wireguard.nix
       ../../common/networking-extra.nix
 

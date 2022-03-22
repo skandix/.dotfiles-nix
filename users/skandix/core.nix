@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 
-# importingi scripts n shit
+# importing in scripts n shit
 with import ../../scripts/default.nix { inherit pkgs; };
 
 {
@@ -28,6 +28,6 @@ with import ../../scripts/default.nix { inherit pkgs; };
     ch_setup
     blanking
     mpvuia
-    comma
+    unstable.comma
   ];
 }

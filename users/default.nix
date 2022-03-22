@@ -18,9 +18,10 @@
       "lp"
       "scanner"
       "networkmanager"
+      "wireshark"
     ];
     group = "skandix";
-    shell = pkgs.fish;
+    shell = pkgs.unstable.fish;
   };
 
   home-manager.users = {

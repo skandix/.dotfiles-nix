@@ -19,9 +19,8 @@
       ../../common/networkmanager.nix
       ../../common/fonts.nix
       ../../common/pulseaudio.nix
-      ../../common/security.nix
       ../../common/kubernetes.nix
-      ../../common/games.nix
+      #../../common/games.nix
       ../../common/steam.nix
 
       # CPU Microcode
