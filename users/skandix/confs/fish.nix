@@ -39,7 +39,7 @@
       set -U fish_color_match --background=brblue
       set -U fish_color_comment FF9640
     '';
-    promptInit = ''
+    interactiveShellInit = ''
         pfetch
     '';
     plugins = [
