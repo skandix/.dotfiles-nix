@@ -5,7 +5,7 @@
   services.blueman.enable = true;
   hardware = {
     bluetooth.enable = true;
-    bluetooth.config = {
+    bluetooth.settings = {
       General = {
         Enable = "Source,Sink,Media,Socket";
       };

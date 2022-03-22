@@ -5,8 +5,8 @@ with lib; {
     boot.cleanTmpDir = true;
 
     nix = {
-      autoOptimiseStore = true;
-      trustedUsers = [ "root" "skandix" ];
+      auto-optimise-store = true;
+      trusted-users = [ "root" "skandix" ];
     };
 
     security.pam.loginLimits = [{
