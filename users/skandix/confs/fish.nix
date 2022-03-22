@@ -3,7 +3,6 @@
 {
   programs.fish = {
     enable = true;
-    package = pkgs.unstable.fish;
     shellAliases = {
       "sprunge" = "curl -F 'sprunge=<-' http://sprunge.us";
       ".." = "cd ..";
