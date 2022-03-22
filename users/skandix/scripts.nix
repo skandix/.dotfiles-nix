@@ -8,13 +8,11 @@ imports = [
 
   home-manager.users.skandix = {
     home.packages  = with pkgs; [
-      _obsidian
-      _telegram
+      _Discord
       ch_setup
       diff_hours
       mpvuia
       profileuia
-      uiasearch
     ];
   };
 }

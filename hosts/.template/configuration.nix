@@ -32,8 +32,8 @@
       ../../common/gpu/nvidia.nix
     ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.enable = true;
+  boot.loader.grub.version = 2;
 
   # Change hostname to what you call your system
   networking.hostName = "ChangeMe";
@@ -53,5 +53,5 @@
 
   time.timeZone = "Europe/Oslo";
 
-  system.stateVersion = "21.05";
+  system.stateVersion = "21.11";
 }

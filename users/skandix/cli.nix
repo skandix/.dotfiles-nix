@@ -37,6 +37,7 @@
             gnumake
 
             # Misc Tools
+            bat
             unstable.jq
             wget
             git

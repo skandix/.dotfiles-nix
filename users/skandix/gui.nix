@@ -17,12 +17,12 @@
       discord
       unstable.tdesktop
       unstable.teams
-      signal-desktop
       zoom-us
 
       # Entertainment
       spotify
       plex-media-player
+      unstable.plexamp
       mpv
 
       # Productivity

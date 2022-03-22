@@ -10,6 +10,7 @@
                 };
             };
 
+            # TODO: 
             extensions = with pkgs.nur.repos.rycee.firefox-addons; [
                 buster-captcha-solver
                 privacy-badger

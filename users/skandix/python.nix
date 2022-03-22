@@ -3,14 +3,16 @@
 {
   home.packages = with pkgs;
   [
-    (python39.withPackages
-    (ps: with ps; [
-      neovim
-      setuptools
-      pip
-      virtualenv
-      pipenv
-      binwalk
-  ]))
+    (python310.withPackages
+      (ps: with ps; [
+        neovim
+        setuptools
+        pip
+        virtualenv
+        pipenv
+        binwalk
+        ]
+      )
+    )
   ];
 }

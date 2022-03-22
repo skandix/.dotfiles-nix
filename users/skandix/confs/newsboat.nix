@@ -5,23 +5,12 @@
         programs.newsboat = {
             enable = true;
             urls = [
-                { url = https://nrkbeta.no/feed/; }
                 { url = https://blog.jonasbengtson.se/feed.rss; }
-                { url = https://www.matteomalvica.com/index.xml; }
-                { url = https://hexler.net/feed; }
                 { url = https://weekly.nixos.org/feeds/all.rss.xml; }
-                { url = https://hacks.mozilla.org/feed/; }
                 { url = https://news.ycombinator.com/rss; }
                 { url = https://www.nrk.no/toppsaker.rss; }
-                { url = https://telenorsoc.blogspot.com/feeds/posts/default?alt=rss; }
                 { url = https://www.wired.com/feed/rss; }
-                { url = https://www.kode24.no/?lab_viewport=rss; }
-                { url = https://signal.org/blog/rss.xml; }
-                { url = https://francis.begyn.be/blog.rss; }
-                { url = https://blog.cloudflare.com/rss/; }
-                { url = http://sreweekly.com/feed/; }
-                { url = https://boards.4channel.org/g/index.rss; }
-                { url = https://www.agwa.name/blog/feed; }
+                { url = https://christine.website/blog.rss; }
             ];
             autoReload = true;
             reloadTime = 300;

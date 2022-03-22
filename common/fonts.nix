@@ -12,9 +12,10 @@
       dina-font
       symbola
       (nerdfonts.override { fonts = [
-        "FiraCode"
-        "DejaVuSansMono"
-      ];})
+          "FiraCode"
+          "DejaVuSansMono"
+        ];}
+      )
     ];
     fontconfig = {
       enable = true;
