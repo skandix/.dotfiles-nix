@@ -4,7 +4,7 @@ with lib; {
   config = {
     boot.cleanTmpDir = true;
 
-    nix = {
+    nix.seetings = {
       auto-optimise-store = true;
       trusted-users = [ "root" "skandix" ];
     };
