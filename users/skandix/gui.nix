@@ -17,22 +17,22 @@
       discord
       unstable.tdesktop
       unstable.teams
-      unstable.notion-app-enhanced
       zoom-us
 
       # Entertainment
-      spotify
       plex-media-player
       unstable.plexamp
       mpv
 
       # Productivity
       unstable.firefox
-      obsidian
+      unstable.notion-app-enhanced
+      unstable.texstudio
+      texlive.combined.scheme-full
 
       # Code
       unstable.vscode
-      sublime3
+      sublime4
 
       # Tools
       pavucontrol
@@ -41,6 +41,7 @@
       gnome3.seahorse
       peek
       qalculate-gtk
+      bitwarden
     ];
   };
 }

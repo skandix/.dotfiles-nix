@@ -3,7 +3,7 @@ set $mod Mod4
 set $altMod Mod1
 set $term alacritty
 set $screen flameshot gui
-set $lock xsecurelock
+set $lock dm-tool lock
 
 ### FONT ###
 font pango:monospace 10

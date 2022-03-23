@@ -10,10 +10,13 @@
   };
   hardware.pulseaudio.support32Bit = true;
   hardware.steam-hardware.enable = true;
-  home-manager.users.skandix = {
-    home.packages = with pkgs; [
-      steam
-    ];
-  };
+  programs.steam.enable = true;
+  #home-manager.users.skandix = {
+  #  home.packages = with pkgs; [
+  #    steam
+  #    steam-original
+  #    steam-runtime
+  #  ];
+  #};
 }
 
