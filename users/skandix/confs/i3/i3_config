@@ -181,12 +181,13 @@ default_border pixel 1
 
 # autostart
 exec_always --no-startup-id picom
-exec_always --no-startup-id "$HOME/.dotfiles/scripts/rnd_bg.sh"
+exec_always --no-startup-id "/home/skandix/.screenlayout/default.sh"
+exec_always --no-startup-id "/home/skandix/.dotfiles/scripts/rnd_bg.sh"
 exec_always --no-startup-id dunst
 exec_always --no-startup-id setxkbmap no
 
-exec --no-startup-id greenclip daemon
-exec --no-startup-id "$HOME/.dotfiles/scripts/blanking.sh"
+#exec --no-startup-id greenclip daemon
+exec --no-startup-id "/home/skandix/.dotfiles/scripts/blanking.sh"
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
 exec --no-startup-id blueman-applet
