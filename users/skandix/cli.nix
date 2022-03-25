@@ -36,6 +36,7 @@
             gnumake
 
             # Misc Tools
+            unstable.openstackclient
             bat
             unstable.jq
             wget

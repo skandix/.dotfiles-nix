@@ -20,8 +20,8 @@
       ../../common/fonts.nix
       ../../common/pulseaudio.nix
       ../../common/kubernetes.nix
-      #../../common/games.nix
       ../../common/steam.nix
+      ../../common/vagrant.nix
 
       # CPU Microcode
       ../../common/cpu/intel.nix
