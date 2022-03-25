@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
-
-  # make steam work
   hardware.opengl = {
     enable = true;
     driSupport32Bit = true;
@@ -11,12 +9,5 @@
   hardware.pulseaudio.support32Bit = true;
   hardware.steam-hardware.enable = true;
   programs.steam.enable = true;
-  #home-manager.users.skandix = {
-  #  home.packages = with pkgs; [
-  #    steam
-  #    steam-original
-  #    steam-runtime
-  #  ];
-  #};
 }
 
