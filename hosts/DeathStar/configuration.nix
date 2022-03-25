@@ -33,6 +33,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  networking.firewall.enable = false;
+
   networking.hostName = "DeathStar";
   networking.useDHCP = false;
   networking.interfaces.eno1.useDHCP = true;

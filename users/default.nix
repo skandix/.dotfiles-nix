@@ -19,6 +19,7 @@
       "scanner"
       "networkmanager"
       "wireshark"
+      "vboxusers"
     ];
     group = "skandix";
     shell = pkgs.unstable.fish;

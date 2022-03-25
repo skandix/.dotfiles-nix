@@ -4,13 +4,14 @@
   virtualisation.virtualbox = {
     host = {
       enable = true;
+      enableExtensionPack = true;
     };
-    guest.enable = true;
   };
+  users.extraGroups.vboxusers.members = ["skandix"];
 
   home-manager.users.skandix = {
     home.packages = with pkgs; [
-      vagrant
+      unstable.vagrant
     ];
   };
 }
