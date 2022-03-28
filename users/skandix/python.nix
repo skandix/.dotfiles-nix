@@ -1,11 +1,12 @@
 { pkgs, ... }:
 
 {
-  home.packages = with pkgs;
+  home.packages = with pkgs.unstable;
   [
-    (python38.withPackages
+    (python310.withPackages
       (ps: with ps; [
         neovim
+        requests
         setuptools
         pip
         virtualenv

@@ -27,6 +27,7 @@
             # Libs
             libnotify
             inotify-tools
+            libopenmpt
 
             # Terminal Multiplexers
             screen
