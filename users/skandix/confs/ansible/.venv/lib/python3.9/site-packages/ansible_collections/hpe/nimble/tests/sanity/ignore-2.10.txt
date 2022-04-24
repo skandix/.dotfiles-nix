@@ -1,0 +1,160 @@
+plugins/modules/hpe_nimble_volume.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_volume_collection.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_user.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_user_policy.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_snapshot.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_snapshot_collection.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_shelf.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_performance_policy.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_protection_template.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_protection_schedule.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_pool.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_partner.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_network.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_initiator_group.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_info.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_group.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_fc.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_encryption.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_disk.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_chap_user.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_array.py validate-modules:missing-gplv3-license
+plugins/modules/hpe_nimble_access_control_record.py validate-modules:missing-gplv3-license
+plugins/module_utils/hpe_nimble.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_volume.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_volume_collection.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_user.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_user_policy.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_snapshot.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_snapshot_collection.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_shelf.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_performance_policy.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_protection_template.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_protection_schedule.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_pool.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_partner.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_network.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_initiator_group.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_info.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_group.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_fc.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_encryption.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_disk.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_chap_user.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_array.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/modules/hpe_nimble_access_control_record.py compile-2.6!skip # Python 2.6 is not supported on the controller
+plugins/module_utils/hpe_nimble.py compile-2.7!skip
+plugins/modules/hpe_nimble_volume.py compile-2.7!skip
+plugins/modules/hpe_nimble_volume_collection.py compile-2.7!skip
+plugins/modules/hpe_nimble_user.py compile-2.7!skip
+plugins/modules/hpe_nimble_user_policy.py compile-2.7!skip
+plugins/modules/hpe_nimble_snapshot.py compile-2.7!skip
+plugins/modules/hpe_nimble_snapshot_collection.py compile-2.7!skip
+plugins/modules/hpe_nimble_shelf.py compile-2.7!skip
+plugins/modules/hpe_nimble_performance_policy.py compile-2.7!skip
+plugins/modules/hpe_nimble_protection_template.py compile-2.7!skip
+plugins/modules/hpe_nimble_protection_schedule.py compile-2.7!skip
+plugins/modules/hpe_nimble_pool.py compile-2.7!skip
+plugins/modules/hpe_nimble_partner.py compile-2.7!skip
+plugins/modules/hpe_nimble_network.py compile-2.7!skip
+plugins/modules/hpe_nimble_initiator_group.py compile-2.7!skip
+plugins/modules/hpe_nimble_info.py compile-2.7!skip
+plugins/modules/hpe_nimble_group.py compile-2.7!skip
+plugins/modules/hpe_nimble_fc.py compile-2.7!skip
+plugins/modules/hpe_nimble_encryption.py compile-2.7!skip
+plugins/modules/hpe_nimble_disk.py compile-2.7!skip
+plugins/modules/hpe_nimble_chap_user.py compile-2.7!skip
+plugins/modules/hpe_nimble_array.py compile-2.7!skip
+plugins/modules/hpe_nimble_access_control_record.py compile-2.7!skip
+plugins/module_utils/hpe_nimble.py compile-3.5!skip
+plugins/modules/hpe_nimble_volume.py compile-3.5!skip
+plugins/modules/hpe_nimble_volume_collection.py compile-3.5!skip
+plugins/modules/hpe_nimble_user.py compile-3.5!skip
+plugins/modules/hpe_nimble_user_policy.py compile-3.5!skip
+plugins/modules/hpe_nimble_snapshot.py compile-3.5!skip
+plugins/modules/hpe_nimble_snapshot_collection.py compile-3.5!skip
+plugins/modules/hpe_nimble_shelf.py compile-3.5!skip
+plugins/modules/hpe_nimble_performance_policy.py compile-3.5!skip
+plugins/modules/hpe_nimble_protection_template.py compile-3.5!skip
+plugins/modules/hpe_nimble_protection_schedule.py compile-3.5!skip
+plugins/modules/hpe_nimble_pool.py compile-3.5!skip
+plugins/modules/hpe_nimble_partner.py compile-3.5!skip
+plugins/modules/hpe_nimble_network.py compile-3.5!skip
+plugins/modules/hpe_nimble_initiator_group.py compile-3.5!skip
+plugins/modules/hpe_nimble_info.py compile-3.5!skip
+plugins/modules/hpe_nimble_group.py compile-3.5!skip
+plugins/modules/hpe_nimble_fc.py compile-3.5!skip
+plugins/modules/hpe_nimble_encryption.py compile-3.5!skip
+plugins/modules/hpe_nimble_disk.py compile-3.5!skip
+plugins/modules/hpe_nimble_chap_user.py compile-3.5!skip
+plugins/modules/hpe_nimble_array.py compile-3.5!skip
+plugins/modules/hpe_nimble_access_control_record.py compile-3.5!skip
+plugins/module_utils/hpe_nimble.py import-2.6!skip
+plugins/modules/hpe_nimble_volume.py import-2.6!skip
+plugins/modules/hpe_nimble_volume_collection.py import-2.6!skip
+plugins/modules/hpe_nimble_user.py import-2.6!skip
+plugins/modules/hpe_nimble_user_policy.py import-2.6!skip
+plugins/modules/hpe_nimble_snapshot.py import-2.6!skip
+plugins/modules/hpe_nimble_snapshot_collection.py import-2.6!skip
+plugins/modules/hpe_nimble_shelf.py import-2.6!skip
+plugins/modules/hpe_nimble_performance_policy.py import-2.6!skip
+plugins/modules/hpe_nimble_protection_template.py import-2.6!skip
+plugins/modules/hpe_nimble_protection_schedule.py import-2.6!skip
+plugins/modules/hpe_nimble_pool.py import-2.6!skip
+plugins/modules/hpe_nimble_partner.py import-2.6!skip
+plugins/modules/hpe_nimble_network.py import-2.6!skip
+plugins/modules/hpe_nimble_initiator_group.py import-2.6!skip
+plugins/modules/hpe_nimble_info.py import-2.6!skip
+plugins/modules/hpe_nimble_group.py import-2.6!skip
+plugins/modules/hpe_nimble_fc.py import-2.6!skip
+plugins/modules/hpe_nimble_encryption.py import-2.6!skip
+plugins/modules/hpe_nimble_disk.py import-2.6!skip
+plugins/modules/hpe_nimble_chap_user.py import-2.6!skip
+plugins/modules/hpe_nimble_array.py import-2.6!skip
+plugins/modules/hpe_nimble_access_control_record.py import-2.6!skip
+plugins/module_utils/hpe_nimble.py import-2.7!skip
+plugins/modules/hpe_nimble_volume.py import-2.7!skip
+plugins/modules/hpe_nimble_volume_collection.py import-2.7!skip
+plugins/modules/hpe_nimble_user.py import-2.7!skip
+plugins/modules/hpe_nimble_user_policy.py import-2.7!skip
+plugins/modules/hpe_nimble_snapshot.py import-2.7!skip
+plugins/modules/hpe_nimble_snapshot_collection.py import-2.7!skip
+plugins/modules/hpe_nimble_shelf.py import-2.7!skip
+plugins/modules/hpe_nimble_performance_policy.py import-2.7!skip
+plugins/modules/hpe_nimble_protection_template.py import-2.7!skip
+plugins/modules/hpe_nimble_protection_schedule.py import-2.7!skip
+plugins/modules/hpe_nimble_pool.py import-2.7!skip
+plugins/modules/hpe_nimble_partner.py import-2.7!skip
+plugins/modules/hpe_nimble_network.py import-2.7!skip
+plugins/modules/hpe_nimble_initiator_group.py import-2.7!skip
+plugins/modules/hpe_nimble_info.py import-2.7!skip
+plugins/modules/hpe_nimble_group.py import-2.7!skip
+plugins/modules/hpe_nimble_fc.py import-2.7!skip
+plugins/modules/hpe_nimble_encryption.py import-2.7!skip
+plugins/modules/hpe_nimble_disk.py import-2.7!skip
+plugins/modules/hpe_nimble_chap_user.py import-2.7!skip
+plugins/modules/hpe_nimble_array.py import-2.7!skip
+plugins/modules/hpe_nimble_access_control_record.py import-2.7!skip
+plugins/module_utils/hpe_nimble.py import-3.5!skip
+plugins/modules/hpe_nimble_volume.py import-3.5!skip
+plugins/modules/hpe_nimble_volume_collection.py import-3.5!skip
+plugins/modules/hpe_nimble_user.py import-3.5!skip
+plugins/modules/hpe_nimble_user_policy.py import-3.5!skip
+plugins/modules/hpe_nimble_snapshot.py import-3.5!skip
+plugins/modules/hpe_nimble_snapshot_collection.py import-3.5!skip
+plugins/modules/hpe_nimble_shelf.py import-3.5!skip
+plugins/modules/hpe_nimble_performance_policy.py import-3.5!skip
+plugins/modules/hpe_nimble_protection_template.py import-3.5!skip
+plugins/modules/hpe_nimble_protection_schedule.py import-3.5!skip
+plugins/modules/hpe_nimble_pool.py import-3.5!skip
+plugins/modules/hpe_nimble_partner.py import-3.5!skip
+plugins/modules/hpe_nimble_network.py import-3.5!skip
+plugins/modules/hpe_nimble_initiator_group.py import-3.5!skip
+plugins/modules/hpe_nimble_info.py import-3.5!skip
+plugins/modules/hpe_nimble_group.py import-3.5!skip
+plugins/modules/hpe_nimble_fc.py import-3.5!skip
+plugins/modules/hpe_nimble_encryption.py import-3.5!skip
+plugins/modules/hpe_nimble_disk.py import-3.5!skip
+plugins/modules/hpe_nimble_chap_user.py import-3.5!skip
+plugins/modules/hpe_nimble_array.py import-3.5!skip
+plugins/modules/hpe_nimble_access_control_record.py import-3.5!skip

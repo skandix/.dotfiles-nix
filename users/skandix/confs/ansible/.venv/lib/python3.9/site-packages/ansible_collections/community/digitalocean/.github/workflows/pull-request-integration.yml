@@ -1,0 +1,35 @@
+name: pull-request-integration
+
+on:
+  pull_request_target:
+    branches: [ main ]
+    types: [ opened, synchronize, reopened ]
+
+concurrency:
+  group: cloud-integration-tests
+  cancel-in-progress: false
+
+jobs:
+
+  integration:
+    # Require reviewers for this environment
+    # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
+    environment: integration
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Perform testing
+        uses: ansible-community/ansible-test-gh-action@release/v1
+        with:
+          # ansible-core-version:
+          git-checkout-ref: ${{ github.event.pull_request.head.sha }} # Check out the pull request
+          pre-test-cmd: >-  # Configure integration test run
+            DO_API_KEY=${{ secrets.DO_API_KEY }}
+            ./tests/utils/render.sh
+            tests/integration/integration_config.yml.template
+            > tests/integration/integration_config.yml
+          python-version: 3.9
+          target-python-version: 3.9
+          testing-type: integration
+          test-deps: community.general

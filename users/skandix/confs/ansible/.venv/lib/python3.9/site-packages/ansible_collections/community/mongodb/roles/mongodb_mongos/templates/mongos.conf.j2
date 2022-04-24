@@ -1,0 +1,22 @@
+systemLog:
+  destination: file
+  path: /var/log/mongodb/mongos.log
+  logAppend: true
+  logRotate: reopen
+net:
+{% if bind_ip_all %}
+  bindIpAll: true
+{% else %}
+  bindIp: {{ bind_ip }}
+{% endif %}
+  port: {{ mongos_port }}
+{% if net_compressors %}
+  compression:
+    compressors: {{ net_compressors }}
+{% endif %}
+sharding:
+  configDB: "{{ config_repl_set_name }}/{{ config_servers }}"
+processManagement:
+  timeZoneInfo: /usr/share/zoneinfo
+security:
+  keyFile: {{ openssl_keyfile_path }}

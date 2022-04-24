@@ -1,0 +1,11 @@
+---
+
+- set_fact:
+    sops_installed: no
+
+- include_tasks: install.yml
+
+- include_tasks:
+    file: install.yml
+    apply:
+      delegate_to: localhost

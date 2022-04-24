@@ -1,0 +1,33 @@
+---
+- name: Initialize OpenSCAP variables
+  set_fact:
+    oscap_dir: "/usr/share/xml/scap/ssg/content"
+    oscap_ver: "{{ appliance_ver if ansible_distribution != 'Fedora' else '' }}"
+- name: Set OpenSCAP datastream path
+  set_fact:
+    oscap_datastream: "{{ oscap_dir }}/ssg-{{ appliance_dist | replace('RedHat', 'rhel') | lower }}{{ oscap_ver }}-ds.xml"
+- name: Verify OpenSCAP datastream
+  stat:
+    path: "{{ oscap_datastream }}"
+  register: oscap_ds_stat
+- name: Set default OpenSCAP profile
+  shell: >-
+    set -euo pipefail && oscap info --profiles {{ oscap_datastream }} |
+    grep -Ei "(standard|disa)" | sort | tail -1 | cut -d':' -f1
+  register: oscap_profile
+  ignore_errors: true
+  changed_when: true
+  when: oscap_ds_stat.stat.exists
+- name: Apply OpenSCAP profile
+  command: >-
+    oscap xccdf eval --profile {{ oscap_profile.stdout }} --remediate
+    --report /root/openscap-report.html {{ oscap_datastream }}
+  failed_when: false
+  ignore_errors: true
+  changed_when: true
+  when: oscap_profile.stdout is defined
+- name: Reset PermitRootLogin for sshd
+  lineinfile: dest=/etc/ssh/sshd_config
+              regexp="^\s*PermitRootLogin"
+              line="PermitRootLogin yes"
+              state=present

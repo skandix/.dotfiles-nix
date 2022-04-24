@@ -1,0 +1,37 @@
+{
+ "collection_info": {
+  "namespace": "f5networks",
+  "name": "f5_modules",
+  "version": "1.13.0",
+  "authors": [
+   "Wojciech Wypior (@wojtek0806)"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "f5",
+   "networking",
+   "bigip",
+   "bigiq"
+  ],
+  "description": "F5 Modules for Ansible",
+  "license": [
+   "GPL-3.0-only"
+  ],
+  "license_file": null,
+  "dependencies": {
+   "ansible.netcommon": ">=2.0.0"
+  },
+  "repository": "https://github.com/F5Networks/f5-ansible",
+  "documentation": "https://clouddocs.f5.com/products/orchestration/ansible/devel/modules/module_index.html",
+  "homepage": "https://clouddocs.f5.com/products/orchestration/ansible/devel/",
+  "issues": "https://github.com/F5Networks/f5-ansible/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "1eadc02c0472ec2c0adac3fd34c8274187c87e72fbcc3c7aca44472c097dab0d",
+  "format": 1
+ },
+ "format": 1
+}

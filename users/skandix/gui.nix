@@ -21,18 +21,21 @@
 
       # Entertainment
       plex-media-player
-      unstable.plexamp
+      plexamp
       mpv
-
+      foliate
       # Productivity
-      unstable.firefox
-      unstable.notion-app-enhanced
-      unstable.texstudio
-      texlive.combined.scheme-full
+      firefox
+      #notion-app-enhanced
+      #unstable.texstudio
+      #texlive.combined.scheme-full
 
       # Code
       unstable.vscode
       sublime4
+
+      # CREATIVITY
+      #gimp
 
       # Tools
       pavucontrol

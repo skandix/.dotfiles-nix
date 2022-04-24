@@ -23,6 +23,7 @@
             unzip
             unrar
             p7zip
+            zlib
 
             # Libs
             libnotify
@@ -37,6 +38,9 @@
             gnumake
 
             # Misc Tools
+            dig
+            yt-dlp
+            unstable.terraform
             unstable.openstackclient
             bat
             unstable.jq
@@ -49,7 +53,8 @@
             pfetch
             minicom
             ffmpeg
-            keybase
+            pipenv
+            #keybase
         ];
     };
 }

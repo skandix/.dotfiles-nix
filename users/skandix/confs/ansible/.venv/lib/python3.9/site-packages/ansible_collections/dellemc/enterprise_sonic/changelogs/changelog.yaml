@@ -1,0 +1,95 @@
+ancestor: null
+releases:
+  1.0.0:
+    release_summary: This collection includes Ansible core modules, network resource modules, 
+          and plugins needed to provision and manage Dell EMC PowerSwitch platforms running 
+          Enterprise SONiC Distribution by Dell Technologies 
+    modules:
+    - description: Run commands through Management Framework CLI.
+      name: sonic_command
+      namespace: ''
+    - description:  Manage configuration through the Management Framework CLI.
+      name: sonic_config
+      namespace: ''
+    - description: Perform REST operations through the Management Framework REST API.
+      name: sonic_api
+      namespace: ''
+    - description: Interface resource module.
+      name: sonic_interfaces
+      namespace: ''
+    - description: Layer 2 interface resource module.
+      name: sonic_l2_interfaces
+      namespace: ''
+    - description: Layer 3 interface resource module.
+      name: sonic_l3_interfaces
+      namespace: ''
+    - description: Link aggregation (LAG) resource module.
+      name: sonic_lag_interfaces
+      namespace: ''
+    - description: VLAN resource module.
+      name: sonic_vlans
+      namespace: ''
+    - description: BGP resource module.
+      name: sonic_bgp
+      namespace: ''
+    - description: BGP AF resource module.
+      name: sonic_bgp_af
+      namespace: ''
+    - description: BGP neighbors resource module.
+      name: sonic_bgp_neighbors
+      namespace: ''
+    - description: BGP neighbors AF resource module.
+      name: sonic_bgp_neighbors_af
+      namespace: ''
+    - description: BGP AS path resource module.
+      name: sonic_bgp_as_paths
+      namespace: ''
+    - description: BGP communities resource module.
+      name: sonic_bgp_communities
+      namespace: ''
+    - description: BGP Ext communities resource module.
+      name: sonic_bgp_ext_communities
+      namespace: ''
+    - description: VxLAN EVPN resource module.
+      name: sonic_vxlans
+      namespace: ''
+    - description: MCLAG resource module.
+      name: sonic_mclag
+      namespace: ''
+    - description: USERS resource module.
+      name: sonic_users
+      namespace: ''
+    - description: port breakout resource module.
+      name: sonic_port_breakout
+      namespace: ''
+    - description: VRF resource module.
+      name: sonic_vrfs
+      namespace: ''
+    plugins:
+      cliconf:
+      - description: Use Ansible CLICONF to run commands on Enterprise SONiC.
+        name: sonic
+        namespace: null
+      httpapi:
+      - description: Use Ansible HTTPAPI to run commands on Enterprise SONiC.
+        name: sonic
+        namespace: null
+    release_date: '2020-12-07'    
+  1.1.0:
+    release_summary: Supports AAA, Users, System and Port breakout 
+          resource modules    
+    modules:
+    - description: TACACS Server resource module.
+      name: sonic_tacacs_server
+      namespace: ''
+    - description: RADIUS resource module.
+      name: sonic_radius_server
+      namespace: ''
+    - description: AAA resource module.
+      name: sonic_aaa
+      namespace: ''
+    - description: SYSTEM resource module.
+      name: sonic_system
+      namespace: ''
+    release_date: '2021-05-28'
+        

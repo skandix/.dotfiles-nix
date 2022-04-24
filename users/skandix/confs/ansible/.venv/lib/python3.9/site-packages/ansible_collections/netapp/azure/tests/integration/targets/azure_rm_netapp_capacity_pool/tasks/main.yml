@@ -1,0 +1,47 @@
+- name: Create Azure NetApp capacity pool
+  azure_rm_netapp_capacity_pool:
+    resource_group: NetworkWatcherRG
+    account_name: ansibleazure
+    name: tests-poolsss
+    location: eastus
+    size: 2
+    service_level: Standard
+  register: output
+
+- assert:
+    that: output.changed
+
+- name: Create Azure NetApp capacity pool (Idempotency)
+  azure_rm_netapp_capacity_pool:
+    resource_group: NetworkWatcherRG
+    account_name: ansibleazure
+    name: tests-poolsss
+    location: eastus
+    size: 2
+    service_level: Standard
+    register: output
+
+- assert:
+    that: not output.changed
+
+- name: Delete Azure NetApp capacity pool
+  azure_rm_netapp_capacity_pool:
+    state: absent
+    resource_group: NetworkWatcherRG
+    account_name: ansibleazure
+    name: tests-poolsss
+  register: output
+
+- assert:
+    that: output.changed
+
+- name: Delete Azure NetApp capacity pool (Idempotency)
+  azure_rm_netapp_capacity_pool:
+    state: absent
+    resource_group: NetworkWatcherRG
+    account_name: ansibleazure
+    name: tests-poolsss
+  register: output
+
+- assert:
+      that: not output.changed

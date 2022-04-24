@@ -1,0 +1,37 @@
+---
+ansible_connection: httpapi
+module_name: vlans
+
+preparations_tests:
+    add_vlans_input:
+        - vlan_id: 500
+        - vlan_id: 501
+        - vlan_id: 502
+        - vlan_id: 503
+
+
+tests:
+  # merge test cases started
+  - name: test_case_01
+    description: Add access and trunk VLANs
+    state: merged
+    input:
+        - vlan_id: 500
+        - vlan_id: 501
+  - name: test_case_02
+    description: Update trunk VLANs
+    state: merged
+    input:
+        - vlan_id: 502
+        - vlan_id: 503
+  # delete test cases started
+  - name: test_case_03
+    description: Delete Access VLAN
+    state: deleted
+    input:
+      - vlan_id: 500
+      - vlan_id: 501
+  - name: test_case_04
+    description: Delete specific trunk VLANs
+    state: deleted
+    input: []

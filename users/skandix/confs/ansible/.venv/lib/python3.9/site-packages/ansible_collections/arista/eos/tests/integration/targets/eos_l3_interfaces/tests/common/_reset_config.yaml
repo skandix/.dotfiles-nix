@@ -1,0 +1,5 @@
+---
+- name: Reset state
+  become: true
+  arista.eos.eos_config:
+    src: reset.cfg

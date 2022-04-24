@@ -1,0 +1,89 @@
+---
+ansible_connection: httpapi
+module_name: lag_interfaces
+
+preparations_tests:
+    delete_port_configurations:
+          - name: "{{ interface1 }}"
+          - name: "{{ interface2 }}"
+          - name: "{{ interface3 }}"
+          - name: "{{ interface4 }}"
+
+tests:
+  # Ethernet testcases started...
+  - name: test_case_01
+    description: Update Ethernet interface parameters
+    state: merged
+    input:
+        - name: PortChannel43
+          mode: static
+        - name: PortChannel44
+          mode: lacp          
+  - name: test_case_02
+    description: Update interface parameters
+    state: merged
+    input:
+        - name: PortChannel40
+          mode: static
+          members:
+            interfaces:
+              - member: "{{ interface1 }}"
+        - name: PortChannel41
+          mode: lacp
+          members:
+            interfaces:
+              - member: "{{ interface3 }}"
+        - name: PortChannel43
+          mode: static
+  - name: test_case_03
+    description: Update interface parameters
+    state: merged
+    input:
+        - name: PortChannel40
+          mode: static
+          members:
+            interfaces:
+              - member: "{{ interface1 }}"
+              - member: "{{ interface2 }}"
+        - name: PortChannel41
+          mode: lacp
+          members:
+            interfaces:
+              - member: "{{ interface3 }}"
+              - member: "{{ interface4 }}"
+        - name: PortChannel42
+  - name: test_case_04
+    description: Delete interface parameters
+    state: deleted
+    input:
+        - name: PortChannel40
+          members:
+            interfaces:
+              - member: "{{ interface1 }}"
+        - name: PortChannel41
+          members:
+            interfaces:
+        - name: PortChannel42
+  - name: test_case_05
+    description: Update interface parameters
+    state: merged
+    input:
+        - name: portchannel 40
+          members:
+            interfaces:
+              - member: "{{ interface1 }}"
+        - name: po41
+          members:
+            interfaces:
+              - member: "{{ interface3 }}"
+  - name: test_case_06
+    description: Create standalone portchannels
+    state: merged
+    input:
+        - name: portchannel42
+        - name: portchannel 12
+        - name: po10
+  - name: test_case_07
+    description: Update interface parameters
+    state: deleted
+    input: []

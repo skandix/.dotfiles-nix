@@ -1,0 +1,160 @@
+- name: Create an availability set with default options
+  azure_rm_availabilityset:
+    name: myavailabilityset1
+    resource_group: "{{ resource_group }}"
+    tags:
+      tag1: testtag
+  register: results
+
+- assert:
+    that: results.changed
+
+- name: Create proximity placement group name
+  set_fact:
+    ppgroup_name: "ppg{{ resource_group | hash('md5') | truncate(22, True, '') }}"
+
+- name: Create a proximity placement group
+  azure_rm_proximityplacementgroup:
+    resource_group: "{{ resource_group }}"
+    location: eastus
+    name: "{{ ppgroup_name }}"
+    state: present
+  register: results
+
+- name: Create an availability set with advanced options
+  azure_rm_availabilityset:
+    name: myavailabilityset2
+    resource_group: "{{ resource_group }}"
+    platform_update_domain_count: 5
+    platform_fault_domain_count: 2
+    proximity_placement_group: "{{ ppgroup_name }}"
+    sku: Aligned
+  register: results
+
+- assert:
+    that: results.changed
+
+- name: Modify availabilty set immutable options - no changes, fail for immutable options
+  azure_rm_availabilityset:
+    name: myavailabilityset2
+    resource_group: "{{ resource_group }}"
+    platform_update_domain_count: 2
+    platform_fault_domain_count: 2
+    proximity_placement_group: "{{ ppgroup_name }}"
+    sku: Aligned
+  register: results
+  ignore_errors: yes
+
+- assert:
+    that: 
+    - not results.changed
+    - results.msg == 'You tried to change platform_update_domain_count but is was unsuccessful. An Availability Set is immutable, except tags'
+
+- name: Modify availabilty set immutable options and set tags - change tags and fail for immutable options
+  azure_rm_availabilityset:
+    name: myavailabilityset2
+    resource_group: "{{ resource_group }}"
+    platform_update_domain_count: 2
+    platform_fault_domain_count: 2
+    proximity_placement_group: "{{ ppgroup_name }}"
+    sku: Aligned
+    tags:
+      test1: modified
+  register: results
+  ignore_errors: yes
+
+- assert:
+    that: 
+    - not results.changed
+    - results.msg == 'You tried to change platform_update_domain_count but is was unsuccessful. An Availability Set is immutable, except tags'
+
+- name: Modify availabilty set options to update tags
+  azure_rm_availabilityset:
+    name: myavailabilityset2
+    resource_group: "{{ resource_group }}"
+    platform_update_domain_count: 5
+    platform_fault_domain_count: 2
+    proximity_placement_group: "{{ ppgroup_name }}"
+    sku: Aligned
+    tags:
+      test2: modified
+  register: results
+
+- assert:
+    that:
+      - results.state.tags.test2 == 'modified'
+
+- name: Create availability set with incorrect fault domain parameter
+  azure_rm_availabilityset:
+    name: myavailabilityset3
+    resource_group: "{{ resource_group }}"
+    platform_update_domain_count: 5
+    platform_fault_domain_count: 4
+    sku: Aligned
+  register: results
+  ignore_errors: yes
+
+- assert:
+    { that: "'The specified fault domain count 4 must fall in the range 1 to' in results['msg']" }
+
+- name: Test check_mode
+  azure_rm_availabilityset:
+    name: myavailabilityset2
+    resource_group: "{{ resource_group }}"
+    platform_update_domain_count: 5
+    platform_fault_domain_count: 2
+    proximity_placement_group: "{{ ppgroup_name }}"
+    sku: Aligned
+    tags:
+      checktest1: modified1
+      checktest2: modified2
+  check_mode: yes
+  register: results
+
+- assert:
+    that: 
+      - not results.changed
+      - results.state.tags.checktest1 == 'modified1'
+
+#
+# azure_rm_availabilityset_facts tests
+#
+- name: Get facts for created availability set
+  azure_rm_availabilityset_info:
+    name: myavailabilityset2
+    resource_group: "{{ resource_group }}"
+  register: results
+
+- assert:
+    that: 
+      - not results.changed
+      - not results.failed
+      - results.ansible_info.azure_availabilitysets[0].properties.platformFaultDomainCount == 2
+      - results.ansible_info.azure_availabilitysets[0].properties.platformUpdateDomainCount == 5
+      - results.ansible_info.azure_availabilitysets[0].sku == 'Aligned'
+      - results.ansible_info.azure_availabilitysets[0].properties.proximityPlacementGroup.id.split('/')[-1] == ppgroup_name
+
+
+- name: Delete an availability set
+  azure_rm_availabilityset:
+    name: myavailabilityset1
+    resource_group: "{{ resource_group }}"
+    state: absent
+
+- name: Delete an availability set
+  azure_rm_availabilityset:
+    name: myavailabilityset2
+    resource_group: "{{ resource_group }}"
+    state: absent
+
+- name: Delete an availability set
+  azure_rm_availabilityset:
+    name: myavailabilityset3
+    resource_group: "{{ resource_group }}"
+    state: absent
+
+- name: Delete proximity placement group
+  azure_rm_proximityplacementgroup:
+    resource_group: "{{ resource_group }}"
+    name: "{{ ppgroup_name }}"
+    state: absent

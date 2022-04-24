@@ -12,7 +12,14 @@
         virtualenv
         pipenv
         binwalk
-        ]
+        pandas
+        loguru
+        urllib3
+        boto3
+        requests_oauthlib
+        python-dotenv
+        untangle
+      ]
       )
     )
   ];

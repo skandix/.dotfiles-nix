@@ -1,0 +1,7 @@
+####################################################################
+# WARNING: These are designed specifically for Ansible tests       #
+# and should not be used as examples of how to write Ansible roles #
+####################################################################
+
+# mysql_role module initial CI tests
+- import_tasks: mysql_role_initial.yml

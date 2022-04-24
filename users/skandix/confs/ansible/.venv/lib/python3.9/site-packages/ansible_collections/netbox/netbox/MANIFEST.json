@@ -1,0 +1,33 @@
+{
+ "collection_info": {
+  "namespace": "netbox",
+  "name": "netbox",
+  "version": "3.4.0",
+  "authors": [
+   "Mikhail Yohman <mikhail.yohman@gmail.com>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "dcim",
+   "system",
+   "ipam",
+   "networking"
+  ],
+  "description": "This is a collection of NetBox Ansible modules",
+  "license": [],
+  "license_file": "LICENSE",
+  "dependencies": {},
+  "repository": "https://github.com/netbox-community/ansible_modules",
+  "documentation": "https://netbox-ansible-collection.readthedocs.io/en/latest/",
+  "homepage": null,
+  "issues": "https://github.com/netbox-community/ansible_modules/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "30bd4d1cbd303a8b84f29b5295645429b966d1709b6cc46831604e8b74b5c119",
+  "format": 1
+ },
+ "format": 1
+}

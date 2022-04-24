@@ -26,5 +26,8 @@
   swapDevices =
     [ { device = "/dev/disk/by-label/swap"; }
     ];
-
+  #fileSystems."/mnt/games" =
+    #{ device = "/dev/sdb1";
+      #fsType = "ext4";
+    #};
 }

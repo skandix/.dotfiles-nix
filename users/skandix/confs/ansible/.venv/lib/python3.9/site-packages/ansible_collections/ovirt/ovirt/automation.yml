@@ -1,0 +1,18 @@
+---
+distros:
+  - el8
+release_branches:
+  ovirt-ansible-collection-1.6: ["ovirt-4.4"]
+stages:
+  - build-artifacts:
+      substages:
+        - ansible-core
+        - ansible
+  - check-patch:
+      substages:
+        - ansible-core
+        - ansible
+  - build-artifacts-manual:
+      substages:
+        - ansible-core
+        - ansible

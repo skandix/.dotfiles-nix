@@ -1,0 +1,39 @@
+{
+ "collection_info": {
+  "namespace": "fortinet",
+  "name": "fortimanager",
+  "version": "2.1.4",
+  "authors": [
+   "Link Zheng (@chillancezen)",
+   "Xue Jie (@JieX19)",
+   "Hongbin Lu (@fgtdev-hblu)",
+   "Frank Shen (@frankshen01)"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "fortinet",
+   "fortimanager",
+   "ansible"
+  ],
+  "description": "The FortiManager Ansible Collection.",
+  "license": [
+   "GPL-2.0-or-later"
+  ],
+  "license_file": null,
+  "dependencies": {
+   "ansible.netcommon": "*"
+  },
+  "repository": "https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/tree/galaxy/2.1.4",
+  "documentation": "https://ansible-galaxy-fortimanager-docs.readthedocs.io/en/galaxy-2.1.4",
+  "homepage": "https://fortinet.com",
+  "issues": "https://github.com/fortinet-ansible-dev/ansible-galaxy-fortimanager-collection/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "24e016f3d505ecbfa743f7e362b2d9ec726d78011efcbf03a344513c494e87e5",
+  "format": 1
+ },
+ "format": 1
+}

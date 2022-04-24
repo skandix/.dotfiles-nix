@@ -1,0 +1,33 @@
+{
+ "collection_info": {
+  "namespace": "vyos",
+  "name": "vyos",
+  "version": "2.6.0",
+  "authors": [
+   "Ansible Network Community (ansible-network)"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "vyos",
+   "networking"
+  ],
+  "description": "Ansible Network Collection for VYOS devices.",
+  "license": [],
+  "license_file": "LICENSE",
+  "dependencies": {
+   "ansible.netcommon": ">=2.0.1"
+  },
+  "repository": "https://github.com/ansible-collections/vyos.vyos",
+  "documentation": null,
+  "homepage": null,
+  "issues": "https://github.com/ansible-collections/vyos.vyos/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "b48c60d939199ccc6133fa3dda9c68087552857adf598aabbecbb15491e4332a",
+  "format": 1
+ },
+ "format": 1
+}

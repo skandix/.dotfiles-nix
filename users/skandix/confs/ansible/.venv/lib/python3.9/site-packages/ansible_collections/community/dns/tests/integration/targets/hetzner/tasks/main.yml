@@ -1,0 +1,6 @@
+---
+- name: Run tests with record sets
+  include_tasks: record-sets.yml
+
+- name: Run tests with records
+  include_tasks: records.yml

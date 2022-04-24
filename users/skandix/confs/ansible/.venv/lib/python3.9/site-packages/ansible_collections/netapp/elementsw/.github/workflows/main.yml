@@ -1,0 +1,47 @@
+name: NetApp.elementsw Ansible CI
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 6 * * *'
+
+jobs:
+  sanity:
+    name: Sanity (${{ matrix.ansible }} on Elementsw
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ansible:
+          - stable-2.9
+          - stable-2.10
+          - stable-2.11
+          - stable-2.12
+          - devel
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install ansible (${{ matrix.ansible }})
+        run: pip install https://github.com/ansible/ansible/archive/${{ matrix.ansible }}.tar.gz --disable-pip-version-check
+
+      - name: Make directory to make ansible-test happy
+        run: |
+          pwd
+          mkdir -p ansible_collections/netapp/elementsw/
+          rsync -av . ansible_collections/netapp/elementsw/ --exclude ansible_collections/netapp/elementsw/
+
+
+      - name: Run sanity tests Elementsw
+        run: ansible-test sanity --docker -v --color
+        working-directory: ansible_collections/netapp/elementsw/
+
+      - name: Run Unit Tests
+        run: ansible-test units --docker -v --color
+        working-directory: ansible_collections/netapp/elementsw/

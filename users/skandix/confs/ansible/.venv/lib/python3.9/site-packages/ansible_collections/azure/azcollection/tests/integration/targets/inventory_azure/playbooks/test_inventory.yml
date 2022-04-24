@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+  - include_vars: vars.yml
+
+  - meta: refresh_inventory
+
+  - name: Test Inventory 
+    assert:
+      that:
+        - vm_name in hostvars

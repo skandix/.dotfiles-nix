@@ -1,0 +1,64 @@
+name: NetApp Ansible CI
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 6 * * *'
+
+jobs:
+  sanity_azure:
+    name: Sanity (${{ matrix.ansible }} on Azure ANF)
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ansible:
+          - stable-2.9
+          - stable-2.10
+          - stable-2.11
+          - stable-2.12
+          - devel
+        collection: [azure]
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install ansible (${{ matrix.ansible }})
+        run: pip install https://github.com/ansible/ansible/archive/${{ matrix.ansible }}.tar.gz --disable-pip-version-check
+
+      - name: Delete collection tar file (azure)
+        run: rm -f /tmp/netapp-azure*
+
+      - name: Check collection path (azure)
+        run: |
+          pwd
+          ls
+
+      - name: Build collection (azure)
+        run: ansible-galaxy collection build --output-path /tmp .
+
+      - name: Install collection (azure)
+        run: ansible-galaxy collection install /tmp/netapp-azure*
+
+      - name: Delete collection tar file (azure)
+        run: rm -f /tmp/netapp-azure*
+
+      - name: Run sanity tests (azure)
+        run: ansible-test sanity --docker -v --color
+        working-directory: /home/runner/.ansible/collections/ansible_collections/netapp/azure
+
+      - name: Make directory to make ansible-test happy
+        run: |
+          pwd
+          mkdir -p ansible_collections/netapp/azure/
+          rsync -av . ansible_collections/netapp/azure/ --exclude ansible_collections/netapp/azure/
+
+      - name: Run Unit Tests
+        run: ansible-test units --docker -v --color
+        working-directory: ansible_collections/netapp/azure/

@@ -1,0 +1,32 @@
+---
+- name: Create host template
+  t_systems_mms.icinga_director.icinga_host_template:
+    state: present
+    url: "{{ icinga_url }}"
+    url_username: "{{ icinga_user }}"
+    url_password: "{{ icinga_pass }}"
+    object_name: foohosttemplate
+    display_name: foohosttemplate
+    disabled: false
+    check_command: dummy
+    check_interval: 90s
+    retry_interval: 30s
+    groups:
+      - "foohostgroup"
+    imports:
+      - ''
+    has_agent: true
+    master_should_connect: true
+    max_check_attempts: 3
+    accept_config: true
+    command_endpoint: fooendpoint
+- name: Update host template
+  t_systems_mms.icinga_director.icinga_host_template:
+    state: present
+    url: "{{ icinga_url }}"
+    url_username: "{{ icinga_user }}"
+    url_password: "{{ icinga_pass }}"
+    object_name: foohosttemplate
+    notes: "example note"
+    notes_url: "'http://url1' 'http://url2'"
+    append: true

@@ -1,0 +1,4 @@
+---
+dependencies:
+  - setup_sops
+  - setup_remote_tmp_dir

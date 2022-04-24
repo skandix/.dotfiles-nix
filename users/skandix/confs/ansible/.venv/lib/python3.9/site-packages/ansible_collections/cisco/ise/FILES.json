@@ -1,0 +1,5521 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".DS_Store",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4981581e66113a4ff9acacf91e9f6717da2d648038cffd03016a4029a5733800",
+   "format": 1
+  },
+  {
+   "name": "LICENSE",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cef0b2884a9f43663717328019888311de5b8a62e0d24f91fc0f36939e5e50e9",
+   "format": 1
+  },
+  {
+   "name": "requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6aca76d3b39e5e95559b4e0e26ddfcb1b8aba354c329adbf2b5b34804adb434b",
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments/module_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "91879f23d1fc484191a20de0f0fc61d5052a9f6f711cb92d6e948de3b175f35b",
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments/module.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b771b903e53e98e86ecfe34b30758c1e659b3abd9065d00314bcd61c07648d7",
+   "format": 1
+  },
+  {
+   "name": "plugins/action",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_local_exception_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e719f68af6f5974ac24e040de7b4b6cb19322e231288bcbdd38e15771ae960fa",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_dictionary_attributes_authentication_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a932b33f5e88c43e5a746c7f30bc959bddddf34e8c0707f421d951e88b5c988b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/trusted_certificate_export_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b030f981c446ab76da5e7b509b762c8aae4955de3117b2148de83e273fb83132",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_device_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0069421691abb25ccec8bc3e1a716e916dd1738e04e197ec732cc902bd2894fd",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_connections.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "81cfe47450dc5e9deac246a7fb2243ff4e509031092a6712bfe7d13ee4e6e80a",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_ssid.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f1eac1586f4faf24177b293eb5e7d08c4d20fc2c9f32d7d11156c0e2d3be2b2a",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_dictionary_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7997c73de9d99339be051cc9f69966a49990b53e369126424fbea422f8052cab",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_policy_set.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "475d23cbc11698a5d4c200099a983f23a32d3396908c4bfd45b9f9bea677be70",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/repository_files_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "719da6af9a0c42fb52b7be5430b2d95b1f42260fff193d01be5135c7e70960a5",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/repository_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c39748a71f1b7456a2c884a5e259d1d5d4fdd96d9ae6aa950c5a1e51839a6b09",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/rest_id_store_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c5c07f473f95e442050a601786a790fe40069e8a1e8b8c9091a6ddb7624a16fc",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/anc_policy_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6c407c3f9c54bf420079a8084f6e95e6aa4f4f3d9164bfb4cfb164897cb92629",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/tasks_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "78ebb7b928fce2177001a57436258a085aeda9e8b9050e5beda4f3a45a2593a3",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_authorization_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "770f8ef98cdafb59e09f5f24c4edb1930e08f0122d151b598be51e5ba89d7733",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user_email.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf1ff40efbaa427dd6664d6ca3b38356312e51fa5c0c5bc8c91167f4e20dd117",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/node_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "50069ea1833d08aa1278246363c8fad62c4dcbde5f5110a2a8e0f35c9328a40a",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_authentication_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "61afd4f70b7c67975eaa8b1f8479754aa076ea5d0e83f62f595b51052701033f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_healths_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25cd687b52bac592e4a42529f14be1f83b6a944033882d42b28ae46ad1f34845",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/hotspot_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0d22acbc01ffe1dad54aab68978596d93c2202d07d5f49ceabf150eda5452e5b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/authorization_profile_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5811533b04020c295c39daf8e10eaab7fedd0900985eda342cbdd91726703d81",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/node_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "71afa4c1843086849a1f820d35a5bc9e4192840fa8e818c5d1a65062868e8e96",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/personas_export_certs.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0be0b1501d0c9af19a194c17830e22aa0e91519b09de0e4497d5ccadee33a6dc",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_dictionary_attributes_authentication_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c8609c6134e706548bb5c29df345e0d53fb78b09eebefcdca97e947728586e22",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/aci_bindings_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b25a3302a35ed79562e64930b56fd24d4617094fc0ebd43621d3119ed7a11ad",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_policy_set_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c01fffc137ec0b35745615d08eba22597bfeae3d7fa60cd1f640c6ed1425038",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/id_store_sequence_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4387692da291d9a79eff267df484e6e6ea696635c963b5072cbb8f93018ceaf7",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_policy_set_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ef92e419e0103f16127ef032453e25463f037b57bf80b53c5ed447cc6f5f027",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_local_bindings_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "209d203345791d17e59f03ecb0e4a231ea038e89440447819542489488d3753f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/ise_root_ca_regenerate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "81fa81d73a86fa108666e55e4425f1cbb2727c7fdfc458463ff7dcf07be31ad8",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_sessions_by_session_id_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc373c24cd6cf89d54c6b7dfa3b8a0a7a74ddc72a2a14705128a35600e83ca9d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_service_name_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3374ac4bda2adec275e9b26a828b49861fc91980a3f179382103cbb42f38dc73",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "069051bd964ade2ca7cce5d6d96f862def6d68475849f24f8cec7415a0129d55",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/aci_settings.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "de239f0ac5e308ca7f8ad5024851a0eab0fa4c80043e1879d70e8d91940d97a4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/bind_signed_certificate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8339c14764599699d9727221192fbc804f1e513c577d9112da8fc8ac15013858",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/endpoint_register.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "827f680569ac5af47cef24d2546119dc964f73472397d681de6b18cc60124c3d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/px_grid_node_delete.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c12da6347199f5021863f32e8fe9549a49b4757428ab19679fc45084aab65b04",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_network_conditions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7af952ae75a039264fdab708f59980c0440042045df1f410d199013e599e4f20",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/active_directory_leave_domain_with_all_nodes.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ca381cfabfcc65273312b7a541ca8f32c74308637e80b0889c22dff755f8a03c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/trusted_certificate_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b166912394b699b3a6d26394b0fd3c5cdde1c1d82400a7eb2762ec5754b1807e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_account_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "78047c98e895b436042e5c79a18ec66e6e7807f09acd6094c269ab7e39b8d197",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/node_deployment_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1add9bac0c818047acdc5f1352d88a5bb52b2511377f7c5954e1922d5fa63557",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_failures_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "de115e7a9f03f9e506bbfb7b469d3014a35edc160344a8698ba04ea508e22d3d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_global_exception_rules_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d52ba964d0a5d2a73115c7f6d94a3cd52f9dc5c0bf7506d7c628a427f8c22b3b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_conditions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f54a256df3721fa770770f9fa2aab134a57a5ef49b5372ce2a148c03c8f71d58",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_security_group_acls_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "baa50aa4f18a16e5ed26e87b9e550aeeffb2fccefaef1ac4821fa4151e81ada8",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user_deny.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "87b7a5f5a15c6aeafb17db9cbf6cbd25f3e5a859ecc01e964e891013968ffe8c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/admin_user_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bcf79c7f34750008a64641766a0b86fa9ab8299dfe476ee3140c0cf641903f8e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/endpoint_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a5969be7241c335b2e850a560b57fa6e797b6219d7cc7bd93e3db32a12fb754e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/threat_vulnerabilities_clear.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "077a9b1291e2642c39d64be8430d626ab02e59e4b42c1de74acf7d227d35cd38",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/identity_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae23b350365929c9c7b3f0ef37c19bcd06bacf1b0db0c16d157c986e71d21f4e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_dictionary_attribute_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f48d8f8961991a2ca1bcc814caadbae0840e71a4c0aa73e9a3b49f92769eb639",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_vpns_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "884a933d5a60837eb1746bd9d4798b3ef10f9d16bc31d95e2c78f40410cab153",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_conditions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "59dbd136b1fab205b5028dfc809e7c08fc0270bea1d3ef98e6c53b40a3e32eec",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/certificate_profile.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d49658c7c900bf2592bb5239dd9bd38bb9cb61dba4802c1e5a80b054fc4da08d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_location_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed0e2e47ef7499ed016025e80ba1d9d4042c27ceb95df6c0fdcc37fc5fad45a4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/native_supplicant_profile_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "44b2c0db9d47e13947ffc923d92e1e9a2714def99f4968bc5289d553aa375d87",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_dictionary_attributes_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d5cadd177b0d9ca5914bba714da7e2f20bb74b2f7f4b924781d1e6b16d1767cd",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_conditions_for_authentication_rule_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b4298bc635695fb0f93e4c54a6979f0dd00133f0c7f432fc8ed7f8b2055e9a29",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_version_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a61ddbe92aab52c0d95c1c50b89f189238527586b1702a167c61346bd124e59a",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sponsor_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37eb2f5261623aed6065f3d2af9b11f98ec5fce4f475c5e08181fb8b3f3b3ccf",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_local_exception_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "24a763957670a3d292da11a6ecf57418382978d3794079c180337b2bc9985203",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/system_certificate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1532a412e2e9dc3c9df7c1c7aa33a5ab4fea7716af5f1384f6cbaa2f9f8a3edf",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_bindings_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "04a75e517220796e9326cc69ff5f512736c1d05a02e5c68ef43f9f9e4ef4619a",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/tacacs_profile.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "adf9442ffb3f0f2e1c4e248e4c9d101ff13baea8fec67958f473807721ceb3d1",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/tacacs_server_sequence.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e50418dc5ac710db6dbc3e1b1c71da0c4dc5e7afc5b11452c601f4243c6f26b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_global_exception_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0292cf6853948d7b43c4f831a8c23a05baa83093395cf8a294c31c733e426399",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_profiler_count_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "41770f05f6e6cd51a5fa65b3101c2256fc0bc744c1f4784dcbe12938c73ca3e9",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/external_radius_server_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8ac1a7628eb8b92e1cf58fc2da6412e68c16c625445d12377f1fb4deb991c9e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/session_service_node_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ccac780fa20c23da0f9519098d53cf26d888ff7df6da0daaf7ae79c62e30bea1",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_global_exception_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8cab6dba9ab2793b914fc2c24903ee681127062e9c15422ebad1971f206b1dfe",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_local_bindings_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c205c23e67fc3165e976befb8e6bcec55071ba2d913d5cdeccc8c2f7a3f46274",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_performances_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "961b88ecd4bc279c913ac74abadbe06bbd798ef62918207964cd110008257956",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/csr_generate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cbb2c759e05e31bcf914e4ef6d3fcc75bedec91ca893e15db0c1b9a801f634a3",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_by_username_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b622c608249cca2abcbee9e5dff749a777b267ca083d4ea91031adb182747b26",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_time_date_conditions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "746a577b47a1544dc0a6034f848e6a715d57e0bbdbf2c4eb342d60b15a1f85a6",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_time_date_conditions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "793fc73f04e43251b792d3e912f30359d61ebc9b598dac90f8f4a501f988c152",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/byod_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "95b3c0357c09fec2e9fb2a834453dc265096a0aee62ccb83f9ab17305593bb52",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_endpoints_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d1cde92796246d26d08f5c19f49f7db4cbc150f2efa62dd8f636149d69cdd244",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/portal_theme_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5bc7f0c80ad1098ea6ddf0be553bfda5ec81f6576c1f44fca293b20c6cb2c750",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user_approve.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fae8d4fea1e47eac20eb2861b2068c89380b6d17290e2192dced069cbfc8c782",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_session_for_recovery_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c48f6712a3273b6b4eff4da40ff9e3fa675350a72e12c9b3474f9e38c6860c35",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/tacacs_server_sequence_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ce9a077e0700ce246d4ae7241e11637260c8229189b512b9211a2eeee0c1c1b2",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "81645deaf3c2eda229cc50158f94102ccf1b7098707527d8e030711493500ffe",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/system_certificate_import.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1be9399358f3176505407b03203430dd33e40ebe3b4595d5a38f3e66d764e8ed",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_failure_reasons_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3363422d608c226e84aabc2018e87e2ac327f55d87aa5d03b62203693da75368",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_network_condition_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "57ea428f90e21210e5317cdd1acd8c076ada9dbd1b5c6d4e346fe55b4befdb42",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_authentication_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6f869490304d510bd010020f8c79e72a4c018572daf84ecc29b24c9aad48bf30",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_authentication_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e44af44421e8f112ef157aad02b5a13f8de9d6ae8cef8d4fb5ad7774278532c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/anc_endpoint_apply.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "73758137f43830b74b1d39e616fe2088db84a2b4d764426f7db54e266ea5703a",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/endpoint_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8b04cbde6cecd0bc3ea67d334d66c59098c651975828b088f3d7a1a90325b7d5",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_type_email.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "05ff78c64ffe8a884b64b4a4e26d690568fb76dc377447d921c1c4c2d79f205d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/rest_id_store.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b28767c99f1545721f9ed53b9b37f470dae1da8d5a80cb4c832c3de6477a53d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/my_device_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "384e0327475483a679f5196c96af153e283b911ece7a9950e60e731944a3bf90",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_authorization_rules_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e340da94acd5f7147902a609eed252f0aa055b23244477eefb0bc28c87d40ee5",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_egress_matrices_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f82ed48096bb828179e64cd518f5a55287f6ac5ac2d15eddd7e089da6e828eb",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/active_directory_join_domain.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f4100c0a45ed30c1163e0c20741f079e6ad26c1ad40a7df4a4e89a79b1995124",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_conditions_for_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0e3e6e70782f52cc466a69aadd682593be4eb55340051b25278ed1d2b619cf1b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_reauthentication_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ff93ab542724db7c52144df4b90a569220f6688aec68b5bda4a022cd5e0582e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/support_bundle.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ad9b8830f0a7c5b59fa8e1c57e0aabc3aef98d2505541a6c182206dfe1540d5b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "edf9b4024402c56644a059f1e3739b07d7f1f5d21d0c82ca868794e854bf326c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_endpoints_by_os_type_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6e65141dc4098f78f22481cd3321b93ba63e824d29316d17847536f1e170f944",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/egress_matrix_cell_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "949b0d88d9cf29ce859156b0d91e1ced35b287cd30948e2c6d045b790618e771",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/node_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8923f93761c3143c593ac1c0de06b3a4c8d0e90f0b23250d43c3b7632dc15cc",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_connections_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e0f0bfa01c052f43c35399d3d673e16f243b6f8a78f72dce50fc005c9538ec17",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user_sms.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f128d0cdedb54d559328e9b43f49067b4e654beade3b26b21433e7fc1f647bc0",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_user_groups_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4dc93a2557d3cdfa1a72dac395a0c123a76a69b391064aea5321c4a1ee351c26",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_profiles_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cebe9257957c271610a52e6696a752c2f3b17d58669960c6e69feb43e1506b9e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b559572d98dc333e3cc2604f69e540687c635eca1d7f2c596f78b6b28d99bfa8",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_group_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b59223710344780da86c623279ce4cc606bd41e38e63c2f12d2b7eb60ee21879",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_conditions_for_authorization_rule_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e25d952a8059b9f35c57dfe6df448f8176a7790517f7dfe08ddf744eec0b7dc8",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_identity_stores_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a0bcde37e45ef495f365d428db167dd2cf32625e4b57ae85c813de75c65f9d6a",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_account_create.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4bca483378e08c07c8aa9f78a07a7f07b32e4588725cbc3cd12662337560f6b7",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_access_secret.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4b8a42803ed50346212543fce40b2692254fc42d96f1d7a720df5978a8648345",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/personas_check_standalone.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "91b4478f56dc78ee339167ca80654893b21a37f13e842002b93bc6d8d3c181a5",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_authentication_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "70b1f76082891ac66b594e0ed672e30a3cda557cbc61bc64cfc57617d61e0b51",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/active_directory_is_user_member_of_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0f15b9b360a676c5fdb94a2a685a7fb12e2ef8d72d4beae3042ba56d4a3d8ddd",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sms_provider_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "417d236654975bfdef0851dee1132e3546058b90be22c90e947f8bb5018abd6e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_local_bindings.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "18e2629ece7f660947f03ab21142fb49390700914885f624bb62e8c6985b52a2",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/aci_test_connectivity.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d88b87f03c3984ae5f2f51a6371348c4021bd747aea7b4ddc788bdb1207045c4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_identity_stores_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "897be95445318cbb43291fba430abaa777f5fd4be4e2283acdae8936d31dd0f8",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/id_store_sequence.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7204370b9fb0aefd03ee40ce9fdf3b08e7779e4a962ae02a7e45c6c00e28ad16",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_acl_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7c479455ec0568919b307931721c87f0e0b3661b898dcebbe9df26647cf4cff",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_egress_policies_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae5dcd04d812224fef936fd205d8676d2423e4ce1be47abc4e4a09f2b2305da7",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/anc_endpoint_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9fbfafe0ae751b49fc93998ebfc6893c976173a3e98ca18e13807cf4810104cf",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0361ab53cd9bb913d7e7836cf4c7a81324f00e70cd289829c25b932e397d6697",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sponsor_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5dec298a200c998352801eba54f0f7efe99bfb2928866dddf878ae75bc08180b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/system_certificate_create.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d9db2df23175f5d3610f4df44edcdcb871b3d1fff08387f92eb00a33638419bf",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_dictionary_attributes_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "91da40438827a24dbc14a3c5a8dab51c519cdcd3e6787b1ad2a6a94a3acf7f31",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/px_grid_node_approve.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd0d5b8564b78438096a9b4ac61fecb7b9ba68ab4683d3320948e7ed552b917f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_global_exception_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a9154fdf221a23cf2a9fa054633de080269bd19a1cfaab8c64b5fd28167f06a3",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_acl_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e66873ee456cccd360cefaf92f9cce6a55a451db0933ad9b15561eb9536e2888",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/active_directory_user_groups_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3cf826a39cb1726e9f080c93c7dfd798f44440ef4ea3a2908b1ef66a8e355e14",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/backup_last_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f1e8c69727d1bc8b644ca17c36797ded1c9167668e13b257f972e7dd77ebda3",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/deployment_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0fce46cdcccb82e278a578906875ab7d274dad643bbc12acf94cbc3d3e204f9c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sponsor_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d4ad64b76360a1b59da242a580f4fe96174f28cc119e33cac0f5681e38f5f461",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/csr_delete.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e6c340269019a361f4479d0759412237167799cac7bba039e267f71910bf451",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/personas_promote_primary.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c44330055ce558993c512707c5f994ed8e85cce265fbc273c9ddbc14257519f7",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_session_by_ip_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "453d2000987a171dd61411ec73c7e2ea93f090104f5832286de807fd3279542c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/node_replication_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dda4c81eb696e0ab610decd238dac5ab77c3ec2af44392410caaaee6bf36b740",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/egress_matrix_cell_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ff34670898982fff1b43382ae69c490c120229075ed4c1157e87dd2cbe448e6",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_smtp_notification_settings_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f3c957d9fd6e2871bca05f6e82693ea01f557f7478658eb26db661fbaa36482",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/endpoint_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "675d19c06a8d7e8bfb81debe049517ce317da2869c0450da5351504b394babcd",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "24082780584c287e99390f28fdbe708b502640fe51f97110c2d399a28a4422f2",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/egress_matrix_cell_set_all_status.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "283a9ca31ac9f35b68a8ac987a7986162dda42fa7ce9ac7460e429af8d41c950",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_to_vn_to_vlan_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a430631d55966b625d5f999a09cc054608733431fe7d53e978e6fb55fbcbc856",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/trusted_certificate_import.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6bcdebf39d7334ada09ab1f1b7c00eacb74b935ce08332ddb3561e941d01cd79",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_network_condition.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "582993a45bf66fd1fb90a2cc2e1ea8c59226ae1a8b38e77d744425ed7c658f79",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_authorization_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3aa5cf40b38d4ea9b090870978ed7d4169563d1434618139ef00000db510a531",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/backup_schedule_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "30a78b60b13a2a977b394049bfe9b9522a4760d6d66c055ec4ab4a47c7a587fa",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_session_by_mac_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a75484246503a5818c7d6143497cec2be3cbd379bf47267671a32875d152a393",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_local_exception_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "430b86e7100aabe8539811fbfe4d5c7201d3a513e7c9673c4aad0c6a40632300",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "882a00a53ad3081a5647e06dd663f4fdee4f2c64710d9591bd1191d68e914c8e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_security_groups_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "118e9adc910fe77ed133b6128617483ef3acec9175b8e0f7e0dd67bfaaedd0c6",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_global_exception_rules_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c19a3aa6565dac831818aeef2afa181054b5f89d3b34e778d7f07d29a2b93de",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_network_conditions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a6c2552aad7f0848e7fec249b651365e2b77a87dbe56f2c3953d90a015945db4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_dictionary.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f1f615a560af70161872ef85a9672104d9c6a4c94efbb2ab7f13c4569cae83ab",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sponsored_guest_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd5605ad5bcd2b43aed28a306ba2f307f2a776325578b07dd736b15b447c962b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_group_deploy_all.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3d18c32a790f7ebab906076e5871d03bd639a77888f8a9bb3cc001c78919f5f2",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_disconnect_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "da5554925be091ddc9129113499668d5aee46e50e7a1c3aa14aa4b6c47e600fd",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_by_mac_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc5b6b6d224b9213cdb69a6b3147e9415f0be005aedd5a73e556c712833197d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/aci_settings_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e1d6e918a890735e1654b91ec635d79022bb1874a9c41caafa2086c1938e5b1f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_dictionary_attribute.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4894be8ed6c029cb6c9d71e6f9329a7ede63a38e30220aa26848235c145817a0",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/node_sync.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c64b5c54022e4562d072bd55c3342b6c35f3c8610fd6de56efeece53b15a74e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/endpoint_get_rejected_endpoints_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8a30a3fe8ef4b9cfa1801afbc8e633b8c86a8c1f37adf8ae9e03c4ced8c3c84a",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/anc_endpoint_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "84ddbb32eac11027dfa3a7ba3a970b008f7302dc1c0f5ddeaa6054aac04f6355",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_by_nas_ip_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8048c3a727233954a81cc1510712db31f4cbddeed5a3968534b903afb1553d1",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/node_promotion.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52f1a8a9e513a1cb22e92b253ae34f1967733d679f3059ba6f3680301c9665e0",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/tacacs_command_sets.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b0147659a5288bab9ea63458b5308971bc65cc261369424cf8d6932bbb0607ff",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_service_register.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4b0fd7d817dac0f6c753ff8f76bdbc8c660d06d10b378e059f6d70e770f637da",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ca823898683387c288348573e109893551dae4d503aa2bb5ad98c1ed4035794c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_device_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f20cb840975ff402f586ea0a02f702ab400a7cf8c303b6dcebcce251b88bfe6b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/tacacs_external_servers.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ee73ef83266480259b894acfd5f922bb2eb6320a3761a89aaedebc26efa6bc6",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pan_ha.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e06534306222b4ead550b9c902b90ce2e5f957bdebffed022af1c724d4faaa83",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/system_certificate_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "905483d3609be26d29241aca95de98d22ea44eb0c0af8733a6a4c71e58150c0d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/telemetry_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fde258360b15996e47e7ad13258a95d49a4d823798eaa0b6dd0e43943287f754",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_deploy_all.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a0f98573b4cf15fa23f7e2c7c47e5a1d84499de03a0b03a4de2b37fb8385f423",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/endpoint.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f1bdcb0c3da9c14a7d8c505775b4336222f3643e9c109fdbec0c58deac86a371",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/egress_matrix_cell_clear_all.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a909ddbbcdb38fe45b3dbee04ad7e003f8f4e7939257b55d0fa839a39b4b522",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/endpoint_deregister.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d4389ecc78f35438c39b4e53a4c1595692d02db32d762114c3cce58e65b35344",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/system_config_version_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "51bab1027d35643e0bf11fbf612da9255477ac9ea32d79b67043c54ad82ffcfd",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/downloadable_acl.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bf1b4e2e7eec2eba7bfdd2f81b29131a9f245e1c61e47189eba3a6d6301bbbdd",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/csr_generate_intermediate_ca.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dcaecb46ff49761388713aa2c211b00a8769d3eed841cae81bffb7b15d11829d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_ssid_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cac3adf1fe51cc5e661843993efe7cf426f0c5fd37b0ae4f614dfcf2e81b0ba4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/anc_endpoint_clear.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ed8e66cdf1da19b432815fbe1f87494bed033fb1a841573f1fb20a9645d5c3c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_connections_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bdc30883af47eb7757ad73f6108cd3d18b74af52b0c98e1bc48de869d4438080",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/filter_policy_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "68b6fcb35961ee5f744416437eec8c59492595330646e2a3621d09dcdf7449f0",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/px_grid_node_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "161b8d9e1cf11d544ae45894592b2c9a69d932aca3e21bfad292dbfb239a9e93",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/internal_user.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1fabc05129b96fd9e4bd284750785acf82e153df5d7fb5647a25844a709dff9f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/anc_policy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f70ddc38601ad7421ab75e6b2ee0df5bd3afb29d4daa5114f954abc1ed354f82",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_global_exception_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1204fd63a0fbf9400ccb5b8a91aa56909fd94019993e33689daba6a17f3fe881",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sgt_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4dd538648b127222706ad8dae6b63e42d729feef12b357c860832808b1a25d34",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/certificate_profile_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fabeda8c29ee374ba0eaefb445cac9a08930586509b045357fb46018a9df888f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_acl_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8a72e9f444267efa5fab00428715cf893588cfc6236e650b8d9852711a6ec8cb",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/anc_policy_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a45dc5c8394c8229aaf50f9d818b5ec40e7a5c8bcc6594e408b05bbd324f4970",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_dictionary_attributes_authorization_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ca74e7a832de60d0d7f7ce3fba9e3488af33a5a540c87d874456d6cc19cd049b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user_reset_password.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b532a46da2059f39bca590e479d56a5749acaf690a4484c4ba1fdb409dacdc91",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_authorization_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4199c5b3ee56865cef0628b8a0c6fc85eb41df76e000eed34a8db1d0f4316354",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_active_count_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "064cebd280cf102dca9677772ee11bf41ad4153f4d84da982d5b716f838f61ab",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_vpns_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ef24cb19c9f13e8f4b69944863f47f54a6b51d6a3855f74267181a0ad494f8f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/portal_global_setting.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d80a0399db950c787941d4f89436cf46b78a05fdd3d9bcf8d3799b44e31e440c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_conditions_for_authorization_rule_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "54b94a636e8218e4dca8d5472314b8f9f61fc35cf4e0387fb5a74e9b26926307",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/portal_theme.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c28e350f5f2593829f92005bf95987041f85db2eef75864dc03cf81f2307a818",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/portal_global_setting_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "069cd03c554084ecf59999eb705ce8d2e0754b8c2823a1764978708edf890f23",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_group_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "989e4f2a15a366866067775296b7bc1be4ecf414efd1e08b124c25bf0f455b43",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/backup_restore.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6519a7798801fabc781fcc6b6fb8a14d4acc1b5d7bff37a6a56217e25d22a3c0",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_group_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0287ca8bd83c4f1a5ae1c28120187468ad625de9e8fe7263e30f6f210216a91d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/allowed_protocols.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eb4c07e0018594ded860f176d98e725f030210a1999320ed2b2ee53ccdfea677",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/active_directory_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7457260145333e73673c7da982c58e1852c913cfccce20cf0c0f7fda4657cc09",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7346b86455adaa0295455d6b657955133dd4c62de6e2681e881d1fbede46be65",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_local_bindings_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1117c1d68ccab717417495aa4d2285529fc3eca8017928a3843b913f1000f423",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/support_bundle_download.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "64ac4ce4058844119da5815a86d75093d5f92035e6b1b3cbe3775818d71538fa",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/self_registered_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0dec65952e96a35d2767d4c56b667cc471969e431553ccc1fa4c3bbb6694423a",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_type_sms.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c6f74aa3cb7f60602fba88aef91f1d2d715d906fee81a0c0944156536680db04",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sgt_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4f7c5385bc320946298e6ef3cf6be81ea36a6719d1f6f698fc925ba1ce2788bf",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_by_ip_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e1aec29a7c14fb52c0c66642fcc49aae6c3990e413b3063e77c7336db95690af",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1445cb0659fd696f6a7f984911e722609f9b75e45bab3c1f68cd87131b81baa1",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/csr_export_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6eb219feb204c022a5546950eb99d0dc58470c49aea1595f2be504345842ed5b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/trusted_certificate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2449685f3fda372181879e556033d15464296f28ada81195c22d5d893dbd5879",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/filter_policy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ed87f8f548d2d85eff9e66a63226dcc9e69593d4e6ad5143b3ede1c2905391c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "094b2b35861600a2bd8df6c1db07667387ca8fc0fd8ce57479c2edefbb7c94d7",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_endpoint_by_mac_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5af4fe3d802443719a136498b281a557fb0db9030d85e836d640fa75a55bb569",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/radius_server_sequence.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37dd31f877f5262a908533140d8f2bdcede015e272b66f681907f9241111512c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_time_date_conditions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "17d9dc9b10b942edc6c7de09adb72756126098900008b6c7e2df135f60f34f3c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_sessions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c377645dced8cec5dfe85a4609e6f7d6d13bd626cc1dece347b9c68c811e2639",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/allowed_protocols_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b1ce3de0ac69a3cac763ff4c51ea0c5989eb535493e41bbebcb474b4e41bd2a4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_acl.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "60876f7f2d4296fa5b58161695f053e81efb3e4b6b6bcf90364ecd7f5e072bb1",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_time_date_conditions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d66bb279238de58fecd091695959e247870a89ea81e141bc7ca28d32b76dde73",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_posture_count_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "613328ef0b91e6d3f3edaf7c9ebcf816c248a85c601a75c0734cd11272c8d04b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_to_vn_to_vlan_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4abfa7aebf911e3c647f3d005561911842bb5bb3ac5d3e7ca77729fc8042ba80",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/profiler_profile_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e1ded1d0f3e400b3bf054dd3baec0418339bb14469c0adf2a1946b75616e6534",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/active_directory.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c14fa5f23e342de1d7b09f85bcfa6236ddec3504e5561819045c3c715c828b9",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/identity_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e587d2cc06683da28dcb2fe6c7d5c3eb2f6c96cf3ca6d876e4d22b075c910d4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_auth_list_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f8b6c92267c97e6f6a8bc55a3572028c2c89401f0cfef9866ad72cd48d681b7c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_device_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9887482d6f2bd82480843108808cd81d26db4a12b2ee4e1a3adfc7673caec3f4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_authentication_rules_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c2573984e0dd6f2d3de6645933f6e59b55154bff180859c973b3c3a844078a0c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_authorization_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f0727dacec72e3979e5e3b71ef40c7b8dc040b126f35ff122a153ea267883655",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/tacacs_command_sets_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4fdcde3911bc5f97da12bf3f3b16c1c2b09949ea7525b720c4f9ce4a3a37ef4d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/support_bundle_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "38c39950eba2e25634618e11cdabd2a35dc5969145140d31e4f0d9f16af5dcc6",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/active_directory_leave_domain.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6c64d935d2c2f37f5a6f8e494db913aa397182dba8b4a81bf627184d37bc0b4c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/endpoint_certificate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7373296415d333810ddcc5a57f403c4299c9bba3689cc71e0257d9b587ec2989",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user_change_sponsor_password.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "99ca9c15e67dfb07a01122acfb822d85de07af08be520fe18329c80d9aac946b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_authentication_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd47c6ba4ebbdf971835914f8f4ef51ff45418bd0ae49a39de1e91905f7fde1e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/downloadable_acl_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e650273a4e7aa4702bfabf4fa9b9ec707a40159162e64b329784e42a6d12ddf",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_conditions_for_authentication_rule_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9ec016205386433cbc4769098977d1143d566fdf1ecba8d8663894635fa86acf",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_account_activate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7d84172547b885a81b5584ffb0c31d0c84e336a019bd5beb1899686f6de2ac5c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_to_vn_to_vlan.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c2ed9fd23f4e500dbb551fa2a0640938530bfb1494943543ea2fb4172ccb19ab",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_device_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "01e64f5ec79e6fb9d5ced5ef22d1cb3a040fe15143940b799e38b99c9b8eae6b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_authentication_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4f9491f4bb659adc0950331853990dc0c1a849d5c74a80575885d74a1d4d991c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/csr_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1f737d637c2fab3a3cd414cc01f67f39cc66cc20707b6d4792cfc5c9f8c23527",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/authorization_profile.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "78b8323139c15d93271a4ccd267fc83fe883bff8070796cf3b28e57e7fd5ed9c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sgt.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2d3082d78445580d0bfb1b8e50be19fbfd84e998a39fc5b141f10c1ce4a50c65",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_service_names_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ec9b52d572859cb44171cfffdca1934a6609b92f9654d68f1b84db6aea7795a4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_delete_all.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1b127b2b32d03713661e90677a5b471d2f1cbad7579a97b41f0b7219822f4538",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/px_grid_settings_auto_approve.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "35b021d3475916586b5251578aff3cbcbb4e19edb20f09699945f8f765a09dfe",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/endpoint_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8620f3e002f362d69b780304e7aebd65d38364521a427c967fab35d27566e1f6",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_authorization_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b6575ac692cc960bfb2c6d61e0519340e77393756e480cfcb8e171aedee1f176",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_athentication_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "61afd4f70b7c67975eaa8b1f8479754aa076ea5d0e83f62f595b51052701033f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_conditions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "147f963bd9846c63b6bbfc5409a7dce01f3628843fd04c60c562868dc7f1911f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_vpns.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f09d072d02764cec392dc6a2145e90f8f9e4d200cbfe38f2ffedc6dbf1fdb89d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_local_exception_rules_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "266eceb56619105a104099053972ffe089c06f1b5a9502f80f497c5fc1be7a3f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/resource_version_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "655749d93e27adc3449fed8ae044abfefe4fbccc9b12ece9f34728bd80f84474",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/renew_certificate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0118d425cfc4608b00bbaeffb2b91ace9376e3ad76ab8f9a958b3e922fd3aea0",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/endpoint_release_rejected_endpoint.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00ded974deae0b21c23aca3c13fd537ef2d3f9bd4c2f7ac786925eac38d2c2da",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user_reinstate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e66568bf358b57a20179567f5c78bd977c3ccd64508d4d604242e144f871fe04",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/egress_matrix_cell_clone.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e62f74ef65dc1d8798927af5b77087bd3338e5175f0b41ba01cbfcc822ed605d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/my_device_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "160fd3d29c79ee0b3c80f46e64bd73b9b163aa6c591a98b480435f01a238ce62",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_conditions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "615139694efe2bdff367284320740c0edebd961dee83faff281c7117e0d33f3c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pan_ha_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e97f8568d8df9e9bf3542e3637e8fd39cdedc13344005fd98af060381b16e024",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_user_group_by_username_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "428ff0a9095969a5b6c0382a8ba9096470877a106bf5d33d320eab5223aff2c7",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/node_deployment.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3fa1c6d62d00eca7472c6fd6cb2b90e8cc85894f2cca71a84cd89d593b51b6c9",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/certificate_template_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e145fae3f47b96bfcc30407aed934ffa99d0e09a20560ca02afd1b31bd378e5",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/tacacs_profile_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b3e5191bf4ed44b6d88cc92fe6f22f3a339bae3cf863e7b8bc95eceb3f76f50",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "39870a005ff90645cbb2ce8e62c1bb386a965c658b0ec5e72911b8076fd3fab2",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_connections_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a93e99cd584d13769fe68e6af0c40de52abafe38f0e40219bb0af66979188321",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_service_unregister.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d1c7614e7c0b51fb3a1974ee317a90507083207e152608ab657ed8a290f48807",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/byod_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00ee6ae7ba7e283de8a1be24aa5393e7a0c9684bad03d09d2850f4f0fe9a8b7c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_to_vn_to_vlan_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f470dfd3833038807ebaa4bb13a52f732377545e8881bcb5ba1da9629cde4d6f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/active_directory_trusted_domains_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "15cd22413135bd1be392dd2cfc9b7e5c9c293fc1aac4714c6504693466a93340",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_authorization.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a47d38c28d5dfcb75e6c50035279133f16bba90c4c928f18ae25c1de944b8f0",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/egress_matrix_cell_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c069fc3a7cdf4a9bde3997cd669f460e84cbe62cbcc0176a9b052a1c3575079",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_deploy_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fd071267efe9052bbd03b5bf087cba830dc7662dca0e2a875f7614c8cf32ba6c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sxp_vpns_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "db772c7cbccffe0362beeddfed5be3df553570bbd7ba4fff0b61ab0a40576c9a",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_command_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d32b8a47e93a0793bfdd12feec57781e4c00482203534f51167de647102efd1d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_group_deploy_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7592d85021acd8136cf077995a8869eec409419d6b7a238dd1f6e89ba60e6fe6",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/repository.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "765b687b494d013e635d378a5a4891745a6254bd30df355d9bd262e8ecee9d8f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_user_suspend.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c1d9e2c0f4c92ac375e73f806f09a6aa3fefbaa6d9f3483a04b068b35c7eaf6",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_local_exception_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "706c15eaef6a640553c6d00fa5bc6c5fe8f77cdcb352a750ac0fd51ffaff5723",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/endpoint_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eafe45ec41ae94e31c189edd3d021e320b685ef574963e1936c14d9ca13610b5",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_dictionary_attributes_authorization_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cbbb19cb89a84d454b2869be9976cf3b7dc6807d62bbc686eae03f0ce76d1cb7",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/backup_cancel.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "914cbf689aa35ef072174a5353ff996d9c5d144f598eb470f120e92045eb4261",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/system_certificate_export_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6c076d2260259e07af3aa8878441018fa652805c8d6171ed7c6330e7d06ba5c5",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_smtp_notification_settings.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ace28a028ab8aaa001a9ee3ef94d5870f1ae2c28b93f516c9a949054efc5f1f0",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_profiles_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4d5cb0f043292336f0980248cc1ffc8cd7b952615f92428af0e281dccc381bb5",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/active_directory_add_groups.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7c82408ddf06145e816459c794b2797bcfab201165158d0585150579b8b2d8c8",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/mnt_session_active_list_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d3fc681f38ea1e6f21fc14658e99c173c035589ba5ac6f168200239760526a3d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/anc_endpoint_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c0cea7828f29ce5856a3b06d90075207ba279958318a6dbed5d852d2f89cd6c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_type.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e3434e4b354b8cfb78d7ec7cf4fb372c13cf598a1fa40e0e13a79d49a9a71ce",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/active_directory_groups_by_domain_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ef5051969362b37f023634bd4e09d8e09c4cca099c5ec856c072915ec7b512e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_device.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f8120dfeb773d93bcd8838fe78668c68aeb332d1fe18cc2f5ade41fe7d1847a4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_conditions_for_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3beeee1aba447239ea5362d42fe4f9b0da29d59011fa665dc3ff7bcb0aa669ac",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/tacacs_external_servers_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "49d7e12ed7306e3c943f857e8cf870b724c43b3fd3aff074acc4af600d344b20",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/active_directory_join_domain_with_all_nodes.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "968ff9591228ef881fb0455bf608783f1ba97d0dd0fb008bf2ce7fcde3ad6e91",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_service_reregister.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0d2040c00e4efac9e0f2373515199ce4b8dbd2e87ce625ac1be4baf0c9621deb",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_policy_set.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ab85bea671df94287b00861e937fa98468358e756fbf7a968318376da9d30901",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_service_lookup.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0366d02f2862d4c90bc007aeb491e1afa7e1f9a6217d26d436fdac8fb5b3a8d5",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a6f972709d0d22c6d97b32076027b3de26f7b7c312f3b2ebc7088d510ad51ad3",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/anc_policy_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e50713adec53f4eebaccf8d22e4292743a74eaf5c5a4d9a72281a97140bd450d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/personas_update_roles.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6dd88b05bb33c2d9d0f316801c9d06e96efaac3a5bf091f524996f29fc056dad",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_access_local_exception_rules_reset_hitcounts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eab643dfdbd0e0f206f33cedaaece12c8ae931b8ecda43e0def334b72418f15e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/device_administration_profiles_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7aa6df0b0793e34d1ff12c266d3e2a2caa59cc05b18e629dc9d5554326a240a4",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/hotspot_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "96c0f31284afbbd6866748b23b92fabae9980daf325c744aa75049ea88f43028",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/backup_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0059cfec575ab39046a9ec562329778427630e2e0ad772041ac03f49fd2c44f3",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sponsor_group_member_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f8eec47bbd90163e78e92647a2cf3f2a2ccb83c6fc8cd3d1b4d6ea76151e3a6",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/native_supplicant_profile.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6ea58e5f166512555e8bdeaded167c721bc371be8ce3f877e42614b77aa162a6",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/network_device_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3e1ca347e7b8a103511bcffdd479f385230cd59c70ebdb745ad870af25ac30a3",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/egress_matrix_cell.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8ef3dec84018c8a4ae2789014f24ba8db9ec191cdd3de8064f980953c4fcc73b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/self_registered_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7e2727ef6b8859dd91193bfbffbf141b4ca58c3a4d12eef592314c9545ffd43c",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_endpoints_by_type_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "70a6dcf3132306530519c13fdf9d2a912f65a0f8c35510cde26721b75709bfb3",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/external_radius_server.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9206e0e74e3f2e2a31931b187f3e09b09a0e4b52fb6378a047597074a68f0c8f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pxgrid_security_groups_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d57a644c469c083c915cd54fc1a0fc77d5e4407c2146d7ed7cc6ae7174cf3d0e",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/internal_user_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2987784738942afbb30bc7c757d1d9b702ff187f35b6cab0c437a817947e224b",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sponsor_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c20ddc558f38553822bcf4a0d4d29c77b61272b3e855b820cdb5b719163dee4d",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/radius_server_sequence_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "09e993bfc009bf8be08c63c09e3d4a6d82acffcd34c1212244792f57feb8db63",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sponsored_guest_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a1073079b561b7cf1d6b84e9bb37954e9a9985479261a50c5a0aafe8265a0a4f",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/guest_type_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4bdb906b48cbb63820e752e5819244606c4569033d93fda956db6f70dd0f0bfd",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sgt_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "abdd10bec44bde27d691c9cb221358acc292d9d5a2834ae46a8ccfc742fd6910",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/sg_mapping_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "980a5f94e0bd456a73ac7e0197cad1828eb8fdf6fda3cd42e125539db7b4cda2",
+   "format": 1
+  },
+  {
+   "name": "plugins/plugin_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/plugin_utils/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/plugin_utils/ise.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "93c2643df8d15fec75dcde251dd742868f1869dcff979bcf50b3d75a9d81fc6d",
+   "format": 1
+  },
+  {
+   "name": "plugins/plugin_utils/exceptions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "56b24d56873bc0dad797b6c6c9154a0c91468878e162fd4aa0d3965cb5046910",
+   "format": 1
+  },
+  {
+   "name": "plugins/plugin_utils/personas_utils.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0a4897c82f9b7bef59c69b659779da4af305320ef86b157ca2b79814dbb6bdfe",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_local_exception_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "405653ff99acc426da3fcaca81bd7d13a88525045588e172417df831a24552bb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_dictionary_attributes_authentication_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3eac448729704c771d44fd2738b13db78a60a745e95e332657ada01c228c6f0c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/trusted_certificate_export_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f35f7c7322cf934fb542f7e5a64d49312a4276e37fb64810acb3f139e944e1f3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_device_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "93aee2f0fb7b5b15e1be9265fa306b844767461cb26ae689093595896ee6049e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_connections.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7ad656fc810ebf3dcee39c3897657313a79746cd1c97fc4624129ad9f9f70039",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_ssid.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c8132c78b19199becb15d0ae0f5fc44daaaabc8801a4a17363a603a00c929a5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_dictionary_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e864386cda26eae66f27749b5d6af456bdbb5e17fea434159bf34263b0c751c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_policy_set.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "09a838040bd30af94fa4dea86a5d885d973f7637bd2227abbb8a1e8bc9f78f9d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/repository_files_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1d42b5b6fa764fad4b024e76668b403587f31f3320d11b06d3da71df363be078",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/repository_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a3668f079ea587409872b87bdb4d780ce346049466dbde7fd38cfac7b3300e1b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/rest_id_store_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "86c9ec5050d3280f9d1e861aadb399dc4502f1acee0aef19b5f258b9ff4b2627",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/anc_policy_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c8f191e89e7e14f007efc94739508092e416281ac83194b7720d28745b48ac2",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/tasks_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c04a8b9f9803a0ba0a1aa9d05ffdde8d00c7b3c9a3429b58fc8bd9d28fc8fb69",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_authorization_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "64e43b1b9272a4276f262958e26f820060c60648e25ab49224d0abcc336a1aff",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user_email.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3870a600919c7fbaa17a2343442a728b9ea1adc88fddd7d4de10d420c8a6244e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/node_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "72dcd81e78f605fd1e675651ce04be588b6bc54e04096f187dc6e5f65cdbc84c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_authentication_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eb7a175bfa348dcefdf0b0f02e42d216d797656f49775daad694d86b45f8e2f5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_healths_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0bd17bb6389032d64f1db602a4bea1d00f11652379b9b4c3ef00db20627e19bd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/hotspot_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6fbbe2837777bb2f5ca46a8d94a80cf72ec00b790b56b4f3268c794aab47b2be",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/authorization_profile_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3be259dfaeda00836fd597ff5c1066ccfa03c4d31d7087d61f3f0908417964f8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/node_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d61f3255669da98f6dce9cb2f004374067b45600512a23ac2aaa682075971c46",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/personas_export_certs.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e8eda07da8782dbed722994498a63f5e75dbdc886841d3e3a604a39c4ac85642",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_dictionary_attributes_authentication_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6acfc7c516cdcb3035c26122ed3cd110edd24801327be4007d1738b7949e5fa9",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/aci_bindings_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "04ffb2bb3098f77986083e5cb1fa4239b723d0067b3f6a2e84da6bb3540834b9",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_policy_set_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fe86a2af141e912f8100fcf8779c7a2540d03bedefc27bf4d43e17c587cdc34a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/id_store_sequence_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9b8cfa5d1922a145f1e959e844a01373b22eaae557e9ec17cb6e1dd2c61e2649",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_policy_set_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e30e9d1f36b528125abea626f9a0b4a7a5720285a747781275ff6978a85bf7f1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_local_bindings_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00a6efe7916957b842b2c85e1dfe5ee98eb113a09eec17a0ef4245c3967daded",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ise_root_ca_regenerate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9d450f6797f72ff52e8c04002290f7c01db853ddc1888d6bd9f9e09dfadfb282",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_sessions_by_session_id_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79b04c109cf60c69dcadacc6afaab94024e9f30922f8b496fdd98f3bde94f812",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_service_name_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "87a7a1bbe022d5d282c08916e3a108bbac5585eac31c956e2f7f9918f72c8d4e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bfa1f64c336e79fecc19011422e740c4c792fdc51e8df6d26f7e5f19d4794d6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/aci_settings.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e15cb08bfee2274725b62c85be4ed303d5a2aa9c3c55bae05736d63182e337cf",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/bind_signed_certificate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b7307d363dba2a81c3e403f7a97e66209f8d5672e8c8711ed06816d812e8b4b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/endpoint_register.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c3a5737c8f4576b4de71424768e99906281619235eb258a6f7f873d5f625a76f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/px_grid_node_delete.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e5526cc3e89f70a64f9db5d91d9fc6c5bd7e790449c85bacc42cf195baf6354d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_network_conditions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e5c6a92dc0ff85df7c1020f602f818419548fc487853af86b4dc27ef5c007eb3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/active_directory_leave_domain_with_all_nodes.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e7719f6699b260335f1741307895b50da12aff3232bed2cfa866d1cc66bc2d5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/trusted_certificate_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e95a99ca62590137b562f7c7fe2a386497dad2fed9ceee97698156032ea8285c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_account_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1667023b637f3a2b58fad28fa1975be95a5d8753e0267948b4e93c8c46740b5d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/node_deployment_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a6ede266ab73b935c87f0043b4fcc12495b96a3f4a16239c4e88d16c641f69ad",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_failures_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "db912deb4425b7c0f70e9db87a5af0b8570eb1f951df9a32975663cc7325d40b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_global_exception_rules_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "55e920bc6692e099d74ca3df9d6ae45585610f6e69093525a4304fba2ad81ce8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_conditions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2532cd55f6234e05b5beaf186a50e118ac0d10dd857d5909de0827fb29ddc4f8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_security_group_acls_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bfeec54413ec0784441152113715320fdeb807058755688412b998c02db62415",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user_deny.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d8ded451f39f6e11b9b94d9e817461825375e03edb973c9588df1e18d39a8d4",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/admin_user_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0fec83dc03a54de48318f474f7fc57efa856192fba6a96d3adbaf2162a685a80",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/endpoint_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7ffabbf2f3bc311c80794ec3feaf2fc7fa9a12efc907cbe9a7934a2dbed3d6bb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/threat_vulnerabilities_clear.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "af1a2cf122c6aa21edf6ac7e686462e65a4fc25bab35befe193293b2ff32db25",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/identity_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f20e1c11a87ba4c283d225b2e63d43731294e1dd5394eef9000f538b3eebae2d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_dictionary_attribute_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "67652ea3bb5404fe9cd4839c3275469c26feb22d5c6b633e86f7ecaaefaa3571",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_vpns_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "510668f17a7c24057938ccd1c183b59dfd95ab7c4d71eab815e1a97d6e0db91c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_conditions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "022eabf2b910afdc6fdc992a1362ca80a65d701edbaa2dd93b6cb76c7ea7ddb0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/certificate_profile.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "29593161471ca669e906eb642463661cf7a4e708b390b37ea741cd6e2fa92fae",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_location_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f2534adc01f204d4c63de1e58c4c0385b0de38327b0c60b391bc76730833c5af",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/native_supplicant_profile_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f65e98a6685f8100a467a47bdea37c874f28a7934f8c333389a70dc3f8de6768",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_dictionary_attributes_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "51db656736d93bc5757eb86386f8d8e907d0e6dd8c494b58b6680bdf965ce7e1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_conditions_for_authentication_rule_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "993f8daca0eca49f0d5a86f0ac0f1ae24769a009518a82faed1b7741b54f772e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_version_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "17525e762723015ba0d202ed8390580d54878850cda184b9a12a39014a71f1b1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sponsor_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0cb52283a493bdcb5c87648922941f63a3c7b94921de743f6e6c2f2d237e1b23",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_local_exception_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "301504cea84c76f76ba912ce9409de3ccd4eb4894d47a449dab4803bd7e2d7fc",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/system_certificate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6e3c06a9ee83621faa7a96e31fa8fce2f5d9ceed7fb9b4de889c1e10d5467c4f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_bindings_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1cde2259a2915d6a75db07be772214a802ef7af978fad83b7e227240b0f4f19b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/tacacs_profile.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d45b9b147a70a53e5d84c0aa87a5682eb4f3cd6110b4253fc5f6a7553dd4ce44",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/tacacs_server_sequence.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "152e7c825b5b298d274fe6d546cc6e5840f1783da8f87760a58a7f3c90123a56",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_global_exception_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c80ac64f9fa67c590b05b836ff49d2b3525350563f0fcbef54ddaea7b222370f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_profiler_count_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "74146adc0066f2848c7de69f76b3d9663fa53bc2956e2e637ff8cee56bb1476a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/external_radius_server_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ab639cb9ef130cc5c9ebad103ee54cbc718206ec21d067d243c5ffdde7e6643",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/session_service_node_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c9be37f71394b2b84d9ee0ed53c23f2d2e86509d0357b31ba81f99838ee57b6a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_global_exception_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc20909658bcd311eb37a187b6c46ef4ea98cbb2da8eba108f502b5c5731f421",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_local_bindings_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9c1f862ecf563657ab72fc4bf9583352e6217177731d556383c89c50d386d3d3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_performances_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0fab31173328bea2029df58dabbedbc843ff41906569b02e3f8897eaa02ce31b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/csr_generate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "727e2f631d648a065d90b773317b42bf084c424cb478e2d649fa8ecdd75fe9f1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_by_username_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "14870ad897c58b6751ca02a91cfeb6b5b45fc020050b3ee6d564c297514223c7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_time_date_conditions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5e7d177b7a69a7d0d6d54381c31998216493b97830ac30c2a4b5774f4632f69d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_time_date_conditions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "50957f4c5b06d74e5048a3f0a57bb078be98781e9d437bca3584ac2bbde0a671",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/byod_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "73e5a0863ce3bee330589276da33a704cb13a17e803031d11c9f70678c9a46e7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_endpoints_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2a9d34c8ff013479d79a7d767c7dd6d66c260e6c526daf7be1b7d6059b7d8843",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/portal_theme_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1acbc1f17d88d8b610c17b97c4ef69754bd570c82d0f17355e96bca6c7accf49",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user_approve.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "87947b2ac3a015f8b235937e8e43722a66aa5769d98a0d40de0ccdab9a8d9232",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_session_for_recovery_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a6ada9b52966add093d67d11e9f5ba338b822f233a1a5aee9e68de97eb95e6b7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/tacacs_server_sequence_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6f3441bd04a52eca96f3baa9fbc4d93f28c57a22bbbfc03beb5b107e24050551",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "22d2a21731ce8e7d84bfe9e3fd133c8eaa76aeb8250954a3f02cb21c6fe0fec6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/system_certificate_import.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "257bf44442c7128179a0e94d1699f6fe721ecbbf003e578c267545baedb9beef",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_failure_reasons_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c8b4f9966aab2f21de0534eca3fe201d56fe9c130cf0cd415bfdf2cabcad571",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_network_condition_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5aa8c6f2fae6aac27967fd2ec99131a92788328ca8c71edefe138e7715b6702d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_authentication_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf508ace1fbc914be750ab759fca8daf58c13557f78a12b92299c1d9bb3c40f1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_authentication_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "65510154131114dfa3a4464b32d78efeba108d4d9402cc5837dc7a732940bbd9",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/anc_endpoint_apply.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9b52c74fea95f5c16676a36e1ff2e356002cf135b381f52585972c9ba18160c1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/endpoint_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b52343690902e9781713e0d537ec37ca793a9045ead6ea501e981b5704486974",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_type_email.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "28d7cd00c555699a4d1a4cb323ac3f6246c2feb036a9bb22f9a6665138d36850",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/rest_id_store.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "656eba43fb737f15c554c3069d8db7bb91d1359c21b05ec82236579fb8bc4f08",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/my_device_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e9677ad5bbadcae4c445e273c6cb212174da103c0e814800c59e4ab5622038de",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_authorization_rules_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4712b0e63c4b49eb380159e0c1429302c8c2ae9e11b75aa77643264bf882a4e3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_egress_matrices_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "13d4c7503f5cd0e37a4d0f5ee7722282425b18c9acac4072ad8e466fe73b9e57",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/active_directory_join_domain.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "43b48a66d5b9ec57aecf4c0a2af82cc4a5f047cb661b1a11a2bc4ca9e6900a35",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_conditions_for_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "68f2e16f3b00f4af02f30e4e130d221bff5c06811d71cce45e1aaa0215afa82e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_reauthentication_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a2260e196de717b54502a95aa3c2dc8d4933cfd82a3b59af084998351114c4e3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/support_bundle.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e2512792d563682c11daa257544bb856d1613d5012345814524628b561101fbe",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e93cce92466da6ac803afc74199971d3eb09c7ecf88446348c1442cb72da6d53",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_endpoints_by_os_type_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d25ff69415ef725e50e8c887300388c55d4faa8a28a84fe59a1ba0f3b986baf1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/egress_matrix_cell_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "77868d3bf80da1ef3605cb29915a9f3afcadb347a4b68bbfd0252c6e805ab20d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/node_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a33daa9dc837569ff8ea9ed4f0f2ffd56f3eb56c7f3ffcd3db9128b0023ee35b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_connections_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac55bb06c6d6ef3996152afd13b2f0d138f1752d39583c7a9147a8a1e4220022",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user_sms.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ef2e5f5d9b2579a4d4c31825290f00c9e3d70f6a3babc7ee2359480aba4ccee8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_user_groups_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "788b8c77bbe7095732b2cb28cf4966d53fb6495a2fc522b9cc4bc2458e7bdfd3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_profiles_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "993991119050e21c7ebbcf568d49cdaae1055d8e6560f8624968ae3bc2c9f523",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f815e3b20c61d18de21238d87bad962a96408af7f4d8960c29615b7e53218df8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_group_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "737558881495f3da593c849c6f3458ff81f7827792b9edb625cadb95cd4206cb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_conditions_for_authorization_rule_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "808a8b314bdcbdaca1f8963817eefd606d757554f733d36ada3144b17f57c0cf",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_identity_stores_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1dadb11cc6a62493f4a942477606188539e35dd09c6874a6bde8ddecaeb2b151",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_account_create.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f8602518d174f8a0435954f81166c495ebcc3e529e5f4937a90e233fd7b67c0d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_access_secret.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "faef07fe11333d97b611aa0d654fabb0b317f556ba14d4db67c4ff937757ee4d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/personas_check_standalone.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6fe19451da0b9914d5ec2190821c3189401b2a6a69e5c0d76b095e85adea4d89",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_authentication_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d72e2398c0809cb396679c262da7523a9cb16a3dac768a3cdcb7b863fcaa4822",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/active_directory_is_user_member_of_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ef4d96783ee5b7384445a00173428b64af1427c4bca8511e036da45fd4cbd6f1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sms_provider_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "811c124a121ee37d16aa33b808415f3d1b3ebbc127118416d2f8b579822f6967",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_local_bindings.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a07729d7902ce41eea8a9ee9a032248ac0f94fbd29748999ef8fc29a6bf280c0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/aci_test_connectivity.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1edae313c031b6dc03b24001f3d82b8dccfc67c438f87597f4aeece59269876b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_identity_stores_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f9be98a9dd58219318b6fb648881ef4534a691494b4af4d1cf1e87bbebb0a7e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/id_store_sequence.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bf28bbf6e2d1c34dc586821404d09490f7dda86a381bff24dd67a2cffe529173",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_acl_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "061fbcbf83226feb72fea1e79b440586abba05681eeb371f216e623b348d21e9",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_egress_policies_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5cd83ea29d233eceee5a7127c9254daf3af34b620b0990aeff76e95536fcb981",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/anc_endpoint_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b25094f8ad2205096ecfc90c7f26f8505f3aa31c79bdec5ec68226bdd5f56cad",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cd3d0c3c143e1575f9529c6604247e7e48558a498acff6942185612d8dbbb07",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sponsor_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ba4942b36003d280c61121cb0c43630c47f7cfa70d9bb9acc0c1b6012668fa52",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/system_certificate_create.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae0de32509c7c91562a6a56ca359ea09e3736351a64e957802c457527df070c1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_dictionary_attributes_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fb2eedb527c9a60b7d8cf157ef06e138a495ad3dfe592fbbe1651c5a1df8edd1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/px_grid_node_approve.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8988c44ebefc3804ec7057eb1ed33452b1af469548b4f73404344614b009168",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_global_exception_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c52f947d05c8ab2a88bf41fa24c2ccfcfded408c2565bd3b2d9b3da804d97216",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_acl_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1f6bf0af224130ed7ee60d221ebb4362a3a33847b14f78e2fd70878f7a7b3e9f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/active_directory_user_groups_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "93632d50b86bb634f7943403744ff33d3150fa37a988523c69af3b10d5d49044",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/backup_last_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5df94c86123a8111a89128369468c5f58b9e77b872ef643fa517efc0fe7fc1b6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/deployment_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d0a5f05e015a35128c3e7dd9f674198beae6981d3fd81967d2e11ecb809df9a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sponsor_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2e76d7ea7d8485d0cb0bb6e67c5a045f0e39c1fe7312cfd451d2263491b3096a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/csr_delete.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "db908d616db1e658b639e0e9f3dd87c8090d8efa2c54aa734d9920081678a9af",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/personas_promote_primary.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "32fe5d922a1d5fef599bf50af483dfdf674f4fedc032bd76887bf8f3ee0aa294",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_session_by_ip_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "de50eb3e725488ccb04e68466f51397dedbcf2b85bffe0b7d9ab061954ee637d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/node_replication_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c72b97d6b9e05a59bb7850e9810e9692ed38c7e9ae8877959c02a8284cf8d32d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/egress_matrix_cell_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "07e955d7c8d741ffdf26ab63edfb024171847c515cd937015ac8a5b918fcf320",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_smtp_notification_settings_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "945492f810cc9bdeccafb3da859efa47a784138279ba0b7e5b48ca59406bf15e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/endpoint_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a1f3fe79aa79d604747ce1fe190a75b39556df7b348555bb024bf020fdbc452c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f36fb40ddac100bf33108d20283ed92647a0e777105bc1788853c2f4f9c4356c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/egress_matrix_cell_set_all_status.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0a5a2b6d55e10be579118433a2f8bc80779d38f881c8162e815e4fc6de10bd54",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_to_vn_to_vlan_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "69f92b73650844af210403dc2b2edac66541fa2385481943d336ed88409c8678",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/trusted_certificate_import.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6fcfcbb367476135f3ba9a9e6ba03ee8463d7a30c1f454391b07aa5f84e87bff",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_network_condition.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d951228ebc143c02596430e6560ca2badb0fe02a852dc2a3279c7031f9ab4b31",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_authorization_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ee7bb2b52eb3d3fe46804e843289549d3cd2c3c0156bdbeb8851a5544d81b086",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/backup_schedule_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "15c45f3aa798a8b24b382953f1b59e5e9b5a792a40ef17279e3c65e21562b30a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_session_by_mac_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8a163f0b51ca0411c182d34b8f23b6e3e3f93df19985df1553d1ea43bba02dd0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_local_exception_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fe01f55294b0b3c7917b98b5eed68d3329b9bd581ff8e9a716482788a108c3f5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "37880c21de0cc6bebfbe0b666f6e5f5a3e47b15064f3d8a8e8e4f1b899476e6d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_security_groups_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "58e6c351e07378daf0af00225c48adcc840ab1912d029983bb87c4d2558e8eb5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_global_exception_rules_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "83b62a03a3be14a25b44bab2e22f4aa2b828c37d2550b8f4f25c805e51e396f5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_network_conditions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "572abcc905ca6ceaf416b3b76c76fb178e98514dca8ab050c9244839a23d4065",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_dictionary.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "208f1ac82536f565174ac2bc758c38c454299274a244bc85d8060e7cc162a970",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sponsored_guest_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4136dec4913a146cde5192c62b125a69ce9c78c1f6bcad790c57980f5820ae31",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_group_deploy_all.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "077029ad98f3d7f5da4faf5cd05dc2803b1331e51bb1bdb95bbc3220fbe35fc0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_disconnect_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8136e936137cd1cfa4184ec27e3e462bafe15f7069b652d84a66ffd7e2d81268",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_by_mac_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "953ff03153ebeef37258af788afaf2b89b4773c3388916a82c9c645301c16084",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/aci_settings_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6a202d708ad19d59be061f2301c24737e63dfbf4caef3e1ba1ce23ce1693c3f2",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_dictionary_attribute.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "83fa4dbfe01f7590cf3a329f8a30057d6645ebdd13dd1bcf526de17226cd9c81",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/node_sync.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8fd07aac713e5b74764ee2ada97b7969af79b000043191cb4cf3eb7cea37c626",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/endpoint_get_rejected_endpoints_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "53834479e8eb900601e0cc814acaca9535b7059e6238e7da6cd761767dbe40c0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/anc_endpoint_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "01f437cc2852ef0b1b68e6e6e548adb1fa1e861cc47f5a30fd758ced3c3c8e8b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_by_nas_ip_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3734b4be26db62bf00589dec3b4850be64d0a5d362d30710b6c75160a62fabfd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/node_promotion.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dca6adb0f9e2ea486e201f8f1ec1926246b65ebb418be91f918b0559a9068172",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/tacacs_command_sets.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "05760bd25c0d55f4ff628630f4ea34f29db44b2ec5d3b1c08d8f29433eaf5e4d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_service_register.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac1a0d6a2eb03151728160adaffa3a7dca9c8e6cd084b5e208b4036ba953d229",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7d67d79bf69539402058c903fc41fc922aa30bfa9a1611f1b1be5cfaf5be6c62",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_device_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8c1fed3ee43087fc0e56c6e855997c11448b5772525202d6bd59df0a10bcbdb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/tacacs_external_servers.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fd5ecaba4d6ce59e2bfaf22a2a76b5ad7e37794fb9c6c799eed78fbbfbd6e4c2",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pan_ha.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f05414c08bdaeffaf3a1b1c5d9be4079f91c4b7d9d97446464a698523b8dded4",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/system_certificate_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdfb138e6b76d4b85ee516d2f19760e2e4ba2ec7330aabeca31ed50130ebabfb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/telemetry_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2b46ba6ac1ae52a482bd6129e29c41ccd85225c20ef48a4fb814517e215e2dd4",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_deploy_all.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f9a6663c20e2de92fc8a8ac9f775810d58b56e8decb340efd1d83d7d2f8bf82c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/endpoint.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "069dc47c3c03ba0b93d450e197a5a30f9c57bf1bc8a83e5d604a895d24c6a840",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/egress_matrix_cell_clear_all.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "239fa4ff4c76ac9bd8ae744fb16247be812019d06d6113a417ec92a606135c83",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/endpoint_deregister.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "764dfde4b356b9743d91d0c3766d2f13545334980241d64a10ea5c573ae57c8c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/system_config_version_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f88e1280edfefc058b2300069132c17fbc0c4e54fb1c8fb83f2224863fb6d99",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/downloadable_acl.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "105c486526bc6fa08339175a459e9a0b948af79bde4a881764267e5615e4f2b8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/csr_generate_intermediate_ca.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fd8d268220eaa7a0cb9c8430082437cdd080fdb4aaa9c8cbf3abf1c06cca1091",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_ssid_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0e96ae4fc2d9e713f7c7231ddfba2432bbd55c5f3eba46aecd1377213a4e4a23",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/anc_endpoint_clear.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f25f33e0995dff69e5b4c8d5bc61516a4b177c0f3037e362e3fe010c31056021",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_connections_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fd44c98e501caccdbc5445da3a91cca9ea394e3bd50ea68c9478da55c3581c23",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/filter_policy_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9cdbca956f852a771854e9810e8d1f97cc0c13b82c0eeb6187f21ab0b99682d5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/px_grid_node_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "64426346615134a284b2a861df328c74f0ab97e478b8445cb8b5a310ae6d3f26",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/internal_user.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "26e4aac9f3fc1519b8b6f09dc3e93adaf136e9eff2f9d45c5307151adaf1b05b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/anc_policy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "116fa39af87857a0d691574fcdec298e2af8d73bf48072160fe7a7bdec64e736",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_global_exception_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "73e76d9028b7d3aeac8406afc78ae42c30ebc0a09bdbe425207ed68394caf8fe",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sgt_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "af5428f2b9364b3f4d738ca19c9aa1d4cf1c7abf2fb86d2a941a7f970ac2ab08",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/certificate_profile_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f7b6307aa0b17e8326be936e2f8e657050bc9777daf3f75e0382da566dd110ed",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_acl_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "83cace9ddafdafde35cd532787893e0d5df55feb19968f466e13c1c77100b03b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/anc_policy_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "64f8e9c2307425b0b794440c2f3eec0a2f9108c53632fdf50c1ad59ea50f4482",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_dictionary_attributes_authorization_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f13740d43a1cc7d776b25c4d7a62cd411529674bb8f824864d825d37688f4333",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user_reset_password.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1a97c92f9342b6965e9741292d882c61ecb444951d820887f197df5cbf0bfdaa",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_authorization_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6344927f620fd3be443ddc5b09ab9b2600c778451e2d1d401a3039f539aaf852",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_active_count_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "15fed874ea59c03783bc65acf71fa5daa69db5b8fad6ff61dd9f9d6aed93fc72",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_vpns_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "835d792b83353659c7142709d481d8ea5e83ece88a034820cde19020559d609b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/portal_global_setting.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f41bfe41477f6263bd5150180cfe83ad5c6747f3da7f276a2d6abb2ad26e7b0c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_conditions_for_authorization_rule_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "067fc4809944e911b5ad328c928b14541c3e4860b34f690002805513fd32334b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/portal_theme.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "99359d7659ef047a8dc11dba44314b7a4db7bc2dc068a98e8be37b0dfb31309c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/portal_global_setting_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c532fa0b4e3079d9901996dc034f4ae61b6327976af9bb50c9183bfa4bba3e4",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_group_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "76be07a74facf9d99031d64840a8b99c60cb66b0cdcb14fc721bd73826aa31b9",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/backup_restore.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dba01d4b4de4e7f5b2ff487ab29e5c7b53f4ab643addc94b160c659ddf958ced",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_group_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c982c47f6d3da8c45f6cbb51616c069cfca42003a5f5e0d8e892c2d289858e11",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/allowed_protocols.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9d9cb1ae3cace799e7c541ae178b5da2d1936e566112661d2f924f8a0d4b7369",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/active_directory_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e27b94b45ae0e82a687aa116bc4ffb56a781b22b0c70dca1cb7629a4ab79730",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d3e614e4087fe6cbb313f912bd49cff43b80d75435d94dd3e0530ad695af00dd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_local_bindings_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "03e7f4225190a0d985565cabef8c234e86d5b3d47057a362e851bb57f2d9a79f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/support_bundle_download.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7576e64a4ee638e3a012abe259b7ff29a75e6aa78925f0cfc695d454dc83f3f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/self_registered_portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0c604dd590ee15251b5444c8cb923d85043c49ce5443d76dec1c379bbd45e666",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_type_sms.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "30c11d2470fe97a16695ad523e6fc005b466f8664d5c21f2c941338eb2dfcc2c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sgt_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2b1e12608bd799d341d408c8f8668974eb088672f6f15f32d218de33c9935e83",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_by_ip_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "347d4fd22d7274e3867fba356595ae250d04d9d2bf82117ce867640dc061588b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_deploy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2bc555c666d3936bb6453376dee2482220c165c8906c5febbd2c5812d0e670b0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/csr_export_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f4bb8c4a4db2d15eaca57469c0136b48673d7db2cfd0572b3319a54fed642cca",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/trusted_certificate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1b2cfb5456277873ee594123a04ad51e91d92b74f1a26fec3029c1ea7fc79192",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/filter_policy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f601b2112df983452af38307e8155ac9a1a942b838ba56fef25adb275f128fc0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f92056d37847526093fe0f81a7f30613f7b92cbb99e88919827733e6c5ed755b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_endpoint_by_mac_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5bc83c0dfe852183a49855c9a5cb5551c756c45ef1df09dc943045db2ffa98cd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/radius_server_sequence.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ea67690d78fd874543dfbe7ff3e047a5cf24a40e8bd19e45f8ad3a9203e911b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_time_date_conditions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2417feff0d4227d055c0ff6310cd509e364eedf5387bdf27c08b8c3e9006a843",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_sessions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b252210edb2695b40b33bd50a2822efd12a85b115173dbd11b35ea10528f43b8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/allowed_protocols_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3d1bb6803d65896521833cacf3f6b184a8dc5c2bbd836fdd001c0ae3a3f6bbba",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_acl.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aac7b3a55102fcf5488fc7eb81308b30e3e0a792368b8f2f82769211e2636e91",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_time_date_conditions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "434f8a2c508179fc9fada76c1b915e6ddbae1fb5d7d5ebcafbcb84f3303a7c25",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_posture_count_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "905a16d1bc1a089a0c84655c94b44df8d770080a10392624010d1889f9891598",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_to_vn_to_vlan_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8ba806a39f1bfea509368f97af0ad13b101fd58bc343420722f8e6b2ec4c6735",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/profiler_profile_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9f3c0b447fe4f4c7e113dbf5abf48f1e267d0ebcbda0a6cd6bf15503d390d46a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/active_directory.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8b3c8297972d61bc7b74b51bd20e6d383511b585a6efbe83e5baef4905079d37",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/identity_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df4ec238045b91e4956755a1fcab5e1d26454f59e4af3631712b4e38a21beb5a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_auth_list_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ae13499d5b44c153c04ff73b9181566d24dc33677f6512aa1a4f5d66022cd40",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_device_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2cf3c8ad1e9697221674cf1bf346144ab6071b878bfdb1890da5065dca5fadab",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_authentication_rules_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dc2afbba90e6ac8b7f7dfa3fa753c939d65f93fd5e36a63e8d55a0b295133159",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_authorization_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2791dfa82b42cf33fc7f81c69ac81ac6a970df290922a752d49ce1bbaa0a6959",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/tacacs_command_sets_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2094ef793dc4c1edd5a2b612b2a57abaa44a51f0b612a6ec0ef2e323cd577bbc",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/support_bundle_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "16bf33301a74756d30fcfbe7fd8f1c624102f6e5d6dcc7b64b1c006b74d7c970",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/active_directory_leave_domain.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9948ae23414c24020b2f59571ecb763199c1276c5ea264e4b38ebb579b7d392f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/endpoint_certificate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6f33adb5bd78ebc32b5ff2488942df09093c482c0c22413b72625f1ae3b9fec1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user_change_sponsor_password.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "50443f19bfa52be7804b898188ec7dd325ee035e066b8893e272b14c273aa330",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_authentication_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "69d7d23c3d162dd305663c578de0cd71762168df9149e8dedc757068bde82bb7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/downloadable_acl_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0f97bce40b9b9e71cb9bdc07a5f5bd834402a7b02f9ac4424114f3319cea7cb3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_conditions_for_authentication_rule_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "42efedc318c600653ee8f8991387fb55a4946fccfb920f241f2513ec27450f8a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_account_activate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d2465b9217bed67719dd2e53c8e82eb48bfa8acbd4a1e3ac477e2a8c5da59c8f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_to_vn_to_vlan.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4dc08dbb8f680dd716873aa0d8aa6712632de15d75467c26d3ac0553a1d7116f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_device_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e8c54d504dc0d3f27b78291b33ee04e2a6bfa56bfb6ab69fb9b8c302a635e3ac",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_authentication_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "efb69731fedf2691c33e41bcef04952ea1e29a4acc826f7bc4d1154335493c1e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/csr_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8ae2537742bd0e6cc31ad9eee8baea506292b8eb97e1d842f6cda6e4d91a42f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/authorization_profile.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c22c90e7026723384a5e610ad80dd8e65d4101f1b17051171dee9e14ee53c72",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sgt.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1d6f0dddba755a4cd1e3ae914410fc9d64e1cc2b569f6aa3e3afe3880c916ecb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_service_names_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b0497828af095e18b347c3cc04657122580af22f443984020b3452070161ddd3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_delete_all.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "72bb63146bfb3d028ac991bcc854fb45047d577e67ce6d89c91c51df073ec279",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/px_grid_settings_auto_approve.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e9978f06c9a8a9335dfd6dd1949811f41dbeae0d51f64544670542541f9ed8ea",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/endpoint_group.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc7adf663b3e12b1fbddda8f3fb4a24951d094b5d1bc6727b372814f01c9f8ac",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_authorization_rules.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ffb2f34bd7a9b204ba8fab46c70fdaf594efcc93535a97092ade707f165f599",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_athentication_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e9fca7bfb24ada8f0ae69f40162c2f143e8072fba8fdc04567d4d54757737b1d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_conditions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "03a07ea9a5af8e14e183f69fab9cded0c5fd4e75cda2f5b52047f4fb01320416",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_vpns.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9fd8828b9355886bee80b148d10aa73ee6c9152782d6f533c3d3b1d38fe6da83",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_local_exception_rules_reset_hitcount.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9d1a5357de18a273e3a730a4ec52fb2710d7ba53c99246c2cb4b20cee5b284bb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/resource_version_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "68386daa57a478c238254c79c796e922cc2371074592b8660427cf5d5951ce20",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/renew_certificate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e36ac99bd02aa925216247704abb856255ce70d70ac9d11ccfe7c0a68ed2d0e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/endpoint_release_rejected_endpoint.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e2f824c2753c427fe48b120dd070470a66c6d00d7cd8abc074002da9697d7d65",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user_reinstate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "966f734b97760f92b84785e1b9bee0fb3584438f4ba57837d2596c012f6b3423",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/egress_matrix_cell_clone.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c684bf27885a184a8a71981717ed3801eef8ea3eae553986117de82e6f1afae5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/my_device_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c293d1bb24460763f220e7e87d00aec37d0519ef9727002b5582b2692c2e59b1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_conditions_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "afa1d665e1d7f378dace3b2317967b3bfe16f8046b727b16785f063378a77435",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pan_ha_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d0fd93f0e0c7c59bf5edbd2f669d8e0f26fcffeb4e4e298f641f5d5b9a3ba429",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_user_group_by_username_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "72e2b052f68e1f586698adb1b8eac2ecafba4f6d4e0bc4d498bef0bfbb9d1dc5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/node_deployment.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a37dc1bc858a63f52284fccdfdf35a31873276b56edc1c798a2766e46d2cf83f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/certificate_template_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "77e29e97c52aa2d4a3d581be3bc425e51d1bb07048f021e233ea5df88ee10883",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/tacacs_profile_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "676fec4739d58a6cc77195776d4a41514c888f3af8dfa912b5bf1268f6bf5367",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8623aee0368ae422720db6e3fd35420fbfd3a40caa36799642b57956d3c14e99",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_connections_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dc1bc2ee34f026b998b7870fefa176fdaaedf6c6a44fc72dafcb7a49b296108e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_service_unregister.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd8317851db6b6f7e595d5fa6e0caf51e43326a7889ede1f140797db50a2a249",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/byod_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b1ef38ae676bcbd47135a0327e3a8594559145901d29327e3f2d15098f1225b6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_to_vn_to_vlan_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "99ea2a7f3e8e8417f0d3e6577f8bc080c3e3720485c3e65a8aa1cb079953331c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/active_directory_trusted_domains_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a58d83d541b5aaf7b19113d151c068e4e49e44fbefd3a3d83ec80bbe12a2999a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_authorization.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a2028dfe224527788813ecf8ce523d4a605ede3a3a91443801e6de02fb4661b8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/egress_matrix_cell_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "efc966a183aef9f52eec322db24236fa22d1814c86779fa52974e526604d30a9",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_deploy_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "10c3de6eb4c627ddb2ff5fc7f235504b714fdc58d9a18d13d738beebd0ea0e68",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sxp_vpns_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "048b891b923e0a4bb5ed64bcaf3cbc01dc123a76717d153fb2b83c3331915b15",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_command_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8720cb5607b2e60289dc7e9f15b6d1379b4026b42d36f00505f4d47d3bc3a5cb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_group_deploy_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e0edc475417207d6c27d72aeb106e7e32e864ef0e85b3f471e297181825a234",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/repository.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "729efa50d7b3434529b158e7166293ee8b59f323c35850f37321d573953b8592",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_user_suspend.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d21739f8caff5b5fdee3f330ea8e016e5b8f3827aa623be70e9f62d578a8f137",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_local_exception_rules_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "225319c00bb9219e78bde1ac97470813fd7afa8b8e131a426fe5aee7e3d0ded0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/endpoint_group_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f0f75f0a5f7a5af03d1e414d6ab5b968a47c47b4b37e02a06bbed712fc463a02",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_dictionary_attributes_authorization_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "68ef129c11c33b8cde73d498190da225443d2cf3e10671989f13da43c69cde3a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/backup_cancel.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7a2e4d76743109df4fde2adf4934c2938d0f4c6697e3469d6b4846a0d976fbba",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/system_certificate_export_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8bd4aaa5554e9cac300e79c830b0301638aab802a4fbe7b1868fd818d479518",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_smtp_notification_settings.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e4c23fdd5dec80823a93930a6ee23a7ad6fd3baa6d9f41da374f3ec53ec27307",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_profiles_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fa242fd556ffdf158438d2bcbb9f5b606d3231aa4965199d11dd95535fbcfc44",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/active_directory_add_groups.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e55b9a806d74b14257f35f24cf81e76435481c03d8b7e68cfe06839e6484e0fe",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/mnt_session_active_list_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4879d219b0152c62033a98c867b0082aadff827e01dabfb0d5fbae4db52fff71",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/anc_endpoint_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8bc4afb2dd1ab37caab49fa7a406c5cf6cd676aa3b085a3006da77a5760e47ef",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_type.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5571e288cf07d45f171a162f7bab28e5909861b8879a6bb7f690082187af20fa",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/active_directory_groups_by_domain_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "897194b506c6ef754234fdb9097abc15a83c4084df00d220eff84c704aeb6c44",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_device.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "24988ad1134a0f1bfdf79ffb503aa74c057682eef796bec8ac27fc641553d004",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_conditions_for_policy_set_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "76912203d5ef1a70512d0050c21fb87bee4861b453e77c94d887ec5de6a77f1d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/tacacs_external_servers_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "02f38cd3b42c21f1907c2c89d25aad56938214ce07c484d05d45ffc4f4de6e88",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/active_directory_join_domain_with_all_nodes.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4e77ce3dd847f6cdc3a7b88f43f4f4c5ecf8b5e1c69235c4fcfa77c7ff235cb8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_service_reregister.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4d0e91f4c30bde54519b52aa6f3e4cca6312a4818790e6cc70da76b72e9eb42d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_policy_set.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "819a50f6c71e19e01b685b8da2d7d23035e6e53c34d07a799e46ae2fa1400395",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_service_lookup.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "27490b0f59cdaa3408a835ee875178a169b1c30fe8cb439b7724fe11297a5f07",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/portal_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f0186c0dad177d86a55d3645a8ff2d220206f8c2ee2c4532fccfe49751d97e3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/anc_policy_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4b9471a3c0f71b7990c8aacffa30e8b2337abd0550c5b6676f8b836c0fb7bbcb",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/personas_update_roles.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b4332bcd563a19e337e2aa93562b52fcdad81f1aa5b9f3f6786ea771770d347",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_access_local_exception_rules_reset_hitcounts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "554c0580e72096fff73ffe0d95e71cf3f008ee5ceae53bc402cc59beaf2377d8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/device_administration_profiles_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "913e79844666cd49e04dbf8a144f5480c557ca265d9e14625ed706d05dc6181b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/hotspot_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1cfbfa4c9b2b8246ffaa3e7c227fe97b8310271789333bc46be3003bfec78786",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/backup_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b2eab2fe0c6ad578674d32b6effe2861394fed0dfa491772891d4aaf5a7a6f84",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sponsor_group_member_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d39330573788b02207170f1b5e1740a7675f8c9bd695369c9250e8ea7f0a12f0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/native_supplicant_profile.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6e106f95d06fc2c7452dd42128aeea87fc44c2c26b635cd138292e1f0f94f97c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/network_device_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c335071779b42327129917951c458f4f02416d0d4b459c357d28632f67cb3113",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/egress_matrix_cell.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a626044ce1d8d2e0de6fe77a2f5574b8c451360236ba5c5553987e1bf7390434",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/self_registered_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6e521e432a7d886a0ad38ae8cb9e68c5dc390d8a1902b27cfdd7f2943c03a6df",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_endpoints_by_type_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8a1a9e90fd3efa4746e2e2278fe6cb618feb894d25fd0a8e9da9f120bb58a92",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/external_radius_server.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "14b99c50e340bc0b6a574ce04dd3633d7b34651516119409426eb5938a1abb39",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pxgrid_security_groups_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5033c4adf919984a67c9ec1ab1578408252574dd24673f4eaa4828f1019d0dab",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/internal_user_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4f68b49c008223f39bd63391435519a5eac255b53e7fc90c71db341dd4824ad2",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sponsor_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d5700bc6200339d8e5a6abbd65e8c29e88c74c831bd1cd0487ae7d90b3310331",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/radius_server_sequence_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4a5078afd683ae112d162a2ca92d5d795b7c33a87050849fc64662206aff17ee",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sponsored_guest_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8bb1b5b4d9f246157acd7cbbd86ca61b61b2284fd88fed4dcb7d4a4898b2b2a6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/guest_type_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ef64ee62fdc047903b21ecbde79d38e1777b2d602a011ee9837060e4d2be9907",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sgt_bulk_request.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d607671e681e6a170e9909a86a46e7becef743abf64323c07d063335669dbce7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/sg_mapping_bulk_monitor_status_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dbf0e9af9f56ef1845349d526618267f4c057ae812f0b993009a07c48ba593d7",
+   "format": 1
+  },
+  {
+   "name": "Makefile",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "05cac947c20f1b10288ef37a1984da3005ddb97b159b7ef23350a230600a255a",
+   "format": 1
+  },
+  {
+   "name": "tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/sanity",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.11.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d94a667c99f9ea4db8eddc1d26a966874bc44f55beca242eae573dd68f7b4767",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.10.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df6646fbac5caef8fb463dcce68034516810944fe9156130372a5ca2cb7139f1",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.12.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.9.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df6646fbac5caef8fb463dcce68034516810944fe9156130372a5ca2cb7139f1",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "48a2f61c72296aaa190a3ad670b0a5759bd047262b59b3d870e986b05878d87d",
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f55d8ae8704f26f592c45c007d5a6f7cb7d7334c95ab0207855064ea80a1a52e",
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/tasks/small_deployment.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a53ca1a98ad45337df5c80bd0bcf239e99179581b3869df0cd347920f26b2ed1",
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/tasks/large_deployment.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "70901689b4a69b1b3df263569a9adab1cd067e8950a531f6e7b68eb3cc08c934",
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/tasks/medium_deployment.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "acf6f14c21cdb87c72461447a076e17cd4ab7e1f5eee4ed49053d95091bb0612",
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a0f414895a84431ab041f64abf71963635093cfd7ba150b1b98a678b88d60f91",
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/tests/test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c98f35fc8ade67c442d8641edae8825d5798a685d5b522bc6762d714449d475f",
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/tests/inventory",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e02233819b1a09844410549191813f7cc7ba360f21298578f4ba1727a27d87fc",
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e82c60136cb1895d61432dd52c83d4c6e8ad4c654a697ac2d5b5e4a288866d87",
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a999fe36d40ae205853eea83722c6fcc779efe96dcee9c9fc189df06e291f139",
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25efdb2cca0d6ba49d1fce59a9be2b6dbd7b2a29ba91138ae4fc200ba9830191",
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "43e63a93716f15cdb102c201e4631be604b45910b8c749c78d89e3fc076c7c7e",
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/personas_deployment/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a48f9f7bca003379749a897c0afef3a20a3e0d183824842d8723920ffc5ff300",
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment/tasks/aws",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment/tasks/aws/single_node.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8aee61a2d643de1003654a2e5536daf1c7a22d425f089a4ff7fb2014e89fce60",
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment/tasks/aws/small_deployment.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "afaf0b88082bfce8b32838319d09926a20c17ab0f848215b9375ac744a444b29",
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment/tasks/aws/large_deployment.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "60e7161b5b0ad69e20b0af28cb9904ca37a792f79bd011630ec6259516efbc60",
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment/tasks/aws/aws.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae216690f7abbae0ae71bbb66e9292576ba6c55056d6e8d6830d218e194756da",
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment/tasks/aws/medium_deployment.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a327877f259ce95edfa83eccd03fc3e5491914b4cf365fdcf99f357497f9d20",
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e63b66e5d6d27a561b5cebe7cdc4374f6dff7454e9234e908de9ddee0c0f7b4d",
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d9c4cda538d57153b6c76e33a383898da5d065de3d5f7236a6534383635e8691",
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/aws_deployment/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "52249e2721614022378334f91bc59f8b61cb16af368a75d9d86123eebb24d99d",
+   "format": 1
+  },
+  {
+   "name": "playbooks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "playbooks/byod_portal.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7fc864c04bb8ff78168432907b2b5b82076ccc47433cc20f6a9eabd155bb96ca",
+   "format": 1
+  },
+  {
+   "name": "playbooks/aci_settings.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3f7a3d1ed47007b849c4e94ecd7a7693e8deec82ad7f91f8080f0d4e0102ae3c",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_access_network_condition.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b1799905f448503f9f4ce6c9ce8ee84558348271db4d388415223f337d3f30d0",
+   "format": 1
+  },
+  {
+   "name": "playbooks/backup_schedule.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5e0a4eb5fb8ca25e108aaf0c7eb4acd7e8b995107d2e4f878f167f1f113dc256",
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "playbooks/vars/device_administration_time_date_conditions.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dbb3b2346ce3ab3a10f7dd6aa4f560bcdeac9e3d5fdd5f719a9eeb900c455189",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_access_policy_set.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "60e892de955391eaadb940cb57e913de49c929eba9a4f9319b09ffb0bba9d668",
+   "format": 1
+  },
+  {
+   "name": "playbooks/my_device_portal.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "664dfe92497ea7a8fbc2ce11a202034b72ba60c395c0f53a01bbf438ad9ba3ca",
+   "format": 1
+  },
+  {
+   "name": "playbooks/device_administration_authorization_global_exception_rules.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d63c6f77b53688c2921b00c126e31db3aede50af40b060bd211a64f990a7f972",
+   "format": 1
+  },
+  {
+   "name": "playbooks/group_vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "playbooks/group_vars/ise_servers",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ca685537c61a92b2e1c18d2c1330b687b045413ef805b0411553e6e9b321dbb5",
+   "format": 1
+  },
+  {
+   "name": "playbooks/backup_restore.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "08733f83c0260b649d4959f039dcd1463c05531bab1d621f181e7b689309ab4b",
+   "format": 1
+  },
+  {
+   "name": "playbooks/anc_policy.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e4f593170a5723a73efc6220d05d190f0624fd2a3132d66218118d85a4d11061",
+   "format": 1
+  },
+  {
+   "name": "playbooks/sponsor_portal.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "41d8329b763adc4fbc096694770fe9998c4b080f42a2d5e037ceee5d66d5ec42",
+   "format": 1
+  },
+  {
+   "name": "playbooks/personas_deployment.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d72538cca47825b5cf2de31f2d69f094a631a0bdc088b097eb156ee32aa8925e",
+   "format": 1
+  },
+  {
+   "name": "playbooks/certificate_management.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "679fc6cf284c473ab918040d9c48629fe5bd347a1560d78aa2fbe86dfadfea14",
+   "format": 1
+  },
+  {
+   "name": "playbooks/device_administration_authorization_exception_rules.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d57df0200ea070d189e481b138041becfa9af3487af234f3efbd89d8cbe7e119",
+   "format": 1
+  },
+  {
+   "name": "playbooks/csr_export.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6bf92d019c525570bd50084b62002dcfb6287a90aa50d6ef22ca4a051bcff58c",
+   "format": 1
+  },
+  {
+   "name": "playbooks/device_administration_time_date_conditions.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7e64a3f2de6b2ce0d2648a50653d799ea0cb2c038129132568b45943778bab6a",
+   "format": 1
+  },
+  {
+   "name": "playbooks/device_administration_authorization_rules.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5a5b4b73fc83cecd6df81447c1048558ea512376e48b5e237c4477a48ad2d150",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_access_authorization_rules.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e4c31d97ea69bf4574ec1abb788faf1dda9650e8cd30ca5e2416cadf997e0017",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_access_authorization_global_exception_rules.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e2943f69302b541db1efbbe2836502ba47ec8e09e46d652ae1897aacdb12137d",
+   "format": 1
+  },
+  {
+   "name": "playbooks/certificates.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cffe669284fbfbc2600bf1325fdc37f5510f11da5a182095dd872fc1e30a6af6",
+   "format": 1
+  },
+  {
+   "name": "playbooks/device_administration_network_conditions.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ec8c82e4c2b06935211ae5287707352cd4b9155efd9e523127b76784367f12a",
+   "format": 1
+  },
+  {
+   "name": "playbooks/device_administration_policy_set.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "612d9ea786e82dfb16eef040989f0e6fb2ba812089c8190d73ac67be809e099a",
+   "format": 1
+  },
+  {
+   "name": "playbooks/system_certificate.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c990fc845be879507e80f4b42cee439d5406d37b6dca068147fefa27c28255c9",
+   "format": 1
+  },
+  {
+   "name": "playbooks/native_supplicant_profile.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "67e9c435e1d462e76837718a1d200f50205690d1033b881248e1126ed774f11d",
+   "format": 1
+  },
+  {
+   "name": "playbooks/allowed_protocols.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4f0b736daabc43ceb93691ba50d6912099242c7b6e4d1b0d0c512f6b916db44c",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_device_group.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a105fedf67297275b1cbbbfb654e84e83bd90cd60a5408489b1d06e40a4710e8",
+   "format": 1
+  },
+  {
+   "name": "playbooks/portal_global_setting.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1a44f82320ab4eb5f9bfc5ca9b6a97a0a3727e8b40283f3f74049d82fa6ab224",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_access_time_date_conditions.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "42d0ca1b5286580dbc2b5b040677e11404680b10ea09e67b023bd4e80690fe8f",
+   "format": 1
+  },
+  {
+   "name": "playbooks/identity_group.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7903676961ec046ae800ac2159cb4aef44c5bce13cba4e51ab034d7241ac1df2",
+   "format": 1
+  },
+  {
+   "name": "playbooks/endpoint.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c3827fdcc5a9553bba13ed07a83e351618181c99015b7b9188248c4392364e6",
+   "format": 1
+  },
+  {
+   "name": "playbooks/internal_user.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5b62fbf5232dbb7abba583c6d8aa3da6ea517de3a78410d75b221d52e1e59cce",
+   "format": 1
+  },
+  {
+   "name": "playbooks/endpoint_group.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3197fed6c0807593d55af603f01cc69a6f809973469c646026dec7ee8c0f719d",
+   "format": 1
+  },
+  {
+   "name": "playbooks/aws_deployment.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "03bd0b1ceaf581ebca4095ff9abea1e0588a2f74b2305d1b6a27499edc69c669",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_access_authorization_exception_rules.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b27fadd67fd2784a339441a6d4414051bb9c15fe64b2d992b06ba50c583aa8e",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_access_authentication_rules.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d71222bf295231bd688ad481b87003ed09726b431723c06101e0daf4177e5010",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_access_dictionary_attribute.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "71909737ebe686fe820d4a9ebe5a8c0c8ea76ef6414fefa112a90574c73c4b70",
+   "format": 1
+  },
+  {
+   "name": "playbooks/endpoint_certificate.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "094868f7974d4bed980f1605ba307d50d1f34de18bd21ff9fe8c208e76e0876c",
+   "format": 1
+  },
+  {
+   "name": "playbooks/portal_theme.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80bfe16d0dd8e979480d20fe548ebaed78c41f2745f81026ea160445cdac227f",
+   "format": 1
+  },
+  {
+   "name": "playbooks/egress_matrix_cell.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dfc6c25e2b6f62b9a7662379c6f46a2ce735ffeacfd35750628b7c98f806e1ea",
+   "format": 1
+  },
+  {
+   "name": "playbooks/active_directory.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6e943b02502acaabd1eee20dd742d56af963d53c924662f058db758b0e8bb220",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_device.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4aa376b70bd49c6b645fb644f4d02c4c65b3959aa708f7ebef448c9cba8f4e0f",
+   "format": 1
+  },
+  {
+   "name": "playbooks/radius_server_sequence.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7593430152c5a518f83eea726e1bfe2b208c804ea8afe1d5a8850a803d52bb2f",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_access_conditions.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4d3a09f140efbe8bee9b08774101574ac5431c398824660810bb058b951349b6",
+   "format": 1
+  },
+  {
+   "name": "playbooks/filter_policy.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ec9e6093296b9e940a4aa98160afc3b4c996cc0633bea54aed96e6a111c18dc4",
+   "format": 1
+  },
+  {
+   "name": "playbooks/hosts",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "58455c816186626e36f39ad71466d285cc9649cfc05f8fd1fed470777d02a8a8",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_access_dictionary.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d82f1d1714bf6940cb0444868ebb91fdd0f1c6f57bdedae36c5518e1ff0107a8",
+   "format": 1
+  },
+  {
+   "name": "playbooks/network_device_group_deparments.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2622974d96fc30ce435c5b1e369c04c1d5df6a0e0bd8895bb34db81a8ba7cf3e",
+   "format": 1
+  },
+  {
+   "name": "playbooks/support_bundle.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4dc46714d76a73d7028cc5481fe279d5cdbbaa43db715d35324a5a064c145771",
+   "format": 1
+  },
+  {
+   "name": "playbooks/downloadable_acl.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e1133a71b06f2b37e057d60559e2e138f909ee4832a4cd5fff35bfd2f440d601",
+   "format": 1
+  },
+  {
+   "name": "playbooks/device_administration_authentication_rules.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f21f522a0fea40a0a9c83b5f4176a50e48a2647ba1047ba50ae09d7c77043c4",
+   "format": 1
+  },
+  {
+   "name": "playbooks/authorization_profile.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8ee512948c798da9d107f9251a48a18cd6bea4a093720af42e953bc0c992ad1",
+   "format": 1
+  },
+  {
+   "name": "playbooks/certificate_profile.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9dcc7aff9c3800aa59ef92ccfe3c04e4f74da026b8d092793c09b0da9ddde72b",
+   "format": 1
+  },
+  {
+   "name": "playbooks/backup_create.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "07a1071586af0efdf50c81e8a0a19c40bcb0bdb9c64f58c7aaa28bca7cb85632",
+   "format": 1
+  },
+  {
+   "name": "playbooks/credentials.template",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf9c0b49f99a06ba5b49be8bcda5a0f033062cf3d51957abc6f80fa7bf8ea08a",
+   "format": 1
+  },
+  {
+   "name": "playbooks/deployment_info.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cc95a47745fcad5bae02dea423666edc874bee77262d9bb713b56eff1f0f6d99",
+   "format": 1
+  },
+  {
+   "name": "docs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "docs/index.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fae064d506e83a0652d6ab69ee605c114f134cf10fff4b60a0cb995a33ca05fa",
+   "format": 1
+  },
+  {
+   "name": "docs/requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bb6d818f16e97b11662f5d0dbd7d134c0b99841f0e812199cf984cf2dbaf4414",
+   "format": 1
+  },
+  {
+   "name": "docs/Makefile",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d2c6a97d92edff806bf9b67ba9d40a57c3ef5bdb2900ddd6660a6fc643d1f568",
+   "format": 1
+  },
+  {
+   "name": "docs/conf.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "11c3f508b7f7472dd6aed3df9a989bb299114020c6a9b5bd451270d89f51e7cd",
+   "format": 1
+  },
+  {
+   "name": "docs/roles.rst.template",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f48168b084d43150a0a95e2e97b906a650795a72dc6b35331d067d4e3fbd8ab7",
+   "format": 1
+  },
+  {
+   "name": "docs/_gh_include",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "docs/_gh_include/footer.inc",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ec5a9f6b1f0975e1f4ce91a2ef16394f1f68f1898a96ed61c9c229801b0a9e11",
+   "format": 1
+  },
+  {
+   "name": "docs/_gh_include/header.inc",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e86f969e650c344e8d02acf2644f1b767ceb89b54c882fe27c43af7682baa2c9",
+   "format": 1
+  },
+  {
+   "name": "changelogs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "changelogs/changelog.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "74444ae96bf47c33bec40a95b43034a818347e1896e8e16f5af6e75311dc6f0f",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "73e6ee4bf3d2a4e5ae668f870fb36d185e78bdde43a5488bc98b4a508eef7711",
+   "format": 1
+  },
+  {
+   "name": ".gitignore",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7ca3fe38636b77eb5cb337eb1aa17ed8215e7307051cfef7705a7f6e2d45a516",
+   "format": 1
+  },
+  {
+   "name": ".github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/sanity_tests.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd8200f08670ed083cf136d2b06c9706497d9ab10367584df6c7c33c5602e001",
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/docs.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d8611ee91073e25e678934a5f53609f26282966c77c50c38527065bc467eb344",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

@@ -1,0 +1,47 @@
+name: NetApp.um_info Ansible CI
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 6 * * *'
+
+jobs:
+  sanity:
+    name: Sanity (${{ matrix.ansible }} on Um_info
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ansible:
+          - stable-2.9
+          - stable-2.10
+          - stable-2.11
+          - stable-2.12
+          - devel
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install ansible (${{ matrix.ansible }})
+        run: pip install https://github.com/ansible/ansible/archive/${{ matrix.ansible }}.tar.gz --disable-pip-version-check
+
+      - name: Make directory to make ansible-test happy
+        run: |
+          pwd
+          mkdir -p ansible_collections/netapp/um_info/
+          rsync -av . ansible_collections/netapp/um_info/ --exclude ansible_collections/netapp/um_info/
+
+
+      - name: Run sanity tests Um_info
+        run: ansible-test sanity --docker -v --color
+        working-directory: ansible_collections/netapp/um_info/
+
+      - name: Run Unit Tests
+        run: ansible-test units --docker -v --color
+        working-directory: ansible_collections/netapp/um_info/
