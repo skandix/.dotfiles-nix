@@ -1,3 +1,0 @@
----
-- import_tasks: module_vault_read_setup.yml
-- import_tasks: module_vault_read_test.yml

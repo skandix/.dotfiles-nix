@@ -1,6 +1,0 @@
----
-- name: Cleanup
-  become: true
-  ignore_errors: true
-  arista.eos.eos_logging_global:
-    state: deleted

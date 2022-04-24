@@ -1,1 +1,0 @@
-azure-mgmt-netapp ; python_version >= '2.7'

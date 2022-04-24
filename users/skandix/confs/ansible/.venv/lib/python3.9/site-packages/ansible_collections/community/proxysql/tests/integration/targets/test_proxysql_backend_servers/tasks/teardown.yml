@@ -1,6 +1,0 @@
----
-- name: "{{ role_name }} | teardown | uninstall proxysql"
-  apt:
-    name: proxysql
-    purge: true
-    state: absent

@@ -1,7 +1,0 @@
-- hosts: "{{ target_hosts }}"
-  gather_facts: no
-  tasks:
-
-    - name: Create a user
-      user:
-        name: testuser

@@ -1,5 +1,0 @@
----
-- name: PRE POST TASK Remove snmp-server config
-  cisco.ios.ios_snmp_server:
-    config:
-    state: deleted

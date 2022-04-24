@@ -1,3 +1,0 @@
-test_bucket: "{{ tiny_prefix }}-testbucket-ansible"
-test_bucket_2: "{{ tiny_prefix }}-testbucket-ansible-2"
-test_bucket_3: "{{ tiny_prefix }}-testbucket-ansible-3"

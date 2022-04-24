@@ -1,4 +1,0 @@
----
-- name: CONFIG REMOVE - [deleted] Remove exiting configuration
-  cisco.ios.ios_logging_global:
-    state: deleted

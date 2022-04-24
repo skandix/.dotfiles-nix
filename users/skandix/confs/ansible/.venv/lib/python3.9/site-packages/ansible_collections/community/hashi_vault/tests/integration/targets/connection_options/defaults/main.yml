@@ -1,3 +1,0 @@
----
-# when False the tests requiring a valid SSL connection to Vault will be skipped
-vault_run_https_tests: True

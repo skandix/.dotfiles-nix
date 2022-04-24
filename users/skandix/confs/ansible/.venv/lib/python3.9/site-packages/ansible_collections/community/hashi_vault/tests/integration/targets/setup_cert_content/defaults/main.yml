@@ -1,4 +1,0 @@
----
-cert_output_dir: '{{ role_path }}'
-cert_file_name: cert.pem
-cert_location: '{{ cert_output_dir }}/{{ cert_file_name }}'
