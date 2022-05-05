@@ -20,17 +20,25 @@
       zoom-us
 
       # Entertainment
-      unstable.plex-media-player
+      plex-media-player
       plexamp
       mpv
+      foliate
 
       # Productivity
       unstable.firefox
       unstable.google-chrome
+      firefox
+      #notion-app-enhanced
+      #unstable.texstudio
+      #texlive.combined.scheme-full
 
       # Code
       vscode
       sublime4
+
+      # CREATIVITY
+      #gimp
 
       # Tools
       pavucontrol

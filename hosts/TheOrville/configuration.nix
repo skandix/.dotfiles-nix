@@ -20,17 +20,21 @@
       ../../common/kubernetes.nix
       ../../common/obs-studio.nix
       ../../common/networkmanager.nix
-      ../../common/pulseaudio.nix
+      ../../common/pipewire.nix
       ../../common/steam.nix
       ../../common/wireguard.nix
       ../../common/networking-extra.nix
       ../../common/vagrant.nix
+      ../../common/reveal-md.nix
 
       # CPU Microcode
       ../../common/cpu/intel.nix
 
       # GPU Drivers
       ../../common/gpu/nvidia.nix
+
+      # WG
+      ./c137.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
