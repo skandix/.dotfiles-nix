@@ -36,7 +36,12 @@
             go
             gnumake
 
+            # Fixed vscode cant click on account icon
+            gnome.gnome-keyring
+
             # Misc Tools
+            terraform
+            unstable.nodePackages.reveal-md
             unstable.openstackclient
             bat
             unstable.jq

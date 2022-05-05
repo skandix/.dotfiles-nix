@@ -14,24 +14,22 @@
     home.packages = with pkgs; [
       # Comms
       unstable.slack
-      discord
+      unstable.discord
       unstable.tdesktop
       unstable.teams
       zoom-us
 
       # Entertainment
-      plex-media-player
-      unstable.plexamp
+      unstable.plex-media-player
+      plexamp
       mpv
 
       # Productivity
       unstable.firefox
-      unstable.notion-app-enhanced
-      unstable.texstudio
-      texlive.combined.scheme-full
+      unstable.google-chrome
 
       # Code
-      unstable.vscode
+      vscode
       sublime4
 
       # Tools
