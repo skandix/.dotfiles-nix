@@ -13,7 +13,6 @@
       ../../users/skandix/cli.nix
 
       # Common
-      ../../common/bluetooth.nix
       ../../common/docker.nix
       ../../common/fonts.nix
       ../../common/games.nix
@@ -34,7 +33,7 @@
       ../../common/gpu/nvidia.nix
 
       # WG
-      ./c137.nix
+      #./c137.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -53,5 +52,5 @@
 
   time.timeZone = "Europe/Oslo";
 
-  system.stateVersion = "20.09";
+  system.stateVersion = "22.05";
 }

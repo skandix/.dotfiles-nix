@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 nix-channel --add https://channels.nixos.org/nixos-21.11 nixos
 nix-channel --add https://github.com/nix-community/home-manager/archive/release-21.11.tar.gz home-manager
 nix-channel --add https://github.com/NixOS/nixos-hardware/archive/master.tar.gz nixos-hardware

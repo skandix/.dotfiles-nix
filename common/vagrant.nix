@@ -11,8 +11,8 @@
 
   home-manager.users.skandix = {
     home.packages = with pkgs; [
-      unstable.vagrant
-      unstable.ansible
+      vagrant
+      ansible
     ];
   };
 }

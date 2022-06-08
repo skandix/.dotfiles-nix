@@ -3,7 +3,7 @@
 {
   home-manager.users.skandix = {
     programs.git = {
-      package = pkgs.unstable.gitAndTools.gitFull;
+      package = pkgs.gitAndTools.gitFull;
       enable = true;
       extraConfig = {
         core.editor = "vim";

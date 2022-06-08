@@ -3,7 +3,7 @@
 {
 home-manager.users.skandix = {
   home.packages = with pkgs; [
-    unstable.alacritty
+    alacritty
   ];
   xdg.configFile = {
     "alacritty/alacritty.yml".source = ./alacritty.yml;

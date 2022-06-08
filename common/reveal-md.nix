@@ -2,6 +2,6 @@
 
 {
   home-manager.users.skandix.home.packages = with pkgs; [
-    unstable.nodePackages.reveal-md
+    nodePackages.reveal-md
   ];
 }

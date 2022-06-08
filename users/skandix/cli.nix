@@ -24,6 +24,7 @@
             unrar
             p7zip
             zlib
+            gnutar
 
             # Libs
             libnotify
@@ -34,31 +35,30 @@
             screen
 
             # LANG STUFF
-            go
             gnumake
+            go
 
             # Fixed vscode cant click on account icon
             gnome.gnome-keyring
 
             # Misc Tools
+            #unstable.nodePackages.reveal-md
+            #unstable.openstackclient
+            #unstable.jq
+            #unstable.htop
             terraform
-            unstable.nodePackages.reveal-md
             dig
             yt-dlp
-            unstable.openstackclient
             bat
-            unstable.jq
             wget
             git
             ncdu
             termdown
-            unstable.htop
             xclip
             pfetch
             minicom
             ffmpeg
             pipenv
-            #keybase
         ];
     };
 }

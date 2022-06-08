@@ -1,9 +1,9 @@
 { pkgs, ... }:
 
 {
-  home.packages = with pkgs.unstable;
+  home.packages = with pkgs;
   [
-    (python310.withPackages
+    (python39.withPackages
       (ps: with ps; [
         neovim
         requests
@@ -12,13 +12,12 @@
         virtualenv
         pipenv
         binwalk
-        pandas
         loguru
-        urllib3
-        boto3
-        requests_oauthlib
-        python-dotenv
-        untangle
+        #pandas
+        #urllib3
+        #boto3
+        #requests_oauthlib
+        #python-dotenv
       ]
       )
     )

@@ -2,9 +2,9 @@
 
 {
   home.packages = with pkgs; [
-    unstable.traceroute
-    unstable.ldns
-    unstable.mtr
+    traceroute
+    ldns
+    mtr
     nmap
     wireshark
     tcpdump

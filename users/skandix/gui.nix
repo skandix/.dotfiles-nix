@@ -4,7 +4,6 @@
    imports = [
      # Gui
      ./confs/i3/default.nix
-
     # Common - Repo
     ../../common/repo/unstable.nix
     ../../common/repo/master.nix
@@ -13,10 +12,10 @@
   home-manager.users.skandix = {
     home.packages = with pkgs; [
       # Comms
-      unstable.slack
-      unstable.discord
-      unstable.tdesktop
-      unstable.teams
+      slack
+      discord
+      tdesktop
+      teams
       zoom-us
 
       # Entertainment
@@ -26,27 +25,17 @@
       foliate
 
       # Productivity
-      unstable.firefox
-      unstable.google-chrome
       firefox
-      #notion-app-enhanced
-      #unstable.texstudio
-      #texlive.combined.scheme-full
-
-      # Code
+      google-chrome
       vscode
       sublime4
 
-      # CREATIVITY
-      #gimp
-
       # Tools
       pavucontrol
-      unstable.filezilla
+      filezilla
       nm-tray
       gnome3.seahorse
       peek
-      qalculate-gtk
       bitwarden
     ];
   };

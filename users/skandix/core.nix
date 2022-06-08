@@ -6,7 +6,7 @@ with import ../../scripts/default.nix { inherit pkgs; };
 {
   imports = [
     # Tools
-    ./python.nix
+    #./python.nix
     #./rust.nix
     ./network-tools.nix
     ./ctf-tools.nix
@@ -28,6 +28,6 @@ with import ../../scripts/default.nix { inherit pkgs; };
     ch_setup
     blanking
     mpvuia
-    unstable.comma
+    #comma
   ];
 }

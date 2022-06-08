@@ -22,7 +22,7 @@
       "vboxusers"
     ];
     group = "skandix";
-    shell = pkgs.unstable.fish;
+    shell = pkgs.fish;
   };
 
   home-manager.users = {

@@ -4,8 +4,8 @@
 home-manager.users.skandix = {
   home.packages = with pkgs; [
       mpv
-      unstable.youtube-dl
-      unstable.streamlink
+      youtube-dl
+      streamlink
     ];
 
     xdg.configFile = {
