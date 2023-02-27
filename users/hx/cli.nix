@@ -6,7 +6,6 @@
         ./confs/vim/default.nix
         ./confs/tmux/default.nix
         ./confs/git.nix
-        ./confs/newsboat.nix
 
         # Common - Repo
         ../../common/repo/unstable.nix
