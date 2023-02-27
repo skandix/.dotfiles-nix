@@ -5,5 +5,5 @@
     home.packages = with pkgs; [
       nodePackages.reveal-md
     ];
-  }
+  };
 }

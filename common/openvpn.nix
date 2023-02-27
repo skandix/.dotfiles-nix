@@ -5,5 +5,5 @@
     home.packages = with pkgs; [
       openvpn
     ];
-  }
+  };
 }

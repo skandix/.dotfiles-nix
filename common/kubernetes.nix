@@ -8,5 +8,5 @@
       kubernetes-helm
       lens
     ];
-  }
+  };
 }
