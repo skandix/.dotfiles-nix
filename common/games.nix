@@ -1,7 +1,7 @@
 {pkgs, config, ...}:
 
 {
-    home-manager.users.skandix = {
+    home-manager.users.hx = {
         home.packages = with pkgs; [
             lutris-unwrapped
             wine-staging

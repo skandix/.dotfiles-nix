@@ -5,7 +5,7 @@
     enable = true;
   };
 
-  home-manager.users.skandix = {
+  home-manager.users.hx = {
     home.packages = with pkgs; [
       docker-compose
     ];

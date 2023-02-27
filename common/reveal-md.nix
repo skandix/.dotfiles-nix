@@ -1,7 +1,9 @@
 {pkgs, ...}:
 
 {
-  home-manager.users.skandix.home.packages = with pkgs; [
-    nodePackages.reveal-md
-  ];
+  home-manager.users.hx = {
+    home.packages = with pkgs; [
+      nodePackages.reveal-md
+    ];
+  }
 }

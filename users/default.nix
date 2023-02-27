@@ -3,8 +3,8 @@
 {
   imports = [<home-manager/nixos>];
 
-  users.groups.skandix.gid = 1000;
-  users.users.skandix = {
+  users.groups.hx.gid = 1000;
+  users.users.hx = {
     isNormalUser = true;
     extraGroups = [
       "wheel"
@@ -21,11 +21,11 @@
       "wireshark"
       "vboxusers"
     ];
-    group = "skandix";
-    shell = pkgs.fish;
+    group = "hx";
+    shell = pkgs.bash;
   };
 
   home-manager.users = {
-    skandix = (import ./skandix/core.nix);
+    hx = (import ./hx/core.nix);
   };
 }

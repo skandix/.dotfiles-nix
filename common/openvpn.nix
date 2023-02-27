@@ -1,7 +1,9 @@
 { pkgs, ... }:
 
 {
-  home-manager.users.skandix.home.packages = with pkgs; [
-    openvpn
-  ];
+  home-manager.users.hx = {
+    home.packages = with pkgs; [
+      openvpn
+    ];
+  }
 }

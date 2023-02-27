@@ -8,9 +8,9 @@
 
       # core dotfiles + graphical things
       ../../users
-      ../../users/skandix
-      ../../users/skandix/gui.nix
-      ../../users/skandix/cli.nix
+      ../../users/hx
+      ../../users/hx/gui.nix
+      ../../users/hx/cli.nix
 
       # Common
       ../../common/wireguard.nix

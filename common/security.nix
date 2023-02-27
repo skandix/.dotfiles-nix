@@ -6,7 +6,7 @@ with lib; {
 
     nix.settings = {
       auto-optimise-store = true;
-      trusted-users = [ "root" "skandix" ];
+      trusted-users = [ "root" "hx" ];
     };
 
     security.pam.loginLimits = [{

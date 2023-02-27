@@ -7,9 +7,9 @@
       enableExtensionPack = true;
     };
   };
-  users.extraGroups.vboxusers.members = ["skandix"];
+  users.extraGroups.vboxusers.members = ["hx"];
 
-  home-manager.users.skandix = {
+  home-manager.users.hx = {
     home.packages = with pkgs; [
       vagrant
       ansible
