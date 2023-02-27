@@ -11,10 +11,6 @@ with import ../../scripts/default.nix { inherit pkgs; };
     ./network-tools.nix
     ./ctf-tools.nix
 
-    # Shell
-    ./confs/fish.nix
-    ./confs/fzf.nix
-
     # Common - Repo
     ../../common/repo/unstable.nix
     ../../common/repo/master.nix
