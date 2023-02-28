@@ -27,5 +27,6 @@
 
   home-manager.users = {
     hx = (import ./hx/core.nix);
+    hx.home.stateVersion = "22.11";
   };
 }
