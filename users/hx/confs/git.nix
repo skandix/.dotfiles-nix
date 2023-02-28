@@ -3,7 +3,6 @@
 {
   home-manager.users.hx = {
     programs.git = {
-      package = pkgs.gitAndTools.gitFull;
       enable = true;
       extraConfig = {
         core.editor = "vim";
