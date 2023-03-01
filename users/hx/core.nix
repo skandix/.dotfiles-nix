@@ -26,5 +26,4 @@ with import ../../scripts/default.nix { inherit pkgs; };
     mpvuia
     #comma
   ];
-  # home.stateVersion = "21.11";
 }
