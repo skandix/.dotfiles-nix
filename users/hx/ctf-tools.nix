@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
     sonic-visualiser
-    # unstable.volatility
+    # volatility
     ghidra-bin
     hexedit
     strace

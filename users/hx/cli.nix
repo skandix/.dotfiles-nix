@@ -14,9 +14,6 @@
 
     home-manager.users.hx = {
         home.packages = with pkgs; [
-            # Hardware info
-            lm_sensors
-
             # Archive
             zip
             unzip
@@ -33,6 +30,13 @@
             # Terminal Multiplexers
             screen
 
+            ## it ork
+            #kubectl
+            #k9s
+            #lens
+            #terraform
+            ##ansible-core
+
             # LANG STUFF
             gnumake
             go
@@ -42,9 +46,9 @@
 
             # Misc Tools
             #unstable.nodePackages.reveal-md
-            #unstable.openstackclient
-            #unstable.jq
-            #unstable.htop
+            openstackclient
+            jq
+            htop
             terraform
             dig
             yt-dlp

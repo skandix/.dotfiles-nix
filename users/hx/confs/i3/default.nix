@@ -8,6 +8,7 @@
     ../rofi
     ../alacritty
     ../mpv
+    ../discord
   ];
 
   services.xserver = {
@@ -44,7 +45,7 @@
   home-manager.users.hx = {
     xdg.configFile = {
       "i3/config".source = ./i3_config;
-      "i3/rnd_bg".source = ./rnd_bg.sh;
+      "i3/rnd_bg.sh".source = ./rnd_bg.sh;
       "i3blocks/config".source = ./i3blocks_config;
       "i3blocks/battery-poly".source = ./battery-poly;
     };

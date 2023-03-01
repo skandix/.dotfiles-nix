@@ -14,9 +14,11 @@
       # Comms
       slack
       discord
+      discord-ptb
       tdesktop
-      teams
+      #teams
       zoom-us
+      #mumble
 
       # Entertainment
       plex-media-player

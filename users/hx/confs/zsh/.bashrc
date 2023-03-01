@@ -1,23 +1,42 @@
-[[ $- == *i* ]] || return
+# load zinit plugin manager
+source /usr/share/zinit/zinit.zsh # yay -S zinit-git
+zstyle :compinstall filename '$HOME/.zshrc'
+autoload -Uz compinit
+compinit
 
-# Dircolors
-export LS_OPTIONS='--color=auto'
-eval "$(dircolors $HOME/.dircolors)"
+## Plugins ##
+zinit light trapd00r/LS_COLORS
+zinit load zdharma-continuum/history-search-multi-word
+zinit light zsh-users/zsh-autosuggestions
+zinit light zdharma-continuum/fast-syntax-highlighting
+zinit snippet https://gist.githubusercontent.com/hightemp/5071909/raw/
 
-# Alias
-alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+
+## ALIAS ##
 alias ..="cd .."
-alias ls='ls --color'
-alias ip='ip -c'
-alias pressmd='reveal-md --theme solarized --highlight-theme solarized-dark '
-alias tf='terraform'
-alias k='kubectl'
+alias ip="ip -c"
+alias k="kubecolor"
+alias kd="k delete -f ."
+alias ka="k apply -f ."
+alias o="openstack"
+alias tf="terraform"
+alias ls="ls --color"
+alias compose="docker compose"
+alias vim="nvim"
+alias nf="cd $HOME/.dotfiles && nvim . && cd -"
+#alias docker="podman"
 
-# pywal
-(cat ~/.cache/wal/sequences &)
+## BINDKEY ###
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 
-# pfetch or motd
-if [ -f /usr/bin/pfetch ];  then pfetch -t | lolcat;  else echo "need to install pfetch"; fi;
+pfetch -t | lolcat
 
-# Prompt
-export PS1="\u@\h λ "
+PS1="%n@%m λ " # shell prompt

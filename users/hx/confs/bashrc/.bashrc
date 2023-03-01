@@ -17,7 +17,9 @@ alias k='kubectl'
 (cat ~/.cache/wal/sequences &)
 
 # pfetch or motd
-if [ -f /usr/bin/pfetch ];  then pfetch -t | lolcat;  else echo "need to install pfetch"; fi;
+# if [ -f /usr/bin/pfetch ];  then pfetch -t | lolcat;  else echo "need to install pfetch"; fi;
+
+pfetch -t | lolcat
 
 # Prompt
 export PS1="\u@\h λ "
