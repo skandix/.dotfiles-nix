@@ -5,7 +5,6 @@
     ../pfetch
     ../tmux
     ../moc
-    ../git.nix
 
     ./ls-colors.nix
   ];

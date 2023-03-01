@@ -7,8 +7,8 @@
       extraConfig = {
         core.editor = "vim";
         user.useConfigOnly = true;
-        user.personal.name = "Bendik";
-        user.personal.email = "skandix@protonmail.com";
+        user.name = "Bendik";
+        user.email = "skandix@protonmail.com";
         init.defaultBranch = "main";
         pull.rebase = false;
       };
