@@ -41,8 +41,8 @@
 
   networking.hostName = "TheOrville";
   networking.useDHCP = false;
-  networking.interfaces.enp9s0.useDHCP = true;
-  networking.interfaces.wlp7s0.useDHCP = true;
+  networking.interfaces.enp5s0.useDHCP = true;
+  networking.interfaces.wlp6s0.useDHCP = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
