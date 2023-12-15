@@ -12,15 +12,15 @@
 
   home-manager.users.hx = {
     home.packages = with pkgs; [
-      bash
-      bash-completion
-      nix-bash-completions
+      zsh
       pfetch
+      lolcat
+      zinit
     ];
 
     home.file.bashrc = {
-      source = ./.bashrc;
-      target = ".bashrc";
+      source = ./.zshrc;
+      target = ".zshrc";
     };
   };
 }

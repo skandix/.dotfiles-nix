@@ -7,15 +7,15 @@ set $screen flameshot gui
 set $lock xsecurelock
 
 ### FONT ###
-font pango:Terminus 6px
+font pango:Terminus 14px
 
 ### MUTING MICROPHONE ###
 bindsym $mod+t exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send "MUTED?!?"
 
 ### MEDIA KEYS ###
-bindsym XF86AudioPrev exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
-bindsym XF86AudioPlay exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
-bindsym XF86AudioNext exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioLowerVolume exec --no-startup-id  pamixer --decrease 5
 bindsym XF86AudioRaiseVolume exec --no-startup-id  pamixer --increase 5
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -62,6 +62,7 @@ bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
+
 
 mode "move ws" {
  bindsym k move workspace to output up
@@ -125,6 +126,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+#gaps inner 15px
+#smart_gaps on
 
 bindsym $mod+x mode "resize"
 mode "resize" {
@@ -138,17 +141,14 @@ mode "resize" {
         bindsym $mod+x mode "default"
 }
 
-
 bindsym $mod+Escape workspace back_and_forth
 
 bar {
-
-    position top
-    status_command i3blocks
-    tray_output primary
-    font pango:Fira Code 12
-    separator_symbol " λ "
-    workspace_buttons yes
+position top
+	status_command i3blocks
+	tray_output primary
+	separator_symbol " λ "
+	workspace_buttons yes
 }
 
 # Avoid title bar on windows, don't want to waste to much space
@@ -156,14 +156,19 @@ default_border pixel 1
 
 # autostart
 exec_always --no-startup-id picom
-exec_always --no-startup-id bash "rnd_bg.sh"
-exec_always --no-startup-id bash "~/.screenlayout/default.sh"
+exec_always --no-startup-id bash "$HOME/.screenlayout/default.sh"
+exec_always --no-startup-id bash rnd_bg.sh
 exec_always --no-startup-id dunst
 exec_always --no-startup-id setxkbmap no
 
+
 exec --no-startup-id tailscale-systray
+exec --no-startup-id twitch-indicator
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
+
+# Start coms app automagically
+exec --no-startup-id slack --startup
 
 for_window [class="Pavucontrol"] floating enable
 for_window [window_role="pop-up"] floating enable
