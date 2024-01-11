@@ -1,0 +1,22 @@
+[user]
+	email = skandix@protonmail.com
+	name = Bendik Dyrli
+[core]
+    editor = vim  # who the fuck wants to use something else than vim :nauseated:
+[color]
+    status = auto
+    branch = auto
+    interactive = auto
+    diff = auto
+[pretty]
+    pretty-history = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
+[alias]
+    commit = commit -s
+    quicklog = log --pretty=format:'%Cblue%h %Cred%cD %Creset%cn %Cgreen%s%Creset' --date-order --graph
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[safe]
+	directory = /usr/share/zinit

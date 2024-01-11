@@ -1,8 +1,6 @@
-{ config, pkgs, ... }:
+{ config, pkgs, home-manager, ... }:
 
 {
-  imports = [<home-manager/nixos>];
-
   users.groups.hx.gid = 1000;
   users.users.hx = {
     isNormalUser = true;
@@ -22,7 +20,15 @@
       "vboxusers"
     ];
     group = "hx";
-    shell = pkgs.bash;
+    shell = pkgs.zsh;
+    openssh.authorizedKeys.keyFiles = [ ssh-keys.outPath ];
+  };
+
+  environment.variables = {
+    PAGER = "less";
+    BROWSER = "firefox";
+    EDITOR = "vim";
+    SHELL = "zsh";
   };
 
   home-manager.users = {

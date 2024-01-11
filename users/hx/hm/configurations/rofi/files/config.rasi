@@ -1,0 +1,26 @@
+configuration {
+    modi: "window,run,ssh";
+    font: "Hack 10";
+    width: 10;
+    height: 3;
+    fixed-num-lines: true;
+    show-icons: true;
+    terminal: "alacritty";
+    ssh-client: "ssh";
+    ssh-command: "{terminal} -e ssh {host}";
+    run-command: "{cmd}";
+    yoffset: -200;
+    xoffset: 0;
+    run {
+        width: 10;
+        }
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+}
+/* Dark theme. */
+/*@import "~/.cache/wal/colors-rofi-dark"*/
+
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+@theme "/usr/share/rofi/themes/purple.rasi"
