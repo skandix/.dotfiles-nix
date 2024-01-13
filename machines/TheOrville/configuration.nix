@@ -12,20 +12,17 @@
       ../../users/hx/gui.nix
       ../../users/hx/cli.nix
 
+
       # Common
       ../../common/docker.nix
       ../../common/fonts.nix
       ../../common/games.nix
-      ../../common/kubernetes.nix
-      ../../common/obs-studio.nix
       ../../common/networkmanager.nix
       ../../common/pipewire.nix
       ../../common/steam.nix
-      ../../common/wireguard.nix
       ../../common/networking-extra.nix
-      ../../common/vagrant.nix
-      ../../common/reveal-md.nix
-
+      ../../common/security.nix
+      ../../common/nix-pkg-allow.nix
       ../../common/amdcpu.nix
       ../../common/amdgpu.nix
 
@@ -48,6 +45,5 @@
   };
 
   time.timeZone = "Europe/Oslo";
-
-  system.stateVersion = "21.11";
+  system.stateVersion = "23.11";
 }

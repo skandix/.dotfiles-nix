@@ -8,6 +8,6 @@
     ./gui.nix
     ./network-tool.nix
     ./python.nix
-    ./rust.nix
+    # ./rust.nix
   ];
 }

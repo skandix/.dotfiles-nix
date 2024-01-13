@@ -7,7 +7,7 @@
     nur.url = "github:nix-community/NUR";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
     home-manager = {
-      url = "github:nix-community/home-manager/release-23.11";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-gaming.url = "github:fufexan/nix-gaming";
@@ -25,22 +25,35 @@
     nixos-hardware,
     home-manager,
     nix-gaming
-    }: let
-    pkgs = nixpkgs.legacyPackages."x86_64-linux";
-
+    }:
+    let
+      pkgs = nixpkgs.legacyPackages."x86_64-linux";
+    in
+    {
     nixosConfigurations = {
-      DeathStar = mkMachine [
-        ./machines/DeathStar/configuration.nix
-        # nixos-hardware.nixosModules...
-      ];
-      SpaceCruiser = mkMachine [
-        ./machines/SpaceCruiser/configuration.nix
-        # nixos-hardware.nixosModules...
-      ];
-      TheOrville = mkMachine [
-        ./machines/TheOrville/configuration.nix
-        # nixos-hardware.nixosModules...
-      ];
+      DeathStar = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./machines/DeathStar/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
+      };
+
+      TheOrvile = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./machines/TheOrvile/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
+      };
+
+      SpaceCruiser = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./machines/SpaceCruiser/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
+      };
     };
   };
 }
