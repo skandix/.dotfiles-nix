@@ -2,9 +2,9 @@
 
 {
     imports = [
-        ./configurations/vim/default.nix
-        ./configurations/tmux/default.nix
-        ./configurations/git.nix
+        ./hm/configurations/vim
+        ./hm/configurations/tmux
+        ./hm/configurations/git
     ];
 
     home-manager.users.hx = {

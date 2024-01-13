@@ -11,10 +11,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-gaming.url = "github:fufexan/nix-gaming";
-    ssh-keys = {
-      url = "https://github.com/skandix.keys";
-      flake = false;
-    };
+    # ssh-keys = {
+    #   url = "https://github.com/skandix.keys";
+    #   flake = false;
+    # };
   };
 
     outputs = inputs@{

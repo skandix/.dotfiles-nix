@@ -9,7 +9,7 @@
         requests
         setuptools
         pip
-        virtualenv
+        #virtualenv
         pipenv
         binwalk
         loguru

@@ -21,17 +21,10 @@
     ];
     group = "hx";
     shell = pkgs.zsh;
-    openssh.authorizedKeys.keyFiles = [ ssh-keys.outPath ];
-  };
-
-  environment.variables = {
-    PAGER = "less";
-    BROWSER = "firefox";
-    EDITOR = "vim";
-    SHELL = "zsh";
+    # openssh.authorizedKes.keyFiles = [ ssh-keys.outPath ];
   };
 
   home-manager.users = {
-    hx = (import ./hx/core.nix);
+    hx = (import ./hx/hm/base.nix);
   };
 }

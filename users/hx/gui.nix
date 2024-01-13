@@ -2,7 +2,7 @@
 
 {
    imports = [
-     ./confs/i3/default.nix
+     ./hm/configurations/i3
    ];
 
   home-manager.users.hx = {
