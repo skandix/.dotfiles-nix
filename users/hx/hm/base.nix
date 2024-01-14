@@ -3,7 +3,6 @@
 {
   imports = [
     ./configurations/git
-    ./configurations/common
     ./configurations/zsh
   ];
   programs.home-manager.enable = true;
