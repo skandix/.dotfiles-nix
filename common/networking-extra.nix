@@ -12,7 +12,6 @@
 
   services.tailscale = {
     enable = true;
-    PermitCertUid = "hx";
     extraUpFlags = [
       "--exit-node-allow-lan-access=true"
     ];
