@@ -32,6 +32,7 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.device = "nodev";
 
   networking.hostName = "TheOrville";
   networking.useDHCP = false;
@@ -45,5 +46,4 @@
   };
 
   time.timeZone = "Europe/Oslo";
-  system.stateVersion = "23.11";
 }
