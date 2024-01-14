@@ -5,7 +5,7 @@
     enable = true;
   };
 
-  environment.packages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     docker-compose
   ];
 }
