@@ -19,7 +19,6 @@
       ../../common/games.nix
       ../../common/networkmanager.nix
       ../../common/pipewire.nix
-      ../../common/steam.nix
       ../../common/networking-extra.nix
       ../../common/security.nix
       ../../common/nix-pkg-allow.nix
