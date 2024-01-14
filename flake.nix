@@ -39,10 +39,10 @@
         ];
       };
 
-      TheOrvile = nixpkgs.lib.nixosSystem {
+      TheOrville = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
-          ./machines/TheOrvile/configuration.nix
+          ./machines/TheOrville/configuration.nix
           inputs.home-manager.nixosModules.default
         ];
       };
