@@ -9,6 +9,6 @@
 
         home.file = {
             "/files/tmux.conf".source = ./tmux.conf;
-        }
+        };
     };
 }
