@@ -1,4 +1,4 @@
-{pkgs, home-manager, ...}:
+{pkgs, ...}:
 
 {
     home-manager.users.hx = {
@@ -6,9 +6,9 @@
             tmux
             tmux-cssh
         ];
-        home.file.tmux = {
-            source = ./files/tmux.conf;
-            target = ".tmux.conf";
-        };
+
+        home.file = {
+            "/files/tmux.conf".source = ./tmux.conf;
+        }
     };
 }
