@@ -27,7 +27,5 @@
     [ { device = "/dev/disk/by-label/swap"; }
     ];
 
-  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
-  # high-resolution display
-  hardware.video.hidpi.enable = lib.mkDefault true;
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 }
