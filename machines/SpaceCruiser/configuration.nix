@@ -48,5 +48,5 @@
 
   time.timeZone = "Europe/Oslo";
 
-  system.stateVersion = "20.09";
+  system.stateVersion = "23.11";
 }

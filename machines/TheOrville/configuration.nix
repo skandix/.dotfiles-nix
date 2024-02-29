@@ -45,4 +45,5 @@
   };
 
   time.timeZone = "Europe/Oslo";
+  system.stateVersion = "23.11";g
 }
