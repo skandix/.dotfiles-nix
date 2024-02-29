@@ -6,10 +6,7 @@
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    home-manager.url =  "github:nix-community/home-manager";
     nix-gaming.url = "github:fufexan/nix-gaming";
     # ssh-keys = {
     #   url = "https://github.com/skandix.keys";
@@ -34,7 +31,7 @@
       DeathStar = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
-          ./machines/DeathStar/configuration.nix
+          ./machines/tar/configuration.nix
           inputs.home-manager.nixosModules.default
         ];
       };
