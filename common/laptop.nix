@@ -1,12 +1,10 @@
 {config, pkgs, ...}:
 
 {
-  home-manager.users.hx = {
-    home.packages = with pkgs; [
+    environment.systemPackages = with pkgs; [
       powertop
       tlp
       brightnessctl
       light
     ];
-  };
 }

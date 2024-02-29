@@ -1,14 +1,13 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   networking.networkmanager.enable = true;
-  home-manager.users.hx = {
-    home.packages = with pkgs; [
+
+  environment.systemPackages = with pkgs.unstable; [
         networkmanager
         networkmanagerapplet
         networkmanager-openvpn
         networkmanager-openconnect
         openvpn
-    ];
-  };
+  ];
 }

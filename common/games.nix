@@ -17,12 +17,10 @@
     programs.steam.enable = true;
 
     # OTHER
-    home-manager.users.hx = {
-        home.packages = with pkgs; [
-            lutris-unwrapped
-            wine-staging
-            gamemode
-            mangohud
-        ];
-    };
+    environment.systemPackages = with pkgs; [
+        lutris-unwrapped
+        wine-staging
+        gamemode
+        mangohud
+    ];
 }

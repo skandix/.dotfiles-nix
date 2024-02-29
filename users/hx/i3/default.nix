@@ -1,15 +1,15 @@
 {pkgs, ...}:
 
 {
-  imports = [
-    ../dunst
-    ../picom
-    ../flameshot
-    ../rofi
-    ../alacritty
-    ../mpv
-    ../discord
-  ];
+  # imports = [
+  #   ../dunst
+  #   ../picom
+  #   ../flameshot
+  #   ../rofi
+  #   ../alacritty
+  #   ../mpv
+  #   # ../discord
+  # ];
 
   services.xserver = {
     enable = true;
@@ -44,10 +44,13 @@
 
   home-manager.users.hx = {
     xdg.configFile = {
-      "i3/config".source = ./i3_config;
-      "i3/rnd_bg.sh".source = ./rnd_bg.sh;
-      "i3blocks/config".source = ./i3blocks_config;
-      "i3blocks/battery-poly".source = ./battery-poly;
+      "i3config".source = ./i3_config;
+      "rnd_bg.sh".source = ./rnd_bg.sh;
+      "i3blocks".source = ./i3blocks_config;
+      "battery-poly".source = ./battery-poly;
+      "dunstrc".source = ./dunstrc;
+      "config.rasi".source = ./config.rasi;
+
     };
   };
 }

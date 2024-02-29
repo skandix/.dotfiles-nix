@@ -47,12 +47,9 @@ security.rtkit.enable = true;
     };
   };
   };
-
-  home-manager.users.hx = {
-    home.packages = with pkgs; [
-      helvum
-      pamixer
-      pasystray
-    ];
-  };
+  environment.systemPackages = with pkgs; [
+    helvum
+    pamixer
+    pasystray
+  ];
 }

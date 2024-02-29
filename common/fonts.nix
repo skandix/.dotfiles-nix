@@ -17,7 +17,7 @@
       #     "FiraCode"
       #     "DejaVuSansMono"
       #   ];}
-      )
+      # )
     ];
     fontconfig = {
       enable = true;
