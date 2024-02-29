@@ -29,10 +29,13 @@ alias k="kubecolor"
 alias kd="k delete -f ."
 alias ka="k apply -f ."
 alias o="openstack"
+alias t="talosctl"
 alias tf="terraform"
 alias ls="ls --color"
+alias sl="ls --color"
 alias compose="docker compose"
 alias nf="cd $HOME/.dotfiles && nvim . && cd -"
+alias gname="head -c 100 /dev/urandom | md5sum"
 #alias docker="podman"
 
 ## BINDKEY ###

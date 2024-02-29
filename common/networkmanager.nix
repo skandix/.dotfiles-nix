@@ -7,8 +7,8 @@
         networkmanager
         networkmanagerapplet
         networkmanager-openvpn
-        openvpn
         networkmanager-openconnect
+        openvpn
     ];
   };
 }

@@ -15,10 +15,8 @@
             p7zip
             zlib
             gnutar
-            screen
             libnotify
             inotify-tools
-            libopenmpt
             pywal
             gnumake
             go
@@ -32,7 +30,6 @@
             wget
             git
             ncdu
-            termdown
             xclip
             pfetch
             minicom

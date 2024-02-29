@@ -7,6 +7,11 @@
     nur.url = "github:nix-community/NUR";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
     home-manager.url =  "github:nix-community/home-manager";
+    vscode-server.url = "github:nix-community/nixos-vscode-server";
+    # darwin = {
+    #   url = "github:LnL7/nix-darwin";
+    #   inputs.nixpkgs.follows = "nixpkgs-unstable";
+    # };
     nix-gaming.url = "github:fufexan/nix-gaming";
     # ssh-keys = {
     #   url = "https://github.com/skandix.keys";
@@ -19,6 +24,7 @@
     nixpkgs,
     nixpkgs-unstable,
     nur,
+    vscode-server,
     nixos-hardware,
     home-manager,
     nix-gaming
@@ -30,25 +36,28 @@
     nixosConfigurations = {
       DeathStar = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
+        system = "x86_64-linux";
         modules = [
-          ./machines/tar/configuration.nix
-          inputs.home-manager.nixosModules.default
+          ./machines/DeathStar/configuration.nix
+          #inputs.home-manager.nixosModules.default
         ];
       };
 
       TheOrville = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
+        system = "x86_64-linux";
         modules = [
           ./machines/TheOrville/configuration.nix
-          inputs.home-manager.nixosModules.default
+          #inputs.home-manager.nixosModules.default
         ];
       };
 
       SpaceCruiser = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
+        system = "x86_64-linux";
         modules = [
           ./machines/SpaceCruiser/configuration.nix
-          inputs.home-manager.nixosModules.default
+          #inputs.home-manager.nixosModules.default
         ];
       };
     };

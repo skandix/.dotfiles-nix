@@ -13,10 +13,10 @@
       fira-code-symbols
       dina-font
       symbola
-      (nerdfonts.override { fonts = [
-          "FiraCode"
-          "DejaVuSansMono"
-        ];}
+      # (nerdfonts.override { fonts = [
+      #     "FiraCode"
+      #     "DejaVuSansMono"
+      #   ];}
       )
     ];
     fontconfig = {

@@ -1,3 +1,15 @@
+#TabsToolbar {
+  visibility: collapse;
+}
+#nav-bar {
+  /* This works on qhd(100% hidpi) and 4k(150%) screen */
+  margin-top: -40px;
+  margin-right: 138px; /* 140px is ok */
+}
+#toolbar-menubar {
+  height: 40px;
+  margin-left: -100vw;
+}
 .tabbrowser-tab {
   visibility: hidden;
 }

@@ -44,6 +44,7 @@
     keyMap = "no";
   };
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   time.timeZone = "Europe/Oslo";
   system.stateVersion = "23.11";
 }
