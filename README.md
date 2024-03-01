@@ -16,6 +16,10 @@ nixos-generate-config --root /mnt
 # symlink desired host configuration.nix into /mnt/etc/nixos/configuration.nix
 ```
 
+```bash
+sudo nix flake check --extra-experimental-features nix-command --extra-experimental-features flakes
+```
+
 ## Resources
 * https://github.com/fbegyn/nixos-configuration
 * https://search.nixos.org/packages
