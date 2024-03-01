@@ -1,10 +1,8 @@
-{config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 {
   services.fprintd = {
     enable = true;
-    package = with pkgs; [
-      fprintd
-    ];
+    package = with pkgs; [ fprintd ];
   };
 }

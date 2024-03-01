@@ -1,7 +1,5 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 
 {
-    xdg.configFile = {
-      "discord/files/settings.json".source = ./settings.json;
-    };
+  xdg.configFile = { "discord/files/settings.json".source = ./settings.json; };
 }

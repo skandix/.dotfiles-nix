@@ -1,13 +1,7 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-      mpv
-      youtube-dl
-      streamlink
-    ];
+  home.packages = with pkgs; [ mpv youtube-dl streamlink ];
 
-    xdg.configFile = {
-      "mpv/files/mpv.conf".source = ./mpv.conf;
-    };
+  xdg.configFile = { "mpv/files/mpv.conf".source = ./mpv.conf; };
 }

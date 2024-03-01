@@ -19,8 +19,6 @@
       #   ];}
       # )
     ];
-    fontconfig = {
-      enable = true;
-    };
+    fontconfig = { enable = true; };
   };
 }

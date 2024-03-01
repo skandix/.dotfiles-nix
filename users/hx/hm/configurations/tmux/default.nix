@@ -1,12 +1,12 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 
 {
-        home.packages = with pkgs; [
-            tmux
-            tmux-cssh
-        ];
-
-        home.file = {
-            "/files/tmux.conf".source = ./tmux.conf;
-        };
+  programs.tmux = {
+    enable = true;
+    package = pkgs.unstable.tmux;
+    sensibleOnTop = true;
+    newSession = true;
+    secureSocket = true;
+  };
+  home.file = { "files/tmux.conf".source = ./tmux.conf; };
 }

@@ -1,34 +1,32 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [
-      # Hardware udev rules
-      ./hardware-configuration.nix
+  imports = [
+    # Hardware udev rules
+    ./hardware-configuration.nix
 
-      # core dotfiles + graphical things
-      ../../users
-      ../../users/hx
-      ../../users/hx/gui.nix
-      ../../users/hx/cli.nix
+    # core dotfiles + graphical things
+    ../../users
+    ../../users/hx
+    ../../users/hx/gui.nix
+    ../../users/hx/cli.nix
 
-      # Common
-      ../../common/wireguard.nix
-      ../../common/bluetooth.nix
-      ../../common/docker.nix
-      ../../common/networkmanager.nix
-      ../../common/fonts.nix
-      ../../common/pulseaudio.nix
-      ../../common/kubernetes.nix
-      ../../common/steam.nix
-      ../../common/vagrant.nix
+    # Common
+    # ../../common/wireguard.nix
+    ../../common/bluetooth.nix
+    ../../common/docker.nix
+    ../../common/networkmanager.nix
+    ../../common/fonts.nix
+    ../../common/pipewire.nix
+    ../../common/games.nix
+    ../../common/virtualbox.nix
 
-      # CPU Microcode
-      ../../common/cpu/intel.nix
+    # CPU Microcode
+    ../../common/intelcpu.nix
 
-      # GPU Drivers
-      ../../common/gpu/nvidia.nix
-    ];
+    # GPU Drivers
+    ../../common/nvidiagpu.nix
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;

@@ -6,8 +6,6 @@
       startAgent = true;
       agentTimeout = "4h";
     };
-    gnupg.agent = {
-      enableSSHSupport = false;
-    };
+    gnupg.agent = { enableSSHSupport = false; };
   };
 }

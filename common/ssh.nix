@@ -1,7 +1,5 @@
-{config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 {
-  services.sshd = {
-    enable = true;
-  };
+  services.sshd = { enable = true; };
 }

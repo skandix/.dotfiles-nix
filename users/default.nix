@@ -1,4 +1,4 @@
-{ config, home-manager, ... }:
+{ config, home-manager, pkgs, ... }:
 
 {
   users.groups.hx.gid = 1000;
@@ -24,7 +24,5 @@
     # openssh.authorizedKes.keyFiles = [ ssh-keys.outPath ];
   };
 
-  home-manager.users = {
-    hx = (import ./hx/hm/base.nix);
-  };
+  home-manager.users = { hx = (import ./hx/hm/base.nix); };
 }

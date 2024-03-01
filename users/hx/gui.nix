@@ -13,7 +13,7 @@
     ./hm/configurations/mpv
     ./hm/configurations/picom
     ./hm/configurations/rofi
-    ./hm/configurations/xscreensaver
+    # ./hm/configurations/xscreensaver
   ];
 
   home-manager.users.hx = {

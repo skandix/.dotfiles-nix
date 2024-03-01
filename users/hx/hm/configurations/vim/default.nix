@@ -1,8 +1,6 @@
-{pkgs, configs, ...}:
-let
-  general = builtins.readFile ./files/general.vim;
-in
-  {
+{ pkgs, configs, ... }:
+let general = builtins.readFile ./files/general.vim;
+in {
   programs.neovim = {
     enable = true;
     vimAlias = true;
@@ -30,7 +28,6 @@ in
     '';
   };
 }
-
 
 # 'rust-lang/rust.vim'
 # 'pearofducks/ansible-vim'

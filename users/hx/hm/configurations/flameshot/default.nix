@@ -1,10 +1,8 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 
 {
-    home.packages = with pkgs; [
-      flameshot
-    ];
-    xdg.configFile = {
-      "flameshot/files/flameshot.ini".source = ./flameshot.ini;
-    };
+  home.packages = with pkgs; [ flameshot ];
+  xdg.configFile = {
+    "flameshot/files/flameshot.ini".source = ./flameshot.ini;
+  };
 }

@@ -1,9 +1,5 @@
 { config, pkgs, ... }:
 
-
 {
-  imports = [
-    ./variables.nix
-    ./ssh.nix
-  ];
+  imports = [ ./variables.nix ./ssh.nix ];
 }

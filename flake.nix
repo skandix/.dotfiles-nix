@@ -6,8 +6,11 @@
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
-    home-manager.url =  "github:nix-community/home-manager";
-    vscode-server.url = "github:nix-community/nixos-vscode-server";
+    #home-manager.url = "github:nix-community/home-manager";
+    home-manager = {
+      url = "github:nix-community/home-manager/release-23.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # darwin = {
     #   url = "github:LnL7/nix-darwin";
     #   inputs.nixpkgs.follows = "nixpkgs-unstable";
@@ -19,47 +22,37 @@
     # };
   };
 
-    outputs = inputs@{
-    self,
-    nixpkgs,
-    nixpkgs-unstable,
-    nur,
-    vscode-server,
-    nixos-hardware,
-    home-manager,
-    nix-gaming
-    }:
-    let
-      pkgs = nixpkgs.legacyPackages."x86_64-linux";
-    in
-    {
-    nixosConfigurations = {
-      DeathStar = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
-        system = "x86_64-linux";
-        modules = [
-          ./machines/DeathStar/configuration.nix
-          #inputs.home-manager.nixosModules.default
-        ];
-      };
 
-      TheOrville = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
-        system = "x86_64-linux";
-        modules = [
-          ./machines/TheOrville/configuration.nix
-          #inputs.home-manager.nixosModules.default
-        ];
-      };
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, nur, nixos-hardware, home-manager, nix-gaming }:
+    let pkgs = nixpkgs.legacyPackages."x86_64-linux";
+    in {
+      nixosConfigurations = {
+        DeathStar = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          #system = "x86_64-linux";
+          modules = [
+            ./machines/DeathStar/configuration.nix
+            inputs.home-manager.nixosModules.default
+          ];
+        };
 
-      SpaceCruiser = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
-        system = "x86_64-linux";
-        modules = [
-          ./machines/SpaceCruiser/configuration.nix
-          #inputs.home-manager.nixosModules.default
-        ];
+        TheOrville = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          system = "x86_64-linux";
+          modules = [
+            ./machines/TheOrville/configuration.nix
+            inputs.home-manager.nixosModules.default
+          ];
+        };
+
+        SpaceCruiser = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          system = "x86_64-linux";
+          modules = [
+            ./machines/SpaceCruiser/configuration.nix
+            inputs.home-manager.nixosModules.default
+          ];
+        };
       };
     };
-  };
 }
