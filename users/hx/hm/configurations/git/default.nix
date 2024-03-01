@@ -1,7 +1,6 @@
 { pkgs, ... }:
 
 {
-  home-manager.users.hx = {
     programs.git = {
       enable = true;
       extraConfig = {
@@ -13,5 +12,4 @@
         pull.rebase = false;
       };
     };
-  };
 }

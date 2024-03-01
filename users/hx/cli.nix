@@ -2,16 +2,17 @@
 
 {
     imports = [
+        ./hm/configurations/git
+        # ./hm/configurations/helix
         ./hm/configurations/vim
         ./hm/configurations/tmux
-        ./hm/configurations/git
+        ./hm/python.nix
+        ./hm/rust.nix
     ];
 
     home-manager.users.hx = {
         home.packages = with pkgs; [
-            zip
-            unzip
-            unrar
+            ## GENERAL CLI
             p7zip
             zlib
             gnutar
@@ -19,12 +20,9 @@
             inotify-tools
             pywal
             gnumake
-            go
             gnome.gnome-keyring
-            nodePackages.reveal-md
             jq
             htop
-            dig
             yt-dlp
             bat
             wget
@@ -34,15 +32,31 @@
             pfetch
             minicom
             ffmpeg
-            pipenv
+
+            ## PROGRAMMING LANGUAGES
+            go
+
+            ## NETWORK TOOLS
+            dig
             traceroute
             ldns
             mtr
             wireshark
             tcpdump
             speedtest-cli
+
+            ## NFC TOOLS
             mfoc
             mfcuk
+
+            ## OPS TOOLS
+            kubectl
+            kubectx
+            k9s
+            vagrant
+            terraform
+            ansible-core
+            openstackclient
         ];
     };
 }

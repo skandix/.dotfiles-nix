@@ -1,16 +1,6 @@
 {pkgs, ...}:
 
 {
-  # imports = [
-  #   ../dunst
-  #   ../picom
-  #   ../flameshot
-  #   ../rofi
-  #   ../alacritty
-  #   ../mpv
-  #   # ../discord
-  # ];
-
   services.xserver = {
     enable = true;
     layout = "no";
@@ -48,9 +38,6 @@
       "rnd_bg.sh".source = ./rnd_bg.sh;
       "i3blocks".source = ./i3blocks_config;
       "battery-poly".source = ./battery-poly;
-      "dunstrc".source = ./dunstrc;
-      "config.rasi".source = ./config.rasi;
-
     };
   };
 }

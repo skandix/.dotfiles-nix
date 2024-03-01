@@ -1,7 +1,6 @@
 {pkgs, ...}:
 
 {
-home-manager.users.hx = {
   home.packages = with pkgs; [
       mpv
       youtube-dl
@@ -11,5 +10,4 @@ home-manager.users.hx = {
     xdg.configFile = {
       "mpv/files/mpv.conf".source = ./mpv.conf;
     };
-  };
 }

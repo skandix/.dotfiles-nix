@@ -5,7 +5,6 @@
     ../tmux
   ];
 
-  home-manager.users.hx = {
     home.packages = with pkgs; [
       zsh
       pfetch
@@ -17,5 +16,4 @@
       source = ./.zshrc;
       target = ".zshrc";
     };
-  };
 }

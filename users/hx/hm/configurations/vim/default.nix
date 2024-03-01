@@ -3,7 +3,6 @@ let
   general = builtins.readFile ./files/general.vim;
 in
   {
-  home-manager.users.hx = {
   programs.neovim = {
     enable = true;
     vimAlias = true;
@@ -30,7 +29,6 @@ in
       ${general}
     '';
   };
-};
 }
 
 
