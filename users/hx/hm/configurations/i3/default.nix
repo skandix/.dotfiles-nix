@@ -1,16 +1,16 @@
 { pkgs, ... }:
 
 {
-  # imports = [
-  #   "../alacritty"
-  #   "../dunst"
-  #   "../flameshot"
-  #   "../firefox"
-  #   "../gtk-3.0"
-  #   "../mpv"
-  #   "../picom"
-  #   "../rofi"
-  # ];
+  imports = [
+    "../alacritty"
+    "../dunst"
+    "../flameshot"
+    "../firefox"
+    "../gtk-3.0"
+    "../mpv"
+    "../picom"
+    "../rofi"
+  ];
 
   services.xserver = {
     enable = true;
