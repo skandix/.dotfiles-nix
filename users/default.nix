@@ -27,7 +27,6 @@
     ];
     group = "hx";
     shell = pkgs.zsh;
-    # openssh.authorizedKes.keyFiles = [ ssh-keys.outPath ];
   };
 
   home-manager.users = { hx = (import ./hx/hm/base.nix); };

@@ -46,19 +46,13 @@
       ltrace
       netcat-gnu
       gobuster
-      thc-hydra
-      john
-      metasploit
-      msfpc
       nmap
       seclists
       sqlmap
-      wpscan
       binwalk
       msitools
       ghidra-bin
       sonic-visualiser
-      burpsuite
     ];
   };
 }
