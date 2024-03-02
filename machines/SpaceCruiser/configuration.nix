@@ -4,7 +4,7 @@
   imports = [
     # Hardware udev rules
     ./hardware-configuration.nix
-    <nixos-hardware/lenovo/thinkpad/t490>
+    # <nixos-hardware/lenovo/thinkpad/t490>
 
     # core dotfiles + graphical things
     ../../users
@@ -13,22 +13,18 @@
     ../../users/hx/cli.nix
 
     # Common
-    ../../common/wireguard.nix
     ../../common/networkmanager.nix
     ../../common/docker.nix
     ../../common/bluetooth.nix
-    ../../common/briigth.nix
     ../../common/fonts.nix
-    ../../common/pulseaudio.nix
-    ../../common/kubernetes.nix
     ../../common/networking-extra.nix
     ../../common/laptop.nix
 
     # CPU Microcode
-    ../../common/cpu/intel.nix
+    ../../common/intelcpu.nix
 
     # GPU Drivers
-    ../../common/gpu/intel.nix
+    ../../common/intelgpu.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -46,7 +42,7 @@
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
+  home-manager.users.hx.home.stateVersion = "23.11";
   time.timeZone = "Europe/Oslo";
   system.stateVersion = "23.11";
 }

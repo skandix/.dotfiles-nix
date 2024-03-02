@@ -3,9 +3,9 @@
 {
   services.xserver = {
     enable = true;
-    layout = "no";
     autorun = true;
     libinput.enable = true;
+    xkb.layout = "no";
   };
 
   services.xserver.displayManager.sddm.enable = true;
