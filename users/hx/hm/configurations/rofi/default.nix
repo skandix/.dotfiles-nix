@@ -3,6 +3,6 @@
 {
   home-manager.users.hx = {
     home.packages = with pkgs; [ rofi ];
-    xdg.configFile = { "rofi/files/config.rasi".source = ./config.rasi; };
+    xdg.configFile = { "rofi/config.rasi".source = ./config.rasi; };
   };
 }

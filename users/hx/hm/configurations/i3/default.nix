@@ -1,6 +1,17 @@
 { pkgs, ... }:
 
 {
+  # imports = [
+  #   "../alacritty"
+  #   "../dunst"
+  #   "../flameshot"
+  #   "../firefox"
+  #   "../gtk-3.0"
+  #   "../mpv"
+  #   "../picom"
+  #   "../rofi"
+  # ];
+
   services.xserver = {
     enable = true;
     layout = "no";
@@ -8,12 +19,12 @@
     libinput.enable = true;
   };
 
-  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
   services.xserver.displayManager.defaultSession = "none+i3";
   services.xserver.windowManager.i3 = {
     enable = true;
     package = pkgs.i3;
-    extraPackages = with pkgs; [ pkg-config xclip arandr feh i3blocks ];
+    extraPackages = with pkgs; [ pkg-config xclip arandr feh i3status ];
   };
   services.xserver.extraConfig = ''
     Section "ServerFlags"
@@ -28,10 +39,8 @@
 
   home-manager.users.hx = {
     xdg.configFile = {
-      "i3config".source = ./i3_config;
-      "rnd_bg.sh".source = ./rnd_bg.sh;
-      "i3blocks".source = ./i3blocks_config;
-      "battery-poly".source = ./battery-poly;
+      "i3/config".source = ./i3_config;
+      "i3/rnd_bg.sh".source = ./rnd_bg.sh;
     };
   };
 }

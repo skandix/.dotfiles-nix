@@ -1,6 +1,7 @@
 { pkgs, configs, ... }:
-let general = builtins.readFile ./files/general.vim;
-in {
+# let general = builtins.readFile general.vim;
+# in 
+{
   home-manager.users.hx = {
     programs.neovim = {
       enable = true;
@@ -24,9 +25,9 @@ in {
         lexima-vim
         gruvbox
       ];
-      extraConfig = ''
-        ${general}
-      '';
+      # extraConfig = ''
+      #   ${general}
+      # '';
     };
   };
 }

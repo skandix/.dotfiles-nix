@@ -2,17 +2,10 @@
 
 {
   imports = [
-    ./hm/configurations/alacritty
-    ./hm/configurations/discord
-    ./hm/configurations/dunst
-    ./hm/configurations/firefox
-    ./hm/configurations/flameshot
+    # ./hm/configurations/discord
     # ./hm/configurations/hyperland
     ./hm/configurations/i3
     # ./hm/configurations/mangohud
-    ./hm/configurations/mpv
-    ./hm/configurations/picom
-    ./hm/configurations/rofi
     # ./hm/configurations/xscreensaver
   ];
 
