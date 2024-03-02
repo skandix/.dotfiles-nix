@@ -37,7 +37,7 @@
       nm-tray
       bitwarden
       obsidian
-      obs-studio
+      # obs-studio
 
       ## CTF
       # volatility # error: 'volatility' has been removed, as it was broken and unmaintained
