@@ -3,7 +3,7 @@
 {
   programs.firefox = {
     enable = true;
-    profiles = { legend = { isDefault = true; }; };
+    #profiles = { legend = { isDefault = true; }; };
     # TODO: add in symlink of userchrome.css, for treestyletabs
     # extensions = with pkgs.nur.repos.rycee.firefox-addons; [
     #     buster-captcha-solver
@@ -12,4 +12,7 @@
     #     bitwarden
     # ];
   };
+
+  # home-manager.users.hx = {
+  # };
 }

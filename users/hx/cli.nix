@@ -6,8 +6,10 @@
     # ./hm/configurations/helix
     ./hm/configurations/vim
     ./hm/configurations/tmux
-    # ./hm/python.nix
-    # ./hm/rust.nix
+    ./hm/python.nix
+    ./hm/rust.nix
+    ./hm/configurations/git
+    ./hm/configurations/zsh
   ];
 
   home-manager.users.hx = {
@@ -55,7 +57,7 @@
       k9s
       vagrant
       terraform
-      ansible-core
+      ansible
       openstackclient
     ];
   };

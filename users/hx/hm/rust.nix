@@ -1,5 +1,8 @@
 { pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ rustc cargo rustfmt ];
+  home-manager.users.hx = {
+    home.packages = with pkgs; [ rustc cargo rustfmt ];
+  };
 }
+

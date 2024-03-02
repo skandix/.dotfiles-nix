@@ -1,8 +1,10 @@
 { pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ alacritty ];
-  xdg.configFile = {
-    "alacritty/files/alacritty.toml".source = ./alacritty.yml;
+  home-manager.users.hx = {
+    home.packages = with pkgs; [ alacritty ];
+    xdg.configFile = {
+      "alacritty/alacritty.toml".source = ./alacritty.toml;
+    };
   };
 }

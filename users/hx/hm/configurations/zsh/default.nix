@@ -1,12 +1,16 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  imports = [ ../tmux ];
+  # home-manager.users.hx = {
 
-  home.packages = with pkgs; [ zsh pfetch lolcat zinit ];
+    programs.zsh = {
+      enable = true;
+    };
+  #   home.packages = with pkgs; [ pfetch lolcat zinit ];
 
-  home.file.bashrc = {
-    source = ./.zshrc;
-    target = ".zshrc";
-  };
+  #   home.file.zshrc = {
+  #     source = ./.zshrc;
+  #     target = ".zshrc";
+  #   };
+  # };
 }

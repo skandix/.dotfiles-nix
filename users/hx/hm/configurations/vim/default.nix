@@ -1,31 +1,33 @@
 { pkgs, configs, ... }:
 let general = builtins.readFile ./files/general.vim;
 in {
-  programs.neovim = {
-    enable = true;
-    vimAlias = true;
-    vimdiffAlias = true;
-    plugins = with pkgs.vimPlugins; [
-      vim-nix
-      nerdtree
-      rust-vim
-      vim-indent-guides
-      nerdcommenter
-      The_NERD_tree
-      ctrlp
-      polyglot
-      vim-startify
-      vim-json
-      vim-better-whitespace
-      lightline-vim
-      ale
-      vim-gitgutter
-      lexima-vim
-      gruvbox
-    ];
-    extraConfig = ''
-      ${general}
-    '';
+  home-manager.users.hx = {
+    programs.neovim = {
+      enable = true;
+      vimAlias = true;
+      vimdiffAlias = true;
+      plugins = with pkgs.vimPlugins; [
+        vim-nix
+        nerdtree
+        rust-vim
+        vim-indent-guides
+        nerdcommenter
+        The_NERD_tree
+        ctrlp
+        polyglot
+        vim-startify
+        vim-json
+        vim-better-whitespace
+        lightline-vim
+        ale
+        vim-gitgutter
+        lexima-vim
+        gruvbox
+      ];
+      extraConfig = ''
+        ${general}
+      '';
+    };
   };
 }
 

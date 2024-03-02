@@ -17,15 +17,14 @@
   ];
 
   home-manager.users.hx = {
-    home.packages = with pkgs.unstable; [
+    home.packages = with pkgs; [
       ## GENERAL GUI
       tdesktop
       signal-desktop
       tor-browser
-      sublime4
       peek
       mumble
-      teams
+      teams-for-linux
       zoom-us
       vscode
       plexamp
@@ -41,7 +40,7 @@
       obs-studio
 
       ## CTF
-      volatility
+      # volatility # error: 'volatility' has been removed, as it was broken and unmaintained
       hexedit
       strace
       ltrace
@@ -49,7 +48,7 @@
       gobuster
       thc-hydra
       john
-      metasploit-framework
+      metasploit
       msfpc
       nmap
       seclists
