@@ -1,9 +1,9 @@
 {pkgs, config, ...}:
 
 {
-  programs.fish  = {
-    enable = true;
-    package = pkgs.fish;
+  programs = {
+    fish.enable = true;
+    fish.package = pkgs.fish;
     # shellAliases = {
     #   #..="cd .."
     #   ip="ip -c"
@@ -20,7 +20,7 @@
     #   gname="head -c 100 /dev/urandom | md5sum"
     # };
     # # Colors for shell, not sure if this is the prefered way to do it
-    loginShellInit = ''
+    fish.loginShellInit = ''
       set -U fish_color_normal normal
       set -U fish_color_command 009999
       set -U fish_color_quote 5CCCCC
@@ -47,10 +47,8 @@
       set -U fish_color_match --background=brblue
       set -U fish_color_comment FF9640
     '';
-    interactiveShellInit = "pfetch";
-  };
-  programs.dircolors = {
-    enable = true;
-    enableFishIntegration = true;
+    fish.interactiveShellInit = "pfetch";
+    dircolors.enable = true;
+    dircolors.enableFishIntegration = true;
   };
 }

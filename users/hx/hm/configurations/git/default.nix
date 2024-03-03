@@ -3,11 +3,12 @@
 {
   programs.git = {
     enable = true;
-    config = {
-      user = {
-        name = "Bendik";
-        email = "skandix@protonmail.com";
-      };
-    };
+    # userName = "Bendik";
+    # config = {
+    #   user = {
+    #     name = "Bendik";
+    #     email = "skandix@protonmail.com";
+    #   };
+    # };
   };
 }
