@@ -6,7 +6,7 @@
       enable = true;
       package = pkgs.fish;
       shellAliases = {
-        ..="cd ..";
+        #..="cd ..";
         ip="ip -c";
         k="kubecolor";
         kd="k delete -f .";
