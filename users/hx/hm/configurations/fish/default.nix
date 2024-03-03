@@ -1,7 +1,6 @@
 {pkgs, ...}:
 
 {
-  home-manager.users.hx = {
     programs.fish = {
       enable = true;
       package = pkgs.fish;
@@ -50,7 +49,6 @@
       '';
       interactiveShellInit = "pfetch";
     };
-  };
     programs.dircolors.enable = true;
     programs.dircolors.enableFishIntegration = true;
 }
