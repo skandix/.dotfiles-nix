@@ -1,12 +1,12 @@
 { config, home-manager, pkgs, ... }:
 
 {
-
   nixpkgs = {
     config = {
       allowUnfree = true;
     };
   };
+
   users.groups.hx.gid = 1000;
   users.users.hx = {
     isNormalUser = true;
@@ -27,6 +27,7 @@
     ];
     group = "hx";
     shell = pkgs.fish;
+    
   };
 
   home-manager.users = { hx = (import ./hx/hm/base.nix); };
