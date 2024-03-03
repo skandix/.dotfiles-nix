@@ -6,7 +6,7 @@
     # ./hm/configurations/helix
     ./hm/configurations/vim
     ./hm/configurations/tmux
-    ./hm/python.nix
+    # ./hm/python.nix
     ./hm/rust.nix
     ./hm/configurations/git
     ./hm/configurations/zsh
