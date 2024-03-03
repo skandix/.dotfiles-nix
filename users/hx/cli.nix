@@ -59,6 +59,17 @@
       terraform
       ansible
       openstackclient
+
+      ## CTF
+      # volatility # error: 'volatility' has been removed, as it was broken and unmaintained
+      hexedit
+      strace
+      ltrace
+      netcat-gnu
+      nmap
+      seclists
+      # binwalk
+      msitools
     ];
   };
 }

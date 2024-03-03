@@ -41,16 +41,6 @@
 
       ## CTF
       # volatility # error: 'volatility' has been removed, as it was broken and unmaintained
-      hexedit
-      strace
-      ltrace
-      netcat-gnu
-      gobuster
-      nmap
-      seclists
-      sqlmap
-      binwalk
-      msitools
       ghidra-bin
       sonic-visualiser
     ];
