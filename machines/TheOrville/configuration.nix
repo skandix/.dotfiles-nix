@@ -40,7 +40,6 @@
   i18n.defaultLocale = "en_GB.UTF-8";
   console = { keyMap = "no"; };
 
-
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   home-manager.users.hx.home.stateVersion = "23.11";
   time.timeZone = "Europe/Oslo";
