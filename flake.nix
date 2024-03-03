@@ -22,7 +22,7 @@
   };
 
 
-  outputs = inputs@{ self, nixpkgs, nur, nixos-hardware, home-manager, nix-gaming }:
+  outputs = inputs@{ self, nixpkgs, nur, nixos-hardware, home-manager, nix-gaming, dawrin, nixpkgs-unstable }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages."x86_64-linux";
