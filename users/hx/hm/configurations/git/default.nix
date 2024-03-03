@@ -1,9 +1,13 @@
 { pkgs, ... }:
 
 {
-  # programs.git = {
-  #   enable = true;
-  #   userName = "Bendik";
-  #   # userEmail = "skandix@protonmail.com";
-  # };
+  programs.git = {
+    enable = true;
+    config = {
+      user = {
+        name = "Bendik";
+        email = "skandix@protonmail.com";
+      };
+    };
+  };
 }

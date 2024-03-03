@@ -36,7 +36,8 @@
       pavucontrol
       nm-tray
       bitwarden
-      # obsidian
+      gnome.seahorse
+      obsidian
       # obs-studio
 
       ## CTF

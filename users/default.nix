@@ -4,7 +4,7 @@
 
   nixpkgs = {
     config = {
-    allowUnfree = true;
+      allowUnfree = true;
     };
   };
   users.groups.hx.gid = 1000;
@@ -26,7 +26,7 @@
       "vboxusers"
     ];
     group = "hx";
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
   };
 
   home-manager.users = { hx = (import ./hx/hm/base.nix); };

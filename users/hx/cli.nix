@@ -34,6 +34,7 @@
       pfetch
       minicom
       ffmpeg
+      pulseaudio # needed for pactl
 
       ## PROGRAMMING LANGUAGES
       go
