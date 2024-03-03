@@ -2,7 +2,7 @@
 
 {
   home-manager.users.hx = {
-    home.packages = with pkgs; [ rustc cargo rustfmt ];
+    home.packages = with pkgs; [ rustup rustfmt ];
   };
 }
 
