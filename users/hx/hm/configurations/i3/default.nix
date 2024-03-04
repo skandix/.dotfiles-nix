@@ -8,7 +8,7 @@
     xkb.layout = "no";
   };
 
-  services.xserver.displayManager.ligthdm.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
   services.xserver.displayManager.defaultSession = "none+i3";
   services.xserver.windowManager.i3 = {
     enable = true;
