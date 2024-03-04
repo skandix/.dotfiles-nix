@@ -38,6 +38,7 @@
       bitwarden
       gnome.seahorse
       obsidian
+      ulauncher
       # obs-studio
 
       ## CTF

@@ -2,9 +2,9 @@
 set $mod Mod4
 set $altMod Mod1
 set $term alacritty
-set $screen flameshot gui 
+set $screen flameshot gui
 #set $screen /home/skandix/.ssh/zipline.sh &
-set $lock xsecurelock
+set $lock dm-tool lock
 
 ### FONT ###
 font pango:Terminus 14px
@@ -27,7 +27,8 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 bindsym $mod+Return exec $term
 bindsym $mod+c kill
-bindsym $mod+space exec rofi -show run
+# bindsym $mod+space exec rofi -show run
+bindsym $mod+space exec ulauncher-toggle
 bindsym $mod+Shift+s sticky toggle
 bindsym $mod+p exec pavucontrol # easily trigger audio mixer
 
@@ -167,6 +168,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
 
 # Start coms app automagically
+exec --no-startup-id ulauncher --hide-window --no-window-shadow
 exec --no-startup-id discord --start-minimized
 exec --no-startup-id slack --startup
 
