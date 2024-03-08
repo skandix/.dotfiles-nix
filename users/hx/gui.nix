@@ -39,6 +39,8 @@
       gnome.seahorse
       obsidian
       ulauncher
+      sublime
+      cider
       # obs-studio
 
       ## CTF

@@ -30,7 +30,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub.device = "nodev";
-  boot.loader.grub.devices = [ "/dev/sda" ];
+  boot.loader.grub.useOSProber= true;
 
   networking.hostName = "TheOrville";
   networking.useDHCP = false;

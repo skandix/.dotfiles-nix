@@ -32,6 +32,7 @@
       minicom
       ffmpeg
       pulseaudio # needed for pactl
+      glib
 
       ## PROGRAMMING LANGUAGES
       go
