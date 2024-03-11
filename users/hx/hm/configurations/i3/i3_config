@@ -168,7 +168,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
 
 # Start coms app automagically
-exec --no-startup-id ulauncher --hide-window --no-window-shadow
+exec_always --no-startup-id ulauncher --hide-window --no-window-shadow
 exec --no-startup-id discord --start-minimized
 exec --no-startup-id slack --startup
 

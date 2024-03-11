@@ -15,7 +15,10 @@
 
   # OTHER
   environment.systemPackages = with pkgs; [
-    lutris-unwrapped
+    lutris
+    #bottles
+    winetricks
+    instawow
     wine-staging
     gamemode
     mangohud

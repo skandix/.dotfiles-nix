@@ -4,6 +4,11 @@ command=echo "${1:-⚙️} $(ps -U $USER | wc -l)"
 interval=5
 color=#ff00ff
 
+[load]
+command=echo "$(w | grep load | cut -d':' -f 5 | xargs)"
+interval=5
+color=#ff00ff
+
 [kernel]
 command=echo "${1:-🐧} $(uname -r)"
 interval=5
@@ -33,4 +38,3 @@ color=#ff00ff
 command=date +" %a, %d %b - %H:%M:%S "
 interval=1
 color=#ff00ff
-
