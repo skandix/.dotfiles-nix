@@ -13,12 +13,11 @@
 
     # Common
     # ../../common/wireguard.nix
-    ../../common/bluetooth.nix
+    #../../common/bluetooth.nix
     ../../common/docker.nix
     ../../common/networkmanager.nix
     ../../common/fonts.nix
     ../../common/pipewire.nix
-    ../../common/games.nix
     ../../common/virtualbox.nix
 
     # CPU Microcode
