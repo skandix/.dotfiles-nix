@@ -24,7 +24,7 @@
     ../../common/intelcpu.nix
 
     # GPU Drivers
-    ../../common/nvidiagpu.nix
+    # ../../common/nvidiagpu.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
