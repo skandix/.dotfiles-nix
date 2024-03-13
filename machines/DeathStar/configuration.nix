@@ -18,13 +18,14 @@
     ../../common/networkmanager.nix
     ../../common/fonts.nix
     ../../common/pipewire.nix
-    ../../common/virtualbox.nix
+    ../../common/tailscale.nix
+    #../../common/virtualbox.nix
 
     # CPU Microcode
     ../../common/intelcpu.nix
 
     # GPU Drivers
-    # ../../common/nvidiagpu.nix
+    ../../common/nvidiagpu.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
