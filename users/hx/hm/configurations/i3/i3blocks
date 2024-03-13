@@ -1,17 +1,6 @@
-markup=none
-[procs]
-command=echo "${1:-⚙️} $(ps -U $USER | wc -l)"
-interval=5
-color=#ff00ff
-
 [load]
 command=echo "$(w | grep load | cut -d':' -f 5 | xargs)"
-interval=5
-color=#ff00ff
-
-[kernel]
-command=echo "${1:-🐧} $(uname -r)"
-interval=5
+interval=1
 color=#ff00ff
 
 # [battery-poly]
@@ -31,10 +20,21 @@ color=#ff00ff
 
 [IP]
 command=ip route get 1.1.1.1 |grep src | cut -d' ' -f7
-interval=once
+interval=5
 color=#ff00ff
+
+[weather]
+command=curl -Ss 'https://wttr.in/Grimstad?format=2'
+interval=3600
+color=#A4C2F4
 
 [TIME_DATE]
 command=date +" %a, %d %b - %H:%M:%S "
 interval=1
 color=#ff00ff
+
+
+# [JP_TIME]
+# command=date --date='TZ="Japan/Tokyo"' +"%H:%M:%S"
+# interval=1
+# color=#ff00ff
