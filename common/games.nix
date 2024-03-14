@@ -22,5 +22,6 @@
     wine-staging
     gamemode
     mangohud
+    r2modman
   ];
 }

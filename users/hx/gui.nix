@@ -9,7 +9,6 @@
     ./hm/configurations/mpv
     ./hm/configurations/picom
     ./hm/configurations/rofi
-    ./hm/configurations/i3
     # ./hm/configurations/discord
     # ./hm/configurations/hyperland
     # ./hm/configurations/mangohud
