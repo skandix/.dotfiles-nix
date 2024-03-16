@@ -1,13 +1,13 @@
 {
   description = "Cornflakes, probably have not heard this before huehuehue";
 
-  nixConfig = {
-    substituters = [
-      # Query the mirror of USTC first, and then the official cache.
-      "https://mirrors.ustc.edu.cn/nix-channels/store"
-      "https://cache.nixos.org"
-    ];
-  };
+  # nixConfig = {
+  #   substituters = [
+  #     # Query the mirror of USTC first, and then the official cache.
+  #     "https://mirrors.ustc.edu.cn/nix-channels/store"
+  #     "https://cache.nixos.org"
+  #   ];
+  # };
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
@@ -51,17 +51,17 @@
           modules = [
             ./machines/SpaceCruiser/configuration.nix
             inputs.home-manager.nixosModules.default
-          ];
+          ]; 
         };
       };
     };
 
     darwinConfigurations."SpaceCruiser" = darwin.lib.darwinSystem {
-      specialArgs = {
-        username = "hx";
-      };
       modules = [
-        ./machines/SpaceCruiser/configuration.nix
+        ./modules/macos/nix-core.nix
+        ./modules/macos/system.nix
+        ./modules/macos/apps.nix
+        ./modules/macos/system.nix
       ];
     };
 }
