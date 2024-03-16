@@ -1,6 +1,14 @@
 {
   description = "Cornflakes, probably have not heard this before huehuehue";
 
+  nixConfig = {
+    substituters = [
+      # Query the mirror of USTC first, and then the official cache.
+      "https://mirrors.ustc.edu.cn/nix-channels/store"
+      "https://cache.nixos.org"
+    ];
+  };
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -10,10 +18,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # home-manager-unstable = {
-    #   url = "github:nix-community/home-manager/master";
-    #   inputs.nixpkgs.follows = "nixpkgs-unstable";
-    # };
     darwin = {
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
@@ -22,7 +26,7 @@
   };
 
 
-  outputs = inputs@{ self, nixpkgs, nur, nixos-hardware, home-manager, nix-gaming, darwin, nixpkgs-unstable }:
+  outputs = inputs@{ self, nixpkgs, nur, nixos-hardware, home-manager, nix-gaming, darwin, nixpkgs-unstable, ...}:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages."x86_64-linux";
@@ -50,5 +54,14 @@
           ];
         };
       };
+    };
+
+    darwinConfigurations."SpaceCruiser" = darwin.lib.darwinSystem {
+      specialArgs = {
+        username = "hx";
+      };
+      modules = [
+        ./machines/SpaceCruiser/configuration.nix
+      ];
     };
 }
