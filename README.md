@@ -8,16 +8,9 @@
 
 ## Install
 ```bash
-nix-env -iA nixos.git
-git clone https://github.com/skandix/.nix-conf
-cd .nix-conf/scripts 
-./format.sh /dev/sd? && ./channels_setup.sh
-nixos-generate-config --root /mnt
-# symlink desired host configuration.nix into /mnt/etc/nixos/configuration.nix
-```
-
-```bash
-sudo nix flake check --extra-experimental-features nix-command --extra-experimental-features flakes
+wget https://raw.githubusercontent.com/skandix/.nix-conf/main/scripts/format.sh
+./format.sh /dev/sd?
+sudo nixos-install --flake github:skandix/.nix-conf#(DeathStar|TheOrville|SpaceCruiser)
 ```
 
 ## Resources
