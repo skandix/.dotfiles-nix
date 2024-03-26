@@ -24,6 +24,7 @@
       peek
       mumble
       teams-for-linux
+      slack
       zoom-us
       vscode
       plexamp

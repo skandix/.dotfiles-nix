@@ -56,12 +56,12 @@
       };
     };
 
-    darwinConfigurations."SpaceCruiser" = darwin.lib.darwinSystem {
-      modules = [
-        ./modules/macos/nix-core.nix
-        ./modules/macos/system.nix
-        ./modules/macos/apps.nix
-        ./modules/macos/system.nix
-      ];
-    };
+    #darwinConfigurations."SpaceCruiser" = darwin.lib.darwinSystem {
+      #modules = [
+        #./modules/macos/nix-core.nix
+        #./modules/macos/system.nix
+        #./modules/macos/apps.nix
+        #./modules/macos/system.nix
+      #];
+    #};
 }
