@@ -1,4 +1,4 @@
-# .nix-conf
+# .dotfiles-nix
 > This is my personal nixos-configs.
 
 ## Hosts
