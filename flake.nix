@@ -10,7 +10,7 @@
   # };
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs";
+    #nixpkgs.url = "github:NixOS/nixpkgs";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
@@ -26,32 +26,32 @@
   };
 
 
-  outputs = inputs@{ self, nixpkgs, nur, nixos-hardware, home-manager, nix-gaming, darwin, nixpkgs-unstable, ...}:
+  outputs = inputs@{ self, nur, nixos-hardware, home-manager, nix-gaming, darwin, nixpkgs-unstable, ...}:
     let
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages."x86_64-linux";
+      pkgs = nixpkgs-unstable.legacyPackages."x86_64-linux";
     in {
       nixosConfigurations = {
-        DeathStar = nixpkgs.lib.nixosSystem {
+        DeathStar = nixpkgs-unstable.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
             ./machines/DeathStar/configuration.nix
             inputs.home-manager.nixosModules.default
           ];
         };
-        TheOrville = nixpkgs.lib.nixosSystem {
+        TheOrville = nixpkgs-unstable.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
             ./machines/TheOrville/configuration.nix
             inputs.home-manager.nixosModules.default
           ];
         };
-        SpaceCruiser = nixpkgs.lib.nixosSystem {
+        SpaceCruiser = nixpkgs-unstable.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
             ./machines/SpaceCruiser/configuration.nix
             inputs.home-manager.nixosModules.default
-          ]; 
+          ];
         };
       };
     };
