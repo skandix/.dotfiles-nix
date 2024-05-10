@@ -2,7 +2,7 @@ update:
 	nix flake update
 
 switch:
-	sudo nixos-rebuild switch --flake .
+	sudo nixos-rebuild switch --flake . --show-trace
 
 install-os:
 	# format disks then run this!
