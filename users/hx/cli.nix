@@ -33,6 +33,8 @@
       ffmpeg
       pulseaudio # needed for pactl
       glib
+      xsecurelock
+      xscreensaver
 
       ## PROGRAMMING LANGUAGES
       go

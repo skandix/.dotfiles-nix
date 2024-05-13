@@ -9,9 +9,7 @@
     driSupport32Bit = true;
   };
 
-
-
-  virtualisation.docker.enableNvidia = true;
+  virtualisation.containers.cdi.dynamic.nvidia.enable = true;
   services.xserver.videoDrivers = [ "nvidia" ];
 
   hardware.nvidia = {

@@ -4,12 +4,14 @@
   services.xserver = {
     enable = true;
     autorun = true;
-    libinput.enable = true;
     xkb.layout = "no";
+    libinput = {
+      enable = true;
+    }
   };
 
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.defaultSession = "none+i3";
+  services.displayManager.sddm.enable = true;
+  services.displayManager.defaultSession = "none+i3";
   services.xserver.windowManager.i3 = {
     enable = true;
     package = pkgs.i3;
