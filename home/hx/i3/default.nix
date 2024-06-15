@@ -5,11 +5,8 @@
     enable = true;
     autorun = true;
     xkb.layout = "no";
-    libinput = {
-      enable = true;
-    };
   };
-
+  services.libinput.enable = true;
   services.displayManager.sddm.enable = true;
   services.displayManager.defaultSession = "none+i3";
   services.xserver.windowManager.i3 = {

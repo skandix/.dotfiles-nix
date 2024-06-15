@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./configurations/git ./configurations/fish ];
+  imports = [ ./configurations/git ./configurations/fish ./git.nix ];
 
   xdg.configFile = {
     "nixpkgs/config.nix".source = ./configurations/nixpkgs-config.nix;

@@ -12,7 +12,7 @@
   home-manager.users.hx = {
     home.packages = with pkgs; [
       ## GENERAL CLI
-      p7zip
+      nixpkgs-unstable.p7zip
       zlib
       gnutar
       libnotify
