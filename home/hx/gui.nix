@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, unstable, ... }:
 
 {
   imports = [
@@ -40,7 +40,7 @@
       obsidian
       ulauncher
       sublime
-      cider
+      unstable.cider
       # obs-studio
 
       xsecurelock

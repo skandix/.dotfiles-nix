@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, unstable, ... }:
 
 {
   imports = [
@@ -12,7 +12,7 @@
   home-manager.users.hx = {
     home.packages = with pkgs; [
       ## GENERAL CLI
-      nixpkgs-unstable.p7zip
+      p7zip
       zlib
       gnutar
       libnotify
@@ -30,7 +30,7 @@
       xclip
       pfetch
       minicom
-      ffmpeg
+      unstable.ffmpeg
       pulseaudio # needed for pactl
       glib
       xsecurelock
@@ -49,8 +49,8 @@
       speedtest-cli
 
       ## NFC TOOLS
-      mfoc
-      mfcuk
+      # mfoc
+      # mfcuk
 
       ## OPS TOOLS
       kubectl
@@ -63,14 +63,14 @@
 
       ## CTF
       # volatility # error: 'volatility' has been removed, as it was broken and unmaintained
-      hexedit
-      strace
-      ltrace
-      netcat-gnu
-      nmap
-      seclists
+      # hexedit
+      # strace
+      # ltrace
+      # netcat-gnu
+      # nmap
+      # seclists
       # binwalk
-      msitools
+      # msitools
     ];
   };
 }

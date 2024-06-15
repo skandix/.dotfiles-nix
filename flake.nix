@@ -30,6 +30,7 @@
     let
       system = "x86_64-linux";
       # pkgs = nixpkgs.legacyPackages."x86_64-linux";
+      unstable = nixpkgs-unstable.legacyPackages.${system};
     in {
       nixosConfigurations = {
         DeathStar = nixpkgs.lib.nixosSystem {
@@ -40,7 +41,10 @@
           ];
         };
         TheOrville = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
+          specialArgs = { 
+            inherit inputs; 
+            inherit unstable; 
+          };
           modules = [
             ./hosts/TheOrville/configuration.nix
             inputs.home-manager.nixosModules.default
