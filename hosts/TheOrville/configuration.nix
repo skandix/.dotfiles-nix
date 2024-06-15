@@ -16,6 +16,7 @@
     ../../common/docker.nix
     ../../common/fonts.nix
     ../../common/games.nix
+    ../../common/docker.nix
     ../../common/networkmanager.nix
     ../../common/pipewire.nix
     ../../common/networking-extra.nix
@@ -23,6 +24,7 @@
     ../../common/nix-pkg-allow.nix
     ../../common/amdcpu.nix
     ../../common/amdgpu.nix
+    ../../common/virtualbox.nix
 
     # WG
     #./c137.nix

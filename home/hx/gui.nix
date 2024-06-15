@@ -47,8 +47,8 @@
       xscreensaver
       ## CTF
       # volatility # error: 'volatility' has been removed, as it was broken and unmaintained
-      ghidra-bin
-      sonic-visualiser
+      # ghidra-bin
+      # sonic-visualiser
     ];
   };
 }
