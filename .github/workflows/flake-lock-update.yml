@@ -9,7 +9,6 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/head/main'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
