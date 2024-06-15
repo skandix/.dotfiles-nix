@@ -16,8 +16,8 @@ echo ""
 echo "===P A R T I T I O N==="
 echo ""
 parted $disk -- mklabel gpt
-parted $disk -- mkpart root ext4 512MiB -200MiB
-parted $disk -- mkpart swap linux-swap -200MiB 100%
+parted $disk -- mkpart root ext4 512MiB -8GB
+parted $disk -- mkpart swap linux-swap -8GB 100%
 parted $disk -- mkpart ESP fat32 1MiB 512MiB
 parted $disk -- set 3 esp on
 
