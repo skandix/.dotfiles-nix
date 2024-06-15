@@ -6,11 +6,11 @@
     ./hardware-configuration.nix
 
     # core dotfiles + graphical things
-    ../../users
-    ../../users/hx
-    ../../users/hx/gui.nix
-    ../../users/hx/cli.nix
-    ../../users/hx/i3
+    ../../home
+    ../../home/hx
+    ../../home/hx/gui.nix
+    ../../home/hx/cli.nix
+    ../../home/hx/i3
 
     # Common
     ../../common/docker.nix
