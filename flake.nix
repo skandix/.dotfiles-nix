@@ -48,6 +48,7 @@
           };
         };
       };
+    };
     #   homeConfigurations = {
     #     hx = home-manager.lib.homeManagerConfiguration { # <-- HOME MANAGER BUILDER FUNCTION FROM STABLE
     #       inherit pkgs; # <-- STABLE
