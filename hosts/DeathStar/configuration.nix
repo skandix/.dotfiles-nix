@@ -4,36 +4,39 @@
   imports = [
     # Hardware udev rules
     ./hardware-configuration.nix
-    # <nixos-hardware/lenovo/thinkpad/t490>
 
     # core dotfiles + graphical things
-    ../../users
-    ../../users/hx
-    ../../users/hx/gui.nix
-    ../../users/hx/cli.nix
+    # ../../users
+    # ../../users/hx
+    # ../../users/hx/gui.nix
+    # ../../users/hx/cli.nix
+    # ../../users/hx/i3
 
     # Common
-    ../../common/networkmanager.nix
+    # ../../common/wireguard.nix
+    #../../common/bluetooth.nix
     ../../common/docker.nix
-    ../../common/bluetooth.nix
+    ../../common/networkmanager.nix
     ../../common/fonts.nix
-    ../../common/networking-extra.nix
-    ../../common/laptop.nix
+    ../../common/pipewire.nix
+    ../../common/tailscale.nix
+    #../../common/virtualbox.nix
 
     # CPU Microcode
     ../../common/intelcpu.nix
 
     # GPU Drivers
-    ../../common/intelgpu.nix
+    ../../common/nvidiagpu.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "SpaceCruiser";
+  networking.firewall.enable = false;
+
+  networking.hostName = "DeathStar";
   networking.useDHCP = false;
-  networking.interfaces.enp0s31f6.useDHCP = true;
-  networking.interfaces.wlp0s20f3.useDHCP = true;
+  networking.interfaces.eno1.useDHCP = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
@@ -44,5 +47,5 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   home-manager.users.hx.home.stateVersion = "23.11";
   time.timeZone = "Europe/Oslo";
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";
 }

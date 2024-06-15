@@ -5,11 +5,6 @@
     # Hardware udev rules
     # ./hardware-configuration.nix
 
-    # core dotfiles + graphical things
-    ../../users
-    ../../users/hx
-    ../../users/hx/cli.nix
-
     # Common
     ../../common/docker.nix
     ../../common/fonts.nix
@@ -42,7 +37,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   home-manager.users.hx.home.stateVersion = "23.11";
   time.timeZone = "Europe/Oslo";
-  system.stateVersion = "23.11";
   services.nix-daemon.enable = true;
   nix.package = pkgs.nix;
+  system.stateVersion = "24.05"; # Did you read the comment?
   }

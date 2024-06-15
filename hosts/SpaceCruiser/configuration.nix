@@ -4,39 +4,30 @@
   imports = [
     # Hardware udev rules
     ./hardware-configuration.nix
-
-    # core dotfiles + graphical things
-    ../../users
-    ../../users/hx
-    ../../users/hx/gui.nix
-    ../../users/hx/cli.nix
-    ../../users/hx/i3
+    # <nixos-hardware/lenovo/thinkpad/t490>
 
     # Common
-    # ../../common/wireguard.nix
-    #../../common/bluetooth.nix
-    ../../common/docker.nix
     ../../common/networkmanager.nix
+    ../../common/docker.nix
+    ../../common/bluetooth.nix
     ../../common/fonts.nix
-    ../../common/pipewire.nix
-    ../../common/tailscale.nix
-    #../../common/virtualbox.nix
+    ../../common/networking-extra.nix
+    ../../common/laptop.nix
 
     # CPU Microcode
     ../../common/intelcpu.nix
 
     # GPU Drivers
-    ../../common/nvidiagpu.nix
+    ../../common/intelgpu.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.firewall.enable = false;
-
-  networking.hostName = "DeathStar";
+  networking.hostName = "SpaceCruiser";
   networking.useDHCP = false;
-  networking.interfaces.eno1.useDHCP = true;
+  networking.interfaces.enp0s31f6.useDHCP = true;
+  networking.interfaces.wlp0s20f3.useDHCP = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
@@ -47,5 +38,5 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   home-manager.users.hx.home.stateVersion = "23.11";
   time.timeZone = "Europe/Oslo";
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05"; # Did you read the comment?
 }

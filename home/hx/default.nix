@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  imports = [ ./ssh.nix ];
+
   environment.variables = {
     PAGER = "less";
     BROWSER = "firefox";

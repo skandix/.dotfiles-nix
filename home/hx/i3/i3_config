@@ -18,7 +18,7 @@ bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioLowerVolume exec --no-startup-id  pamixer --decrease 5
 bindsym XF86AudioRaiseVolume exec --no-startup-id  pamixer --increase 5
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF85AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 ### MISC KEYBINDS ###
 bindsym Print exec --no-startup-id $screen
@@ -74,7 +74,7 @@ mode "move ws" {
  bindsym Escape mode "default"
 }
 
-bindsym $mod+Shift+m mode "move ws"
+bindsym $mod+o mode "move ws"
 
 # focus the parent container
 bindsym $mod+a focus parent
