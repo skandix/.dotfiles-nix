@@ -5,6 +5,13 @@
     # Hardware udev rules
     ./hardware-configuration.nix
 
+    # core dotfiles + graphical things
+    ../../users
+    ../../users/hx
+    ../../users/hx/gui.nix
+    ../../users/hx/cli.nix
+    ../../users/hx/i3
+
     # Common
     ../../common/docker.nix
     ../../common/fonts.nix

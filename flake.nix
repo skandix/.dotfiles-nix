@@ -58,7 +58,7 @@
           ;
           extraSpecialArgs = {
             inherit username;
-            inherit pkgs-unstable; # <-- UNSTABLE
+            inherit pkgs-unstable;
           };
         };
       };
