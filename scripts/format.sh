@@ -33,8 +33,8 @@ echo "===M O U N T I N G==="
 echo ""
 umount -a
 mount -v
-mount /dev/disk/by-label/nixos /mnt --mkdir
+mount /dev/disk/by-label/nixos /mnt
 mkdir -p /mnt/boot
-mount /dev/disk/by-label/boot /mnt/boot --mkdir
+mount -o umask=077 /dev/disk/by-label/boot /mnt/boot
 swapon /dev/disk/by-label/swap
 mount -v
