@@ -16,7 +16,6 @@
     "video=HDMI-A-1:2560x1440@144"
   ];
 
-
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";
     fsType = "ext4";
@@ -28,6 +27,7 @@
   };
 
   swapDevices = [{ device = "/dev/disk/by-label/swap"; }];
-  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+  # nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+  nixpkgs.hostPlatform = "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }

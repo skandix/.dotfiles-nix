@@ -1,7 +1,10 @@
-update:
+up:
 	nix flake update
 
-switch:
+sw:
+	sudo nixos-rebuild switch --flake .
+
+swt:
 	sudo nixos-rebuild switch --flake . --show-trace
 
 install-os:
@@ -10,9 +13,9 @@ install-os:
 
 macos:
 	nix build .#darwinConfigurations."SpaceCruiser".system \
-	   --extra-experimental-features 'nix-command flakes'
+	--extra-experimental-features 'nix-command flakes'
 
 	./result/sw/bin/darwin-rebuild switch --flake .#SpaceCruiser
 
-validate:
+val:
 	nix flake check .

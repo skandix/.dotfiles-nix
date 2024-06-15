@@ -3,7 +3,7 @@
 {
   imports = [
     # Hardware udev rules
-    # ./hardware-configuration.nix
+    ./hardware-configuration.nix
 
     # Common
     ../../common/docker.nix
@@ -35,9 +35,6 @@
   console = { keyMap = "no"; };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  home-manager.users.hx.home.stateVersion = "23.11";
   time.timeZone = "Europe/Oslo";
-  services.nix-daemon.enable = true;
-  nix.package = pkgs.nix;
-  system.stateVersion = "24.05"; # Did you read the comment?
+  system.stateVersion = "24.05";
   }

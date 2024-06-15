@@ -21,22 +21,24 @@
       username = "skandix";
     in {
       nixosConfigurations = {
-          DeathStar = lib.nixosSystem {
-            inherit system;
-            modules = [ ./hosts/DeathStar/configuration.nix ];
-            specialArgs = {
-              inherit username;
-              inherit pkgs-unstable;
-            };
+        DeathStar = nixpkgs.lib.nixosSystem {
+          inherit system;
+          modules = [ ./hosts/DeathStar/configuration.nix ];
+          specialArgs = {
+            inherit username;
+            inherit pkgs-unstable;
           };
-        TheOrville = lib.nixosSystem {
+        };
+        TheOrville = nixpkgs.lib.nixosSystem {
+          inherit system;
           modules = [ ./hosts/TheOrville/configuration.nix ];
           specialArgs = {
             inherit username;
             inherit pkgs-unstable;
           };
         };
-        SpaceCruiser = lib.nixosSystem {
+        SpaceCruiser = nixpkgs.lib.nixosSystem {
+          inherit system;
           modules = [ ./hosts/SpaceCruiser/configuration.nix ];
           specialArgs = {
             inherit username;

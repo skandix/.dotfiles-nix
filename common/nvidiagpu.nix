@@ -1,7 +1,7 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
-
+  nixpkgs.config.allowUnfree = true;
  # Enable OpenGL
   hardware.opengl = {
     enable = true;
@@ -9,7 +9,7 @@
     driSupport32Bit = true;
   };
 
-  virtualisation.containers.cdi.dynamic.nvidia.enable = true;
+  hardware.nvidia-container-toolkit.enable = true;
   services.xserver.videoDrivers = [ "nvidia" ];
 
   hardware.nvidia = {
@@ -21,3 +21,4 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 }
+
