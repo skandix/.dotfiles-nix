@@ -7,7 +7,7 @@
     xkb.layout = "no";
     libinput = {
       enable = true;
-    }
+    };
   };
 
   services.displayManager.sddm.enable = true;
