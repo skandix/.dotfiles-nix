@@ -23,6 +23,7 @@
       nixosConfigurations = {
         DeathStar = nixpkgs.lib.nixosSystem {
           inherit system;
+          inherit home-manager;
           modules = [
             ./hosts/DeathStar/configuration.nix
             inputs.home-manager.nixosModules.default
