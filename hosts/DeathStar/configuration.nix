@@ -47,5 +47,5 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   time.timeZone = "Europe/Oslo";
   system.stateVersion = "24.05";
-  home-manager.users.francis.home.stateVersion = "24.05";
+  home-manager.users.hx.home.stateVersion = "24.05";
 }
