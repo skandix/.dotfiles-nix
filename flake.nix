@@ -12,7 +12,7 @@
   };
 
 
-  outputs = { self, nixos-hardware, home-manager, nixpkgs, nixpkgs-unstable, ...}:
+  outputs = inputs@{ self, nixos-hardware, home-manager, nixpkgs, nixpkgs-unstable, ...}:
     let
       system = "x86_64-linux";
       lib = nixpkgs.lib;
@@ -23,15 +23,13 @@
       nixosConfigurations = {
         DeathStar = nixpkgs.lib.nixosSystem {
           inherit system;
-          inherit home-manager;
+          specialArgs = {
+            inherit inputs;
+          };
           modules = [
             ./hosts/DeathStar/configuration.nix
             inputs.home-manager.nixosModules.default
           ];
-          specialArgs = {
-            inherit username;
-            inherit pkgs-unstable;
-          };
         };
         TheOrville = nixpkgs.lib.nixosSystem {
           inherit system;
@@ -50,23 +48,23 @@
           };
         };
       };
-      homeConfigurations = {
-        hx = home-manager.lib.homeManagerConfiguration { # <-- HOME MANAGER BUILDER FUNCTION FROM STABLE
-          inherit pkgs; # <-- STABLE
-          modules = [
-            ./home/hx
-            ./home/hx/gui.nix
-            ./home/hx/cli.nix
-            ./home/hx/i3
-          ]
-          ;
-          extraSpecialArgs = {
-            inherit username;
-            inherit pkgs-unstable;
-          };
-        };
-      };
-    };
+    #   homeConfigurations = {
+    #     hx = home-manager.lib.homeManagerConfiguration { # <-- HOME MANAGER BUILDER FUNCTION FROM STABLE
+    #       inherit pkgs; # <-- STABLE
+    #       modules = [
+    #         ./home/hx
+    #         ./home/hx/gui.nix
+    #         ./home/hx/cli.nix
+    #         ./home/hx/i3
+    #       ]
+    #       ;
+    #       extraSpecialArgs = {
+    #         inherit username;
+    #         inherit pkgs-unstable;
+    #       };
+    #     };
+    #   };
+    # };
 
     #darwinConfigurations."SpaceCruiser" = darwin.lib.darwinSystem {
       #modules = [
