@@ -7,7 +7,11 @@
     xkb.layout = "no";
   };
   services.libinput.enable = true;
-  services.displayManager.sddm.enable = true;
+  services.xserver.displayManager.lightdm = {
+    enable = true;
+    greeters.enso.enable = true;
+    greeters.enso.blur = true;
+  };
   services.displayManager.defaultSession = "none+i3";
   services.xserver.windowManager.i3 = {
     enable = true;

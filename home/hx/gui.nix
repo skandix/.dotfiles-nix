@@ -25,7 +25,7 @@
       mumble
       teams-for-linux
       slack
-      zoom-us
+      # zoom-us
       vscode
       plexamp
       plex-media-player
@@ -40,11 +40,13 @@
       obsidian
       ulauncher
       sublime
-      unstable.cider
+      cider
       # obs-studio
 
+      ## LOCKSCREEN + SCREENSAVER
       xsecurelock
       xscreensaver
+
       ## CTF
       # volatility # error: 'volatility' has been removed, as it was broken and unmaintained
       # ghidra-bin
