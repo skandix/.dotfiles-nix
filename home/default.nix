@@ -26,7 +26,7 @@
       "vboxusers"
     ];
     group = "hx";
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
   };
 
   home-manager.users = { hx = (import ./hx/hm/base.nix); };
