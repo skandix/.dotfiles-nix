@@ -25,6 +25,7 @@
     ../../common/amdcpu.nix
     ../../common/amdgpu.nix
     ../../common/virtualbox.nix
+    ../../common/fwupd.nix
 
     # WG
     #./c137.nix
