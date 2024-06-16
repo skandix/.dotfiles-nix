@@ -25,6 +25,7 @@
     ../../common/nix-pkg-allow.nix
     ../../common/virtualbox.nix
     ../../common/fwupd.nix
+    ../../common/zsh.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
