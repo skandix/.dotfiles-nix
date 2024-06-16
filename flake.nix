@@ -1,13 +1,6 @@
 {
   description = "Cornflakes, probably have not heard this before huehuehue";
 
-  # nixConfig = {
-  #   substituters = [
-  #     # Query the mirror of USTC first, and then the official cache.
-  #     "https://mirrors.ustc.edu.cn/nix-channels/store"
-  #     "https://cache.nixos.org"
-  #   ];
-  # };
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";

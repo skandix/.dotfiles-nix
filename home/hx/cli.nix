@@ -33,6 +33,7 @@
       unstable.ffmpeg
       pulseaudio # needed for pactl
       glib
+      comma
 
       ## PROGRAMMING LANGUAGES
       go

@@ -1,16 +1,15 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
-  # home-manager.users.hx = {
 
-    programs.zsh = {
-      enable = true;
+  programs.zsh = {
+    enable = true;
+  };
+  home-manager.users.hx = {
+    home.packages = with pkgs; [ pfetch lolcat zinit ];
+    home.file.zshrc = {
+      source = ./.zshrc;
+      target = ".zshrc";
     };
-    # home.packages = with pkgs; [ pfetch lolcat zinit ];
-
-    # home.file.zshrc = {
-    #   source = ./.zshrc;
-    #   target = ".zshrc";
-    # };
-  # };
+  };
 }

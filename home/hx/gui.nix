@@ -41,6 +41,7 @@
       ulauncher
       sublime
       cider
+      activitywatch
       # obs-studio
 
       ## LOCKSCREEN + SCREENSAVER

@@ -13,27 +13,22 @@
     ../../home/hx/i3
 
     # Common
+    ../../common/amdcpu.nix
+    ../../common/amdgpu.nix
     ../../common/docker.nix
     ../../common/fonts.nix
     ../../common/games.nix
-    ../../common/docker.nix
     ../../common/networkmanager.nix
     ../../common/pipewire.nix
     ../../common/networking-extra.nix
     ../../common/security.nix
     ../../common/nix-pkg-allow.nix
-    ../../common/amdcpu.nix
-    ../../common/amdgpu.nix
     ../../common/virtualbox.nix
     ../../common/fwupd.nix
-
-    # WG
-    #./c137.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = false;
-  boot.supportedFilesystems = [ "ntfs" ];
+  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "TheOrville";
   networking.useDHCP = false;
