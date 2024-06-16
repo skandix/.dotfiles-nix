@@ -27,7 +27,10 @@
     in {
       nixosConfigurations = {
         DeathStar = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
+          specialArgs = { 
+            inherit inputs; 
+            inherit unstable; 
+          };
           modules = [
             ./hosts/DeathStar/configuration.nix
             inputs.home-manager.nixosModules.default
@@ -43,22 +46,6 @@
             inputs.home-manager.nixosModules.default
           ];
         };
-        SpaceCruiser = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
-          modules = [
-            ./hosts/SpaceCruiser/configuration.nix
-            inputs.home-manager.nixosModules.default
-          ];
-        };
       };
     };
-
-    #darwinConfigurations."SpaceCruiser" = darwin.lib.darwinSystem {
-      #modules = [
-        #./modules/macos/nix-core.nix
-        #./modules/macos/system.nix
-        #./modules/macos/apps.nix
-        #./modules/macos/system.nix
-      #];
-    #};
 }

@@ -7,6 +7,6 @@
     PAGER = "less";
     BROWSER = "firefox";
     EDITOR = "vim";
-    SHELL = "fish";
+    SHELL = "zsh";
   };
 }

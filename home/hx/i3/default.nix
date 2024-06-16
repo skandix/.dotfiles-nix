@@ -9,9 +9,7 @@
   services.libinput.enable = true;
   services.xserver.displayManager.lightdm = {
     enable = true;
-    background = "../../../wallpapers/lockscreen.jpg";
     greeters.enso.enable = true;
-    greeters.enso.blur = true;
   };
   services.displayManager.defaultSession = "none+i3";
   services.xserver.windowManager.i3 = {

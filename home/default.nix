@@ -6,7 +6,7 @@
       allowUnfree = true;
     };
   };
-  programs.fish.enable = true;
+  programs.zsh.enable = true;
   users.groups.hx.gid = 1000;
   users.users.hx = {
     isNormalUser = true;
