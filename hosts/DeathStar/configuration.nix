@@ -23,6 +23,7 @@
     ../../common/virtualbox.nix
     ../../common/fwupd.nix
     ../../common/security.nix
+    ../../common/ssh-client.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
