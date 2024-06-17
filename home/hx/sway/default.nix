@@ -7,4 +7,9 @@
   programs.waybar = {
     enable = true;
   };
+  home-manager.users.hx = {
+    xdg.configFile = {
+      "sway/config".source = ./sway_config;
+    };
+  };
 }
