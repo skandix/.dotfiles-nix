@@ -3,10 +3,10 @@
 {
   nixpkgs = {
     config = {
-      allowUnfree = true;
+      allowUnfree = true;q
     };
   };
-  programs.zsh.enable = true;
+  programs.fish.enable = true;
   users.groups.hx.gid = 1000;
   users.users.hx = {
     isNormalUser = true;
@@ -26,7 +26,7 @@
       "vboxusers"
     ];
     group = "hx";
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
   };
 
   home-manager.users = { hx = (import ./hx/hm/base.nix); };
