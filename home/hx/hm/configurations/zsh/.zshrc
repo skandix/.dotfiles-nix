@@ -14,8 +14,8 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/fast-syntax-highlighting
 
 ## COLORS ##
-(cat ~/.cache/wal/sequences &) &>/dev/null
-source ~/.cache/wal/colors-tty.sh &>/dev/null
+# (cat ~/.cache/wal/sequences &) &>/dev/null
+# source ~/.cache/wal/colors-tty.sh &>/dev/null
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -34,7 +34,6 @@ alias sl="ls --color"
 alias dc="docker compose"
 alias nf="cd $HOME/.dotfiles-nix && nvim . && cd -"
 alias gname="head -c 100 /dev/urandom | md5sum"
-#alias docker="podman"
 
 ## BINDKEY ###
 bindkey  "^[[H"   beginning-of-line
