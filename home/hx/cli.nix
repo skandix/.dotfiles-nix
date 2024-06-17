@@ -58,6 +58,7 @@
       terraform
       ansible
       openstackclient
+      packer
 
       ## CTF
       # volatility # error: 'volatility' has been removed, as it was broken and unmaintained
