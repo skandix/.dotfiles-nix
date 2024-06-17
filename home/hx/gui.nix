@@ -3,16 +3,8 @@
 {
   imports = [
     ./hm/configurations/alacritty
-    ./hm/configurations/dunst
-    ./hm/configurations/flameshot
     ./hm/configurations/firefox
     ./hm/configurations/mpv
-    ./hm/configurations/picom
-    ./hm/configurations/rofi
-    # ./hm/configurations/discord
-    # ./hm/configurations/hyperland
-    # ./hm/configurations/mangohud
-    # ./hm/configurations/xscreensaver
   ];
 
   home-manager.users.hx = {
@@ -45,8 +37,8 @@
       # obs-studio
 
       ## LOCKSCREEN + SCREENSAVER
-      xsecurelock
-      xscreensaver
+      # xsecurelock
+      # xscreensaver
 
       ## CTF
       # volatility # error: 'volatility' has been removed, as it was broken and unmaintained

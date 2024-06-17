@@ -1,6 +1,13 @@
 { pkgs, ... }:
 
 {
+  imports = [
+    ./../hm/configurations/dunst
+    ./../hm/configurations/flameshot
+    ./../hm/configurations/picom
+    ./../hm/configurations/rofi
+  ];
+
   services.xserver = {
     enable = true;
     autorun = true;

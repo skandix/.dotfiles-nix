@@ -2,11 +2,10 @@
 
 {
   imports = [
-    # ./hm/configurations/helix
     ./hm/configurations/vim
     ./hm/configurations/tmux
     ./hm/python.nix
-    ./hm/rust.nix
+    # ./hm/rust.nix
   ];
 
   home-manager.users.hx = {

@@ -26,15 +26,13 @@ SAVEHIST=1000
 alias ..="cd .."
 alias ip="ip -c"
 alias k="kubecolor"
-alias kd="k delete -f ."
-alias ka="k apply -f ."
 alias o="openstack"
 alias t="talosctl"
 alias tf="terraform"
 alias ls="ls --color"
 alias sl="ls --color"
-alias compose="docker compose"
-alias nf="cd $HOME/.dotfiles && nvim . && cd -"
+alias dc="docker compose"
+alias nf="cd $HOME/.dotfiles-nix && nvim . && cd -"
 alias gname="head -c 100 /dev/urandom | md5sum"
 #alias docker="podman"
 
@@ -46,7 +44,7 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 ## EXPORT ##
-source gitclones/bofh/openstack/openstack.sh
+source gitclones/bofh/openstack/openstack.sh &>/dev/null
 
 pfetch -t |lolcat
 
