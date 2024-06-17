@@ -22,7 +22,7 @@
   services.xserver.windowManager.i3 = {
     enable = true;
     package = pkgs.i3;
-    extraPackages = with pkgs; [ pkg-config xclip arandr feh i3status polybar ];
+    extraPackages = with pkgs; [ pkg-config xclip arandr feh i3status ];
   };
   services.xserver.extraConfig = ''
     Section "ServerFlags"
