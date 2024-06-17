@@ -3,7 +3,7 @@
 {
   nixpkgs = {
     config = {
-      allowUnfree = true;q
+      allowUnfree = true;
     };
   };
   programs.fish.enable = true;
