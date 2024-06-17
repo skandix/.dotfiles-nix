@@ -6,11 +6,11 @@
     ./hardware-configuration.nix
 
     # core dotfiles + graphical things
-     ../../home
-     ../../home/hx
-     ../../home/hx/gui.nix
-     ../../home/hx/cli.nix
-     ../../home/hx/i3
+    ../../home
+    ../../home/hx
+    ../../home/hx/gui.nix
+    ../../home/hx/cli.nix
+    ../../home/hx/i3
 
     # Common
     ../../common/intelcpu.nix
@@ -28,6 +28,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  systemd.services.NetworkManager-wait-online.enable = false;
   networking.hostName = "DeathStar";
   networking.useDHCP = false;
   networking.interfaces.eno1.useDHCP = true;

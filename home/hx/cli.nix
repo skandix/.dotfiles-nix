@@ -21,7 +21,7 @@
       gnome.gnome-keyring
       jq
       htop
-      yt-dlp
+      # yt-dlp
       bat
       wget
       git

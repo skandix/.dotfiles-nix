@@ -26,9 +26,9 @@
     in {
       nixosConfigurations = {
         DeathStar = nixpkgs.lib.nixosSystem {
-          specialArgs = { 
-            inherit inputs; 
-            inherit unstable; 
+          specialArgs = {
+            inherit inputs;
+            inherit unstable;
           };
           modules = [
             ./hosts/DeathStar/configuration.nix
@@ -36,9 +36,9 @@
           ];
         };
         TheOrville = nixpkgs.lib.nixosSystem {
-          specialArgs = { 
-            inherit inputs; 
-            inherit unstable; 
+          specialArgs = {
+            inherit inputs;
+            inherit unstable;
           };
           modules = [
             ./hosts/TheOrville/configuration.nix

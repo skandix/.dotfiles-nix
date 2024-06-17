@@ -3,11 +3,6 @@ command=echo "$(w | grep load | cut -d':' -f 5 | xargs)"
 interval=1
 color=#ff00ff
 
-# [battery-poly]
-# command=$HOME/.config/i3blocks/battery-poly
-# LABEL=BAT
-# interval=5
-
 [DISK]
 command=df -h / | awk '/\//{ printf("💾 %4s/%s \n", $4, $2) }'
 interval=2
@@ -32,9 +27,3 @@ color=#A4C2F4
 command=date +" %a, %d %b - %H:%M:%S "
 interval=1
 color=#ff00ff
-
-
-# [JP_TIME]
-# command=date --date='TZ="Japan/Tokyo"' +"%H:%M:%S"
-# interval=1
-# color=#ff00ff
