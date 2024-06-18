@@ -32,7 +32,7 @@
       unstable.ffmpeg
       pulseaudio # needed for pactl
       glib
-      comma
+      qemu
 
       ## PROGRAMMING LANGUAGES
       go
