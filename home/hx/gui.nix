@@ -37,8 +37,8 @@
       # obs-studio
 
       ## LOCKSCREEN + SCREENSAVER
-      # xsecurelock
-      # xscreensaver
+       xsecurelock
+       xscreensaver
 
       ## CTF
       # volatility # error: 'volatility' has been removed, as it was broken and unmaintained
