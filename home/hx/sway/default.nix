@@ -6,7 +6,7 @@
     extraPackages = with pkgs; [ 
       waypaper
       swaybg
-     ]
+     ];
   };
   programs.waybar = {
     enable = true;

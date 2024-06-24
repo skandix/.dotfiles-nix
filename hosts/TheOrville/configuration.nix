@@ -33,6 +33,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  systemd.services.NetworkManager-wait-online.enable = false; # to avoid iface or vbox waiting for connection.
   networking.hostName = "TheOrville";
   networking.useDHCP = false;
   networking.interfaces.enp5s0.useDHCP = true;

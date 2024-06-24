@@ -29,7 +29,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  systemd.services.NetworkManager-wait-online.enable = false;
+  systemd.services.NetworkManager-wait-online.enable = false; # to avoid iface or vbox waiting for connection.
   networking.hostName = "DeathStar";
   networking.useDHCP = false;
   networking.interfaces.eno1.useDHCP = true;
