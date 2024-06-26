@@ -34,6 +34,7 @@
       sublime
       cider
       activitywatch
+      unstable.zed-editor
       # obs-studio
 
       ## LOCKSCREEN + SCREENSAVER
