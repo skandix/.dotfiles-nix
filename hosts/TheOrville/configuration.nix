@@ -24,7 +24,7 @@
     ../../common/networking-extra.nix
     ../../common/security.nix
     ../../common/nix-pkg-allow.nix
-    ../../common/virtualbox.nix
+    #../../common/virtualbox.nix
     ../../common/fwupd.nix
     ../../common/zsh.nix
     ../../common/ssh-client.nix

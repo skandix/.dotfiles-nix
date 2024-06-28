@@ -34,7 +34,7 @@
       sublime
       cider
       activitywatch
-      unstable.zed-editor
+      #zed-editor # not quite a editor to use as of now 26. june 2024
       # obs-studio
 
       ## LOCKSCREEN + SCREENSAVER

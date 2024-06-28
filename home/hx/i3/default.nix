@@ -6,6 +6,7 @@
     ./../hm/configurations/flameshot
     ./../hm/configurations/picom
     ./../hm/configurations/rofi
+    ./../hm/configurations/librewolf
   ];
 
   services.xserver = {
