@@ -20,6 +20,7 @@
       # zoom-us
       vscode
       plexamp
+      supersonic
       plex-media-player
       discord
       mpv
