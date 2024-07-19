@@ -2,7 +2,7 @@ up:
 	nix flake update
 
 sw:
-	sudo nixos-rebuild switch --flake .
+	NIXPKGS_ALLOW_UNFREE=1 sudo nixos-rebuild switch --flake .
 
 swt:
 	sudo nixos-rebuild switch --flake . --show-trace

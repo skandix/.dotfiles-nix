@@ -10,8 +10,8 @@
 
   home-manager.users.hx = {
     home.packages = with pkgs; [
-      ## GENERAL CLI
       p7zip
+      sshfs-fuse
       zlib
       gnutar
       libnotify
@@ -21,7 +21,7 @@
       gnome.gnome-keyring
       jq
       htop
-      # yt-dlp
+      yt-dlp
       bat
       wget
       git
@@ -33,11 +33,8 @@
       pulseaudio # needed for pactl
       glib
       qemu
-
-      ## PROGRAMMING LANGUAGES
+      ntfs3g
       go
-
-      ## NETWORK TOOLS
       dig
       traceroute
       ldns

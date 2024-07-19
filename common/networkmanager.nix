@@ -6,8 +6,9 @@
   environment.systemPackages = with pkgs; [
     networkmanager
     networkmanagerapplet
-    # networkmanager-openvpn
-    # networkmanager-openconnect
-    # openvpn
+    networkmanager-openvpn
+    openvpn
+    networkmanager-openconnect
+    openconnect
   ];
 }

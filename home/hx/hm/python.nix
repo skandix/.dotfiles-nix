@@ -4,9 +4,8 @@
   home-manager.users.hx = {
     home.packages = with pkgs;
     [
-      pdm
       (python312.withPackages
-        (ps: with ps; [ neovim requests setuptools pip pipenv loguru virtualenv ]))
+        (ps: with ps; [ neovim requests setuptools pip pipenv loguru pipenv ]))
       ];
   };
 }
