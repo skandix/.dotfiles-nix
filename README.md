@@ -23,4 +23,4 @@ sudo nixos-install --flake github:skandix/.nix-conf#(DeathStar|TheOrville|SpaceC
 * https://nixos.org/guides/nix-pills/index.html
 * https://nix.dev/
 * https://nixos.wiki/wiki/For_Beginners
-
+* https://github.com/isabelroses/dotfiles
