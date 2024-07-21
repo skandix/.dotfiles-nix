@@ -19,8 +19,5 @@ configuration {
       delay:  0;
   }
 }
-/* Dark theme. */
-/*@import "~/.cache/wal/colors-rofi-dark"*/
 
-//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
-//@theme "/usr/share/rofi/themes/purple.rasi"
+@import ./spotlight.rasi"
