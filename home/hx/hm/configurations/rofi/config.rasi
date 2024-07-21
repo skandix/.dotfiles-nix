@@ -9,7 +9,7 @@ configuration {
     ssh-client: "ssh";
     ssh-command: "{terminal} -e ssh {host}";
     run-command: "{cmd}";
-    yoffset: -200;
+    yoffset: -100;
     xoffset: 0;
     run {
         width: 10;
@@ -20,4 +20,4 @@ configuration {
   }
 }
 
-@import ./spotlight.rasi"
+@theme "./spotlight.rasi"
