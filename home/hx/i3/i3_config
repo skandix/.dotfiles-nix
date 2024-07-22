@@ -155,10 +155,9 @@ position top
 default_border pixel 1
 
 # START EVERYTIME i3 is reloaded
-# exec_always --no-startup-id sh "$HOME/.config/i3/rnd_bg.sh"
-exec_always --no-startup-id feh --bg-fill --randomize $HOME/.dotfiles-nix/home/hx/i3/wall/*
-exec_always --no-startup-id picom
 exec_always --no-startup-id sh "$HOME/.screenlayout/default.sh"
+exec_always --no-startup-id feh --bg-fill --randomize $HOME/.dotfiles-nix/home/hx/wall/*
+exec_always --no-startup-id picom
 exec_always --no-startup-id dunst
 exec_always --no-startup-id setxkbmap no
 
