@@ -2,7 +2,7 @@
 
 {
   programs.git = {
-    # package = pkgs.gitAndTools.gitFull;
+    package = pkgs.gitAndTools.gitFull;
     enable = true;
     userName = "skandix";
     userEmail = "bendik.dyrli@gmail.com";

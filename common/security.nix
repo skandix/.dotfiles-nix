@@ -1,12 +1,20 @@
 { config, lib, pkgs, ... }:
 
-with lib; {
-  config = {
+{
     boot.tmp.cleanOnBoot = true;
 
     nix.settings = {
       auto-optimise-store = true;
       trusted-users = [ "root" "hx" ];
+    };
+
+    nix.gc = {
+        automatic = true;
+        options = "--delete-older-than 7d";
+    };
+
+    nix.optimise =  {
+        automatic = true;
     };
 
     security.pam.loginLimits = [{
@@ -15,7 +23,6 @@ with lib; {
       item = "nofile";
       value = "unlimited";
     }];
-  };
 }
 
 

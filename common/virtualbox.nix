@@ -7,4 +7,5 @@
       enableExtensionPack = true;
     };
   };
+  environment.systemPackages = with pkgs; [ vagrant ];
 }
