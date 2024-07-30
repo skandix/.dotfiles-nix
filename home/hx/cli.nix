@@ -27,6 +27,7 @@
       xclip
       pfetch
       pulseaudio # needed for pactl
+      qemu
       ntfs3g
       go
       dig
