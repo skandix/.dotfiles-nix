@@ -41,6 +41,7 @@
       ansible
       openstackclient
       packer
+      unstable.pipenv
     ];
   };
 }
