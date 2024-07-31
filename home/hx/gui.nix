@@ -24,9 +24,6 @@
       plex-media-player
       discord
       firefox
-      google-chrome
-      pavucontrol
-      bitwarden
       gnome.seahorse
       obsidian
       sublime
@@ -34,7 +31,7 @@
       activitywatch
       xsecurelock
       xscreensaver
-      apple_cursor
+      apple-cursor
     ];
   };
 }
