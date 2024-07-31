@@ -10,5 +10,6 @@
     openvpn
     networkmanager-openconnect
     openconnect
+    nm-tray
   ];
 }

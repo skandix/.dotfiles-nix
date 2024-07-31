@@ -1,11 +1,6 @@
 {home-manager, pkgs, ... }:
 
 {
-  nixpkgs = {
-    config = {
-      allowUnfree = true;
-    };
-  };
   programs.fish.enable = true;
   users.groups.hx.gid = 1000;
   users.users.hx = {
@@ -30,5 +25,7 @@
     shell = pkgs.fish;
   };
 
-  home-manager.users = { hx = (import ./hx/hm/base.nix); };
+  home-manager.users = {
+    hx = (import ./hx/hm/base.nix);
+  };
 }

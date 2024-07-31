@@ -18,6 +18,7 @@
         compose="docker compose";
         nf="cd $HOME/.nix-conf && nvim . && cd -";
         gname="head -c 100 /dev/urandom | md5sum";
+        cat="bat --decorations never"
       };
       # # Colors for shell, not sure if this is the prefered way to do it
       loginShellInit = ''
@@ -47,7 +48,7 @@
         set -U fish_color_match --background=brblue
         set -U fish_color_comment FF9640
       '';
-      interactiveShellInit = "pfetch";
+      # interactiveShellInit = "pfetch";
     };
     programs.dircolors.enable = true;
     programs.dircolors.enableFishIntegration = true;

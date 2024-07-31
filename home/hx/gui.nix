@@ -23,11 +23,9 @@
       wireshark
       plex-media-player
       discord
-      mpv
       firefox
       google-chrome
       pavucontrol
-      nm-tray
       bitwarden
       gnome.seahorse
       obsidian
@@ -36,6 +34,7 @@
       activitywatch
       xsecurelock
       xscreensaver
+      apple_cursor
     ];
   };
 }

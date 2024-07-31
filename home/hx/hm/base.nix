@@ -10,5 +10,4 @@
   programs.home-manager.enable = true;
 
   home.sessionPath = [ "$HOME/.go/bin" "$HOME/.local/bin" "$HOME/.cargo/bin" ];
-  nixpkgs.config = { allowUnfree = true; };
 }

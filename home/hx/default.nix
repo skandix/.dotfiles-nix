@@ -6,5 +6,6 @@
     BROWSER = "firefox";
     EDITOR = "vim";
     SHELL = "fish";
+    TERMINAL = "alacritty";
   };
 }
