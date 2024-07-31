@@ -3,6 +3,7 @@
 {
   imports = [
     ./hm/configurations/alacritty
+    ./hm/configurations/kitty
     ./hm/configurations/firefox
     ./hm/configurations/mpv
   ];
