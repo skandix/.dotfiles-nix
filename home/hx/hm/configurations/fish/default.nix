@@ -19,6 +19,7 @@
         nf="cd $HOME/.nix-conf && nvim . && cd -";
         gname="head -c 100 /dev/urandom | md5sum";
         cat="bat --decorations never";
+        ssh="kitten ssh";
       };
       # # Colors for shell, not sure if this is the prefered way to do it
       loginShellInit = ''

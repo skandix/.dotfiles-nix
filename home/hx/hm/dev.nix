@@ -18,6 +18,7 @@
         ]))
       rustup
       go
+      poetry
     ];
   };
 }

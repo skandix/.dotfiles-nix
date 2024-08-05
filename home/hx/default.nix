@@ -3,7 +3,7 @@
 {
   environment.variables = {
     PAGER = "less";
-    BROWSER = "firefox";
+    BROWSER = "librewolf";
     EDITOR = "vim";
     SHELL = "fish";
     TERMINAL = "kitty";

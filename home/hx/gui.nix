@@ -2,9 +2,7 @@
 
 {
   imports = [
-    #./hm/configurations/alacritty
     ./hm/configurations/kitty
-    ./hm/configurations/firefox
     ./hm/configurations/mpv
   ];
 
@@ -23,7 +21,6 @@
       wireshark
       plex-media-player
       discord
-      firefox
       gnome.seahorse
       obsidian
       sublime

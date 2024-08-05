@@ -30,11 +30,13 @@
       tcpdump
       speedtest-cli
       kubectl
+      kubecolor
       k9s
       terraform
       ansible
       openstackclient
       packer
+      rbw
     ];
   };
 }
