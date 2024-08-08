@@ -46,7 +46,7 @@ nnoremap <C-H> <C-W><C-H>
 
 """ ligthline config
 syntax enable
-colorscheme gruvbox
+colorscheme srcery
 
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE

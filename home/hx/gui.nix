@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./hm/configurations/kitty
+    ./hm/configurations/alacritty
     ./hm/configurations/mpv
   ];
 

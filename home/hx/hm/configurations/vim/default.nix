@@ -23,6 +23,14 @@ in {
         vim-gitgutter
         lexima-vim
         gruvbox
+        telescope-nvim
+        srcery-vim
+        ansible-vim
+        vim-polyglot
+        aurora
+        rainbow
+        vim-airline
+        vim-airline-themes
       ];
       extraConfig = ''
         ${general}
@@ -30,22 +38,3 @@ in {
     };
   };
 }
-
-# 'rust-lang/rust.vim'
-# 'pearofducks/ansible-vim'
-# 'nathanaelkane/vim-indent-guides'
-# 'scrooloose/nerdtree'
-# 'vimsence/vimsence'
-# 'scrooloose/nerdcommenter'
-# 'Yggdroot/LeaderF'
-# 'sheerun/vim-polyglot'
-# 'mhinz/vim-startify'
-# 'elzr/vim-json'
-# 'ntpeters/vim-better-whitespace'
-# 'bling/vim-airline'
-# 'vim-airline/vim-airline-themes
-# 'w0rp/ale'
-# 'airblade/vim-gitgutter'
-# 'luochen1990/rainbow'
-# 'ray-x/aurora'
-# 'cohama/lexima.vim'
