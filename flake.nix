@@ -10,15 +10,15 @@
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # darwin = {
-    #   url = "github:LnL7/nix-darwin";
-    #   inputs.nixpkgs.follows = "nixpkgs-unstable";
-    # };
+    nix-darwin = {
+      url = "github:LnL7/nix-darwin";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
     # nix-gaming.url = "github:fufexan/nix-gaming";
   };
 
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, nixos-hardware, home-manager, ...}:
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, nixos-hardware, home-manager, nix-darwin, ...}:
     let
       system = "x86_64-linux";
       # pkgs = nixpkgs.legacyPackages."x86_64-linux";
@@ -43,6 +43,15 @@
           modules = [
             ./hosts/TheOrville/configuration.nix
             inputs.home-manager.nixosModules.default
+          ];
+        };
+        SpaceCruiser = nix-darwin.lib.darwinSystem {
+          specialArgs = {
+            inherit inputs;
+            inherit unstable;
+          };
+          modules = [
+            ./hosts/SpaceCruiser/default.nix
           ];
         };
       };
