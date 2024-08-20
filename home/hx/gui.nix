@@ -30,6 +30,7 @@
       xscreensaver
       apple-cursor
       anki-bin
+      libreoffice-qt6-fresh
     ];
   };
 }

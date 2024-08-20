@@ -37,6 +37,7 @@
       openstackclient
       packer
       rbw
+      reveal-md
     ];
   };
 }
