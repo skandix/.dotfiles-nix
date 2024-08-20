@@ -45,6 +45,8 @@
             inputs.home-manager.nixosModules.default
           ];
         };
+      };
+      darwinConfigurations = {
         SpaceCruiser = nix-darwin.lib.darwinSystem {
           specialArgs = {
             inherit inputs;
