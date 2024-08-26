@@ -1,27 +1,22 @@
-{ config, pkgs, unstable, ... }:
+{ config, pkgs, ... }:
 
 {
-  nixpkgs.config.allowUnfree = true;
   hardware.opengl = {
     enable = true;
     driSupport32Bit = true;
     driSupport = true;
   };
   hardware.pulseaudio.support32Bit = true;
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-  };
+  programs.steam.enable = true;
 
   # OTHER
   environment.systemPackages = with pkgs; [
-    unstable.lutris
-    unstable.winetricks
+    lutris
+    winetricks
     wine-staging
     gamemode
     mangohud
     r2modman
-    unstable.protontricks
+    protontricks
   ];
 }
