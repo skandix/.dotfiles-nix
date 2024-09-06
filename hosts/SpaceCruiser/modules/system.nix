@@ -40,11 +40,11 @@
         KeyRepeat = 3; # normal minimum is 2 (30 ms), maximum is 120 (1800 ms)
     };
   };
-
+  };
+  
   security.pam.enableSudoTouchIdAuth = true;
 
   # Create /etc/zshrc that loads the nix-darwin environment.
   # this is required if you want to use darwin's default shell - zsh
   programs.zsh.enable = true;
-
 }
