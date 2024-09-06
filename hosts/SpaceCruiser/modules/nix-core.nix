@@ -2,6 +2,13 @@
 { pkgs, ... }:
 
 {
+  nixpkgs = {
+    hostPlatform = "x86_64-darwin";
+    config = {
+      allowUnfree = true;
+      allowUnfreePredicate = (_: true);
+    };
+  };
   nix.settings = {
     # enable flakes globally
     experimental-features = ["nix-command" "flakes"];

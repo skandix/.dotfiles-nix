@@ -9,11 +9,11 @@
   homebrew = {
     enable = true;
     onActivation = {
-      autoUpdate = false;
-      # cleanup = "zap";
-      upgrade = false;
+      autoUpdate = true;
+      cleanup = "zap";
+      upgrade = true;
     };
-    brewPrefix = "/opt/homebrew/bin";
+    # brewPrefix = "/opt/homebrew/bin";
     caskArgs = {
       no_quarantine = true;
     };
@@ -24,15 +24,69 @@
 
     # `brew install`
     brews = [
-      # "aria2"  # download tool
+      "p7zip"
+      "git"
+      "jq"
+      "wget"
+      "ncdu"
+      "htop"
+      "ffmpeg"
+      "docker"
+      "docker-compose"
+      "netcat"
+      "nmap"
+      "wireshark"
+      "tcpdump"
+      "speedtest-cli"
+      "ansible"
+      "terraform"
+      "kubernetes-cli"
+      "k9s"
+      "mas"
+      "openstackclient"
+      # "obs"
+      # "obs-browser"
+      "binwalk"
+      "poetry"
+      "pfetch"
+      "lolcat"
+      "neofetch"
+      "zsh"
+      "neovim"
+      "tmux"
     ];
 
     # `brew install --cask`
     casks = [
-      telegram
-      libreoffice
-      signal
-      tailscale
+      "telegram"
+      "signal"
+      "tor-browser"
+      "sublime-text"
+      "discord"
+      "librewolf"
+      "mumble"
+      "microsoft-teams"
+      "zoom"
+      "visual-studio-code"
+      "plexamp"
+      "plex-media-player"
+      "slack"
+      "libreoffice"
+      "sonic-visualiser"
+      "keybase"
+      "vagrant"
+      "virtualbox"
+      "tailscale"
+      "swinsian"
+      "binary-ninja"
+      "steam"
+      "obsidian"
     ];
+
+    masApps = {
+      Amphetamine = 937984704;
+      Magnet = 441258766;
+      Wireguard = 1451685025;
+    };
   };
 }
