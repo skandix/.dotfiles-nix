@@ -53,7 +53,8 @@
             inherit unstable;
           };
           modules = [
-            ./hosts/SpaceCruiser/default.nix
+            ./hosts/SpaceCruiser/configuration.nix
+            inputs.home-manager.darwinModules.home-manager
           ];
         };
       };
