@@ -29,44 +29,44 @@
     backupFileExtension = "bak";
     useUserPackages = true;
   };
-  nix = {
-    settings = {
-      max-jobs = "auto";
-      auto-optimise-store = true;
-      experimental-features = [ "nix-command" "flakes" ];
-    };
-    useDaemon = true;
-    };
+  # nix = {
+  #   settings = {
+  #     max-jobs = "auto";
+  #     auto-optimise-store = true;
+  #     experimental-features = [ "nix-command" "flakes" ];
+  #   };
+  #   useDaemon = true;
+  #   };
 
-  homebrew = {
-    enable = true;
-    onActivation = {
-      autoUpdate = true;
-      cleanup = "zap";
-      upgrade = true;
-    };
-    brewPrefix = "/opt/homebrew/bin";
-    caskArgs = {
-      no_quarantine = true;
-    };
-    brews = [
-      "ansible"
-      "ansible-lint"
-      "pulumi"
-    ];
-    casks = [
-      # "notion"
-      "telegram"
-      "libreoffice"
-      "signal"
-      # "karabiner-elements"
-      # "grid"
-      # "monitorcontrol"
-      # "google-chrome"
-      # "handbrake"
-      "tailscale"
-      # "bambu-studio"
-      # "element"
-    ];
-  };
+  # homebrew = {
+  #   enable = true;
+  #   onActivation = {
+  #     autoUpdate = true;
+  #     cleanup = "zap";
+  #     upgrade = true;
+  #   };
+  #   brewPrefix = "/opt/homebrew/bin";
+  #   caskArgs = {
+  #     no_quarantine = true;
+  #   };
+  #   brews = [
+  #     "ansible"
+  #     "ansible-lint"
+  #     "pulumi"
+  #   ];
+  #   casks = [
+  #     # "notion"
+  #     "telegram"
+  #     "libreoffice"
+  #     "signal"
+  #     # "karabiner-elements"
+  #     # "grid"
+  #     # "monitorcontrol"
+  #     # "google-chrome"
+  #     # "handbrake"
+  #     "tailscale"
+  #     # "bambu-studio"
+  #     # "element"
+  #   ];
+  # };
 }
