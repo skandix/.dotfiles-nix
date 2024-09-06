@@ -43,18 +43,18 @@
       "pulumi"
     ];
     casks = [
-      "notion"
+      # "notion"
       "telegram"
       "libreoffice"
       "signal"
-      "karabiner-elements"
-      "grid"
-      "monitorcontrol"
-      "google-chrome"
-      "handbrake"
+      # "karabiner-elements"
+      # "grid"
+      # "monitorcontrol"
+      # "google-chrome"
+      # "handbrake"
       "tailscale"
-      "bambu-studio"
-      "element"
+      # "bambu-studio"
+      # "element"
     ];
   };
 }
