@@ -81,6 +81,7 @@
       "binary-ninja"
       "steam"
       "obsidian"
+      "mpv"
     ];
 
     masApps = {
