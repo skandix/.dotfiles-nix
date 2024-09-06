@@ -78,10 +78,10 @@
       "virtualbox"
       "tailscale"
       "swinsian"
-      "binary-ninja"
+      # "binary-ninja"
       "steam"
       "obsidian"
-      "mpv"
+      # "mpv"
     ];
 
     masApps = {
