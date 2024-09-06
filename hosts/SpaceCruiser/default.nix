@@ -6,7 +6,7 @@
       allowUnfreePredicate = (_: true);
     };
   };
-  imports = [ <home-manager/nix-darwin> ];
+  # imports = [ <home-manager/nix-darwin> ];
   home-manager = {
     useGlobalPkgs = false; # makes hm use nixos's pkgs value
       extraSpecialArgs = { inherit inputs; }; # allows access to flake inputs in hm modules
@@ -14,6 +14,7 @@
         home.homeDirectory = lib.mkForce "/Users/hx";
 
         imports = [
+          ../../home/hx
           ../../home/hx/cli.nix
           ../../home/hx/hm/configurations/tmux
           ../../home/hx/hm/configurations/vim
