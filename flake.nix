@@ -53,13 +53,17 @@
             inherit unstable;
           };
           modules = [
-            #./hosts/SpaceCruiser/configuration.nix
             ./hosts/SpaceCruiser/modules/apps.nix
             ./hosts/SpaceCruiser/modules/host-users.nix
             ./hosts/SpaceCruiser/modules/nix-core.nix
             ./hosts/SpaceCruiser/modules/system.nix
 
             inputs.home-manager.darwinModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.hx = import ./hosts/SpaceCruiser/home.nix;
+            }
           ];
         };
       };
