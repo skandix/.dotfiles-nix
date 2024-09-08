@@ -64,7 +64,7 @@
               #home-manager.useUserPackages = true;
               #home-manager.users.hx = import ./hosts/SpaceCruiser/home.nix;
             #}
-#          ];
+         ];
         };
       };
     };

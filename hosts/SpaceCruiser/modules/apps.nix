@@ -3,6 +3,10 @@
 
   environment.systemPackages = with pkgs; [
     git
+    pfetch
+    neofetch
+    terraform
+    # plex-media-player
   ];
 
   # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
@@ -39,18 +43,12 @@
       "tcpdump"
       "speedtest-cli"
       "ansible"
-      "terraform"
       "kubernetes-cli"
       "k9s"
       "mas"
       "openstackclient"
-      # "obs"
-      # "obs-browser"
-      "binwalk"
       "poetry"
-      "pfetch"
       "lolcat"
-      "neofetch"
       "zsh"
       "neovim"
       "tmux"
@@ -64,24 +62,18 @@
       "sublime-text"
       "discord"
       "librewolf"
-      "mumble"
       "microsoft-teams"
-      "zoom"
       "visual-studio-code"
       "plexamp"
       "plex-media-player"
       "slack"
-      "libreoffice"
-      "sonic-visualiser"
       "keybase"
       "vagrant"
       "virtualbox"
       "tailscale"
       "swinsian"
-      # "binary-ninja"
       "steam"
       "obsidian"
-      # "mpv"
     ];
 
     masApps = {
