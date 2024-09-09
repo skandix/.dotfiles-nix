@@ -16,10 +16,6 @@
       screencapture.location = "~/Pictures/screenshots";
       loginwindow.LoginwindowText = "waaaow";
 
-      windowManager = {
-        StandardHideWidgets = false;
-      };
-
       dock = {
         autohide = true; # automatically hide and show 
         show-recents = false; # do not show recent apps in dock
@@ -35,16 +31,10 @@
 
         # Appearance
         AppleInterfaceStyle = "Dark"; # dark mode
-
         AppleKeyboardUIMode = 3; # Mode 3 enables full keyboard control.
         ApplePressAndHoldEnabled = true; # enable press and hold
-
-        # If you press and hold certain keyboard keys when in a text area, the key’s character begins to repeat.
-        # This is very useful for vim users, they use `hjkl` to move cursor.
-        # sets how long it takes before it starts repeating.
         InitialKeyRepeat = 15; # normal minimum is 15 (225 ms), maximum is 120 (1800 ms)
-        # sets how fast it repeats once it starts.
-        KeyRepeat = 3; # normal minimum is 2 (30 ms), maximum is 120 (1800 ms)
+        KeyRepeat = 2; # normal minimum is 2 (30 ms), maximum is 120 (1800 ms)
     };
   };
   };
