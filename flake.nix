@@ -12,7 +12,7 @@
     };
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     # nix-gaming.url = "github:fufexan/nix-gaming";
   };
@@ -53,8 +53,18 @@
             inherit unstable;
           };
           modules = [
-            ./hosts/SpaceCruiser/default.nix
-          ];
+            ./hosts/SpaceCruiser/modules/apps.nix
+            ./hosts/SpaceCruiser/modules/host-users.nix
+            ./hosts/SpaceCruiser/modules/nix-core.nix
+            ./hosts/SpaceCruiser/modules/system.nix
+
+#            inputs.home-manager.darwinModules.home-manager
+            #{
+              #home-manager.useGlobalPkgs = true;
+              #home-manager.useUserPackages = true;
+              #home-manager.users.hx = import ./hosts/SpaceCruiser/home.nix;
+            #}
+         ];
         };
       };
     };

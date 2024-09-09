@@ -10,6 +10,9 @@ swt:
 val:
 	nix flake check .
 
+macos:
+	nix run nix-darwin -- switch --flake .
+
 install-os:
 	# format disks then run this!
 	nixos-install --flake github:skandix/.dotfiles-nix
