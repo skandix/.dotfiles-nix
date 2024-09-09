@@ -52,6 +52,7 @@
       "zsh"
       "neovim"
       "tmux"
+      "kubecolor"
     ];
 
     # `brew install --cask`
