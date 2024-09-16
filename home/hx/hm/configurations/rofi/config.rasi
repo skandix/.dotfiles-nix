@@ -1,7 +1,7 @@
 configuration {
     modi: "window,run,ssh";
-    font: "Hack 10";
-    width: 10;
+    font: "Hack 8";
+    width: 8;
     height: 3;
     fixed-num-lines: true;
     show-icons: true;

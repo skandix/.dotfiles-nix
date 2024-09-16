@@ -23,6 +23,7 @@
     ../../common/fwupd.nix
     ../../common/security.nix
     ../../common/ssh-client.nix
+    ../../common/games.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
