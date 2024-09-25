@@ -8,6 +8,7 @@
   };
   hardware.pulseaudio.support32Bit = true;
   programs.steam.enable = true;
+  services.ratbagd.enable = true;
 
   # OTHER
   environment.systemPackages = with pkgs; [
@@ -18,5 +19,8 @@
     mangohud
     r2modman
     protontricks
+    piper
+    logitech-udev-rules
+    solaar
   ];
 }
