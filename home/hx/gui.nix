@@ -32,6 +32,8 @@
       anki-bin
       libreoffice-qt6-fresh
       solaar
+      sonic-visualiser
+      unstable.winbox
     ];
   };
 }
