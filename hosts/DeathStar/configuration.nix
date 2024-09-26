@@ -24,6 +24,7 @@
     ../../common/security.nix
     ../../common/ssh-client.nix
     ../../common/games.nix
+    ../../common/virtualbox.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
