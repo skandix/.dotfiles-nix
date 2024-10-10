@@ -36,8 +36,9 @@
       ansible
       openstackclient
       packer
-      rbw
+      #rbw
       reveal-md
+      ripgrep
     ];
   };
 }

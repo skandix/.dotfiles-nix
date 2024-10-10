@@ -22,5 +22,7 @@
     piper
     logitech-udev-rules
     solaar
+    runelite
+    prismlauncher
   ];
 }

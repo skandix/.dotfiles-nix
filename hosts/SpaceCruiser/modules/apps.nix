@@ -6,6 +6,7 @@
     pfetch
     neofetch
     terraform
+    reveal-md
     # plex-media-player
   ];
 
