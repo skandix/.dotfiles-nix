@@ -39,6 +39,7 @@
       #rbw
       reveal-md
       ripgrep
+      talosctl
     ];
   };
 }

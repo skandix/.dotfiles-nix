@@ -11,10 +11,7 @@
   boot.initrd.kernelModules = [ "amdgpu" ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
-  boot.kernelParams = [
-    "video=DisplayPort-1:2560x1440@144"
-    "video=HDMI-A-0:2560x1440@144"
-  ];
+  boot.kernelParams = [  ];
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";

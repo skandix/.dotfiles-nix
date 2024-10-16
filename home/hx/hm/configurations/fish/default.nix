@@ -16,7 +16,7 @@
         ls="ls --color";
         sl="ls --color";
         compose="docker compose";
-        nf="cd $HOME/.nix-conf && nvim . && cd -";
+        nf="cd $HOME/.dotfiles-nix && vim  && cd -";
         gname="head -c 5 /dev/urandom | md5sum";
         cat="bat --decorations never";
         #ssh="kitten ssh";

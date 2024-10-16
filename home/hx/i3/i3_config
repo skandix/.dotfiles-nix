@@ -152,7 +152,7 @@ position top
 }
 
 # Avoid title bar on windows, don't want to waste to much space
-default_border pixel 1
+default_border pixel 3
 
 # START EVERYTIME i3 is reloaded
 exec_always --no-startup-id sh "$HOME/.screenlayout/default.sh"

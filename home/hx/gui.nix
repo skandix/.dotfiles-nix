@@ -4,6 +4,7 @@
   imports = [
     ./hm/configurations/alacritty
     ./hm/configurations/mpv
+    ./hm/configurations/mangohud
   ];
 
   home-manager.users.hx = {
