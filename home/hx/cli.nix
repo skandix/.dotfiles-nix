@@ -32,7 +32,7 @@
       kubectl
       kubecolor
       k9s
-      terraform
+      opentofu
       ansible
       openstackclient
       packer
