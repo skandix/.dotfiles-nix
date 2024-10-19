@@ -4,6 +4,7 @@
   home-manager.users.hx = {
   programs.librewolf = {
     enable = true;
+    #package = pkgs.librewolf-unwrapped;
     settings = {
       "webgl.disabled" = false;
       "privacy.resistFingerprinting" = false;
