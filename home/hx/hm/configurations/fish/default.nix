@@ -12,7 +12,7 @@
         ka="k apply -f .";
         o="openstack";
         t="talosctl";
-        tf="terraform";
+        tf="tofu";
         ls="ls --color";
         sl="ls --color";
         compose="docker compose";
