@@ -1,7 +1,6 @@
 {
   description = "Cornflakes, probably have not heard this before huehuehue";
 
-
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -14,7 +13,6 @@
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # nix-gaming.url = "github:fufexan/nix-gaming";
   };
 
 
@@ -47,24 +45,17 @@
         };
       };
       darwinConfigurations = {
-        SpaceCruiser = nix-darwin.lib.darwinSystem {
+        TheVoyager = nix-darwin.lib.darwinSystem {
           specialArgs = {
             inherit inputs;
             inherit unstable;
           };
           modules = [
-            ./hosts/SpaceCruiser/modules/apps.nix
-            ./hosts/SpaceCruiser/modules/host-users.nix
-            ./hosts/SpaceCruiser/modules/nix-core.nix
-            ./hosts/SpaceCruiser/modules/system.nix
-
-#            inputs.home-manager.darwinModules.home-manager
-            #{
-              #home-manager.useGlobalPkgs = true;
-              #home-manager.useUserPackages = true;
-              #home-manager.users.hx = import ./hosts/SpaceCruiser/home.nix;
-            #}
-         ];
+            ./hosts/TheVoyager/modules/apps.nix
+            ./hosts/TheVoyager/modules/host-users.nix
+            ./hosts/TheVoyager/modules/nix-core.nix
+            ./hosts/TheVoyager/modules/system.nix
+          ];
         };
       };
     };

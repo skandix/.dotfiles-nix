@@ -7,6 +7,7 @@
     neofetch
     terraform
     reveal-md
+    talosctl
     # plex-media-player
   ];
 
