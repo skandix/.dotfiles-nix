@@ -40,6 +40,7 @@
       reveal-md
       ripgrep
       talosctl
+      dive
     ];
   };
 }

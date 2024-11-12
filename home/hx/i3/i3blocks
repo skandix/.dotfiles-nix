@@ -1,3 +1,14 @@
+[docker]
+command=docker
+color=#0db7ed
+interval=10
+LABEL=🐳
+
+[public-ip]
+full_text=public
+command=wget -qO - icanhazip.com
+interval=once
+
 [load]
 command=echo "$(w | grep load | cut -d':' -f 5 | xargs)"
 interval=1
@@ -27,3 +38,4 @@ color=#A4C2F4
 command=date +" %a, %d %b - %H:%M:%S "
 interval=1
 color=#ff00ff
+align=center
