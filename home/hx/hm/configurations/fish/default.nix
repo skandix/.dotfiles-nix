@@ -15,11 +15,9 @@
         tf="tofu";
         ls="ls --color";
         sl="ls --color";
-        compose="docker compose";
         nf="cd $HOME/.dotfiles-nix && vim  && cd -";
         gname="head -c 5 /dev/urandom | md5sum";
         cat="bat --decorations never";
-        #ssh="kitten ssh";
       };
       # # Colors for shell, not sure if this is the prefered way to do it
       loginShellInit = ''

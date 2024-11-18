@@ -24,7 +24,7 @@
   services.xserver.windowManager.i3 = {
     enable = true;
     package = pkgs.i3;
-    extraPackages = with pkgs; [ pkg-config xclip arandr feh i3blocks ];
+    extraPackages = with pkgs; [ pkg-config xclip arandr feh i3blocks pywal ];
   };
   services.xserver.extraConfig = ''
     Section "ServerFlags"

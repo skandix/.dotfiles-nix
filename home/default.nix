@@ -22,7 +22,7 @@
       "podman"
     ];
     group = "hx";
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
   };
 
   home-manager.users = {

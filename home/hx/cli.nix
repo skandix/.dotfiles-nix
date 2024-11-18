@@ -4,6 +4,7 @@
   imports = [
     ./hm/configurations/vim
     ./hm/configurations/tmux
+    ./hm/configurations/zsh
     ./hm/dev.nix
   ];
 
