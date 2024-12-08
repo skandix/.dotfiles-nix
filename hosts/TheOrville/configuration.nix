@@ -25,7 +25,7 @@
     ../../common/security.nix
     ../../common/nix-pkg-allow.nix
     ../../common/virtualization.nix
-    ../../common/fwupd.nix
+    #../../common/fwupd.nix
     ../../common/zsh.nix
     ../../common/ssh-client.nix
   ];
@@ -33,7 +33,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  systemd.services.NetworkManager-wait-online.enable = false; # to avoid iface or vbox waiting for connection.
+  systemd.network.wait-online.enable = false; # to avoid iface or vbox waiting for connection.
   networking.hostName = "TheOrville";
   networking.useDHCP = false;
   networking.interfaces.enp5s0.useDHCP = true;

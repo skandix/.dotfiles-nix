@@ -16,7 +16,7 @@
       libnotify
       inotify-tools
       gnumake
-      gnome.gnome-keyring
+      gnome-keyring
       jq
       htop
       bat
