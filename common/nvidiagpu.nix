@@ -5,7 +5,7 @@
  # Enable OpenGL
   hardware.graphics = {
     enable = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
   };
 
   hardware.nvidia-container-toolkit.enable = true;
