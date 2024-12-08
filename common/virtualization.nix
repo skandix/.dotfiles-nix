@@ -9,4 +9,7 @@
         uris = ["qemu:///system"];
       };
     };
+  environment.systemPackages = [
+    pkgs.virtio-win
+  ];
 }
