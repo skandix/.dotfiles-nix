@@ -22,7 +22,7 @@
       wireshark
       plex-media-player
       discord
-      gnome.seahorse
+      seahorse
       obsidian
       sublime
       cider
