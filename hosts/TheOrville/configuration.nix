@@ -24,7 +24,7 @@
     ../../common/networking-extra.nix
     ../../common/security.nix
     ../../common/nix-pkg-allow.nix
-    #../../common/virtualbox.nix
+    ../../common/virtualization.nix
     ../../common/fwupd.nix
     ../../common/zsh.nix
     ../../common/ssh-client.nix
@@ -46,6 +46,6 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   time.timeZone = "Europe/Oslo";
-  home-manager.users.hx.home.stateVersion = "24.05";
-  system.stateVersion = "24.05";
+  home-manager.users.hx.home.stateVersion = "24.11";
+  system.stateVersion = "24.11";
   }
