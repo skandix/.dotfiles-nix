@@ -13,7 +13,7 @@
     # enable flakes globally
     experimental-features = ["nix-command" "flakes"];
     max-jobs = "auto";
-    auto-optimise-store = true;
+    # auto-optimise-store = true;
 
     # substituers that will be considered before the official ones(https://cache.nixos.org)
     substituters = [

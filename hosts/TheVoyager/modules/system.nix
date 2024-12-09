@@ -2,7 +2,7 @@
 
   # options: https://daiderd.com/nix-darwin/manual/index.html#sec-options
 {
-  ids.uids.nixbld = 300;
+  ids.uids.nixbld = 350;
   system = {
     stateVersion = 5;
     # activationScripts are executed every time you boot the system or run `nixos-rebuild` / `darwin-rebuild`.
@@ -15,13 +15,14 @@
     defaults = {
       menuExtraClock.Show24Hour = true;  # show 24 hour clock
       screencapture.location = "~/Pictures/screenshots";
-      loginwindow.LoginwindowText = "waaaow";
+      loginwindow.LoginwindowText = "Take a deep breath, drink water... & drugs are baaad, mkay?";
 
-      dock = {
+
+        dock = {
         autohide = true; # automatically hide and show 
         show-recents = false; # do not show recent apps in dock
         mru-spaces = false;
-        expose-group-by-app = true; # Group windows by application
+        expose-group-apps = true; # Group windows by application
         launchanim = false;
         largesize = 16;
     };

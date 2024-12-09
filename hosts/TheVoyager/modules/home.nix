@@ -2,10 +2,10 @@
 
 {
 
-  # imports = [
-  #   ../../home/hx/hm/base.nix
-  # ];
-  home.stateVersion = "24.05";
+  imports = [
+    ../../../home/hx/hm/configurations/zsh
+  ];
+  home.stateVersion = "24.11";
 
   home.file = {
     ".vimrc".source = ../
