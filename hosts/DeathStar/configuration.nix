@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports = [
@@ -23,15 +23,16 @@
     ../../common/fwupd.nix
     ../../common/security.nix
     ../../common/ssh-client.nix
-    ../../common/games.nix
-    ../../common/virtualbox.nix
+    #../../common/games.nix
+    #../../common/virtualbox.nix
     ../../common/health.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  systemd.services.NetworkManager-wait-online.enable = false; # to avoid iface or vbox waiting for connection.
+  systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.
+  systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
   networking.hostName = "DeathStar";
   networking.useDHCP = false;
   networking.interfaces.eno1.useDHCP = true;
@@ -41,6 +42,6 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   time.timeZone = "Europe/Oslo";
-  home-manager.users.hx.home.stateVersion = "24.05";
-  system.stateVersion = "24.05";
+  home-manager.users.hx.home.stateVersion = "24.11";
+  system.stateVersion = "24.11";
 }
