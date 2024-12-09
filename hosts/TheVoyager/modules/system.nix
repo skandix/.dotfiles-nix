@@ -15,7 +15,7 @@
     defaults = {
       menuExtraClock.Show24Hour = true;  # show 24 hour clock
       screencapture.location = "~/Pictures/screenshots";
-      loginwindow.LoginwindowText = "Take a deep breath, drink water... & drugs are baaad, mkay?";
+      loginwindow.LoginwindowText = "Take a deep breath, drink water... and drugs are baaad, mkay";
 
 
         dock = {
