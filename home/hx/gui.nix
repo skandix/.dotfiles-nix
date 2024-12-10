@@ -16,7 +16,6 @@
       mumble
       teams-for-linux
       slack
-      winbox
       vscode
       plexamp
       wireshark
@@ -25,13 +24,8 @@
       seahorse
       obsidian
       sublime
-      cider
-      activitywatch
       xsecurelock
       xscreensaver
-      apple-cursor
-      anki-bin
-      libreoffice-qt6-fresh
       solaar
       sonic-visualiser
       zathura
