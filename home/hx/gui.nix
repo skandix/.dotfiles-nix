@@ -19,7 +19,7 @@
       vscode
       plexamp
       wireshark
-      plex-media-player
+      plex-desktop
       discord
       seahorse
       obsidian
