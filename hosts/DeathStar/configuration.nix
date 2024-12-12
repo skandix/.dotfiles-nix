@@ -25,6 +25,7 @@
     ../../common/ssh-client.nix
     #../../common/games.nix
     #../../common/virtualbox.nix
+    ../../common/virtualization.nix
     ../../common/health.nix
   ];
 
