@@ -41,6 +41,13 @@
   i18n.defaultLocale = "en_GB.UTF-8";
   console = { keyMap = "no"; };
 
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    xdgOpenUsePortal = true;
+  };
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   time.timeZone = "Europe/Oslo";
   home-manager.users.hx.home.stateVersion = "24.11";
