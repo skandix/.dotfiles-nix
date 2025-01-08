@@ -29,6 +29,7 @@
       solaar
       sonic-visualiser
       zathura
+      netflix
     ];
   };
 }

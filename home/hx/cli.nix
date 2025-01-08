@@ -42,6 +42,9 @@
       ripgrep
       talosctl
       dive
+      freecad
+      bambu-studio
+      orca-slicer
     ];
   };
 }
