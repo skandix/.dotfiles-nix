@@ -30,6 +30,7 @@ bindsym $mod+c kill
 bindsym $mod+space exec rofi -show run
 bindsym $mod+Shift+s sticky toggle
 bindsym $mod+p exec pavucontrol # easily trigger audio mixer
+bindsym $mod+u exec librewolf # easily trigger webbrowser
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
