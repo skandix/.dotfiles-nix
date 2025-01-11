@@ -12,7 +12,7 @@
   home.stateVersion = "24.11";
 
   home.file = {
-    ".vimrc".source = ../
+    ".vimrc".source = "../../../home/hx/hm/"
   }
 
 
