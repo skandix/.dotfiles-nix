@@ -18,7 +18,9 @@
         ]))
       rustup
       go
-      poetry
+      #poetry
+      uv
+      ruff
     ];
   };
 }
