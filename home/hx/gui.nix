@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./hm/configurations/alacritty
+    ./hm/configurations/ghostty
     ./hm/configurations/mpv
     ./hm/configurations/mangohud
   ];

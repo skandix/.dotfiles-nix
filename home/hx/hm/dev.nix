@@ -12,13 +12,11 @@
           pip
           pipenv
           loguru
-          pipenv
           pandas
-          tabulate
         ]))
       rustup
       go
-      #poetry
+      poetry
       uv
       ruff
     ];

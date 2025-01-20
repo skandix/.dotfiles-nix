@@ -1,0 +1,13 @@
+clipboard-read = allow
+clipboard-write = allow
+copy-on-select = true
+window-save-state = always
+window-theme = dark
+theme = iTerm2 Smoooooth
+cursor-style = block
+font-size = 16
+keybind = alt+b=toggle_tab_overview
+focus-follows-mouse = true
+gtk-titlebar = false
+macos-titlebar-style = hidden
+macos-window-shadow = false
