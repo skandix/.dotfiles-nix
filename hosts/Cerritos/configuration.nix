@@ -16,6 +16,7 @@
     ../../common/docker.nix
     ../../common/networkmanager.nix
     ../../common/networking-extra.nix
+    ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
     ../../common/security.nix
     ../../common/ssh-client.nix

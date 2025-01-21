@@ -19,6 +19,7 @@
     ../../common/fonts.nix
     ../../common/networkmanager.nix
     ../../common/networking-extra.nix
+    ../../common/nix-pkg-allow.nix
     ../../common/pipewire.nix
     ../../common/fwupd.nix
     ../../common/security.nix
@@ -40,13 +41,6 @@
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = { keyMap = "no"; };
-
-
-  xdg.portal = {
-    enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-    xdgOpenUsePortal = true;
-  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   time.timeZone = "Europe/Oslo";
