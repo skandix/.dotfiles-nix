@@ -33,6 +33,16 @@
             inputs.home-manager.nixosModules.default
           ];
         };
+        Cerritos = nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs;
+            inherit unstable;
+          };
+          modules = [
+            ./hosts/Cerritos/configuration.nix
+            inputs.home-manager.nixosModules.default
+          ];
+        };
         TheOrville = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;

@@ -37,7 +37,6 @@
       ansible
       openstackclient
       packer
-      #rbw
       reveal-md
       ripgrep
       talosctl
