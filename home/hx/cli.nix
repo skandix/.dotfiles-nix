@@ -44,6 +44,7 @@
       freecad
       bambu-studio
       orca-slicer
+      cbonsai
     ];
   };
 }
