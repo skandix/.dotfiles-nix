@@ -23,5 +23,6 @@
     solaar
     runelite
     prismlauncher
+    wowup-cf
   ];
 }
