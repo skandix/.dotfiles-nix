@@ -12,7 +12,7 @@
     enable = true;
     extraPackages = with pkgs; [
       swaybg
-      wrandr
+      wlr-randr
       feh
       i3blocks
       pywal
