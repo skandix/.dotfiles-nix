@@ -26,7 +26,7 @@
   home-manager.users.hx = {
     xdg.configFile = {
       "sway/config".source = ./sway_config;
-      "i3blocks/config".source = ./i3blocks;
+      #"i3blocks/config".source = ./i3blocks;
     };
   };
 }
