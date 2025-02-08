@@ -24,5 +24,6 @@
     runelite
     prismlauncher
     wowup-cf
+    protonup-qt
   ];
 }
