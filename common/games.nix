@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, unstable, ... }:
 
 {
   hardware.graphics = {
@@ -24,6 +24,7 @@
     runelite
     prismlauncher
     wowup-cf
-    protonup-qt
+    unstable.protonup-qt
+    #proton-ge-bin # uncomment until resolved issues with package
   ];
 }

@@ -1,0 +1,23 @@
+configuration {
+    modi: "window,run,ssh";
+    font: "Hack 8";
+    width: 8;
+    height: 3;
+    fixed-num-lines: true;
+    show-icons: true;
+    terminal: "ghostty";
+    ssh-client: "ssh";
+    ssh-command: "{terminal} -e ssh {host}";
+    run-command: "{cmd}";
+    yoffset: -100;
+    xoffset: 0;
+    run {
+        width: 10;
+        }
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+}
+
+@theme "./spotlight.rasi"

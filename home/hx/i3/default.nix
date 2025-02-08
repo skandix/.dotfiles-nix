@@ -7,7 +7,6 @@
     ./../hm/configurations/picom
     ./../hm/configurations/rofi
     ./../hm/configurations/librewolf
-    #./../hm/configurations/firefox
   ];
 
   services.xserver = {

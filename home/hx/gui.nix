@@ -4,7 +4,7 @@
   imports = [
     ./hm/configurations/ghostty
     ./hm/configurations/mpv
-    ./hm/configurations/mangohud
+    #./hm/configurations/mangohud
   ];
 
   home-manager.users.hx = {

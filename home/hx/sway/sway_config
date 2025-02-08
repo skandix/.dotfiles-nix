@@ -1,9 +1,9 @@
 ### VARIABLES ###
 set $mod Mod4
 set $altMod Mod1
-set $term alacritty
+set $term ghostty
 set $screen flameshot gui
-set $lock dm-tool lock # LIGTHDM
+set $lock xsecurelock
 
 ### FONT ###
 font pango:Terminus 14px
@@ -12,9 +12,9 @@ font pango:Terminus 14px
 bindsym $mod+t exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send "MUTED?!?"
 
 ### MEDIA KEYS ###
-bindsym XF86AudioPrev exec --no-startup-id playerctl previous
-bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
-bindsym XF86AudioNext exec --no-startup-id playerctl next
+# bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+# bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+# bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioLowerVolume exec --no-startup-id  pamixer --decrease 5
 bindsym XF86AudioRaiseVolume exec --no-startup-id  pamixer --increase 5
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -22,14 +22,15 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 ### MISC KEYBINDS ###
 bindsym Print exec --no-startup-id $screen
 bindsym Insert exec --no-startup-id $lock
-bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
+# bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
+# bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 bindsym $mod+Return exec $term
 bindsym $mod+c kill
 # bindsym $mod+space exec rofi -show run
 bindsym $mod+space exec rofi -show run
 bindsym $mod+Shift+s sticky toggle
 bindsym $mod+p exec pavucontrol # easily trigger audio mixer
+# bindsym $mod+u exec librewolf # easily trigger webbrowser
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -82,7 +83,7 @@ bindsym $mod+a focus parent
 bindsym $mod+d focus child
 
 # Urgent windows like awsmwm
-bindsym $mod+u [urgent=latest] focus
+# bindsym $mod+u [urgent=latest] focus
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -145,19 +146,19 @@ bindsym $mod+Escape workspace back_and_forth
 
 bar {
 position top
-	status_command waybar
+	status_command i3blocks
 	tray_output primary
 	separator_symbol " λ "
 	workspace_buttons yes
 }
 
 # Avoid title bar on windows, don't want to waste to much space
-default_border pixel 1
+default_border pixel 3
 
 # START EVERYTIME i3 is reloaded
-exec_always --no-startup-id sh "$HOME/.config/i3/rnd_bg.sh"
-exec_always --no-startup-id picom
+exec_always --no-startup-id sh "$HOME/.dotfiles-nix/home/hx/i3/bg.sh"
 exec_always --no-startup-id sh "$HOME/.screenlayout/default.sh"
+exec_always --no-startup-id picom
 exec_always --no-startup-id dunst
 exec_always --no-startup-id setxkbmap no
 

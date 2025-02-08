@@ -22,7 +22,7 @@
       "podman"
     ];
     group = "hx";
-    shell = pkgs.zsh;
+    shell = pkgs.zsh; # TODO: fix this properly, and figure out if i want fish or zsh.. hard to choose
   };
 
   home-manager.users = {

@@ -45,6 +45,7 @@
       bambu-studio
       orca-slicer
       cbonsai
+      ranger
     ];
   };
 }

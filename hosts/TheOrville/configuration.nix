@@ -11,7 +11,7 @@
     ../../home/hx/gui.nix
     ../../home/hx/cli.nix
     ../../home/hx/i3
-    #../../home/hx/sway
+    ../../home/hx/sway
 
     # Common
     ../../common/amdcpu.nix
@@ -39,7 +39,7 @@
   networking.hostName = "TheOrville";
   networking.useDHCP = false;
   networking.interfaces.enp5s0.useDHCP = true;
-  networking.interfaces.wlp6s0.useDHCP = false;
+  networking.interfaces.wlp6s0.useDHCP = lib.mkForce false;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = { keyMap = "no"; };
