@@ -55,4 +55,7 @@
     };
   };
 
+  environment.variables = {
+    TERMINAL = "alacritty";
+  };
 }

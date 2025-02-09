@@ -50,6 +50,7 @@
       bambu-studio
       orca-slicer
       ranger
+      nixfmt-rfc-style
     ];
   };
 }

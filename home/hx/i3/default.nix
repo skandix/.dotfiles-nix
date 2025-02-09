@@ -10,44 +10,51 @@
     ./../hm/configurations/ghostty
   ];
 
-  services.xserver = {
-    enable = true;
-    autorun = true;
-    xkb.layout = "no";
-  };
-  services.libinput.enable = true;
-  services.xserver.displayManager.lightdm = {
-    enable = true;
-    greeters.enso.enable = true;
-  };
-  services.displayManager.defaultSession = "none+i3";
-  services.xserver.windowManager.i3 = {
-    enable = true;
-    package = pkgs.i3;
-    extraPackages = with pkgs; [
-      pkg-config
-      xclip
-      arandr
-      feh
-      i3blocks
-      pywal
-    ];
-  };
-  services.xserver.extraConfig = ''
-    Section "ServerFlags"
-    Option          "BlankTime"     "0"
-    Option          "StandbyTime"   "0"
-    Option          "SuspendTime"   "0"
-    Option          "OffTime"       "0"
-    Option "dpms" "false"
+  services = {
+    xserver = {
+      enable = true;
+      autorun = true;
+      xkb.layout = "no";
 
-    EndSection
-  '';
+      displayManager.lightdm = {
+        enable = true;
+        greeters.enso.enable = true;
+      };
 
+      windowManager.i3 = {
+        enable = true;
+        package = pkgs.i3;
+        extraPackages = with pkgs; [
+          pkg-config
+          xclip
+          arandr
+          feh
+          i3blocks
+          pywal
+        ];
+      };
+      extraConfig = ''
+        Section "ServerFlags"
+        Option          "BlankTime"     "0"
+        Option          "StandbyTime"   "0"
+        Option          "SuspendTime"   "0"
+        Option          "OffTime"       "0"
+        Option "dpms" "false"
+
+        EndSection
+      '';
+    };
+    libinput.enable = true;
+    displayManager.defaultSession = "none+i3";
+  };
   home-manager.users.hx = {
     xdg.configFile = {
       "i3/config".source = ./i3_config;
       "i3blocks/config".source = ./i3blocks;
     };
+  };
+
+  environment.variables = {
+    TERMINAL = "alacritty";
   };
 }

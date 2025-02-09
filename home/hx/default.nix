@@ -6,6 +6,5 @@
     BROWSER = "librewolf";
     EDITOR = "vim";
     SHELL = "fish";
-    TERMINAL = "alacritty";
   };
 }
