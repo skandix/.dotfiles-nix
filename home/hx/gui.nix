@@ -8,6 +8,7 @@
 {
   imports = [
     ./hm/configurations/mpv
+    ./hm/configurations/discord
   ];
 
   home-manager.users.hx = {
@@ -23,14 +24,12 @@
       plexamp
       wireshark
       plex-desktop
-      discord
       seahorse
       obsidian
       sublime
       sonic-visualiser
       zathura
       netflix
-      walker
     ];
   };
 }

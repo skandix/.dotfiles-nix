@@ -1,0 +1,9 @@
+[default]
+path = "$HOME/.dotfiles-nix/home/hx/wall"
+duration = "1m"
+sorting = "sorting"
+
+[default.transition.hexagonalize]
+# default values for hexagonalize
+steps = 50
+horizontal-hexagons = 20.0

@@ -2,6 +2,7 @@
 set $mod Mod4
 set $altMod Mod1
 set $term alacritty
+set $launcher tofi
 set $screen flameshot gui
 set $lock xsecurelock
 
@@ -26,7 +27,7 @@ bindsym Insert exec --no-startup-id $lock
 # bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 bindsym $mod+Return exec $term
 bindsym $mod+c kill
-bindsym $mod+space exec wofi --show run
+bindsym $mod+space exec $launcher
 bindsym $mod+Shift+s sticky toggle
 bindsym $mod+p exec pavucontrol # easily trigger audio mixer
 # bindsym $mod+u exec librewolf # easily trigger webbrowser
@@ -63,6 +64,7 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
+bindsym $mod+o mode "move ws"
 
 mode "move ws" {
  bindsym k move workspace to output up
@@ -72,8 +74,6 @@ mode "move ws" {
 
  bindsym Escape mode "default"
 }
-
-bindsym $mod+o mode "move ws"
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -126,8 +126,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-#gaps inner 15px
-#smart_gaps on
+gaps inner 15px
+smart_gaps on
 
 bindsym $mod+x mode "resize"
 mode "resize" {

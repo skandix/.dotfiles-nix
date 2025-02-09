@@ -3,19 +3,21 @@
 {
   imports = [
     ./../hm/configurations/flameshot
-    ./../hm/configurations/wofi
+    ./../hm/configurations/tofi
+    ./../hm/configurations/wpaperd
     ./../hm/configurations/librewolf
     ./../hm/configurations/alacritty
   ];
+
+  programs.xwayland = {
+    enable = true;
+  };
 
   programs.sway = {
     enable = true;
     wrapperFeatures = {
       base = true;
       gtk = true;
-    xwayland = {
-      enable = true;
-    };
   };
 
     extraPackages = with pkgs; [
