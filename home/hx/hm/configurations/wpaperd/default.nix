@@ -2,7 +2,7 @@
 
 {
   home-manager.users.hx = {
-    home.packages = with pkgs; [ tofi ];
-    #xdg.configFile = { "walker/config.json".source = ./config.json; };
+    home.packages = with pkgs; [ wpaperd ];
+    xdg.configFile = { "wpaperd/config.toml".source = ./config.toml; };
   };
 }

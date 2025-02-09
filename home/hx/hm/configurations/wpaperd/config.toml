@@ -1,5 +1,5 @@
 [default]
-path = "$HOME/.dotfiles-nix/home/hx/wall"
+path = "/home/hx/.dotfiles-nix/home/hx/wall/"
 duration = "1m"
 sorting = "sorting"
 

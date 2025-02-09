@@ -2,7 +2,7 @@
 set $mod Mod4
 set $altMod Mod1
 set $term alacritty
-set $launcher tofi
+set $launcher tofi-run | xargs swaymsg exec --
 set $screen flameshot gui
 set $lock xsecurelock
 
