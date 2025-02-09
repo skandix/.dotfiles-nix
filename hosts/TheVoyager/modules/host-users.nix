@@ -1,11 +1,10 @@
-
 { ... }:
 {
   networking.hostName = "TheVoyager";
   networking.computerName = "TheVoyager";
   system.defaults.smb.NetBIOSName = "TheVoyager";
 
-  users.users."hx"= {
+  users.users."hx" = {
     home = "/Users/hx";
     description = "hx";
   };

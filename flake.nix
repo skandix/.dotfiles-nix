@@ -5,23 +5,37 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
+    nix-index-db.url = "github:nix-community/nix-index-database";
+    nix-index-db.inputs.nixpkgs.follows = "nixpkgs-unstable";
+
     home-manager = {
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-
-  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, nixos-hardware, home-manager, nix-darwin, ...}:
+  outputs =
+    inputs@{
+      self,
+      nixpkgs,
+      nix-index-db,
+      nixpkgs-unstable,
+      nixos-hardware,
+      home-manager,
+      nix-darwin,
+      ...
+    }:
     let
       system = "x86_64-linux";
       # pkgs = nixpkgs.legacyPackages."x86_64-linux";
       unstable = nixpkgs-unstable.legacyPackages.${system};
-    in {
+    in
+    {
       nixosConfigurations = {
         DeathStar = nixpkgs.lib.nixosSystem {
           specialArgs = {
@@ -31,8 +45,10 @@
           modules = [
             ./hosts/DeathStar/configuration.nix
             inputs.home-manager.nixosModules.default
+            nix-index-db.nixosModules.nix-index
           ];
         };
+
         Cerritos = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;
@@ -41,8 +57,10 @@
           modules = [
             ./hosts/Cerritos/configuration.nix
             inputs.home-manager.nixosModules.default
+            nix-index-db.nixosModules.nix-index
           ];
         };
+
         TheOrville = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;
@@ -51,9 +69,11 @@
           modules = [
             ./hosts/TheOrville/configuration.nix
             inputs.home-manager.nixosModules.default
+            nix-index-db.nixosModules.nix-index
           ];
         };
       };
+
       darwinConfigurations = {
         TheVoyager = nix-darwin.lib.darwinSystem {
           specialArgs = {
@@ -65,8 +85,10 @@
             ./hosts/TheVoyager/modules/host-users.nix
             ./hosts/TheVoyager/modules/nix-core.nix
             ./hosts/TheVoyager/modules/system.nix
+            nix-index-db.darwinModules.nix-index
           ];
         };
       };
+
     };
 }

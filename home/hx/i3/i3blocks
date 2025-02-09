@@ -1,12 +1,6 @@
-[docker]
-command=docker
-color=#0db7ed
-interval=10
-LABEL=🐳
-
 [public-ip]
 full_text=public
-command=wget -qO - icanhazip.com
+command=wget -qO - http://icanhazip.com
 interval=once
 
 [load]

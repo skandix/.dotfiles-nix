@@ -1,5 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [ powertop tlp brightnessctl light ];
+  environment.systemPackages = with pkgs; [
+    powertop
+    tlp
+    brightnessctl
+    light
+  ];
 }

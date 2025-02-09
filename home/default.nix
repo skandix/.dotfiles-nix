@@ -1,7 +1,7 @@
-{home-manager, pkgs, ... }:
+{ home-manager, pkgs, ... }:
 
 {
-  programs.fish.enable = true;
+  #programs.fish.enable = true;
   users.groups.hx.gid = 1000;
   users.users.hx = {
     isNormalUser = true;
@@ -22,10 +22,12 @@
       "podman"
     ];
     group = "hx";
-    shell = pkgs.zsh; # TODO: fix this properly, and figure out if i want fish or zsh.. hard to choose
+    shell = pkgs.fish;
   };
 
+  users.users.hx.ignoreShellProgramCheck = true;
+
   home-manager.users = {
-    hx = (import ./hx/hm/base.nix);
+    hx = (import ./hx/home.nix);
   };
 }

@@ -2,7 +2,7 @@
 
 {
   nixpkgs.config.allowUnfree = true;
- # Enable OpenGL
+  # Enable OpenGL
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -20,4 +20,3 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 }
-

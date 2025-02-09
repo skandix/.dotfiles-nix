@@ -46,5 +46,12 @@
     #   };
     # };
   };
-  environment.systemPackages = with pkgs; [ helvum pamixer pasystray pulseaudio pavucontrol easyeffects ];
+  environment.systemPackages = with pkgs; [
+    helvum
+    pamixer
+    pasystray
+    pulseaudio
+    pavucontrol
+    easyeffects
+  ];
 }

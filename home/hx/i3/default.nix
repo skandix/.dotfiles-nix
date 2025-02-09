@@ -7,6 +7,7 @@
     ./../hm/configurations/picom
     ./../hm/configurations/rofi
     ./../hm/configurations/librewolf
+    ./../hm/configurations/ghostty
   ];
 
   services.xserver = {
@@ -23,7 +24,14 @@
   services.xserver.windowManager.i3 = {
     enable = true;
     package = pkgs.i3;
-    extraPackages = with pkgs; [ pkg-config xclip arandr feh i3blocks pywal ];
+    extraPackages = with pkgs; [
+      pkg-config
+      xclip
+      arandr
+      feh
+      i3blocks
+      pywal
+    ];
   };
   services.xserver.extraConfig = ''
     Section "ServerFlags"
@@ -40,7 +48,6 @@
     xdg.configFile = {
       "i3/config".source = ./i3_config;
       "i3blocks/config".source = ./i3blocks;
-      "i3blocks/docker".source = ./scripts/docker;
     };
   };
 }

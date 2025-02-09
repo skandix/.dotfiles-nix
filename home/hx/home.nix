@@ -2,16 +2,25 @@
 
 {
   imports = [
-    ./configurations/git
-    ./hm/configurations/zsh
+    ./hm/configurations/git
+    #./hm/configurations/zsh
     ./hm/configurations/fish
-];
+  ];
 
   xdg.configFile = {
-    "nixpkgs/config.nix".source = ./configurations/nixpkgs-config.nix;
+    "nixpkgs/config.nix".source = ./hm/configurations/nixpkgs-config.nix;
   };
 
   programs.home-manager.enable = true;
+
+  # dark mode in gtk apps
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Adwaita-dark";
+      package = pkgs.gnome.gnome-themes-extra;
+    };
+  };
 
   home.sessionPath = [
     "$HOME/.go/bin"

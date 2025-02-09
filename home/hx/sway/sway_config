@@ -1,7 +1,7 @@
 ### VARIABLES ###
 set $mod Mod4
 set $altMod Mod1
-set $term ghostty
+set $term alacritty
 set $screen flameshot gui
 set $lock xsecurelock
 
@@ -26,8 +26,7 @@ bindsym Insert exec --no-startup-id $lock
 # bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 bindsym $mod+Return exec $term
 bindsym $mod+c kill
-# bindsym $mod+space exec rofi -show run
-bindsym $mod+space exec rofi -show run
+bindsym $mod+space exec wofi --show run
 bindsym $mod+Shift+s sticky toggle
 bindsym $mod+p exec pavucontrol # easily trigger audio mixer
 # bindsym $mod+u exec librewolf # easily trigger webbrowser
@@ -152,19 +151,19 @@ position top
 	workspace_buttons yes
 }
 
+
+input * {
+    xkb_layout "no"
+}
+
 # Avoid title bar on windows, don't want to waste to much space
 default_border pixel 3
 
 # START EVERYTIME i3 is reloaded
-exec_always --no-startup-id sh "$HOME/.dotfiles-nix/home/hx/i3/bg.sh"
-exec_always --no-startup-id sh "$HOME/.screenlayout/default.sh"
-exec_always --no-startup-id picom
-exec_always --no-startup-id dunst
-exec_always --no-startup-id setxkbmap no
+exec_always --no-startup-id sh waypaper --random
+exec_always --no-startup-id mako
 
 # Start only once when i3 is started
-exec --no-startup-id aw-qt
-exec --no-startup-id twitch-indicator
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
 exec --no-startup-id discord --start-minimized
@@ -172,6 +171,7 @@ exec --no-startup-id slack --startup
 
 # WINDOWS RULES
 for_window [class="Pavucontrol"] floating enable
+for_window [class="waypaper"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 3

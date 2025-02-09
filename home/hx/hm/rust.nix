@@ -2,10 +2,8 @@
 
 {
   home-manager.users.hx = {
-    home.packages = with pkgs;
-    [
+    home.packages = with pkgs; [
       rustup
-      cargo
     ];
   };
 }

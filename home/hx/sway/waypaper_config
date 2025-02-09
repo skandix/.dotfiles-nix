@@ -1,7 +1,6 @@
 [Settings]
 language = en
-folder = ~/.dotfiles-nix/
-wallpaper = ~/Pictures/wallpaper.jpg
+folder = ~/.dotfiles-nix/home/hx/wall
 backend = swaybg
 monitors = All
 fill = Fill
@@ -9,7 +8,6 @@ sort = name
 color = #ffffff
 subfolders = False
 number_of_columns = 3
-post_command = 
 swww_transition_type = any
 swww_transition_step = 90
 swww_transition_angle = 0

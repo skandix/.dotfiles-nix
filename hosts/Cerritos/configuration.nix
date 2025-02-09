@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   imports = [
@@ -34,9 +39,14 @@
   networking.interfaces.eno1.useDHCP = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
-  console = { keyMap = "no"; };
+  console = {
+    keyMap = "no";
+  };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
   time.timeZone = "Europe/Oslo";
   home-manager.users.hx.home.stateVersion = "24.11";
   system.stateVersion = "24.11";

@@ -1,4 +1,9 @@
-{ config, pkgs, unstable, ... }:
+{
+  config,
+  pkgs,
+  unstable,
+  ...
+}:
 
 {
   hardware.graphics = {
@@ -14,16 +19,15 @@
     lutris
     winetricks
     wine-staging
-    gamemode
-    mangohud
-    r2modman
+    gamemode # Optimise Linux system performance on demand
+    mangohud # A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
+    r2modman # risk of rain 2 mod manager
     protontricks
     piper
     logitech-udev-rules
     solaar
-    runelite
-    prismlauncher
-    wowup-cf
+    prismlauncher # minecraft launcher
+    wowup-cf # wow addoon manager
     unstable.protonup-qt
     #proton-ge-bin # uncomment until resolved issues with package
   ];

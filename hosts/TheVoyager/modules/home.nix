@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 {
 
@@ -13,11 +13,11 @@
 
   home.file = {
     ".vimrc".source = "../../../home/hx/hm/"
-  }
+      }
 
 
-  home.sessionVariables = {
-    PAGER = "less";
+      home.sessionVariables = {
+      PAGER = "less";
     BROWSER = "librewolf";
     EDITOR = "vim";
     SHELL = "fish";

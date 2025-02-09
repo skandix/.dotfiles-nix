@@ -1,32 +1,58 @@
-{pkgs, ...}:
+{ pkgs, unstable, ... }:
 
 {
   imports = [
-    #./../hm/configurations/dunst # not sure if i need this anymore
     ./../hm/configurations/flameshot
-    ./../hm/configurations/wofi # rofi replacement for wayland
+    ./../hm/configurations/wofi
     ./../hm/configurations/librewolf
+    ./../hm/configurations/alacritty
   ];
+
+  programs.xwayland = {
+    enable = true;
+  };
 
   programs.sway = {
     enable = true;
+    wrapperFeatures = {
+      base = true;
+      gtk = true;
+    };
+
     extraPackages = with pkgs; [
+      waybar
+      grim
+      swaylock
+      swayidle
+
       swaybg
-      wlr-randr
+      waypaper
+      wdisplays
       feh
       i3blocks
-      pywal
-     ];
+      mako
+    ];
   };
 
-  #programs.waybar = {
-    #enable = true;
-  #};
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+  };
+
+  xdg.portal = {
+    enable = true;
+    wlr.enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-wlr
+    ];
+  };
 
   home-manager.users.hx = {
     xdg.configFile = {
       "sway/config".source = ./sway_config;
-      #"i3blocks/config".source = ./i3blocks;
+      "i3blocks/config".source = ./i3blocks;
+      "waypaper/config.ini".source = ./waypaper_config;
     };
   };
+
 }

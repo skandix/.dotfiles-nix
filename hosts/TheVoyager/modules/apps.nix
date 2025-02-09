@@ -1,4 +1,5 @@
-{ pkgs, unstable, ...}: {
+{ pkgs, unstable, ... }:
+{
   #options: https://daiderd.com/nix-darwin/manual/index.html
 
   environment.systemPackages = with pkgs; [

@@ -1,12 +1,20 @@
-{ config, pkgs, unstable, ... }:
+{
+  config,
+  pkgs,
+  unstable,
+  ...
+}:
 
 {
   imports = [
     ./hm/configurations/vim
     ./hm/configurations/tmux
-    ./hm/configurations/zsh
-    ./hm/dev.nix
+    ./hm/go.nix
+    ./hm/python.nix
+    ./hm/rust.nix
   ];
+
+  programs.nix-index-database.comma.enable = true;
 
   home-manager.users.hx = {
     home.packages = with pkgs; [
@@ -38,13 +46,9 @@
       openstackclient
       packer
       reveal-md
-      ripgrep
       talosctl
-      dive
-      freecad
       bambu-studio
       orca-slicer
-      cbonsai
       ranger
     ];
   };

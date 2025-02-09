@@ -1,4 +1,3 @@
-
 { pkgs, ... }:
 
 {
@@ -11,7 +10,10 @@
   };
   nix.settings = {
     # enable flakes globally
-    experimental-features = ["nix-command" "flakes"];
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
     max-jobs = "auto";
     # auto-optimise-store = true;
 

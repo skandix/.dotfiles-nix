@@ -1,10 +1,13 @@
-{ config, pkgs, unstable, ... }:
+{
+  config,
+  pkgs,
+  unstable,
+  ...
+}:
 
 {
   imports = [
-    ./hm/configurations/ghostty
     ./hm/configurations/mpv
-    #./hm/configurations/mangohud
   ];
 
   home-manager.users.hx = {
@@ -24,13 +27,9 @@
       seahorse
       obsidian
       sublime
-      xsecurelock
-      xscreensaver
-      solaar
       sonic-visualiser
       zathura
       netflix
-      dbeaver-bin
     ];
   };
 }

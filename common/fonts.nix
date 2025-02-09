@@ -15,6 +15,8 @@
       dina-font
       proggyfonts
     ];
-    fontconfig = { enable = true; };
+    fontconfig = {
+      enable = true;
+    };
   };
 }

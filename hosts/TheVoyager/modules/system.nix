@@ -1,6 +1,6 @@
 { pkgs, ... }:
 
-  # options: https://daiderd.com/nix-darwin/manual/index.html#sec-options
+# options: https://daiderd.com/nix-darwin/manual/index.html#sec-options
 {
   ids.uids.nixbld = 350;
   system = {
@@ -13,20 +13,19 @@
     '';
 
     defaults = {
-      menuExtraClock.Show24Hour = true;  # show 24 hour clock
+      menuExtraClock.Show24Hour = true; # show 24 hour clock
       screencapture.location = "~/Pictures/screenshots";
       loginwindow.LoginwindowText = "Take a deep breath, drink water... and drugs are baaad, mkay";
 
-
-        dock = {
-        autohide = true; # automatically hide and show 
+      dock = {
+        autohide = true; # automatically hide and show
         show-recents = false; # do not show recent apps in dock
         mru-spaces = false;
         expose-group-apps = true; # Group windows by application
         launchanim = false;
         largesize = 16;
-    };
-    NSGlobalDomain = {
+      };
+      NSGlobalDomain = {
         # `defaults read NSGlobalDomain "xxx"`
         "com.apple.swipescrolldirection" = false; # enable natural scrolling(default to true)
         "com.apple.sound.beep.feedback" = 0; # disable beep sound when pressing volume up/down key
@@ -37,10 +36,10 @@
         ApplePressAndHoldEnabled = true; # enable press and hold
         InitialKeyRepeat = 15; # normal minimum is 15 (225 ms), maximum is 120 (1800 ms)
         KeyRepeat = 2; # normal minimum is 2 (30 ms), maximum is 120 (1800 ms)
+      };
     };
   };
-  };
-  
+
   security.pam.enableSudoTouchIdAuth = true;
 
   # Create /etc/zshrc that loads the nix-darwin environment.
