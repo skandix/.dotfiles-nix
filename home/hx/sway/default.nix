@@ -8,23 +8,21 @@
     ./../hm/configurations/alacritty
   ];
 
-  programs.xwayland = {
-    enable = true;
-  };
-
   programs.sway = {
     enable = true;
     wrapperFeatures = {
       base = true;
       gtk = true;
+    xwayland = {
+      enable = true;
     };
+  };
 
     extraPackages = with pkgs; [
       waybar
       grim
       swaylock
       swayidle
-
       swaybg
       waypaper
       wdisplays
@@ -55,6 +53,7 @@
     };
   };
 
+  # Have to set this here as ghostty is a bit buggy on wayland per. now
   environment.variables = {
     TERMINAL = "alacritty";
   };

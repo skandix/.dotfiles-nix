@@ -26,7 +26,7 @@
     ../../common/networkmanager.nix
     ../../common/pipewire.nix
     ../../common/networking-extra.nix
-    ../../common/security.nix
+    ../../common/nix-tweakz.nix
     ../../common/nix-pkg-allow.nix
     ../../common/virtualization.nix
     ../../common/fwupd.nix

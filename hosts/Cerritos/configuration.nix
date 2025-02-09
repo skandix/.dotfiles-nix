@@ -23,7 +23,7 @@
     ../../common/networking-extra.nix
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
-    ../../common/security.nix
+    ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
     ../../common/virtualbox.nix
     ../../common/virtualization.nix

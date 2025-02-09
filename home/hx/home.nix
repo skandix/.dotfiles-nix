@@ -10,6 +10,7 @@
   xdg.configFile = {
     "nixpkgs/config.nix".source = ./hm/configurations/nixpkgs-config.nix;
   };
+  xdg.portal.xdgOpenUsePortal = true;
 
   programs.home-manager.enable = true;
 

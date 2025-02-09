@@ -27,10 +27,8 @@
     ../../common/nix-pkg-allow.nix
     ../../common/pipewire.nix
     ../../common/fwupd.nix
-    ../../common/security.nix
+    ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
-    #../../common/games.nix
-    #../../common/virtualbox.nix
     ../../common/virtualization.nix
     ../../common/health.nix
   ];

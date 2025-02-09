@@ -30,6 +30,7 @@
       sonic-visualiser
       zathura
       netflix
+      walker
     ];
   };
 }
