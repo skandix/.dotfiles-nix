@@ -20,6 +20,9 @@ swt:
 val:
 	nix flake check .
 
+fmt:
+	nixfmt *.nix # it has deprecated use of '.' but it is still possible to use with wildcard
+
 ## macos: build macos nix-config
 macos:
 	nix run nix-darwin -- switch --flake .
