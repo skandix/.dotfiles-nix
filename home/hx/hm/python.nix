@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, unstable, ... }:
 
 {
   home-manager.users.hx = {
@@ -10,11 +10,10 @@
           setuptools
           pip
           loguru
+          unstable.uv
+          unstable.ruff
         ]
       ))
-      poetry
-      uv
-      ruff
     ];
   };
 }
