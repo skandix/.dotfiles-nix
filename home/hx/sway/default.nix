@@ -23,6 +23,8 @@
     extraPackages = with pkgs; [
       waybar
       grim
+      sway-contrib.grimshot
+      slurp
       swaylock
       swayidle
       swaybg

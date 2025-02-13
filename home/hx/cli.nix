@@ -51,6 +51,7 @@
       orca-slicer
       ranger
       nixfmt-rfc-style
+      libappindicator
     ];
   };
 }
