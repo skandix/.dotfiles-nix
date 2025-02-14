@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  programs.streamcontroler = {
+  programs.streamcontroller = {
     enable = true;
   };
 }
