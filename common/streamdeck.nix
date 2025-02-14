@@ -1,8 +1,7 @@
 { pkgs, ... }:
 
 {
-  programs.streamdeck-ui = {
+  programs.streamcontroler = {
     enable = true;
-    autoStart = true;
   };
 }
