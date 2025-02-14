@@ -52,6 +52,7 @@
       ranger
       nixfmt-rfc-style
       libgccjit
+      libappindicator
     ];
   };
 }

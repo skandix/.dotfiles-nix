@@ -23,6 +23,8 @@
     extraPackages = with pkgs; [
       waybar
       grim
+      sway-contrib.grimshot
+      slurp
       swaylock
       swayidle
       swaybg
@@ -32,6 +34,22 @@
       i3blocks
       mako
     ];
+  };
+
+
+  # for working tray applets (source: fbegyn)
+  environment.variables = {
+    XDG_CURRENT_DESKTOP="sway";
+    XDG_SESSION_DESKTOP="sway";
+    XDG_SESSION_TYPE = "wayland";
+    QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
+    QT_AUTO_SCREEN_SCALE_FACTOR = "0";
+    QT_QPA_PLATFORM = "wayland";
+    QT_SCALE_FACTOR = "1";
+    GDK_SCALE = "1";
+    GDK_DPI_SCALE = "1";
+    MOZ_ENABLE_WAYLAND = "1";
+    _JAVA_AWT_WM_NONREPARENTING = "1";
   };
 
   environment.sessionVariables = {
