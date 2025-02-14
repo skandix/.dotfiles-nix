@@ -57,6 +57,7 @@
             inputs.home-manager.nixosModules.default
             nix-index-db.nixosModules.nix-index
             #nix-ld.nixosModules.nix-ld
+            #{ programs.nix-ld.dev.enable = true; }
           ];
         };
 

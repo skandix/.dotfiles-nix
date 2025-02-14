@@ -10,10 +10,11 @@
           setuptools
           pip
           loguru
-          unstable.uv
-          unstable.ruff
+          #uv
+          #ruff
         ]
       ))
+      unstable.poetry
     ];
   };
 }
