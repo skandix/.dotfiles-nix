@@ -20,7 +20,6 @@
     ../../common/intelgpu.nix
     ../../common/docker.nix
     ../../common/networkmanager.nix
-    ../../common/networking-extra.nix
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
     ../../common/nix-tweakz.nix

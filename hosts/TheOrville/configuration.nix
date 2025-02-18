@@ -25,7 +25,6 @@
     ../../common/games.nix
     ../../common/networkmanager.nix
     ../../common/pipewire.nix
-    ../../common/networking-extra.nix
     ../../common/nix-tweakz.nix
     ../../common/nix-pkg-allow.nix
     ../../common/virtualization.nix

@@ -23,7 +23,6 @@
     ../../common/docker.nix
     ../../common/fonts.nix
     ../../common/networkmanager.nix
-    ../../common/networking-extra.nix
     ../../common/nix-pkg-allow.nix
     ../../common/pipewire.nix
     ../../common/fwupd.nix
