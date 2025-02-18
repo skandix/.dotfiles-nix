@@ -16,18 +16,18 @@
       tdesktop
       signal-desktop
       tor-browser
-      peek
+      #peek
       mumble
       teams-for-linux
       slack
       vscode
       plexamp
-      wireshark
+      #wireshark
       plex-desktop
       seahorse
       obsidian
       sublime
-      sonic-visualiser
+      #sonic-visualiser
       zathura
       netflix
     ];

@@ -29,29 +29,29 @@
       htop
       bat
       wget
-      ncdu
+      #ncdu
       xclip
       qemu
       ntfs3g
-      dig
-      traceroute
-      mtr
-      tcpdump
-      speedtest-cli
+      #dig
+      #traceroute
+      #mtr
+      #tcpdump
+      #speedtest-cli
       kubectl
-      kubecolor
+      #kubecolor
       k9s
       opentofu
       ansible
       openstackclient
-      packer
+      #packer
       reveal-md
-      talosctl
+      #talosctl
       bambu-studio
-      orca-slicer
+      #orca-slicer
       ranger
       nixfmt-rfc-style
-      libgccjit
+      #libgccjit
       libappindicator
     ];
   };
