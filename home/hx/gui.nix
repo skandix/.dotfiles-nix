@@ -29,6 +29,7 @@
       sonic-visualiser
       zathura
       netflix
+      sublime
     ];
   };
 }

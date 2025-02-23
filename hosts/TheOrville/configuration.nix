@@ -35,10 +35,6 @@
     ../../common/streamdeck.nix
   ];
 
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg.unstable) [
-     "sublimetext4"
-  ];
-
   nixpkgs.config.allowUnfree = true;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;

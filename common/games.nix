@@ -14,9 +14,6 @@
   programs.steam.enable = true;
   services.ratbagd.enable = true;
 
-
-  nixpkgs.config.allowUnfree = true;
-
   # OTHER
   environment.systemPackages = with pkgs; [
     lutris
@@ -33,6 +30,5 @@
     wowup-cf # wow addoon manager
     unstable.protonup-qt
     #proton-ge-bin # uncomment until resolved issues with package
-    unstable.sublime4
   ];
 }
