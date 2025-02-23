@@ -22,12 +22,12 @@
       slack
       vscode
       plexamp
-      #wireshark
+      wireshark
       plex-desktop
       seahorse
       obsidian
-      sublime
-      #sonic-visualiser
+      sublimetext4
+      sonic-visualiser
       zathura
       netflix
     ];
