@@ -26,7 +26,6 @@
       plex-desktop
       seahorse
       obsidian
-      unstable.sublime4
       sonic-visualiser
       zathura
       netflix

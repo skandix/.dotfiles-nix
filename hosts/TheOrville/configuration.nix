@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  unstable,
   ...
 }:
 
@@ -32,6 +33,10 @@
     ../../common/zsh.nix
     ../../common/ssh-client.nix
     ../../common/streamdeck.nix
+  ];
+
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg.unstable) [
+     "sublimetext4"
   ];
 
   nixpkgs.config.allowUnfree = true;

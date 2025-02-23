@@ -18,8 +18,7 @@ swt:
 
 ## val: validate flake
 val:
-	export NIXPKGS_ALLOW_UNFREE=1
-	nix flake check . --show-trace
+	nix flake check .
 # TODO: prob sort out unfree apps into a seperate file or module
 
 ## fmt: format nix files
