@@ -53,6 +53,7 @@
       nixfmt-rfc-style
       #libgccjit
       libappindicator
+      kubernetes-helm
     ];
   };
 }
