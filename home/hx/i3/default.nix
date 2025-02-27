@@ -31,6 +31,7 @@
           feh
           i3blocks
           pywal
+          xsecurelock
         ];
       };
       extraConfig = ''
