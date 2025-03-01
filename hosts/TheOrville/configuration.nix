@@ -16,7 +16,7 @@
     ../../home/hx
     ../../home/hx/gui.nix
     ../../home/hx/cli.nix
-    ../../home/hx/sway
+    ../../home/hx/i3
 
     # Common
     ../../common/amdcpu.nix

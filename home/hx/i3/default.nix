@@ -56,6 +56,6 @@
   };
 
   environment.variables = {
-    TERMINAL = "alacritty";
+    TERMINAL = "ghostty";
   };
 }
