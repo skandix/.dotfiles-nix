@@ -39,14 +39,14 @@
       #tcpdump
       #speedtest-cli
       kubectl
-      #kubecolor
+      kubecolor
       k9s
       opentofu
       ansible
       openstackclient
-      #packer
+      packer
       reveal-md
-      #talosctl
+      talosctl
       bambu-studio
       #orca-slicer
       ranger
@@ -54,6 +54,7 @@
       #libgccjit
       libappindicator
       kubernetes-helm
+      kubeseal
     ];
   };
 }

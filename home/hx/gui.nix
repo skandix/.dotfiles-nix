@@ -30,6 +30,7 @@
       zathura
       netflix
       sublime
+      inkscape
     ];
   };
 }
