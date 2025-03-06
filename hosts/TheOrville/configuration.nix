@@ -20,6 +20,7 @@
 
     # Common
     ../../common/amdcpu.nix
+    ../../common/unfree.nix
     ../../common/amdgpu.nix
     ../../common/docker.nix
     ../../common/fonts.nix
