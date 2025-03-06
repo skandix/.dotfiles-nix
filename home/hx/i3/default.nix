@@ -7,7 +7,7 @@
     ./../hm/configurations/picom
     ./../hm/configurations/rofi
     ./../hm/configurations/librewolf
-    ./../hm/configurations/ghostty
+    ./../hm/configurations/alacritty
   ];
 
   services = {
@@ -56,6 +56,6 @@
   };
 
   environment.variables = {
-    TERMINAL = "ghostty";
+    TERMINAL = "alacritty";
   };
 }
