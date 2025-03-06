@@ -4,10 +4,6 @@ help:
 	@ echo "Usage: make [target]"
 	@ sed -n 's/^##//p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/ /'
 
-## up: updated nix flake
-up:
-	nix flake update
-
 ## sw: rebuild nixos-config
 sw:
 	NIXPKGS_ALLOW_UNFREE=1 sudo nixos-rebuild switch --flake .
