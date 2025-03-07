@@ -6,7 +6,7 @@
     ./../hm/configurations/flameshot
     ./../hm/configurations/picom
     ./../hm/configurations/rofi
-    ./../hm/configurations/librewolf
+    #./../hm/configurations/librewolf
     ./../hm/configurations/alacritty
   ];
 
