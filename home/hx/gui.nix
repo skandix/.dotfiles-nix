@@ -31,8 +31,8 @@
       netflix
       sublime
       inkscape
-      librewolf-bin
       unstable.planify
+      librewolf
     ];
   };
 }
