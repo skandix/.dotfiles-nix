@@ -1,9 +1,9 @@
-{ config, pkgs, ... }:
+{ config, pkgs, unstable, ... }:
 
 {
   virtualisation.docker = {
     enable = true;
-    package = pkgs.docker_25;
+    package = unstable.docker;
     autoPrune.enable = true;
   };
 

@@ -24,7 +24,6 @@
     ../../common/nix-tweakz.nix
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
-    ../../common/zsh.nix
     ../../common/ssh-client.nix
   ];
 

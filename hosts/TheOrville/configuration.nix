@@ -31,7 +31,6 @@
     ../../common/nix-pkg-allow.nix
     ../../common/virtualization.nix
     ../../common/fwupd.nix
-    ../../common/zsh.nix
     ../../common/ssh-client.nix
     ../../common/streamdeck.nix
   ];
