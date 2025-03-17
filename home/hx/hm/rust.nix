@@ -1,10 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, unstable, ... }:
 
 {
   home-manager.users.hx = {
-    home.packages = with pkgs.unstable; [
+    home.packages = with unstable; [
       rustup
-      rust-analyzer
     ];
   };
 }
