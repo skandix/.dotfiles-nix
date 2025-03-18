@@ -14,7 +14,7 @@
 
     # Common
     ../../common/intelcpu.nix
-    ../../common/fingerprint.nix
+    #../../common/fingerprint.nix
     ../../common/laptop.nix
     ../../common/intelgpu.nix
     ../../common/docker.nix
