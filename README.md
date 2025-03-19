@@ -9,7 +9,7 @@
 ```bash
 wget https://raw.githubusercontent.com/skandix/.nix-conf/main/scripts/format.sh
 ./format.sh /dev/sd?
-sudo nixos-install --flake github:skandix/.nix-conf#(DeathStar|TheOrville|SpaceCruiser)
+sudo nixos-install --root /mnt --flake github:skandix/.nix-conf#(DeathStar|TheOrville|SpaceCruiser)
 ```
 
 # Resources
