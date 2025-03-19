@@ -24,12 +24,13 @@
     ../../common/fwupd.nix
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
-    ../../common/virtualbox.nix
-    ../../common/virtualization.nix
+    ../../common/sshd.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.canTouchEfiVariables = false;
+
+  programs.dconf.enable = true; # TODO: hvorfor trenger jeg denne her?
 
   systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.
   systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
