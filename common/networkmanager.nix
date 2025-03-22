@@ -26,5 +26,6 @@
     networkmanager-openconnect
     openconnect
     nm-tray
+    wireguard-tools
   ];
 }
