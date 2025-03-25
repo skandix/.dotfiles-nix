@@ -14,7 +14,7 @@
 
     # Common
     ../../common/intelcpu.nix
-    #../../common/fingerprint.nix
+    ../../common/fingerprint.nix
     ../../common/laptop.nix
     ../../common/intelgpu.nix
     ../../common/docker.nix
@@ -28,13 +28,15 @@
   ];
 
   boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.canTouchEfiVariables = false;
 
   systemd.services.NetworkManager-wait-online.enable = false; # to avoid iface or vbox waiting for connection.
   networking.hostName = "SpaceCruiser";
   networking.useDHCP = false;
   networking.interfaces.enp5s0.useDHCP = true;
   networking.interfaces.wlp6s0.useDHCP = false;
+
+  programs.dconf.enable = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
@@ -46,6 +48,6 @@
     "flakes"
   ];
   time.timeZone = "Europe/Oslo";
-  home-manager.users.hx.home.stateVersion = "24.05";
-  system.stateVersion = "24.05";
+  home-manager.users.hx.home.stateVersion = "24.11";
+  system.stateVersion = "24.11";
 }

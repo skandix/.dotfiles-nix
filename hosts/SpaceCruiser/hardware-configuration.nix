@@ -19,10 +19,9 @@
     "usbhid"
     "sd_mod"
   ];
-  boot.initrd.kernelModules = [ "amdgpu" ];
-  boot.kernelModules = [ "kvm-amd" ];
+  boot.initrd.kernelModules = [  ];
+  boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
-  boot.kernelParams = [ ];
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";

@@ -18,7 +18,7 @@
 
       displayManager.lightdm = {
         enable = true;
-        greeters.enso.enable = true;
+        #greeters.enso.enable = true;
       };
 
       windowManager.i3 = {
@@ -34,16 +34,16 @@
           xsecurelock
         ];
       };
-      extraConfig = ''
-        Section "ServerFlags"
-        Option          "BlankTime"     "0"
-        Option          "StandbyTime"   "0"
-        Option          "SuspendTime"   "0"
-        Option          "OffTime"       "0"
-        Option "dpms" "false"
+      #extraConfig = ''
+        #Section "ServerFlags"
+        #Option          "BlankTime"     "0"
+        #Option          "StandbyTime"   "0"
+        #Option          "SuspendTime"   "0"
+        #Option          "OffTime"       "0"
+        #Option "dpms" "false"
 
-        EndSection
-      '';
+        #EndSection
+      #'';
     };
     libinput.enable = true;
     displayManager.defaultSession = "none+i3";

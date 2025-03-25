@@ -1,3 +1,7 @@
+[battery]
+command=cat /sys/class/power_supply/BAT0/capacity
+interval=1
+
 [public-ip]
 full_text=public
 command=wget -qO - http://icanhazip.com
