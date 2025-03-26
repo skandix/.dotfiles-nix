@@ -33,7 +33,6 @@
       inkscape
       unstable.planify
       librewolf
-      unstable.zed-editor
     ];
   };
 }
