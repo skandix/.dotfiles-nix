@@ -6,5 +6,6 @@
 
   environment.systemPackages = [
     pkgs.virtio-win
+    qemu
   ];
 }

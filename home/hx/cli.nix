@@ -21,37 +21,20 @@
       p7zip
       zlib
       gnutar
-      libnotify
-      inotify-tools
+
       gnumake
       gnome-keyring
+      
       jq
       htop
       bat
       wget
-      ncdu
-      xclip
-      qemu
       ntfs3g
-      dig
-      traceroute
-      mtr
-      tcpdump
-      speedtest-cli
-      kubectl
-      kubecolor
-      k9s
-      opentofu
-      ansible
-      openstackclient
-      reveal-md
-      talosctl
-      bambu-studio
+      ncdu
       ranger
-      nixfmt-rfc-style
-      kubernetes-helm
-      kubeseal
-      packer
+
+      reveal-md
+      bambu-studio
     ];
   };
 }

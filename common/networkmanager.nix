@@ -26,5 +26,10 @@
     networkmanager-openconnect
     openconnect
     nm-tray
+    dig
+    traceroute
+    mtr
+    tcpdump
+    speedtest-cli
   ];
 }

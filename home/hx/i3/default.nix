@@ -32,6 +32,8 @@
           i3blocks
           pywal
           xsecurelock
+          libnotify
+          inotify-tools
         ];
       };
       #extraConfig = ''

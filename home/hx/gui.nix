@@ -13,13 +13,8 @@
 
   home-manager.users.hx = {
     home.packages = with pkgs; [
-      tdesktop
-      signal-desktop
       tor-browser
-      #peek
-      mumble
-      teams-for-linux
-      slack
+      peek
       vscode
       plexamp
       wireshark
@@ -33,7 +28,6 @@
       inkscape
       unstable.planify
       librewolf
-      unstable.zed-editor
     ];
   };
 }
