@@ -45,7 +45,6 @@
         #EndSection
       #'';
     };
-    #libinput.enable = true;
     displayManager.defaultSession = "none+i3";
   };
   home-manager.users.hx = {
