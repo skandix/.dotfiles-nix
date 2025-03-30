@@ -24,6 +24,7 @@
       ntfs3g
       reveal-md
       ranger
+      bat
 
       # SRE
       talosctl

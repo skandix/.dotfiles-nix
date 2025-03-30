@@ -50,8 +50,4 @@
   };
   programs.dircolors.enable = true;
   programs.dircolors.enableFishIntegration = true;
-
-  environment.systemPackages = with pkgs; [
-    bat
-  ];
 }
