@@ -5,6 +5,7 @@
     #"8.8.8.8"
     #"8.8.4.4"
   #];
+  #services.resolved.enable = true;
   networking.enableIPv6 = true;
   networking.wireguard = {
     enable = false;
