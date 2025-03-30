@@ -14,10 +14,11 @@
       tdesktop
       signal-desktop
       tor-browser
-      #peek
+      peek
       mumble
       teams-for-linux
       slack
+      bambu-studio
       vscode
       plexamp
       wireshark

@@ -16,6 +16,7 @@
     ../../home/hx
     ../../home/hx/gui.nix
     ../../home/hx/cli.nix
+    ../../home/hx/dev.nix
     ../../home/hx/i3
 
     # Common

@@ -14,6 +14,7 @@
     ../../home
     ../../home/hx
     ../../home/hx/cli.nix
+    ../../home/hx/dev.nix
 
     # Common
     ../../common/intelcpu.nix

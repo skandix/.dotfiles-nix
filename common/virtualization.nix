@@ -4,7 +4,8 @@
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
 
-  environment.systemPackages = [
-    pkgs.virtio-win
+  environment.systemPackages = with pkgs; [
+    virtio-win
+    qemu
   ];
 }

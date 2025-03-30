@@ -37,6 +37,8 @@
           feh
           i3blocks
           xsecurelock
+          libnotify
+          inotify-tools
         ];
       };
     };

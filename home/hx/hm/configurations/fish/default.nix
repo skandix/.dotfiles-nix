@@ -3,7 +3,6 @@
 {
   programs.fish = {
     enable = true;
-    package = pkgs.fish;
     shellAliases = {
       #..="cd ..";
       ip = "ip -c";
@@ -51,4 +50,8 @@
   };
   programs.dircolors.enable = true;
   programs.dircolors.enableFishIntegration = true;
+
+  environment.systemPackages = with pkgs; [
+    bat
+  ];
 }

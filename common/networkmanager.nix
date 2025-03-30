@@ -28,5 +28,10 @@
     openconnect
     nm-tray
     wireguard-tools
+    dig
+    traceroute
+    mtr
+    tcpdump
+    speedtest-cli
   ];
 }
