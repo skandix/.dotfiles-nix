@@ -29,11 +29,6 @@ macos:
 gc:
 	nix-collect-garbage -d
 
-# install-os:  FRESH INSTALL OF SYSTEM! NOTE: Need to format drives
-#install-os:
-	## format disks then run this!
-	#nixos-install --flake github:skandix/.dotfiles-nix
-
 ## debug: debug home-manager when it is failing to see what it causing it not to switch config properly
 debug:
 	journalctl -xe --unit home-manager-hx.service
