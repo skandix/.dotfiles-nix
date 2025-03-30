@@ -1,15 +1,12 @@
 ### VARIABLES ###
 set $mod Mod4
 set $altMod Mod1
-set $term alacritty
+set $term ghostty
 set $screen flameshot gui
 set $lock xsecurelock
 
 ### FONT ###
-font pango:Terminus 14px
-
-### MUTING MICROPHONE ###
-bindsym $mod+t exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send "MUTED?!?"
+font pango:Terminus 12px
 
 ### MEDIA KEYS ###
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
@@ -84,7 +81,6 @@ bindsym $mod+d focus child
 
 # Urgent windows like awsmwm
 # bindsym $mod+u [urgent=latest] focus
-
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -127,9 +123,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-#gaps inner 15px
-#smart_gaps on
-
 bindsym $mod+x mode "resize"
 mode "resize" {
         bindsym l resize shrink width 5 px or 5 ppt
@@ -154,6 +147,10 @@ position top
 
 # Avoid title bar on windows, don't want to waste to much space
 default_border pixel 3
+default_floating_border pixel 3
+
+# Hide border if only 1 window
+hide_edge_borders smart
 
 # START EVERYTIME i3 is reloaded
 exec_always --no-startup-id sh "$HOME/.dotfiles-nix/home/hx/i3/bg.sh"
@@ -163,12 +160,16 @@ exec_always --no-startup-id dunst
 exec_always --no-startup-id setxkbmap no
 
 # Start only once when i3 is started
-exec --no-startup-id aw-qt
-exec --no-startup-id twitch-indicator
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
 exec --no-startup-id discord --start-minimized
 exec --no-startup-id slack --startup
+
+# Assign sw to workspaces
+assign [class="Slack"] $ws1
+assign [class="Discord"] $ws1
+assign [class="plexamp"] $ws10
+assign [class="io.github.alainm23.planify"] $ws9
 
 # WINDOWS RULES
 for_window [class="Pavucontrol"] floating enable

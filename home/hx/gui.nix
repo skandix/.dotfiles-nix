@@ -7,8 +7,6 @@
 
 {
   imports = [
-    ./hm/configurations/mpv
-    ./hm/configurations/discord
   ];
 
   home-manager.users.hx = {

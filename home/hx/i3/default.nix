@@ -6,8 +6,14 @@
     ./../hm/configurations/flameshot
     ./../hm/configurations/picom
     ./../hm/configurations/rofi
-    #./../hm/configurations/librewolf
-    ./../hm/configurations/alacritty
+    ./../hm/configurations/ghostty
+    ./../hm/configurations/mpv
+    ./../hm/configurations/discord
+    ./../hm/configurations/vim
+    ./../hm/configurations/tmux
+    ./../hm/go.nix
+    ./../hm/python.nix
+    ./../hm/rust.nix
   ];
 
   services = {
@@ -18,7 +24,7 @@
 
       displayManager.lightdm = {
         enable = true;
-        #greeters.enso.enable = true;
+        greeters.enso.enable = true;
       };
 
       windowManager.i3 = {
@@ -30,20 +36,9 @@
           arandr
           feh
           i3blocks
-          pywal
           xsecurelock
         ];
       };
-      #extraConfig = ''
-        #Section "ServerFlags"
-        #Option          "BlankTime"     "0"
-        #Option          "StandbyTime"   "0"
-        #Option          "SuspendTime"   "0"
-        #Option          "OffTime"       "0"
-        #Option "dpms" "false"
-
-        #EndSection
-      #'';
     };
     displayManager.defaultSession = "none+i3";
   };
@@ -55,6 +50,6 @@
   };
 
   environment.variables = {
-    TERMINAL = "alacritty";
+    TERMINAL = "ghostty";
   };
 }

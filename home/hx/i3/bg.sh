@@ -3,7 +3,5 @@
 WALL_PATH="$HOME/.dotfiles-nix/home/hx/wall/"
 WALL=$(ls $WALL_PATH | shuf -n1)
 
-wal -i $WALL_PATH$WALL
-
 export XSECURELOCK_SAVER=saver_mpv
 export XSECURELOCK_LIST_VIDEOS_COMMAND='feh --bg-fill $WALL_PATH$WALL'

@@ -2,38 +2,26 @@
 command=cat /sys/class/power_supply/BAT0/capacity
 interval=1
 
+[beats]
+command=echo "$(, playerctl metadata artist) - $(, playerctl metadata title)"
+interval=1
+
 [public-ip]
 full_text=public
 command=wget -qO - http://icanhazip.com
-interval=once
+interval=1
+color=#ff0000
+
+[IP]
+command=ip route get 1.1.1.1 |grep src | cut -d' ' -f7
+interval=1
+color=#00ff00
 
 [load]
 command=echo "$(w | grep load | cut -d':' -f 5 | xargs)"
 interval=1
-color=#ff00ff
-
-[DISK]
-command=df -h / | awk '/\//{ printf("💾 %4s/%s \n", $4, $2) }'
-interval=2
-color=#ff00ff
-
-[MEM]
-command=free -h | awk '/Mem:/ { printf("🐏 %5s/%s \n", $3, $2) }'
-interval=1
-color=#ff00ff
-
-[IP]
-command=ip route get 1.1.1.1 |grep src | cut -d' ' -f7
-interval=5
-color=#ff00ff
-
-[weather]
-command=curl -Ss 'https://wttr.in/Grimstad?format=2'
-interval=3600
-color=#A4C2F4
 
 [TIME_DATE]
 command=date +" %a, %d %b - %H:%M:%S "
 interval=1
-color=#ff00ff
 align=center
