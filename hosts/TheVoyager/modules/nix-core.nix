@@ -2,7 +2,7 @@
 
 {
   nixpkgs = {
-    hostPlatform = "x86_64-darwin";
+    hostPlatform = "aarch64-darwin";
     config = {
       allowUnfree = true;
       allowUnfreePredicate = (_: true);
@@ -16,11 +16,10 @@
     };
 
     extraOptions = ''
-      extra-platforms = x86_64-darwin aarch64-darwin
+      extra-platforms = aarch64-darwin
     '';
 
     settings = {
-      # enable flakes globally
       experimental-features = [
         "nix-command"
         "flakes"
@@ -29,8 +28,8 @@
       max-jobs = "auto";
       builders-use-substitutes = true;
       };
+    gc.automatic = true;
 
   };
-  # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
 }
