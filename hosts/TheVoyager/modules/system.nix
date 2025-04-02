@@ -14,8 +14,8 @@
 
     defaults = {
       menuExtraClock.Show24Hour = true; # show 24 hour clock
-      screencapture.location = "~/Pictures/screenshots";
-      loginwindow.LoginwindowText = "Take a deep breath, drink water... and drugs are baaad, mkay";
+      screencapture.location = "$HOME/Pictures/screenshots";
+      loginwindow.LoginwindowText = "";
 
       dock = {
         autohide = true; # automatically hide and show
@@ -25,6 +25,7 @@
         launchanim = false;
         largesize = 16;
       };
+
       NSGlobalDomain = {
         # `defaults read NSGlobalDomain "xxx"`
         "com.apple.swipescrolldirection" = false; # enable natural scrolling(default to true)
@@ -39,9 +40,7 @@
       };
     };
   };
-
   security.pam.enableSudoTouchIdAuth = true;
-
   # Create /etc/zshrc that loads the nix-darwin environment.
   # this is required if you want to use darwin's default shell - zsh
   programs.fish.enable = true;

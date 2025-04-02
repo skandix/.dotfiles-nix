@@ -1,4 +1,5 @@
-{ pkgs, unstable, ... }:
+{ pkgs, unstable, homebrew-core, homebrew-cask, ... }:
+
 {
   #options: https://daiderd.com/nix-darwin/manual/index.html
 
@@ -9,25 +10,27 @@
     terraform
     reveal-md
     talosctl
-    # plex-media-player
   ];
 
   # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
   homebrew = {
     enable = true;
+
     onActivation = {
       autoUpdate = true;
       cleanup = "zap";
       upgrade = true;
     };
+
     # brewPrefix = "/opt/homebrew/bin";
     caskArgs = {
       no_quarantine = true;
     };
 
-    taps = [
-      "homebrew/services"
-    ];
+    global = {
+      brewfile = true;
+    };
+
 
     # `brew install`
     brews = [
@@ -35,8 +38,9 @@
       "git"
       "jq"
       "wget"
-      "ncdu"
+      "ranger"
       "htop"
+      "bat"
       "ffmpeg"
       "docker"
       "docker-compose"
@@ -51,12 +55,14 @@
       "mas"
       "openstackclient"
       "poetry"
-      "lolcat"
+      "uv"
       "zsh"
       "neovim"
       "tmux"
       "kubecolor"
       "go"
+      "opentofu"
+      "kubeseal"
     ];
 
     # `brew install --cask`
@@ -65,18 +71,17 @@
       "signal"
       "tor-browser"
       "sublime-text"
+      "ghostty"
       "discord"
       "librewolf"
       "microsoft-teams"
       "visual-studio-code"
       "plexamp"
-      "plex-media-player"
+      "plex"
       "slack"
-      "keybase"
       "vagrant"
       "virtualbox"
       "tailscale"
-      "swinsian"
       "steam"
       "obsidian"
     ];
@@ -86,5 +91,21 @@
       Magnet = 441258766;
       Wireguard = 1451685025;
     };
+  };
+
+  nix-homebrew = {
+    enable = true;
+
+    # Apple Silicon Only: Also install Homebrew under the default Intel prefix for Rosetta 2
+    enableRosetta = false;
+
+    user = "skandix";
+
+    taps = {
+      "homebrew/homebrew-core" = homebrew-core;
+      "homebrew/homebrew-cask" = homebrew-cask;
+    };
+
+    mutableTaps = false;
   };
 }

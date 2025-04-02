@@ -23,6 +23,17 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Nix-Homebrew
+    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    homebrew-core = {
+      url = "github:homebrew/homebrew-core";
+      flake = false;
+    };
+    homebrew-cask = {
+      url = "github:homebrew/homebrew-cask";
+      flake = false;
+    };
+
     # Nix-ld -  Run unpatched dynamic binaries on NixOS
     #nix-ld.url = "github:Mic92/nix-ld";
     #nix-ld.inputs.nixpkgs.follows = "nixpkgs";
@@ -37,6 +48,9 @@
       nixos-hardware,
       home-manager,
       nix-darwin,
+      nix-homebrew,
+      homebrew-core,
+      homebrew-cask,
       #nix-ld,
       ...
     }:
@@ -99,9 +113,13 @@
 
       darwinConfigurations = {
         TheVoyager = nix-darwin.lib.darwinSystem {
+        system = "aarch64-darwin";
+
           specialArgs = {
             inherit inputs;
             inherit unstable;
+            inherit homebrew-cask;
+            inherit homebrew-core;
           };
           modules = [
             ./hosts/TheVoyager/modules/apps.nix
@@ -109,6 +127,7 @@
             ./hosts/TheVoyager/modules/nix-core.nix
             ./hosts/TheVoyager/modules/system.nix
             nix-index-db.darwinModules.nix-index
+            nix-homebrew.darwinModules.nix-homebrew
           ];
         };
       };

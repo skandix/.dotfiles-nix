@@ -12,12 +12,12 @@
   home.stateVersion = "24.11";
 
   home.file = {
-    ".vimrc".source = "../../../home/hx/hm/"
-      }
+    ".vimrc".source = "../../../home/hx/hm/";
+  };
 
 
-      home.sessionVariables = {
-      PAGER = "less";
+  home.sessionVariables = {
+    PAGER = "less";
     BROWSER = "librewolf";
     EDITOR = "vim";
     SHELL = "fish";
