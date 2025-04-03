@@ -10,6 +10,8 @@
     terraform
     reveal-md
     talosctl
+    vscode
+    #librewolf
   ];
 
   # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
@@ -75,7 +77,7 @@
       "discord"
       "librewolf"
       "microsoft-teams"
-      "visual-studio-code"
+      #"visual-studio-code"
       "plexamp"
       "plex"
       "slack"

@@ -54,30 +54,27 @@
       #nix-ld,
       ...
     }:
-    let
-      system = "x86_64-linux";
-      unstable = nixpkgs-unstable.legacyPackages.${system};
-    in
+
     {
       nixosConfigurations = {
         DeathStar = nixpkgs.lib.nixosSystem {
+          unstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
           specialArgs = {
             inherit inputs;
-            inherit unstable;
+            inherit nixpkgs-unstable;
           };
           modules = [
             ./hosts/DeathStar/configuration.nix
             inputs.home-manager.nixosModules.default
             nix-index-db.nixosModules.nix-index
-            #nix-ld.nixosModules.nix-ld
-            #{ programs.nix-ld.dev.enable = true; }
           ];
         };
 
         Cerritos = nixpkgs.lib.nixosSystem {
+          unstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
           specialArgs = {
             inherit inputs;
-            inherit unstable;
+            inherit nixpkgs-unstable;
           };
           modules = [
             ./hosts/Cerritos/configuration.nix
@@ -87,9 +84,10 @@
         };
 
         TheOrville = nixpkgs.lib.nixosSystem {
+          unstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
           specialArgs = {
             inherit inputs;
-            inherit unstable;
+            inherit nixpkgs-unstable;
           };
           modules = [
             ./hosts/TheOrville/configuration.nix
@@ -99,9 +97,10 @@
         };
 
         SpaceCruiser = nixpkgs.lib.nixosSystem {
+          unstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
           specialArgs = {
             inherit inputs;
-            inherit unstable;
+            inherit nixpkgs-unstable;
           };
           modules = [
             ./hosts/SpaceCruiser/configuration.nix
@@ -114,10 +113,9 @@
       darwinConfigurations = {
         TheVoyager = nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
-
           specialArgs = {
             inherit inputs;
-            inherit unstable;
+            inherit nixpkgs-unstable;
             inherit homebrew-cask;
             inherit homebrew-core;
           };
@@ -131,6 +129,5 @@
           ];
         };
       };
-
     };
 }

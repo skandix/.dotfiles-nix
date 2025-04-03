@@ -16,6 +16,7 @@
     };
 
     extraOptions = ''
+      auto-optimise-store = true
       extra-platforms = aarch64-darwin
     '';
 
