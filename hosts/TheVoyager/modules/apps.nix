@@ -1,4 +1,4 @@
-{ pkgs, unstable, homebrew-core, homebrew-cask, ... }:
+{ pkgs, unstable, ... }:
 
 {
   #options: https://daiderd.com/nix-darwin/manual/index.html
@@ -7,11 +7,8 @@
     git
     pfetch
     neofetch
-    terraform
     reveal-md
     talosctl
-    vscode
-    #librewolf
   ];
 
   # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
@@ -33,9 +30,9 @@
       brewfile = true;
     };
 
-
     # `brew install`
     brews = [
+      "mas"
       "p7zip"
       "git"
       "jq"
@@ -44,32 +41,35 @@
       "htop"
       "bat"
       "ffmpeg"
+      "wireguard-tools"
       "docker"
       "docker-compose"
+      "opentofu"
+      "kubeseal"
+      "ansible"
+      "kubernetes-cli"
+      "k9s"
+      "openstackclient"
+      "poetry"
+      "kubecolor"
       "netcat"
       "nmap"
       "wireshark"
       "tcpdump"
       "speedtest-cli"
-      "ansible"
-      "kubernetes-cli"
-      "k9s"
-      "mas"
-      "openstackclient"
-      "poetry"
       "uv"
       "zsh"
       "neovim"
       "tmux"
-      "kubecolor"
       "go"
-      "opentofu"
-      "kubeseal"
+      "rustup"
+      "stats"
     ];
 
     # `brew install --cask`
     casks = [
       "telegram"
+      "slack"
       "signal"
       "tor-browser"
       "sublime-text"
@@ -77,34 +77,26 @@
       "discord"
       "librewolf"
       "microsoft-teams"
-      #"visual-studio-code"
-      "plexamp"
+      "visual-studio-code"
       "plex"
-      "slack"
       "vagrant"
       "virtualbox"
       "tailscale"
       "steam"
       "obsidian"
+      "plexamp"
+      "monitorcontrol"
+      "virtualbox"
+      "virtualbox-extension-pack"
+      "kubecontext"
+      "bitwarden"
     ];
 
-    masApps = {
-      Amphetamine = 937984704;
-      Magnet = 441258766;
-      Wireguard = 1451685025;
-    };
-  };
-
-  nix-homebrew = {
-    enable = true;
-    autoMigrate = true;
-    enableRosetta = true;
-
-    user = "skandix";
-    taps = {
-      "homebrew/homebrew-core" = homebrew-core;
-      "homebrew/homebrew-cask" = homebrew-cask;
-    };
-    mutableTaps = false;
+    # masApps = {
+    #   Amphetamine = 937984704;
+    #   Magnet = 441258766;
+    #   Wireguard = 1451685025;
+    #   Todoist = 585829637;
+    # };
   };
 }

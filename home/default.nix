@@ -1,7 +1,6 @@
 { home-manager, pkgs, ... }:
 
 {
-  #programs.fish.enable = true;
   users.groups.hx.gid = 1000;
   users.users.hx = {
     isNormalUser = true;

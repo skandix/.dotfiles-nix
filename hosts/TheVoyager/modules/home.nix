@@ -3,25 +3,31 @@
 {
 
   imports = [
-    ../../../home/
-    ../../../home/hx/
-    ../../../home/hx/hm/configurations/zsh
-    ../../../home/hx/hm/configurations/vim
+    ../../../home/hx/hm/configurations/fish
+    ../../../home/hx/hm/configurations/git
+    ../../../home/hx/hm/configurations/mpv
     ../../../home/hx/hm/configurations/tmux
+    ../../../home/hx/hm/configurations/vim
   ];
-  home.stateVersion = "24.11";
 
-  home.file = {
-    ".vimrc".source = "../../../home/hx/hm/";
+  time.timeZone = "Europe/Oslo"
+  programs = {
+    home-manager = {
+      enable = true;
+    };
   };
 
+  home = {
+    username = "skandix";
+    homeDirectory = "/Users/skandix";
+    stateVersion = "24.11";
 
-  home.sessionVariables = {
-    PAGER = "less";
-    BROWSER = "librewolf";
-    EDITOR = "vim";
-    SHELL = "fish";
-    # TERMINAL = "alacritty";
-  };
-  programs.home-manager.enable = true;
+    sessionVariables = {
+      PAGER = "less";
+      BROWSER = "librewolf";
+      EDITOR = "vim";
+      SHELL = "fish";
+      TERMINAL = "ghostty";
+    };
+  }; 
 }
