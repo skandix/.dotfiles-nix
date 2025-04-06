@@ -63,7 +63,6 @@
       "tmux"
       "go"
       "rustup"
-      "stats"
     ];
 
     # `brew install --cask`
@@ -85,11 +84,10 @@
       "steam"
       "obsidian"
       "plexamp"
-      "monitorcontrol"
       "virtualbox"
-      "virtualbox-extension-pack"
       "kubecontext"
       "bitwarden"
+      "stats"
     ];
 
     # masApps = {

@@ -10,7 +10,6 @@
     ../../../home/hx/hm/configurations/vim
   ];
 
-  time.timeZone = "Europe/Oslo"
   programs = {
     home-manager = {
       enable = true;
