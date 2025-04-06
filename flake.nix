@@ -70,7 +70,7 @@
         };
 
         TheOrville = nixpkgs.lib.nixosSystem {
-          unstable = unstable.legacyPackages.x86_64-linux;
+          #unstable = unstable.legacyPackages.x86_64-linux;
           specialArgs = {
             inherit inputs;
             inherit unstable;

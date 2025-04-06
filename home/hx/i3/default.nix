@@ -7,10 +7,10 @@
     ./../hm/configurations/picom
     ./../hm/configurations/rofi
     ./../hm/configurations/ghostty
-    ./../hm/configurations/mpv
+    #./../hm/configurations/mpv
     ./../hm/configurations/discord
-    ./../hm/configurations/vim
-    ./../hm/configurations/tmux
+    #./../hm/configurations/vim
+    #./../hm/configurations/tmux
     ./../hm/go.nix
     ./../hm/python.nix
     ./../hm/rust.nix
