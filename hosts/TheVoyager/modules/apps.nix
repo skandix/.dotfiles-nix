@@ -63,6 +63,8 @@
       "tmux"
       "go"
       "rustup"
+      "jordanbaird-ice"
+      "pearcleaner"
     ];
 
     # `brew install --cask`
