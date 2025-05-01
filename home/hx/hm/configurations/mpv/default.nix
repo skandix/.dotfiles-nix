@@ -1,6 +1,8 @@
 { pkgs, ... }:
 
 {
+
+home-manager.users.hx = {
   home.packages = with pkgs; [
     mpv
     yt-dlp
@@ -11,4 +13,5 @@
   xdg.configFile = {
     "mpv/mpv.conf".source = ./mpv.conf;
   };
+};
 }
