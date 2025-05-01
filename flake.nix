@@ -4,12 +4,12 @@
   inputs = {
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
-    unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
 
     # Comma
     nix-index-db.url = "github:nix-community/nix-index-database";
-    nix-index-db.inputs.nixpkgs.follows = "unstable";
+    nix-index-db.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
     # Home-Manager
     home-manager = {
@@ -33,7 +33,7 @@
       self,
       nixpkgs,
       nix-index-db,
-      unstable,
+      nixpkgs-unstable,
       nixos-hardware,
       home-manager,
       nix-darwin,
@@ -41,10 +41,12 @@
       ...
     }:
 
-    {
+    let
+      system = "x86_64-linux";
+      unstable = nixpkgs-unstable.legacyPackages.${system};
+    in {
       nixosConfigurations = {
         DeathStar = nixpkgs.lib.nixosSystem {
-          unstable = unstable.legacyPackages.x86_64-linux;
           specialArgs = {
             inherit inputs;
             inherit unstable;
@@ -57,7 +59,6 @@
         };
 
         Cerritos = nixpkgs.lib.nixosSystem {
-          unstable = unstable.legacyPackages.x86_64-linux;
           specialArgs = {
             inherit inputs;
             inherit unstable;
@@ -70,7 +71,6 @@
         };
 
         TheOrville = nixpkgs.lib.nixosSystem {
-          #unstable = unstable.legacyPackages.x86_64-linux;
           specialArgs = {
             inherit inputs;
             inherit unstable;
@@ -83,7 +83,6 @@
         };
 
         SpaceCruiser = nixpkgs.lib.nixosSystem {
-          unstable = unstable.legacyPackages.x86_64-linux;
           specialArgs = {
             inherit inputs;
             inherit unstable;

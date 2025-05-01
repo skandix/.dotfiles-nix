@@ -13,7 +13,7 @@
     programs.go = {
       enable = true;
       goPath = ".go";
-      package = unstable.go_1_22;
+      package = unstable.go;
     };
   };
 }

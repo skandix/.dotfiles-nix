@@ -45,7 +45,7 @@
     "nix-index-db": {
       "inputs": {
         "nixpkgs": [
-          "unstable"
+          "nixpkgs-unstable"
         ]
       },
       "locked": {
@@ -93,17 +93,7 @@
         "type": "github"
       }
     },
-    "root": {
-      "inputs": {
-        "home-manager": "home-manager",
-        "nix-darwin": "nix-darwin",
-        "nix-index-db": "nix-index-db",
-        "nixos-hardware": "nixos-hardware",
-        "nixpkgs": "nixpkgs",
-        "unstable": "unstable"
-      }
-    },
-    "unstable": {
+    "nixpkgs-unstable": {
       "locked": {
         "lastModified": 1745930157,
         "narHash": "sha256-y3h3NLnzRSiUkYpnfvnS669zWZLoqqI6NprtLQ+5dck=",
@@ -117,6 +107,16 @@
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "nix-darwin": "nix-darwin",
+        "nix-index-db": "nix-index-db",
+        "nixos-hardware": "nixos-hardware",
+        "nixpkgs": "nixpkgs",
+        "nixpkgs-unstable": "nixpkgs-unstable"
       }
     }
   },
