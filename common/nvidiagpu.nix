@@ -2,7 +2,6 @@
 
 {
   nixpkgs.config.allowUnfree = true;
-  # Enable OpenGL
   hardware.graphics = {
     enable = true;
     enable32Bit = true;

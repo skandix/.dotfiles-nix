@@ -2,7 +2,10 @@
 
 {
   home-manager.users.hx = {
-    home.packages = with pkgs; [ rofi ];
+    programs.rofi = {
+      enable = true;
+    };
+    #home.packages = with pkgs; [ rofi ];
     xdg.configFile = {
       "rofi/config.rasi".source = ./config.rasi;
     };

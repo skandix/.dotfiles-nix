@@ -52,6 +52,6 @@
     pasystray
     pulseaudio
     pavucontrol
-    easyeffects
+    #easyeffects
   ];
 }

@@ -2,6 +2,14 @@
 
 {
   home-manager.users.hx = {
+    programs = {
+      ruff = {
+      enable = true;
+    };
+    poetry = {
+      enable = true;
+    };
+  };
     home.packages = with pkgs; [
       (python312.withPackages (
         ps: with ps; [
@@ -14,9 +22,7 @@
           beautifulsoup4
         ]
       ))
-      unstable.poetry
       unstable.uv
-      unstable.ruff
     ];
   };
   #programs.nix-ld.enable = true;

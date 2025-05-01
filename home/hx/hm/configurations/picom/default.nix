@@ -2,10 +2,10 @@
 
 {
   home-manager.users.hx = {
-    home.packages = with pkgs; [ picom ];
+    home.packages = with pkgs; [ fastcompmgr ];
 
-    xdg.configFile = {
-      "picom/picom.conf".source = ./picom.conf;
-    };
+    #xdg.configFile = {
+      #"picom/picom.conf".source = ./picom.conf;
+    #};
   };
 }

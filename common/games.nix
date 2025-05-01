@@ -23,9 +23,9 @@
     mangohud # A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
     r2modman # risk of rain 2 mod manager
     protontricks
-    piper
-    logitech-udev-rules
-    solaar
+    #piper
+    #logitech-udev-rules
+    #solaar
     prismlauncher # minecraft launcher
     wowup-cf # wow addoon manager
     unstable.protonup-qt
