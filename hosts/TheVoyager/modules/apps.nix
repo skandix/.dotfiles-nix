@@ -7,7 +7,6 @@
     git
     pfetch
     neofetch
-    reveal-md
     talosctl
   ];
 
@@ -63,8 +62,6 @@
       "tmux"
       "go"
       "rustup"
-      "jordanbaird-ice"
-      "pearcleaner"
     ];
 
     # `brew install --cask`
@@ -89,14 +86,13 @@
       "virtualbox"
       "kubecontext"
       "bitwarden"
-      "stats"
     ];
 
-    # masApps = {
-    #   Amphetamine = 937984704;
-    #   Magnet = 441258766;
-    #   Wireguard = 1451685025;
-    #   Todoist = 585829637;
-    # };
+     masApps = {
+       Amphetamine = 937984704;
+       Magnet = 441258766;
+       Wireguard = 1451685025;
+       Todoist = 585829637;
+     };
   };
 }
