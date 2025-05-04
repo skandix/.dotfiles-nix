@@ -7,6 +7,7 @@
 
 {
   imports = [
+    ../../pkgs/cider-2
   ];
 
   home-manager.users.hx = {
@@ -32,7 +33,7 @@
       inkscape
       unstable.planify
       librewolf
-      cider-2
+      # cider-2
     ];
   };
 }
