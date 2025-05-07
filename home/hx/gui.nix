@@ -6,10 +6,6 @@
 }:
 
 {
-  imports = [
-    ../../pkgs/cider-2
-  ];
-
   home-manager.users.hx = {
     home.packages = with pkgs; [
       tdesktop
@@ -33,7 +29,7 @@
       inkscape
       unstable.planify
       librewolf
-      # cider-2
+      cider
     ];
   };
 }
