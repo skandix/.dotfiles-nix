@@ -8,6 +8,7 @@
     pfetch
     neofetch
     talosctl
+    docker_28
   ];
 
   # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
