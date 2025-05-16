@@ -6,10 +6,6 @@
 }:
 
 {
-  imports = [
-    ../../pkgs/cider-2
-  ];
-
   home-manager.users.hx = {
     home.packages = with pkgs; [
       tdesktop
