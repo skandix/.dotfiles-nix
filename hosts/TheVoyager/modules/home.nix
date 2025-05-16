@@ -28,5 +28,5 @@
       SHELL = "fish";
       TERMINAL = "ghostty";
     };
-  }; 
+  };
 }

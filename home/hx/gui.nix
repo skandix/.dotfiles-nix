@@ -29,7 +29,7 @@
       inkscape
       unstable.planify
       librewolf
-      # cider-2
+      cider
     ];
   };
 }
