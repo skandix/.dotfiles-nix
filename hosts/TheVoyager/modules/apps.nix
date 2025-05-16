@@ -89,11 +89,11 @@
       "bitwarden"
     ];
 
-     masApps = {
-       Amphetamine = 937984704;
-       Magnet = 441258766;
-       Wireguard = 1451685025;
-       Todoist = 585829637;
-     };
+     #masApps = {
+       #Amphetamine = 937984704;
+       #Magnet = 441258766;
+       #Wireguard = 1451685025;
+       #Todoist = 585829637;
+     #};
   };
 }
