@@ -28,6 +28,7 @@
     ../../common/games.nix
     ../../common/networkmanager.nix
     ../../common/pipewire.nix
+    #../../common/bluetooth.nix
     ../../common/nix-tweakz.nix
     ../../common/nix-pkg-allow.nix
     ../../common/virtualization.nix

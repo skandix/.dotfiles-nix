@@ -12,7 +12,7 @@ command=wget -qO - http://icanhazip.com
 interval=1
 color=#ff0000
 
-[IP]
+[ip]
 command=ip route get 1.1.1.1 |grep src | cut -d' ' -f7
 interval=1
 color=#00ff00
@@ -21,7 +21,8 @@ color=#00ff00
 command=echo "$(w | grep load | cut -d':' -f 5 | xargs)"
 interval=1
 
-[TIME_DATE]
+[time]
 command=date +" %a, %d %b - %H:%M:%S "
 interval=1
 align=center
+color=#ff00ff
