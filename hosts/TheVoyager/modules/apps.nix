@@ -84,9 +84,8 @@
       "steam"
       "obsidian"
       "plexamp"
-      "virtualbox"
-      "kubecontext"
       "bitwarden"
+      "thunderbird"
     ];
 
      #masApps = {
