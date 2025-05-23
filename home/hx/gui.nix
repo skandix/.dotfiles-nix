@@ -13,7 +13,6 @@
       tor-browser
       peek
       mumble
-      teams-for-linux
       slack
       bambu-studio
       vscode
@@ -27,7 +26,7 @@
       netflix
       sublime
       inkscape
-      unstable.planify
+      #unstable.planify # electron problems
       librewolf
       cider
     ];
