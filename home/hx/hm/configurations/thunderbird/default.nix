@@ -9,11 +9,6 @@
           settings = {
               "privacy.donottrackheader.enabled" = true;
           };
-          profiles.hx = {
-              name = "hx";
-              isDefault = true;
-              search.default = "google";
-          };
       };
   };
 }
