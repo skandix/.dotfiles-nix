@@ -26,6 +26,7 @@
       netflix
       sublime
       inkscape
+      unstable.thunderbird
       #unstable.planify # electron problems
       librewolf
       cider

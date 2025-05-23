@@ -11,7 +11,6 @@
     ./../hm/configurations/discord
     ./../hm/configurations/vim
     ./../hm/configurations/tmux
-    ./../hm/configurations/thunderbird
     ./../hm/go.nix
     ./../hm/python.nix
     ./../hm/rust.nix
