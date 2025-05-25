@@ -10,7 +10,7 @@
     enable = true;
     enable32Bit = true;
   };
-  hardware.pulseaudio.support32Bit = true;
+  services.pulseaudio.support32Bit = true;
   programs.steam.enable = true;
   services.ratbagd.enable = true;
 
