@@ -32,5 +32,5 @@
     gc.automatic = true;
 
   };
-  services.nix-daemon.enable = true;
+  #services.nix-daemon.enable = true; #no longer has any effect
 }

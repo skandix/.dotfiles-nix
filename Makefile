@@ -23,7 +23,7 @@ fmt:
 
 ## macos: build macos nix-config
 macos:
-	nix run nix-darwin -- switch --flake .
+	sudo darwin-rebuild switch --flake .
 
 ## gc: garbage collect old unused nix paths
 gc:

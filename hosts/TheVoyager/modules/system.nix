@@ -7,19 +7,20 @@
   system = {
     startup.chime = false;
     stateVersion = 5;
+    primaryUser = "skandix";
     # activationScripts are executed every time you boot the system or run `nixos-rebuild` / `darwin-rebuild`.
-    activationScripts.postUserActivation.text = ''
-      # activateSettings -u will reload the settings from the database and apply them to the current session,
-      # so we do not need to logout and login again to make the changes take effect.
-      /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
-    '';
+    #activationScripts.postUserActivation.text = ''
+      ## activateSettings -u will reload the settings from the database and apply them to the current session,
+      ## so we do not need to logout and login again to make the changes take effect.
+      #/System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
+    #''; # has been removed.
 
 
 
     defaults = {
       menuExtraClock.Show24Hour = true; # show 24 hour clock
       screencapture.location = "$HOME/Pictures/screenshots";
-      loginwindow.LoginwindowText = "yeeeet, 99227030";
+      loginwindow.LoginwindowText = "If lost, call +47 99 22 70 30 or email bendik.dyrli@gmail.com";
 
       finder = {
         AppleShowAllExtensions = true;
@@ -49,7 +50,7 @@
     };
   };
 };
-security.pam.enableSudoTouchIdAuth = true;
+security.pam.services.sudo_local.touchIdAuth = true;
   # Create /etc/zshrc that loads the nix-darwin environment.
   # this is required if you want to use darwin's default shell - zsh
   programs.fish.enable = true;
