@@ -3,13 +3,20 @@
 
   inputs = {
     # Nixpkgs
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixos-hardware.url = "github:NixOS/nixos-hardware";
+    nixpkgs = {
+      url = "github:nixos/nixpkgs/nixos-25.05";
+    };
+    nixpkgs-unstable = {
+      url = "github:nixos/nixpkgs/nixos-unstable";
+    };
+    nixos-hardware = {
+      url = "github:NixOS/nixos-hardware";
+    };
 
     # Comma
-    nix-index-db.url = "github:nix-community/nix-index-database";
-    nix-index-db.inputs.nixpkgs.follows = "nixpkgs-unstable";
+    nix-index-db = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs-unstable"; };
 
     # Home-Manager
     home-manager = {
@@ -17,15 +24,24 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Nix on Macos
+    # Nix-Darwin
     nix-darwin = {
       url = "github:LnL7/nix-darwin/nix-darwin-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Nix-ld -  Run unpatched dynamic binaries on NixOS
-    #nix-ld.url = "github:Mic92/nix-ld";
-    #nix-ld.inputs.nixpkgs.follows = "nixpkgs";
+    # Nix-Homebrew Darwin
+    nix-homebrew ={
+      url = "github:zhaofengli/nix-homebrew";
+    };
+    #homebrew-core = {
+      #url = "github:homebrew/homebrew-core";
+      #flake = false;
+    #};
+    #homebrew-cask = {
+      #url = "github:homebrew/homebrew-cask";
+      #flake = false;
+    #};
   };
 
   outputs =
@@ -37,7 +53,7 @@
       nixos-hardware,
       home-manager,
       nix-darwin,
-      #nix-ld,
+      nix-homebrew,
       ...
     }:
 
@@ -103,12 +119,13 @@
             inherit unstable;
           };
           modules = [
+            ./hosts/TheVoyager/modules/system.nix
             ./hosts/TheVoyager/modules/apps.nix
             ./hosts/TheVoyager/modules/host-users.nix
             ./hosts/TheVoyager/modules/nix-core.nix
-            ./hosts/TheVoyager/modules/system.nix
             nix-index-db.darwinModules.nix-index
             home-manager.darwinModules.home-manager
+            nix-homebrew.darwinModules.nix-homebrew
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;

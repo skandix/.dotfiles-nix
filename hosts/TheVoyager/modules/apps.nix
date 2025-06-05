@@ -11,6 +11,13 @@
     docker_28
   ];
 
+  nix-homebrew = {
+    enable = true;
+    enableRosetta = false;
+    user = "skandix";
+    mutableTaps = true;
+    autoMigrate = true;
+  };
   # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
   homebrew = {
     enable = true;
