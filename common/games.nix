@@ -29,6 +29,6 @@
     prismlauncher # minecraft launcher
     wowup-cf # wow addoon manager
     unstable.protonup-qt
-    proton-ge-bin # uncomment until resolved issues with package
+    #proton-ge-bin # uncomment until resolved issues with package
   ];
 }

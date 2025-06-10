@@ -49,6 +49,8 @@
   networking.interfaces.enp5s0.useDHCP = true;
   networking.interfaces.wlp6s0.useDHCP = lib.mkForce false;
 
+  programs.dconf.enable = true; # TODO: hvorfor trenger jeg denne her?
+
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
     keyMap = "no";
