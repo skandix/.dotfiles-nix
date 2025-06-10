@@ -31,7 +31,7 @@
     #../../common/bluetooth.nix
     ../../common/nix-tweakz.nix
     ../../common/nix-pkg-allow.nix
-    ../../common/virtualization.nix
+    ../../common/virtualbox.nix
     ../../common/fwupd.nix
     ../../common/ssh-client.nix
     ../../common/streamdeck.nix

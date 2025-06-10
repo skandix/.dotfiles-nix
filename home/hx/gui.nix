@@ -30,6 +30,7 @@
       #unstable.planify # electron problems
       librewolf
       cider
+      picard
     ];
   };
 }
