@@ -15,9 +15,4 @@
       };
     };
   };
-  hardware.sensors = {
-    hddtemp = {
-      enable = true;
-    };
-  };
 }
