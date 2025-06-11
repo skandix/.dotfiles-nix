@@ -1,3 +1,13 @@
+# CLEAR KEYBIND
+keybind=clear
+
+# SET KEYBINDS
+keybind = alt+b=toggle_tab_overview
+keybind = ctrl+t=new_tab
+keybind = ctrl+shift+w=close_tab
+keybind = ctrl+n=toggle_quick_terminal
+keybind = ctrl+tab=next_tab
+
 clipboard-read = allow
 clipboard-write = allow
 copy-on-select = true
@@ -6,7 +16,6 @@ window-theme = dark
 theme = iTerm2 Smoooooth
 cursor-style = block
 font-size = 16
-keybind = alt+b=toggle_tab_overview
 focus-follows-mouse = true
 gtk-titlebar = false
 macos-titlebar-style = hidden

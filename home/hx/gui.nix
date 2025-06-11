@@ -24,7 +24,7 @@
       sonic-visualiser
       zathura
       netflix
-      sublime
+      sublime3
       inkscape
       unstable.thunderbird
       #unstable.planify # electron problems

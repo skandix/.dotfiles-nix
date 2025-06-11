@@ -5,8 +5,19 @@
     enable = true;
     nvidiaSupport = true;
   };
-  environment.systemPackages = with pkgs; [
-    lm_sensors
-    smartmontools
-  ];
+  services = {
+    smartd = {
+      enable = true;
+      notifications = {
+        x11.enable = true;
+        wall.enable = true;
+        test = true;
+      };
+    };
+  };
+  hardware.sensors = {
+    hddtemp = {
+      enable = true;
+    };
+  };
 }
