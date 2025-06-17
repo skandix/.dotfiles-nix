@@ -28,13 +28,10 @@
     ../../common/games.nix
     ../../common/networkmanager.nix
     ../../common/pipewire.nix
-    #../../common/bluetooth.nix
     ../../common/nix-tweakz.nix
     ../../common/nix-pkg-allow.nix
-    ../../common/virtualbox.nix
     ../../common/fwupd.nix
     ../../common/ssh-client.nix
-    ../../common/streamdeck.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

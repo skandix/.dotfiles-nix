@@ -2,7 +2,9 @@
 
 {
   #programs.zsh.enable = true;
-  home-manager.users.hx = {
+
+
+  #home-manager.users.hx = {
     home.packages = with pkgs; [
       pfetch
       lolcat
@@ -12,5 +14,5 @@
       source = ./.zshrc;
       target = ".zshrc";
     };
-  };
+  #};
 }

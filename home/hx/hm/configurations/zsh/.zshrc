@@ -2,7 +2,7 @@
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-source "${ZINIT_HOME}/zinit.zsh"
+source "${ZINIT_HOME}/zinit.zsh" &> /dev/null
 zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit
 compinit
@@ -14,8 +14,8 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/fast-syntax-highlighting
 
 ## COLORS ##
-(cat ~/.cache/wal/sequences &) &>/dev/null
-source ~/.cache/wal/colors-tty.sh &>/dev/null
+#(cat ~/.cache/wal/sequences &) &>/dev/null
+#source ~/.cache/wal/colors-tty.sh &>/dev/null
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -23,6 +23,8 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 ## ALIAS ##
+
+
 alias ..="cd .."
 alias ip="ip -c"
 alias k="kubecolor"
@@ -44,8 +46,8 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 ## EXPORT ##
-source gitclones/bofh/openstack/openstack.sh &>/dev/null
+#source gitclones/bofh/openstack/openstack.sh &>/dev/null
 
-pfetch -t |lolcat
+pfetch |lolcat
 
 PS1="%n@%m λ " # shell prompt
