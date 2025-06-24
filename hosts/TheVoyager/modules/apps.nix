@@ -24,7 +24,7 @@
 
     onActivation = {
       autoUpdate = true;
-      #cleanup = "zap";
+      cleanup = "uninstall";
       upgrade = true;
     };
 
@@ -37,6 +37,7 @@
       brewfile = true;
     };
 
+    #taps = [];
     # `brew install`
     brews = [
       "mas"
@@ -81,13 +82,12 @@
       "sublime-text"
       "ghostty"
       "discord"
-      #"librewolf"
+      "librewolf"
       "microsoft-teams"
       "visual-studio-code"
       "plex"
       "vagrant"
       "virtualbox"
-      "tailscale"
       "steam"
       "obsidian"
       "plexamp"
@@ -95,11 +95,11 @@
       "thunderbird"
     ];
 
-     #masApps = {
-       #Amphetamine = 937984704;
-       #Magnet = 441258766;
-       #Wireguard = 1451685025;
-       #Todoist = 585829637;
-     #};
+     masApps = {
+       Amphetamine = 937984704;
+       Magnet = 441258766;
+       Wireguard = 1451685025;
+       Tailscale = 1475387142;
+     };
   };
 }
