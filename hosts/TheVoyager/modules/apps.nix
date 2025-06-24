@@ -93,6 +93,7 @@
       "plexamp"
       "bitwarden"
       "thunderbird"
+      "betterdisplay"
     ];
 
      masApps = {
