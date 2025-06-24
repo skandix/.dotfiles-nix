@@ -24,7 +24,7 @@
 
     onActivation = {
       autoUpdate = true;
-      cleanup = "zap";
+      #cleanup = "zap";
       upgrade = true;
     };
 
@@ -81,7 +81,7 @@
       "sublime-text"
       "ghostty"
       "discord"
-      "librewolf"
+      #"librewolf"
       "microsoft-teams"
       "visual-studio-code"
       "plex"

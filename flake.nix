@@ -34,14 +34,6 @@
     nix-homebrew ={
       url = "github:zhaofengli/nix-homebrew";
     };
-    #homebrew-core = {
-      #url = "github:homebrew/homebrew-core";
-      #flake = false;
-    #};
-    #homebrew-cask = {
-      #url = "github:homebrew/homebrew-cask";
-      #flake = false;
-    #};
   };
 
   outputs =
@@ -127,7 +119,7 @@
             home-manager.darwinModules.home-manager
             nix-homebrew.darwinModules.nix-homebrew
             {
-              home-manager.useGlobalPkgs = true;
+              #home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users.skandix = import ./hosts/TheVoyager/modules/home.nix;
             }
