@@ -5,6 +5,6 @@
     PAGER = "less";
     BROWSER = "librewolf";
     EDITOR = "vim";
-    SHELL = "zsh";
+    SHELL = "fish";
   };
 }

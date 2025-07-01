@@ -9,7 +9,7 @@
   home-manager.users.hx = {
     home.packages = with pkgs; [
       tdesktop
-      signal-desktop
+      unstable.signal-desktop
       tor-browser
       peek
       mumble

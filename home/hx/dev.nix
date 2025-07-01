@@ -9,5 +9,7 @@
 
   environment.systemPackages = with pkgs; [
     gnumake
+    scala-next
+    sbt
   ];
 }

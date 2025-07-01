@@ -11,12 +11,17 @@
     enable32Bit = true;
   };
   services.pulseaudio.support32Bit = true;
-  programs.steam.enable = true;
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    protontricks.enable = true;
+    localNetworkGameTransfers.openFirewall = true;
+  };
 
   # OTHER
   environment.systemPackages = with pkgs; [
     lutris
-    unstable.winetricks
+    winetricks
     wine-staging
     gamemode # Optimise Linux system performance on demand
     mangohud # A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
@@ -24,6 +29,6 @@
     protontricks
     prismlauncher # minecraft launcher
     wowup-cf # wow addoon manager
-    unstable.protonup-qt
+    protonplus
   ];
 }
