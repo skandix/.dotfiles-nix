@@ -3,7 +3,7 @@
 {
 
   imports = [
-    ../../../home/hx/hm/configurations/zsh
+    ../../../home/hx/hm/configurations/fish
     ../../../home/hx/hm/configurations/git
     ../../../home/hx/hm/configurations/mpv/macos.nix
     ../../../home/hx/hm/configurations/tmux/macos.nix
