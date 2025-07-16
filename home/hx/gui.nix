@@ -27,10 +27,8 @@
       sublime3
       inkscape
       unstable.thunderbird
-      #unstable.planify # electron problems
       librewolf
-      cider
-      picard
+      openscad
     ];
   };
 }

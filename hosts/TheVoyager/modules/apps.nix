@@ -94,6 +94,7 @@
       "bitwarden"
       "thunderbird"
       "betterdisplay"
+      "container"
     ];
 
      masApps = {
