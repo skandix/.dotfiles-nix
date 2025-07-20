@@ -29,6 +29,7 @@
       unstable.thunderbird
       librewolf
       openscad
+      qflipper
     ];
   };
 }
