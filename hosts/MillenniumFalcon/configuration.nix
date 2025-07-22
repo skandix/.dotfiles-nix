@@ -33,7 +33,7 @@
   systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
   networking.hostName = "MillenniumFalcon";
   networking.useDHCP = false;
-  networking.interfaces.eno1.useDHCP = true
+  networking.interfaces.eno1.useDHCP = true;
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
     keyMap = "no";
