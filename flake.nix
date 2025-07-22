@@ -3,20 +3,15 @@
 
   inputs = {
     # Nixpkgs
-    nixpkgs = {
-      url = "github:nixos/nixpkgs/nixos-25.05";
-    };
-    nixpkgs-unstable = {
-      url = "github:nixos/nixpkgs/nixos-unstable";
-    };
-    nixos-hardware = {
-      url = "github:NixOS/nixos-hardware";
-    };
+    nixpkgs = { url = "github:nixos/nixpkgs/nixos-25.05"; };
+    nixpkgs-unstable = { url = "github:nixos/nixpkgs/nixos-unstable"; };
+    nixos-hardware = { url = "github:NixOS/nixos-hardware"; };
 
     # Comma
     nix-index-db = {
       url = "github:nix-community/nix-index-database";
-      inputs.nixpkgs.follows = "nixpkgs-unstable"; };
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
 
     # Home-Manager
     home-manager = {
@@ -31,23 +26,11 @@
     };
 
     # Nix-Homebrew Darwin
-    nix-homebrew ={
-      url = "github:zhaofengli/nix-homebrew";
-    };
+    nix-homebrew = { url = "github:zhaofengli/nix-homebrew"; };
   };
 
-  outputs =
-    inputs@{
-      self,
-      nixpkgs,
-      nix-index-db,
-      nixpkgs-unstable,
-      nixos-hardware,
-      home-manager,
-      nix-darwin,
-      nix-homebrew,
-      ...
-    }:
+  outputs = inputs@{ self, nixpkgs, nix-index-db, nixpkgs-unstable
+    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, ... }:
 
     let
       system = "x86_64-linux";
@@ -105,7 +88,7 @@
 
       darwinConfigurations = {
         TheVoyager = nix-darwin.lib.darwinSystem {
-        system = "aarch64-darwin";
+          system = "aarch64-darwin";
           specialArgs = {
             inherit inputs;
             inherit unstable;
@@ -121,7 +104,8 @@
             {
               #home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.skandix = import ./hosts/TheVoyager/modules/home.nix;
+              home-manager.users.skandix =
+                import ./hosts/TheVoyager/modules/home.nix;
             }
           ];
         };
