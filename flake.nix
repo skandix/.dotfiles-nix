@@ -37,6 +37,18 @@
       unstable = nixpkgs-unstable.legacyPackages.${system};
     in {
       nixosConfigurations = {
+        MillenniumFalcon = nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs;
+            inherit unstable;
+          };
+          modules = [
+            ./hosts/MillenniumFalcon/configuration.nix
+            inputs.home-manager.nixosModules.default
+            nix-index-db.nixosModules.nix-index
+          ];
+        };
+
         DeathStar = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;
