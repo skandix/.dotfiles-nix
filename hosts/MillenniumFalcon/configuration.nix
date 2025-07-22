@@ -16,7 +16,7 @@
 
     ../../common/intelcpu.nix
     ../../common/intelgpu.nix
-    ../../common/sshd.nix                                                         w
+    ../../common/sshd.nix
     ../../common/docker.nix
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
