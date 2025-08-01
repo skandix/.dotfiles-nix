@@ -25,6 +25,7 @@
       reveal-md
       ranger
       bat
+      ripgrep
 
       # SRE
       talosctl

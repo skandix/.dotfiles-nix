@@ -10,12 +10,9 @@ in
     plugins = with pkgs.vimPlugins; [
       vim-nix
       nerdtree
-      rust-vim
       vim-indent-guides
       nerdcommenter
-      The_NERD_tree
-      ctrlp
-      polyglot
+      ctrlp-z
       vim-startify
       vim-json
       vim-better-whitespace

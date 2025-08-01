@@ -13,7 +13,6 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 """ Lettings
 let mapleader=" "
-let g:ycm_autoclose_preview_window_after_completion=1
 let g:go_version_warning = 0
 
 """ KEYBINDS
@@ -21,7 +20,6 @@ let g:go_version_warning = 0
 nnoremap <F1> :set hlsearch!<CR>
 nnoremap <F2> :StripWhitespace<CR>
 
-map <C-g>  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 map <C-d> :NERDTreeToggle<CR>
 map  <C-f> :tabn<CR>
 map  <C-t> :tabnew<CR>
@@ -36,6 +34,11 @@ nnoremap <Leader>w :write <CR>
 nnoremap <Leader>x :xit <CR>
 nnoremap <Leader>q :quit <CR>
 nnoremap <Leader>b :!python3 %<CR>
+
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 """" Splitting Keybinds
 "split navigations

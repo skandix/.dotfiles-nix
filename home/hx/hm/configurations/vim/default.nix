@@ -11,28 +11,21 @@ in
       plugins = with pkgs.vimPlugins; [
         vim-nix
         nerdtree
-        rust-vim
         vim-indent-guides
         nerdcommenter
-        The_NERD_tree
         ctrlp
-        polyglot
         vim-startify
         vim-json
         vim-better-whitespace
         lightline-vim
         ale
         vim-gitgutter
-        lexima-vim
-        gruvbox
+        #lexima-vim
         telescope-nvim
         srcery-vim
         ansible-vim
         vim-polyglot
-        aurora
         rainbow
-        vim-airline
-        vim-airline-themes
       ];
       extraConfig = ''
         ${general}
