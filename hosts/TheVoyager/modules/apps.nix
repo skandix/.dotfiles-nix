@@ -84,7 +84,7 @@
       "discord"
       "librewolf"
       "microsoft-teams"
-      "visual-studio-code"
+      "vscodium"
       "plex"
       "vagrant"
       "virtualbox"
@@ -93,7 +93,6 @@
       "plexamp"
       "bitwarden"
       "thunderbird"
-      "betterdisplay"
       "container"
     ];
 

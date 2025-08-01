@@ -14,8 +14,7 @@
       peek
       mumble
       slack
-      bambu-studio
-      vscode
+      vscodium
       plexamp
       wireshark
       plex-desktop
