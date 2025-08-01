@@ -16,6 +16,7 @@
 
     ../../common/intelcpu.nix
     ../../common/intelgpu.nix
+    ../../common/networkmanager.nix
     ../../common/sshd.nix
     ../../common/docker.nix
     ../../common/nix-pkg-allow.nix

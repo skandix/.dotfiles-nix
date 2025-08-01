@@ -21,7 +21,7 @@
       "podman"
     ];
     group = "hx";
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
   };
 
   users.users.hx.ignoreShellProgramCheck = true;
