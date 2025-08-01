@@ -30,6 +30,7 @@
       librewolf
       openscad
       qflipper
+      keymapp
     ];
   };
 }
