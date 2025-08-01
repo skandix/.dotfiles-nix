@@ -7,7 +7,9 @@ in
     programs.neovim = {
       enable = true;
       vimAlias = true;
+      viAlias = true;
       vimdiffAlias = true;
+      defaultEditor = true;
       plugins = with pkgs.vimPlugins; [
         vim-nix
         nerdtree
@@ -20,7 +22,6 @@ in
         lightline-vim
         ale
         vim-gitgutter
-        #lexima-vim
         telescope-nvim
         srcery-vim
         ansible-vim

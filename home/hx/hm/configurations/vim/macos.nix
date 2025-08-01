@@ -12,23 +12,19 @@ in
       nerdtree
       vim-indent-guides
       nerdcommenter
-      ctrlp-z
+      ctrlp
       vim-startify
       vim-json
       vim-better-whitespace
       lightline-vim
       ale
       vim-gitgutter
-      lexima-vim
-      gruvbox
+      #lexima-vim
       telescope-nvim
       srcery-vim
       ansible-vim
       vim-polyglot
-      aurora
       rainbow
-      vim-airline
-      vim-airline-themes
     ];
     extraConfig = ''
       ${general}

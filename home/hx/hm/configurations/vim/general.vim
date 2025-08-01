@@ -14,6 +14,7 @@ au BufNewFile,BufRead *.js, *.html, *.css
 """ Lettings
 let mapleader=" "
 let g:go_version_warning = 0
+let g:rainbow_active = 1
 
 """ KEYBINDS
 """" F-Keys
