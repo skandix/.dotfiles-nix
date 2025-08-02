@@ -28,6 +28,7 @@ in
         ansible-vim
         vim-polyglot
         rainbow
+        nvim-lspconfig
       ];
       extraConfig = ''
         ${general}
