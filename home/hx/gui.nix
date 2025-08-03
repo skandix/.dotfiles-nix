@@ -12,7 +12,7 @@
       unstable.signal-desktop
       tor-browser
       peek
-      mumble
+      unstable.mumble
       slack
       vscodium
       plexamp

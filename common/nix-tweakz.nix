@@ -32,12 +32,17 @@
       automatic = true;
     };
   };
-  security.pam.loginLimits = [
-    {
-      domain = "*";
-      type = "soft";
-      item = "nofile";
-      value = "unlimited";
-    }
-  ];
+  security.pam = {
+    krb5 = {
+      enable = true;
+    };
+    loginLimits = [
+      {
+        domain = "*";
+        type = "soft";
+        item = "nofile";
+        value = "unlimited";
+      }
+    ];
+  };
 }
