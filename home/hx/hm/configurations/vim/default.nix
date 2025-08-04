@@ -20,6 +20,7 @@ in
         vim-json
         vim-better-whitespace
         lightline-vim
+        lexima-vim
         ale
         vim-gitgutter
         telescope-nvim

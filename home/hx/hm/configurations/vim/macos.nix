@@ -19,7 +19,7 @@ in
       lightline-vim
       ale
       vim-gitgutter
-      #lexima-vim
+      lexima-vim
       telescope-nvim
       srcery-vim
       ansible-vim
