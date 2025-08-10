@@ -11,6 +11,7 @@
 
   nix = {
     package = pkgs.nix;
+    optomise.automatic = true;
     linux-builder = {
       enable = false;
     };
@@ -25,7 +26,7 @@
         "nix-command"
         "flakes"
       ];
-
+      auto-optomise-store = true;
       max-jobs = "auto";
       builders-use-substitutes = true;
       };
