@@ -7,7 +7,7 @@
 
 {
   imports = [
-    ./hardware-configuration.nix
+    #./hardware-configuration.nix
     ./gandicloud.nix
     ../../home
     ../../home/hx
