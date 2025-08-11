@@ -37,6 +37,18 @@
       unstable = nixpkgs-unstable.legacyPackages.${system};
     in {
       nixosConfigurations = {
+        narcissus = nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs;
+            inherit unstable;
+          };
+          modules = [
+            ./hosts/narcissus/configuration.nix
+            inputs.home-manager.nixosModules.default
+            nix-index-db.nixosModules.nix-index
+          ];
+        };
+
         MillenniumFalcon = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;
