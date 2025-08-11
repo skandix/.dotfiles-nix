@@ -43,7 +43,7 @@
             inherit unstable;
           };
           modules = [
-            ./hosts/Narcissus/configuration.nix
+            ./hosts/narcissus/configuration.nix
             inputs.home-manager.nixosModules.default
             nix-index-db.nixosModules.nix-index
           ];
