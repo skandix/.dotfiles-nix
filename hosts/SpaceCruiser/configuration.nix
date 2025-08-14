@@ -50,6 +50,6 @@
     "flakes"
   ];
   time.timeZone = "Europe/Oslo";
-  home-manager.users.hx.home.stateVersion = "24.11";
-  system.stateVersion = "24.11";
+  home-manager.users.hx.home.stateVersion = "25.05";
+  system.stateVersion = "25.05";
 }
