@@ -23,6 +23,7 @@
   ];
 
   networking.hostName = "Narcissus";
+  programs.dconf.enable = true; # TODO: hvorfor trenger jeg denne her?
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
     keyMap = "no";
