@@ -20,8 +20,6 @@
     ../../common/nix-pkg-allow.nix
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
-    ../../common/virtualization.nix
-    ../../common/health.nix
   ];
 
   networking.hostName = "Narcissus";
