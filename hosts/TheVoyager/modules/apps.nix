@@ -94,11 +94,11 @@
       "bitwarden"
       "thunderbird"
       "container"
+      "rectangle"
     ];
 
      masApps = {
        Amphetamine = 937984704;
-       Magnet = 441258766;
        Wireguard = 1451685025;
        Tailscale = 1475387142;
      };
