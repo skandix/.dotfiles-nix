@@ -14,7 +14,7 @@
       peek
       unstable.mumble
       slack
-      vscodium
+      vscode
       plexamp
       wireshark
       plex-desktop

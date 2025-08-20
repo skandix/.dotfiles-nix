@@ -11,6 +11,7 @@ in
       vimdiffAlias = true;
       defaultEditor = true;
       plugins = with pkgs.vimPlugins; [
+        srcery-vim
         vim-nix
         nerdtree
         vim-indent-guides
@@ -24,7 +25,6 @@ in
         ale
         vim-gitgutter
         telescope-nvim
-        srcery-vim
         ansible-vim
         vim-polyglot
         rainbow
