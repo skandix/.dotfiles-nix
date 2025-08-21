@@ -84,7 +84,7 @@
       "discord"
       "librewolf"
       "microsoft-teams"
-      "vscodium"
+      "visual-studio-code"
       "plex"
       "vagrant"
       "virtualbox"
