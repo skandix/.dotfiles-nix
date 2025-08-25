@@ -30,6 +30,7 @@
       openscad
       qflipper
       keymapp
+      marp-cli
     ];
   };
 }
