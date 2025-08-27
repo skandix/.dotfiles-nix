@@ -7,6 +7,9 @@ keybind = ctrl+t=new_tab
 keybind = ctrl+shift+w=close_tab
 keybind = ctrl+n=toggle_quick_terminal
 keybind = ctrl+tab=next_tab
+keybind = ctrl+plus=increase_font_size:1
+keybind = ctrl+minus=decrease_font_size:1
+keybind = ctrl+zero=reset_font_size
 
 clipboard-read = allow
 clipboard-write = allow
@@ -15,7 +18,7 @@ window-save-state = always
 window-theme = dark
 theme = iTerm2 Smoooooth
 cursor-style = block
-font-size = 16
+font-size = 12
 focus-follows-mouse = true
 gtk-titlebar = false
 macos-titlebar-style = hidden
