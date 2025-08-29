@@ -31,6 +31,7 @@
       qflipper
       keymapp
       marp-cli
+      teams-for-linux
     ];
   };
 }
