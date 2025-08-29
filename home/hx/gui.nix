@@ -20,17 +20,17 @@
       plex-desktop
       seahorse
       obsidian
-      sonic-visualiser
+      #sonic-visualiser
       zathura
       netflix
       sublime3
-      inkscape
-      unstable.thunderbird
+      #inkscape
+      #unstable.thunderbird
       librewolf
-      openscad
-      qflipper
-      keymapp
-      marp-cli
+      chromium #needed to export pdf from marp
+      #openscad
+      #qflipper
+      #keymapp
       teams-for-linux
     ];
   };

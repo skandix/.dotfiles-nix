@@ -22,7 +22,6 @@
       wget
       ncdu
       ntfs3g
-      reveal-md
       ranger
       bat
       ripgrep
@@ -38,6 +37,7 @@
       kubernetes-helm
       kubeseal
       packer
+      marp-cli
     ];
   };
 }
