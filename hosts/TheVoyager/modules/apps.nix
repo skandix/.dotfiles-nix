@@ -71,6 +71,7 @@
       "tmux"
       "go"
       "rustup"
+      "marp-cli"
     ];
 
     # `brew install --cask`
@@ -95,6 +96,7 @@
       "thunderbird"
       "container"
       "rectangle"
+      "chromium"
     ];
 
      masApps = {
