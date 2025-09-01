@@ -96,7 +96,7 @@
       "thunderbird"
       "container"
       "rectangle"
-      "chromium"
+      "google-chrome"
     ];
 
      masApps = {
