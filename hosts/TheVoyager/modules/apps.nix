@@ -97,6 +97,7 @@
       "container"
       "rectangle"
       "google-chrome"
+      "gimp"
     ];
 
      masApps = {
