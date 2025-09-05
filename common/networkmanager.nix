@@ -1,31 +1,20 @@
 { config, pkgs, ... }:
 
 {
-  #networking.nameservers = [
-    #"8.8.8.8"
-    #"8.8.4.4"
-  #];
-  #services.resolved.enable = true;
-  networking.enableIPv6 = true;
-  networking.wireguard = {
-    enable = false;
-  };
+  networking = {
+    enableIPv6 = true;
+    networkmanager = {
+      enable = true;
+    };
 
-  services.tailscale = {
-    enable = true;
-    useRoutingFeatures = "both";
-    openFirewall = true;
-    interfaceName = "ts0";
+    wireguard = {
+      enable = true;
+    };
   };
-  networking.networkmanager.enable = true;
 
   environment.systemPackages = with pkgs; [
     networkmanager
     networkmanagerapplet
-    #networkmanager-openvpn
-    #openvpn
-    #networkmanager-openconnect
-    #openconnect
     nm-tray
     wireguard-tools
     dig
