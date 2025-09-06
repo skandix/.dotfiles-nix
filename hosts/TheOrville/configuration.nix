@@ -29,6 +29,7 @@
     ../../common/networkmanager.nix
     ../../common/pipewire.nix
     ../../common/nix-tweakz.nix
+    ../../common/tailscale.nix
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
     ../../common/ssh-client.nix

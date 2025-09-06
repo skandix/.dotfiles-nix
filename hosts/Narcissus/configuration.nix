@@ -17,6 +17,7 @@
     ../../common/intelcpu.nix
     ../../common/sshd.nix
     ../../common/docker.nix
+    ../../common/tailscale.nix
     ../../common/nix-pkg-allow.nix
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix

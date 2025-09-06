@@ -23,6 +23,7 @@
     ../../common/nvidiagpu.nix
     ../../common/docker.nix
     ../../common/fonts.nix
+    ../../common/tailscale.nix
     ../../common/networkmanager.nix
     ../../common/nix-pkg-allow.nix
     ../../common/pipewire.nix

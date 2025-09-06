@@ -21,6 +21,7 @@
     ../../common/intelgpu.nix
     ../../common/docker.nix
     ../../common/networkmanager.nix
+    ../../common/tailscale.nix
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
     ../../common/nix-tweakz.nix

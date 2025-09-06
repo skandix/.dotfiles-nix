@@ -18,6 +18,7 @@
     ../../common/fingerprint.nix
     ../../common/laptop.nix
     ../../common/intelgpu.nix
+    ../../common/tailscale.nix
     ../../common/docker.nix
     ../../common/fonts.nix
     ../../common/networkmanager.nix
