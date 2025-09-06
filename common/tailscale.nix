@@ -4,7 +4,7 @@
   services.tailscale = {
     enable = true;
     useRoutingFeatures = "both";
-    openFirewall = true;
+    #openFirewall = true;
     interfaceName = "ts0";
   };
 }
