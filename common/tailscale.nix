@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, unstable, ... }:
 
 {
   services.tailscale = {
@@ -6,5 +6,6 @@
     useRoutingFeatures = "both";
     #openFirewall = true;
     interfaceName = "ts0";
+    package = unstable.tailscale;
   };
 }
