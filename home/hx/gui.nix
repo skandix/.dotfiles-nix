@@ -32,6 +32,7 @@
       #qflipper
       #keymapp
       teams-for-linux
+      zotero
     ];
   };
 }
