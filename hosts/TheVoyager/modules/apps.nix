@@ -98,6 +98,7 @@
       "rectangle"
       "google-chrome"
       "gimp"
+      "mactex"
     ];
 
      masApps = {
