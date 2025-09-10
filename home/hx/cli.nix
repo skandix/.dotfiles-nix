@@ -38,6 +38,7 @@
       kubeseal
       packer
       marp-cli
+      cilium-cli
     ];
   };
 }
