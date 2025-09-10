@@ -14,7 +14,7 @@
 
   environment.systemPackages = with pkgs; [
     networkmanager
-    networkmanagerapplet
+    #networkmanagerapplet
     nm-tray
     wireguard-tools
     dig
