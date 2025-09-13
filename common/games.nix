@@ -23,7 +23,8 @@
     lutris
     winetricks
     bottles
-    unstable.wine-staging
+    wine-staging
+    winePackages.stagingFull
     gamemode # Optimise Linux system performance on demand
     mangohud # A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
     r2modman # risk of rain 2 mod manager

@@ -28,7 +28,6 @@
       #unstable.thunderbird
       librewolf
       chromium #needed to export pdf from marp
-      #openscad
       #qflipper
       #keymapp
       teams-for-linux
