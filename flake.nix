@@ -27,10 +27,13 @@
 
     # Nix-Homebrew Darwin
     nix-homebrew = { url = "github:zhaofengli/nix-homebrew"; };
+
+    # Nix-Flatpak
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.6.0";
   };
 
   outputs = inputs@{ self, nixpkgs, nix-index-db, nixpkgs-unstable
-    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, ... }:
+    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, nix-flatpak, ... }:
 
     let
       system = "x86_64-linux";
