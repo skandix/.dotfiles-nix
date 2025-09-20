@@ -6,11 +6,17 @@
 }:
 
 {
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
   };
-  services.pulseaudio.support32Bit = true;
+
+  services = {
+    pulseaudio.support32Bit = true;
+    flatpak.enable = true;
+  };
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
@@ -18,11 +24,12 @@
     localNetworkGameTransfers.openFirewall = true;
   };
 
+
   # OTHER
   environment.systemPackages = with pkgs; [
     lutris
     winetricks
-    bottles
+    #bottles
     wine-staging
     winePackages.stagingFull
     gamemode # Optimise Linux system performance on demand

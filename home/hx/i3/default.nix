@@ -50,6 +50,16 @@
     };
   };
 
+
+  xdg.portal = {
+    enable = true;
+    wlr.enable = false;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-wlr
+    ];
+  };
+
   environment.variables = {
     TERMINAL = "xterm-256color"; # so stuff don't shit the bed when they see a ghost
   };
