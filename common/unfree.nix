@@ -7,10 +7,10 @@
 }:
 
 {
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkgs) [
-    "winbox4"
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName unstable) [
+    "ndi-6"
   ];
-  environment.systemPackages = with pkgs; [
-    winbox4
+  environment.systemPackages = with unstable; [
+    unstable.ndi-6
   ];
 }

@@ -1,9 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, unstable, ... }:
 
 {
   environment.systemPackages = with pkgs; [
-    obs-studio-plugins.distroav
-    ndi-6
+    unstable.obs-studio-plugins.distroav
+    #unstable.ndi-6
     obs-studio
   ];
 }
