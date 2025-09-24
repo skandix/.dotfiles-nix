@@ -6,7 +6,7 @@ help:
 
 ## sw: rebuild nixos-config
 sw:
-	NIXPKGS_ALLOW_UNFREE=1 sudo nixos-rebuild switch --flake .
+	sudo NIXPKGS_ALLOW_UNFREE=1 nixos-rebuild switch --flake .
 
 ## swt: rebuild nixos-config with trace
 swt:
@@ -15,7 +15,6 @@ swt:
 ## val: validate flake
 val:
 	nix flake check .
-# TODO: prob sort out unfree apps into a seperate file or module
 
 ## fmt: format nix files
 fmt:

@@ -30,6 +30,7 @@
       chromium #needed to export pdf from marp
       #qflipper
       #keymapp
+      shotwell
       teams-for-linux
       zotero
     ];
