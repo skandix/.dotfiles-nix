@@ -58,6 +58,9 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-wlr
     ];
+    config = {
+      common.default = "*";
+    };
   };
 
   environment.variables = {

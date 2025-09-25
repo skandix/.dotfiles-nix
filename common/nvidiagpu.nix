@@ -6,7 +6,6 @@
     enable32Bit = true;
   };
 
-  virtualisation.docker.enableNvidia = true; # enable nvidia-gpu wrapper
   hardware.nvidia-container-toolkit.enable = true;
   services.xserver.videoDrivers = [ "nvidia" ];
 
