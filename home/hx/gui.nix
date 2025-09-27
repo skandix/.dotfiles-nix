@@ -11,7 +11,7 @@
       tdesktop
       unstable.signal-desktop
       tor-browser
-      peek
+      # peek
       unstable.mumble
       slack
       vscode

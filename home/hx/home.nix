@@ -6,8 +6,9 @@
     ./hm/configurations/fish
   ];
 
-
-  programs.home-manager.enable = true;
+  programs.home-manager = {
+    enable = true;
+  };
 
   # dark mode in gtk apps
   gtk = {

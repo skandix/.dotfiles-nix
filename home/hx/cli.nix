@@ -25,6 +25,7 @@
       ranger
       bat
       ripgrep
+      marp-cli
 
       # SRE
       talosctl
@@ -37,7 +38,6 @@
       kubernetes-helm
       kubeseal
       packer
-      marp-cli
       cilium-cli
     ];
   };
