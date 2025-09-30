@@ -25,6 +25,7 @@
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
     ../../common/virtualization.nix
+    ../../common/virtualbox.nix
     ../../common/health.nix
   ];
 
