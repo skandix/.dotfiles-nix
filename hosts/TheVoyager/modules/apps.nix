@@ -1,4 +1,4 @@
-{ pkgs, unstable, ... }:
+{ pkgs, ... }:
 
 {
   #options: https://daiderd.com/nix-darwin/manual/index.html
@@ -62,7 +62,6 @@
       "kubecolor"
       "netcat"
       "nmap"
-      "wireshark"
       "tcpdump"
       "speedtest-cli"
       "uv"
@@ -72,6 +71,8 @@
       "go"
       "rustup"
       "marp-cli"
+      "uv"
+      "ruff"
     ];
 
     # `brew install --cask`
@@ -87,6 +88,7 @@
       "microsoft-teams"
       "visual-studio-code"
       "plex"
+      "wireshark"
       "vagrant"
       "virtualbox"
       "steam"
