@@ -88,7 +88,7 @@
       "microsoft-teams"
       "visual-studio-code"
       "plex"
-      "wireshark"
+      "wireshark-app"
       "vagrant"
       "virtualbox"
       "steam"
@@ -107,6 +107,7 @@
        Amphetamine = 937984704;
        Wireguard = 1451685025;
        Tailscale = 1475387142;
+       Telegram = 747648890;
      };
   };
 }
