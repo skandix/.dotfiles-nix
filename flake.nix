@@ -30,10 +30,13 @@
 
     # Nix-Flatpak
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.6.0";
+
+    # Vscode Server
+    vscode-server.url = "github:nix-community/nixos-vscode-server";
   };
 
   outputs = inputs@{ self, nixpkgs, nix-index-db, nixpkgs-unstable
-    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, nix-flatpak, ... }:
+    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, nix-flatpak, vscode-server, ... }:
 
     let
       system = "x86_64-linux";
@@ -61,6 +64,7 @@
             ./hosts/MillenniumFalcon/configuration.nix
             inputs.home-manager.nixosModules.default
             nix-index-db.nixosModules.nix-index
+            vscode-server.nixosModules.default
           ];
         };
 

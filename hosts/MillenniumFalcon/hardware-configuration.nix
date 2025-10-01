@@ -20,8 +20,9 @@
     "sd_mod"
   ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-intel" ];
+  boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
+  boot.blacklistedKernelModules = [ "kvm" "kvm_intel" ];
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";

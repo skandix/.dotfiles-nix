@@ -1,4 +1,5 @@
 {
+  #config.vm.box = "ubuntu/lunar64"
   config,
   pkgs,
   lib,
@@ -24,13 +25,15 @@
     ../../common/fwupd.nix
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
-    ../../common/virtualization.nix
     ../../common/virtualbox.nix
     ../../common/health.nix
   ];
 
+  services.vscode-server.enable = true;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
+  programs.dconf.enable = true; # TODO: hvorfor trenger jeg denne her?
 
   systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.
   systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
