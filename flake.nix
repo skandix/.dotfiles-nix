@@ -33,10 +33,13 @@
 
     # Vscode Server
     vscode-server.url = "github:nix-community/nixos-vscode-server";
+
+    # default browser nix-darwin
+    default-browser.url = "github:szympajka/nix-browser";
   };
 
   outputs = inputs@{ self, nixpkgs, nix-index-db, nixpkgs-unstable
-    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, nix-flatpak, vscode-server, ... }:
+    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, nix-flatpak, vscode-server, default-browser, ... }:
 
     let
       system = "x86_64-linux";
@@ -132,6 +135,7 @@
             nix-index-db.darwinModules.nix-index
             home-manager.darwinModules.home-manager
             nix-homebrew.darwinModules.nix-homebrew
+            default-browser.darwinModules.default-browser
             {
               #home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;

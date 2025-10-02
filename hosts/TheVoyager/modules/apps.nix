@@ -3,6 +3,11 @@
 {
   #options: https://daiderd.com/nix-darwin/manual/index.html
 
+  services.defaultBrowser = {
+    enable = true;
+    browser = "librewolf";
+  };
+
   environment.systemPackages = with pkgs; [
     git
     pfetch
