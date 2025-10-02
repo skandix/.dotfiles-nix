@@ -33,6 +33,7 @@
       shotwell
       teams-for-linux
       zotero
+      unstable.blender
     ];
   };
 }
