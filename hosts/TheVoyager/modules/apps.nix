@@ -19,7 +19,7 @@
   nix-homebrew = {
     enable = true;
     enableRosetta = false;
-    user = "skandix";
+    user = "hx";
     mutableTaps = true;
     autoMigrate = true;
   };

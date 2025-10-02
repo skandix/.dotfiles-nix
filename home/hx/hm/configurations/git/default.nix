@@ -5,8 +5,8 @@
   programs.git = {
     package = pkgs.gitAndTools.gitFull;
     enable = true;
-    userName = "skandix";
-    userEmail = "skandix@datapor.no";
+    userName = "hx";
+    userEmail = "skandix.94@gmail.com";
     extraConfig = {
       core.editor = "vim";
       init.defaultBranch = "main";
@@ -19,8 +19,8 @@
       rerere.enabled = true;
       # identities
       user.useConfigOnly = true;
-      user.personal.name = "Bendik Dyrli";
-      user.personal.email = "skandix@datapor.no";
+      user.personal.name = "Bendik";
+      user.personal.email = "hx@datapor.no";
     };
   };
   #};

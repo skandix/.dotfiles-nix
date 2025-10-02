@@ -17,8 +17,8 @@
   };
 
   home = {
-    username = "skandix";
-    homeDirectory = "/Users/skandix";
+    username = "hx";
+    homeDirectory = "/Users/hx";
     stateVersion = "25.05";
 
     sessionVariables = {

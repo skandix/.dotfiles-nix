@@ -139,7 +139,7 @@
             {
               #home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.skandix =
+              home-manager.users.hx =
                 import ./hosts/TheVoyager/modules/home.nix;
             }
           ];

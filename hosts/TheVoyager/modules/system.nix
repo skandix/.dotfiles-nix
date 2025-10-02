@@ -8,7 +8,7 @@
   system = {
     startup.chime = false;
     stateVersion = 5;
-    primaryUser = "skandix";
+    primaryUser = "hx";
 
     defaults = {
       menuExtraClock.Show24Hour = true; # show 24 hour clock

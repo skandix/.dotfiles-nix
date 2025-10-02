@@ -4,10 +4,10 @@
   networking.computerName = "TheVoyager";
   system.defaults.smb.NetBIOSName = "TheVoyager";
 
-  users.users."skandix" = {
-    home = "/Users/skandix";
-    description = "skandix";
+  users.users."hx" = {
+    home = "/Users/hx";
+    description = "primary user";
   };
 
-  nix.settings.trusted-users = [ "skandix" ];
+  nix.settings.trusted-users = [ "hx" ];
 }
