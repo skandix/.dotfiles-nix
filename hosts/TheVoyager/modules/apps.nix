@@ -89,7 +89,7 @@
       "sublime-text"
       "ghostty"
       "discord"
-      "librewolf"
+      #"librewolf"
       "microsoft-teams"
       "visual-studio-code"
       "plex"
@@ -100,12 +100,14 @@
       "obsidian"
       "plexamp"
       "bitwarden"
-      "thunderbird"
+      #"thunderbird"
       "container"
       "rectangle"
       "google-chrome"
       "gimp"
       "zotero"
+      "firefox"
+      "blender"
     ];
 
      masApps = {

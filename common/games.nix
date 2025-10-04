@@ -24,21 +24,24 @@
     localNetworkGameTransfers.openFirewall = true;
   };
 
+  # Remember
+  # - Bottles did not work good without flatpak, why it is not listed here
+
 
   # OTHER
   environment.systemPackages = with pkgs; [
     lutris
-    winetricks
-    #bottles
-    wine-staging
-    winePackages.stagingFull
+    winetricks # wine
+    wine-staging # wine
+    winePackages.stagingFull # wine
     gamemode # Optimise Linux system performance on demand
     mangohud # A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
     r2modman # risk of rain 2 mod manager
-    protontricks
+    protontricks # winetricks but with proton
     prismlauncher # minecraft launcher
     wowup-cf # wow addoon manager
-    protonplus
+    protonplus # proton manager
+    wivrn
   ];
 
   services.wivrn = {
