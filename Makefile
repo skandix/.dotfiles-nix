@@ -6,7 +6,7 @@ help:
 
 ## sw: rebuild nixos-config
 sw:
-	sudo NIXPKGS_ALLOW_UNFREE=1 nixos-rebuild switch --flake .
+	sudo nixos-rebuild switch --flake .
 
 ## swt: rebuild nixos-config with trace
 swt:
