@@ -27,7 +27,7 @@
     ../../common/fonts.nix
     ../../common/games.nix
     ../../common/networkmanager.nix
-    #../../common/streaming.nix
+    ../../common/creative.nix
     ../../common/pipewire.nix
     ../../common/nix-tweakz.nix
     ../../common/tailscale.nix
