@@ -26,6 +26,7 @@
       chromium #needed to export pdf from marp
       teams-for-linux
       zotero
+      typst
     ];
   };
 }
