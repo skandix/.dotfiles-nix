@@ -1,13 +1,13 @@
 ### VARIABLES ###
 set $mod Mod4
 set $altMod Mod1
-set $term alacritty
+set $term ghostty
 set $launcher tofi-run | xargs swaymsg exec --
 set $screen cd $HOME && grimshot savecopy area
 set $lock xsecurelock
 
 ### FONT ###
-font pango:Terminus 14px
+font pango:Terminus 12px
 
 ### MUTING MICROPHONE ###
 bindsym $mod+t exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send "MUTED?!?"

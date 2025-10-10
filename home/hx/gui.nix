@@ -27,6 +27,7 @@
       teams-for-linux
       zotero
       typst
+      spotify
     ];
   };
 }
