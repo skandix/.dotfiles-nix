@@ -47,6 +47,19 @@
       unstable = import nixpkgs-unstable { inherit system;  config.allowUnfree = true; };
     in {
       nixosConfigurations = {
+
+        Ainsworth = nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs;
+            inherit unstable;
+          };
+          modules = [
+            ./hosts/Ainsworth/configuration.nix
+            inputs.home-manager.nixosModules.default
+            nix-index-db.nixosModules.nix-index
+          ];
+        };
+
         Narcissus = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;

@@ -1,7 +1,14 @@
 { config, pkgs, ... }:
 
 {
-  services.sshd = {
+  services.openssh = {
     enable = true;
+    banner = "
+    エリアス・エインズワーズ
+    ";
+    settings = {
+      PermitRootLogin = "no";
+      PasswordAuthentication = true;
+    };
   };
 }
