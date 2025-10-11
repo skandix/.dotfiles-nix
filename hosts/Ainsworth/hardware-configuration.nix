@@ -24,10 +24,8 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "zfs" ];
-  boot.zfs.forceImportRoot = false;
 
-  fileSystems."/mnt/slush" =
-  {
+  fileSystems."/mnt/slush" = {
     device = "slush";
     fsType = "zfs";
   };

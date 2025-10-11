@@ -7,7 +7,7 @@
     エリアス・エインズワーズ
     ";
     settings = {
-      PermitRootLogin = "no";
+      #PermitRootLogin = "no";
       PasswordAuthentication = true;
     };
   };
