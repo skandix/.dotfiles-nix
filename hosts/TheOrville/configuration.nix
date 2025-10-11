@@ -20,7 +20,7 @@
     ../../home/hx/i3
 
     # Common
-    ../../common/virtualbox.nix
+    #../../common/virtualbox.nix
     ../../common/amdcpu.nix
     ../../common/amdgpu.nix
     ../../common/docker.nix
