@@ -26,6 +26,12 @@
   boot.supportedFilesystems = [ "zfs" ];
   boot.zfs.forceImportRoot = false;
 
+  fileSystems."/mnt/slush" =
+  {
+    device = "slush";
+    fsType = "zfs";
+  };
+
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";
     fsType = "ext4";
