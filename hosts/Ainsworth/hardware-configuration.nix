@@ -25,6 +25,11 @@
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "zfs" ];
 
+  fileSystems."/mnt/cache" = {
+    device = "/dev/nvme1n1p2";
+    fsType = "ext4";
+  };
+
   fileSystems."/mnt/slush" = {
     device = "slush";
     fsType = "zfs";
@@ -34,6 +39,7 @@
     device = "/dev/disk/by-label/nixos";
     fsType = "ext4";
   };
+
   fileSystems."/boot" = {
     device = "/dev/disk/by-label/boot";
     fsType = "vfat";
