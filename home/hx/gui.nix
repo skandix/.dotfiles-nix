@@ -28,6 +28,7 @@
       zotero
       typst
       spotify
+      unstable.cider-2
     ];
   };
 }
