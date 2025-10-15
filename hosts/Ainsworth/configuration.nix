@@ -20,7 +20,7 @@
     ../../common/networkmanager.nix
     ../../common/tailscale.nix
     ../../common/nix-pkg-allow.nix
-    #../../common/fwupd.nix
+    ../../common/fwupd.nix
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
     ../../common/sshd.nix
@@ -50,6 +50,9 @@
       allowedUDPPorts = [ 5353 1900 ];
     };
   };
+
+  services.vscode-server.enable = true;
+  services.vscode-server.enableFHS = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
