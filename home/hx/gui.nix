@@ -29,6 +29,7 @@
       typst
       spotify
       unstable.cider-2
+      sonic-pi
     ];
   };
 }

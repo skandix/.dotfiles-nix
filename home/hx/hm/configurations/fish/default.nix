@@ -14,7 +14,7 @@
       tf = "tofu";
       ls = "ls --color";
       sl = "ls --color";
-      nf = "cd $HOME/.dotfiles-nix && vim  && cd -";
+      nf = "cd $HOME/.dotfiles-nix && vim && make sw && cd -";
       gname = "head -c 5 /dev/urandom | md5sum";
       cat = "bat --decorations never";
     };
