@@ -8,6 +8,7 @@
     newSession = true;
     secureSocket = true;
   };
+
   home.file = {
     ".tmux.conf".source = ./tmux.conf;
   };

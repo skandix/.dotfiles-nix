@@ -27,8 +27,9 @@
         }
       ];
     };
-    home.file = {
-      ".tmux.conf".source = ./tmux.conf;
+
+    xdg.configFile = {
+      "tmux/tmux.conf".source = ./tmux.conf;
     };
   };
 }
