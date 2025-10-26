@@ -11,6 +11,7 @@
 
     ../../home
     ../../home/hx
+    ../../home/hx/no-gui
     ../../home/hx/cli.nix
     ../../home/hx/dev.nix
 
