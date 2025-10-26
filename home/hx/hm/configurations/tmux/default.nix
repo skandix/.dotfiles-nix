@@ -26,10 +26,17 @@
           '';
         }
       ];
-    };
+      extraConfig = ''
+        set -sg escape-time 0
+        set -g status-keys vi
+        setw -g mode-keys vi
 
-    xdg.configFile = {
-      "tmux/tmux.conf".source = ./tmux.conf;
+        # smart pane switching with awareness of vim splits
+        bind h select-pane -L
+        bind j select-pane -D
+        bind k select-pane -U
+        bind l select-pane -R
+      '';
     };
   };
 }
