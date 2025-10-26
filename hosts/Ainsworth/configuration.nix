@@ -11,7 +11,6 @@
 
     ../../home
     ../../home/hx
-    ../../home/hx/headless
     ../../home/hx/cli.nix
     ../../home/hx/dev.nix
 
