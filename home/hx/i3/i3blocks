@@ -6,14 +6,18 @@ interval=1
 command=echo "$(, playerctl metadata artist) - $(, playerctl metadata title)"
 interval=1
 
+[vol]
+command=echo"🔊 $(pamixer --get-volume-human)"
+interval=1
+
 [public-ip]
 full_text=public
-command=wget -qO - http://icanhazip.com
+command=echo "$(wget -qO - http://icanhazip.com)"
 interval=1
 color=#ff0000
 
 [ip]
-command=ip route get 1.1.1.1 |grep src | cut -d' ' -f7
+command=echo " $(ip route get 1.1.1.1 |grep src | cut -d' ' -f7)"
 interval=1
 color=#00ff00
 
