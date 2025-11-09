@@ -89,7 +89,7 @@
       "sublime-text"
       "ghostty"
       "discord"
-      #"librewolf"
+      "librewolf"
       "microsoft-teams"
       "visual-studio-code"
       "plex"
@@ -106,7 +106,7 @@
       "google-chrome"
       "gimp"
       "zotero"
-      "firefox"
+      #"firefox"
       "blender"
     ];
 
