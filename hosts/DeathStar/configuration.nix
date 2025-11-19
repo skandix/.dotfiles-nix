@@ -32,6 +32,7 @@
     ../../common/ssh-client.nix
     ../../common/virtualization.nix
     ../../common/health.nix
+    ../../common/autoUpgrade.nix
   ];
 
   boot.loader.systemd-boot.enable = true;

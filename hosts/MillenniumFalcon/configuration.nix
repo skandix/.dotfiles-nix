@@ -27,6 +27,7 @@
     ../../common/ssh-client.nix
     ../../common/virtualbox.nix
     ../../common/health.nix
+    ../../common/autoUpgrade.nix
   ];
 
   services.vscode-server.enable = true;

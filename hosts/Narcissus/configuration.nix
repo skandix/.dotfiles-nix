@@ -22,6 +22,7 @@
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
     ../../common/tailscale.nix
+    ../../common/autoUpgrade.nix
   ];
 
   networking.hostName = "Narcissus";

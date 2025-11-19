@@ -27,6 +27,7 @@
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
     ../../common/sshd.nix
+    ../../common/autoUpgrade.nix
   ];
 
   boot.loader.systemd-boot.enable = true;

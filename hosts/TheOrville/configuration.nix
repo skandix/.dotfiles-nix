@@ -34,6 +34,7 @@
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
     ../../common/ssh-client.nix
+    ../../common/autoUpgrade.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

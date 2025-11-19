@@ -27,6 +27,7 @@
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
     ../../common/ssh-client.nix
+    ../../common/autoUpgrade.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
