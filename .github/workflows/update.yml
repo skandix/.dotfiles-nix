@@ -13,11 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Lix
-        uses: DeterminateSystems/nix-installer-action@main
-        with:
-          source-url: https://install.lix.systems/lix/lix-installer-x86_64-linux
-          logger: pretty
+      - name: Install Nix
+        uses: DeterminateSystems/determinate-nix-action@v3t
 
       - name: Nix Magic Cache
         uses: DeterminateSystems/flakehub-cache-action@main
