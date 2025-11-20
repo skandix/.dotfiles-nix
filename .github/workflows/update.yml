@@ -16,13 +16,9 @@ jobs:
       - name: Install Nix
         uses: DeterminateSystems/determinate-nix-action@v3
 
-      - name: Nix Magic Cache
-        uses: DeterminateSystems/flakehub-cache-action@main
+      - uses: DeterminateSystems/update-flake-lock@main
 
-      - name: Update Lockfile
-        run: nix flake update
-
-      - name: Commit and Push
-        uses: endbug/add-and-commit@v9
-        with:
-          message: "chore: update flake inputs"
+      # - name: Commit and Push
+      #   uses: endbug/add-and-commit@v9
+      #   with:
+      #     message: "chore: update flake inputs"
