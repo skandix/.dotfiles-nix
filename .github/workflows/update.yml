@@ -9,6 +9,9 @@ jobs:
   update-lockfile:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+      
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,7 +21,6 @@ jobs:
 
       - uses: DeterminateSystems/update-flake-lock@main
 
-      # - name: Commit and Push
-      #   uses: endbug/add-and-commit@v9
-      #   with:
-      #     message: "chore: update flake inputs"
+      - uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "chore: update flake inputs"
