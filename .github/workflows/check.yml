@@ -13,17 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout Source
         uses: actions/checkout@v4
-
-      - name: Install Lix
-        uses: DeterminateSystems/nix-installer-action@main
-        with:
-          source-url: https://install.lix.systems/lix/lix-installer-x86_64-linux
-          logger: pretty
-
-      - name: Nix Magic Cache
-        uses: DeterminateSystems/flakehub-cache-action@main
-
-      - name: Check Flake
-        run: nix flake check --accept-flake-config
+        
+      - name: Install Nix
+        uses: DeterminateSystems/determinate-nix-action@v3
+        
+      - name: Check Nix flake inputs
+        uses: DeterminateSystems/flake-checker-action@v2
