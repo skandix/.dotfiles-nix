@@ -26,7 +26,7 @@
   boot.supportedFilesystems = [ "zfs" ];
 
   fileSystems."/mnt/cache" = {
-    device = "/dev/nvme1n1p2";
+    device = "/dev/disk/by-uuid/1b7259e4-c118-4c05-a219-4ecf5ea8f69d";
     fsType = "ext4";
   };
 
