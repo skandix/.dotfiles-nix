@@ -36,6 +36,7 @@
     ../../common/ssh-client.nix
     ../../common/autoUpgrade.nix
     ../../common/ctf.nix
+    ../../common/printing.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
