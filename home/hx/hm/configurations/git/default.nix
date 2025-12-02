@@ -3,7 +3,7 @@
 {
   #home-manager.users.hx = {
   programs.git = {
-    package = pkgs.gitAndTools.gitFull;
+    package = pkgs.gitFull;
     enable = true;
     userName = "hx";
     userEmail = "skandix.94@gmail.com";
