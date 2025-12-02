@@ -19,3 +19,7 @@ jobs:
       - uses: DeterminateSystems/flakehub-cache-action@main
       - uses: DeterminateSystems/flake-checker-action@main
       - run: nix flake check --all-systems
+        continue-on-error: true
+      - name: Create Issue
+        run: |
+           github-issue create --title "Valdiating Flake" --body ${{ steps.step4.outcome }}
