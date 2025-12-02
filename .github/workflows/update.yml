@@ -7,17 +7,17 @@ on:
 
 jobs:
   update-lockfile:
-    runs-on: ubuntu-latest      
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Source
         uses: actions/checkout@v4
-        
+
       - name: Install Nix
         uses: DeterminateSystems/determinate-nix-action@v3
-        
+
       - name: Update Lockfile
         run: nix flake update
-        
+
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: update flake inputs"

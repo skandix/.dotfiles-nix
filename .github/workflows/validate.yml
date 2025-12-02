@@ -1,0 +1,31 @@
+name: Validate Nix Flake
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "**.nix"
+      - "**.lock"
+
+jobs:
+  check-flake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/determinate-nix-action@v3
+
+      - name: Validate Flake
+        run: make val 2> errors
+
+      - name: Create Issue From File
+        uses: peter-evans/create-issue-from-file@v6
+        with:
+          title: Chore: Errors in Flake
+          content-filepath: ./errors
+          labels: |
+            report
+            automated issue
