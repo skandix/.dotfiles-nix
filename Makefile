@@ -28,6 +28,10 @@ fmt:
 macos:
 	sudo darwin-rebuild switch --flake .
 
+## vm: Build a QEMU VM that runs the new configuration.
+vm:
+	sudo nixos-rebuild build-vm --flake .
+
 ## gc: garbage collect old unused nix paths
 gc:
 	nix-collect-garbage -d

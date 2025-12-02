@@ -14,7 +14,7 @@
 
   environment.systemPackages = with pkgs; [
     networkmanager
-    nm-tray
+    networkmanagerapplet
     wireguard-tools
     dig
     traceroute
