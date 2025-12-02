@@ -40,9 +40,13 @@
 
   systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.
   systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
-  networking.hostName = "DeathStar";
-  networking.useDHCP = false;
-  networking.interfaces.eno1.useDHCP = true;
+
+  networking = {
+    hostName = "DeathStar";
+    hostId = "c464a368";
+
+    interfaces.eno1.useDHCP = true;
+  };
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {

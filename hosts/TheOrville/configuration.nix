@@ -46,10 +46,16 @@
   systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.
   systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
   systemd.network.netdevs.wlp6s0.enable = false;
-  networking.hostName = "TheOrville";
-  networking.useDHCP = false;
-  networking.interfaces.enp5s0.useDHCP = true;
-  networking.interfaces.wlp6s0.useDHCP = lib.mkForce false;
+
+  networking = {
+    hostName = "TheOrville";
+    hostId = "ec097b34";
+
+    interfaces = {
+      enp5s0.useDHCP = true;
+      wlp6s0.useDHCP = lib.mkForce false;
+    };
+  };
 
   programs.dconf.enable = true; # TODO: hvorfor trenger jeg denne her?
 

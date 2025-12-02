@@ -38,9 +38,13 @@
 
   systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.
   systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
-  networking.hostName = "MillenniumFalcon";
-  networking.useDHCP = false;
-  networking.interfaces.eno1.useDHCP = true;
+  networking = {
+    hostName = "MillenniumFalcon";
+    hostId = "876927e2";
+
+    interfaces.eno1.useDHCP = true;
+  };
+
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
     keyMap = "no";
