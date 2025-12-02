@@ -14,7 +14,11 @@ swt:
 
 ## val: validate flake
 val:
-	nix flake check .
+	nix flake check --all-systems
+
+## tmux: start update in tmux for updating servers
+tmux:
+	tmux new-session -s nixos_upgrade 'make sw'
 
 ## fmt: format nix files
 fmt:
