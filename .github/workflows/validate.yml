@@ -24,7 +24,7 @@ jobs:
       - name: Create Issue From File
         uses: peter-evans/create-issue-from-file@v6
         with:
-          title: Chore: Errors in Flake
+          title: "Chore: Errors in Flake"
           content-filepath: ./errors
           labels: |
             report
