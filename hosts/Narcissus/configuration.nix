@@ -37,6 +37,6 @@
     "flakes"
   ];
   time.timeZone = "Europe/Oslo";
-  home-manager.users.hx.home.stateVersion = "24.11";
+  home-manager.users.hx.home.stateVersion = "25.11";
   nixpkgs.hostPlatform = "x86_64-linux";
 }

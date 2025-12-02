@@ -19,7 +19,7 @@
   home = {
     username = "hx";
     homeDirectory = "/Users/hx";
-    stateVersion = "25.05";
+    stateVersion = "25.11";
 
     sessionVariables = {
       PAGER = "less";
