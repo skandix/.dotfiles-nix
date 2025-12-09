@@ -18,6 +18,7 @@
     ../../home/hx/cli.nix
     ../../home/hx/dev.nix
     ../../home/hx/i3
+    #../../home/hx/sway # 7.december, not in the mood to fix bugs and issues, lets try this another time
 
     # Common
     #../../common/virtualbox.nix
@@ -37,6 +38,7 @@
     ../../common/autoUpgrade.nix
     ../../common/ctf.nix
     ../../common/printing.nix
+    ../../common/storage-devices.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
