@@ -23,7 +23,6 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 bindsym $mod+Return exec $term
 bindsym $mod+c kill
-# bindsym $mod+space exec rofi -show run
 bindsym $mod+space exec rofi -show run
 bindsym $mod+Shift+s sticky toggle
 bindsym $mod+p exec pavucontrol # easily trigger audio mixer

@@ -2,15 +2,11 @@
 set $mod Mod4
 set $altMod Mod1
 set $term ghostty
-set $launcher tofi-run | xargs swaymsg exec --
-set $screen cd $HOME && grimshot savecopy area
+set $screen flameshot gui
 set $lock xsecurelock
 
 ### FONT ###
 font pango:Terminus 12px
-
-### MUTING MICROPHONE ###
-bindsym $mod+t exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send "MUTED?!?"
 
 ### MEDIA KEYS ###
 # bindsym XF86AudioPrev exec --no-startup-id playerctl previous
@@ -23,14 +19,14 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 ### MISC KEYBINDS ###
 bindsym Print exec --no-startup-id $screen
 bindsym Insert exec --no-startup-id $lock
-# bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
-# bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 bindsym $mod+Return exec $term
 bindsym $mod+c kill
-bindsym $mod+space exec $launcher
+bindsym $mod+space exec rofi -show run
 bindsym $mod+Shift+s sticky toggle
 bindsym $mod+p exec pavucontrol # easily trigger audio mixer
-# bindsym $mod+u exec librewolf # easily trigger webbrowser
+bindsym $mod+u exec librewolf # easily trigger webbrowser
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -174,5 +170,5 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="waypaper"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
-for_window [class=".*"] border pixel 3
+for_window [class=".*"] border pixel 1
 for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0

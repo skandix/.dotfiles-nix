@@ -3,10 +3,17 @@
 {
   imports = [
     ./../hm/configurations/flameshot
-    ./../hm/configurations/tofi
+    ./../hm/configurations/rofi
     ./../hm/configurations/wpaperd
     ./../hm/configurations/librewolf
-    ./../hm/configurations/alacritty
+    ./../hm/configurations/ghostty
+    ./../hm/configurations/mpv
+    ./../hm/configurations/discord
+    ./../hm/configurations/vim
+    ./../hm/configurations/tmux
+    ./../hm/go.nix
+    ./../hm/python.nix
+    ./../hm/rust.nix
   ];
 
   programs.xwayland = {
