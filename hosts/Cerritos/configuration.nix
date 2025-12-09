@@ -60,8 +60,8 @@
 
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 32400 21063 6123 8123 21064 ];
-      allowedUDPPorts = [ 5353 1900 ];
+      #allowedTCPPorts = [ 32400 21063 6123 8123 21064 ];
+      #allowedUDPPorts = [ 5353 1900 ];
     };
   };
 

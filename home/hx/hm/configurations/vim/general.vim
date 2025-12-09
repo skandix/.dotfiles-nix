@@ -1,6 +1,3 @@
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
 au BufNewFile,BufRead *.py
     \ set tabstop=4
     \| set softtabstop=4

@@ -30,6 +30,9 @@ in
         rainbow
         nvim-lspconfig
       ];
+      extraLuaConfig = ''
+        require("nvim-tree").setup()
+      '';
       extraConfig = ''
         ${general}
       '';
