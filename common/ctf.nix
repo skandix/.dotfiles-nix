@@ -10,5 +10,6 @@
   environment.systemPackages = with pkgs; [
     jadx
     quark-engine
+    binaryninja-free
   ];
 }
