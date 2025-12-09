@@ -1,3 +1,6 @@
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 au BufNewFile,BufRead *.py
     \ set tabstop=4
     \| set softtabstop=4
@@ -11,17 +14,14 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \| set softtabstop=2
     \| set shiftwidth=2
 
-""" Lettings
 let mapleader=" "
 let g:go_version_warning = 0
 let g:rainbow_active = 1
 
-""" KEYBINDS
-"""" F-Keys
 nnoremap <F1> :set hlsearch!<CR>
 nnoremap <F2> :StripWhitespace<CR>
 
-map <C-d> :NERDTreeToggle<CR>
+map <C-d> :NvimTreeToggle<CR>
 map  <C-f> :tabn<CR>
 map  <C-t> :tabnew<CR>
 nnoremap <C-J> <C-W><C-J>
@@ -30,7 +30,6 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <BS> X
 
-""" LEADER
 nnoremap <Leader>w :write <CR>
 nnoremap <Leader>x :xit <CR>
 nnoremap <Leader>q :quit <CR>
@@ -41,14 +40,11 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-"""" Splitting Keybinds
-"split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-""" ligthline config
 syntax enable
 colorscheme srcery
 
@@ -61,14 +57,12 @@ hi Normal     ctermbg=NONE guibg=NONE
 hi LineNr     ctermbg=NONE guibg=NONE
 hi SignColumn ctermbg=NONE guibg=NONE
 
-""" Startify
 let g:startify_session_dir = '~/.vim/session'
 
 if &term =~ '256color'
   set t_ut=
 endif
 
-""" BEHAVE
 set wildmode=list:longest,full	" Show vim completion menu
 set encoding=utf-8				" encoding
 set undolevels=256				" how many times one can undo
@@ -107,27 +101,6 @@ set rnu							" Relative line numbering
 """ COMMMANDS (taken from lasseh .vimrc)
 command! Q q
 command! W w
-
-""" NERDTREE SETTINGS (taken from lasseh .vimrc)
-" Open Nerdtree if no files specified
-autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-" Close vim if nerdtree is only buffer left when :q
-function! s:CloseIfOnlyControlWinLeft()
-    if winnr("$") != 1
-        return
-    endif
-    if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
-                \ || &buftype == 'quickfix'
-        q
-    endif
-endfunction
-
-augroup CloseIfOnlyControlWinLeft
-    au!
-    au BufEnter * call s:CloseIfOnlyControlWinLeft()
-augroup END
 
 """ unbinde the fucking arrow keys also they are broken on my cooler master keyboard ;_;
 noremap <Up> <Nop>

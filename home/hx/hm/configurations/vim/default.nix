@@ -13,7 +13,7 @@ in
       plugins = with pkgs.vimPlugins; [
         srcery-vim
         vim-nix
-        nerdtree
+        nvim-tree-lua
         vim-indent-guides
         nerdcommenter
         ctrlp
