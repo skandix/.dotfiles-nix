@@ -16,7 +16,6 @@ in
         nvim-tree-lua
         vim-indent-guides
         nerdcommenter
-        ctrlp
         vim-startify
         vim-json
         vim-better-whitespace
@@ -31,6 +30,9 @@ in
         nvim-lspconfig
       ];
       extraLuaConfig = ''
+        vim.g.loaded_netrw = 1
+        vim.g.loaded_netrwPlugin = 1
+        vim.opt.termguicolors = true
         require("nvim-tree").setup()
       '';
       extraConfig = ''
