@@ -12,7 +12,7 @@
   home-manager.users.hx = {
     programs.go = {
       enable = true;
-      env.GOPATH = ".go";
+      env.GOPATH = "/home/hx/.go";
       package = unstable.go;
     };
   };
