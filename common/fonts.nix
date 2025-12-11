@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   fonts = {
@@ -13,7 +13,11 @@
       mplus-outline-fonts.githubRelease
       dina-font
       proggyfonts
-    ];
+    ] ++ (with inputs.nixos-fonts.packages.x86_64-linux; [
+      anzu-moji
+      azukifont
+      rii-tegaki-fude
+    ]);
     fontconfig = {
       enable = true;
     };

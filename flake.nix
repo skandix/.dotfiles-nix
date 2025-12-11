@@ -36,10 +36,13 @@
 
     # default browser nix-darwin
     default-browser.url = "github:szympajka/nix-browser";
+
+    # Missings Fonts
+    nixos-fonts.url = "github:Takamatsu-Naoki/nixos-fonts";
   };
 
   outputs = inputs@{ self, nixpkgs, nix-index-db, nixpkgs-unstable
-    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, nix-flatpak, vscode-server, default-browser, ... }:
+    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, nix-flatpak, vscode-server, default-browser, nixos-fonts, ... }:
 
     let
       system = "x86_64-linux";
