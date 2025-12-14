@@ -25,6 +25,7 @@
     ../../common/ssh-client.nix
     ../../common/sshd.nix
     ../../common/autoUpgrade.nix
+    ../../common/exporters.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
