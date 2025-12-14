@@ -1,7 +1,8 @@
 { config, pkgs, ... }:
 
 {
-    services.prometheus.exporter = {
+
+    services.prometheus.exporters = {
         zfs = {
             enable = true;
         };
