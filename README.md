@@ -1,6 +1,10 @@
 # .dotfiles-nix
 > These are my personal nixos configurations and nix-darwin config
 
+[![Validate Nix Flake](https://github.com/skandix/.dotfiles-nix/actions/workflows/validate.yml/badge.svg)](https://github.com/skandix/.dotfiles-nix/actions/workflows/validate.yml)
+[![Check nix flake inputs](https://github.com/skandix/.dotfiles-nix/actions/workflows/check.yml/badge.svg)](https://github.com/skandix/.dotfiles-nix/actions/workflows/check.yml)
+[![Bump Flake Inputs](https://github.com/skandix/.dotfiles-nix/actions/workflows/update.yml/badge.svg)](https://github.com/skandix/.dotfiles-nix/actions/workflows/update.yml)
+
 # Hosts
 * ``Cerritos`` - Offsite Server
 * ``DeathStar`` - Work Workstation
