@@ -108,6 +108,7 @@
       "zotero"
       #"firefox"
       "blender"
+      "macfuse"
     ];
 
      masApps = {

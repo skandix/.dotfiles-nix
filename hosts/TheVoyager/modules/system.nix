@@ -17,8 +17,13 @@
 
       finder = {
         AppleShowAllExtensions = true;
-
       };
+
+
+      trackpad = {
+	ActuationStrength = 0;
+      };
+
 
       dock = {
         autohide = true;
@@ -29,16 +34,19 @@
         largesize = 16;
       };
 
-      NSGlobalDomain = {
-        "com.apple.swipescrolldirection" = false;
-        "com.apple.sound.beep.feedback" = 0;
 
-        # Appearance
+
+      NSGlobalDomain = {
+     	"com.apple.swipescrolldirection" = false;
         AppleInterfaceStyle = "Dark";
         AppleKeyboardUIMode = 3;
         ApplePressAndHoldEnabled = true;
+        AppleShowAllExtensions = true;
+        AppleShowScrollBars = "Automatic";
         InitialKeyRepeat = 15;
         KeyRepeat = 2;
+        NSAutomaticCapitalizationEnabled = true;
+        NSAutomaticPeriodSubstitutionEnabled = true;
       };
     };
   };
