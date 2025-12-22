@@ -54,8 +54,8 @@
     };
   };
 
-  services.vscode-server.enable = true;
-  services.vscode-server.enableFHS = true;
+  #services.vscode-server.enable = true;
+  #services.vscode-server.enableFHS = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
