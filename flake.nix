@@ -7,11 +7,18 @@
     nixpkgs-unstable = { url = "github:nixos/nixpkgs/nixos-unstable"; };
     nixos-hardware = { url = "github:NixOS/nixos-hardware"; };
 
+    # Disko - disk partition the nixos way
+    disko = {
+      url = "github:nix-community/disko/latest";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Comma
     nix-index-db = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
+
 
     # Home-Manager
     home-manager = {
@@ -41,7 +48,7 @@
     nixos-fonts.url = "github:Takamatsu-Naoki/nixos-fonts";
   };
 
-  outputs = inputs@{ self, nixpkgs, nix-index-db, nixpkgs-unstable
+  outputs = inputs@{ self, nixpkgs, disko, nix-index-db, nixpkgs-unstable
     , nixos-hardware, home-manager, nix-darwin, nix-homebrew, nix-flatpak, vscode-server, default-browser, nixos-fonts, ... }:
 
     let
@@ -64,13 +71,14 @@
           ];
         };
 
-        Narcissus = nixpkgs.lib.nixosSystem {
+        Lynx = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;
             inherit unstable;
           };
           modules = [
-            ./hosts/Narcissus/configuration.nix
+            ./hosts/Lynx/configuration.nix
+            disko.nixosModules.disko
             inputs.home-manager.nixosModules.default
             nix-index-db.nixosModules.nix-index
           ];

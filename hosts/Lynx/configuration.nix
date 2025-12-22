@@ -36,7 +36,7 @@
   systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.
   systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
   networking = {
-    hostName = "Narcissus";
+    hostName = "Lynx";
     useDHCP = false;
     interfaces = {
       enp4s0 = {
