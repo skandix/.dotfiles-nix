@@ -28,16 +28,18 @@
     ../../common/exporters.nix
   ];
 
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = false;
 
-  boot.loader.grub = {
-    enable = true;
-    efiSupport = true;
-    efiInstallAsRemovable = true;
-  };
+  #boot.loader.grub = {
+    #enable = true;
+    #efiSupport = true;
+    #efiInstallAsRemovable = true;
+  #};
 
-  zramSwap = {
-    enable = true;
-  };
+  #zramSwap = {
+    #enable = true;
+  #};
 
   networking = {
     hostName = "Ainsworth";
