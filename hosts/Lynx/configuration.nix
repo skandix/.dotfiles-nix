@@ -35,10 +35,6 @@
     efiInstallAsRemovable = true;
   };
 
-  programs.dconf.enable = true; # TODO: hvorfor trenger jeg denne her?
-
-  systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.
-  systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
   networking = {
     hostName = "Lynx";
     #useDHCP = false;
