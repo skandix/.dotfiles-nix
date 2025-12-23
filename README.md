@@ -6,21 +6,35 @@
 [![Bump Flake Inputs](https://github.com/skandix/.dotfiles-nix/actions/workflows/update.yml/badge.svg)](https://github.com/skandix/.dotfiles-nix/actions/workflows/update.yml)
 
 # Hosts
-* ``Cerritos`` - Offsite Server
-* ``DeathStar`` - Work Workstation
-* ``MillenniumFalcon`` - Offsite Server
-* ``Narcissus`` - Gandi VPS
-* ``SpaceCruiser`` - Linux Laptop
-* ``TheOrville`` - Home Workstation
-* ``TheVoyager`` - Macos Latop
+* ``DeathStar`` - Work
+* ``TheOrville`` - Home
+* ``TheVoyager`` - Macos
+* ``Ainsworth`` - Server
+* ``Cerritos`` - Server
+* ``MillenniumFalcon`` - Server
+* ``Lynx`` - Server
+* ``SpaceCruiser`` - Laptop
 
 # Install
 
 ## Nixos
 ```bash
-wget https://raw.githubusercontent.com/skandix/.nix-conf/main/scripts/format.sh
-./format.sh /dev/sd? # format drives if nvme it needs to be /dev/nvme0n1
-sudo nixos-install --root /mnt --flake github:skandix/.nix-conf#(DeathStar|TheOrville|SpaceCruiser)
+nixos-install --flake github:skandix/.nix-conf#(DeathStar|TheOrville)
+```
+
+## Nixos Anywhere
+
+```bash 
+nix run nixpkgs#nixos-anywhere -- \
+    --flake .#(TheOrville|DeathStar) \
+    root@172.16.0.12
+```
+
+```bash
+nix run nixpkgs#nixos-anywhere -- \
+    --flake .#(TheOrville|DeathStar) \
+    --generate-hardware-config nixos-generate-config ./hardware-configuration.nix \
+    root@172.16.0.12
 ```
 
 ## Macos

@@ -16,37 +16,44 @@
     ../../home/hx/dev.nix
 
     ../../common/amdcpu.nix
-    ../../common/amdgpu.nix
     ../../common/docker.nix
     ../../common/networkmanager.nix
     ../../common/tailscale.nix
     ../../common/nix-pkg-allow.nix
-    ../../common/fwupd.nix
     ../../common/nix-tweakz.nix
+    ../../common/ctf.nix
+    ../../common/virtualbox.nix
     ../../common/ssh-client.nix
     ../../common/sshd.nix
     ../../common/autoUpgrade.nix
-    ../../common/exporters.nix
   ];
 
-  boot.loader.grub = {
+  boot = {
+    loader.grub = {
+      enable = true;
+      efiSupport = true;
+      efiInstallAsRemovable = true;
+
+    };
+    tmp = {
+      useZram = true;
+      cleanOnBoot = true;
+    };
+  };
+
+  zramSwap = {
     enable = true;
-    efiSupport = true;
-    efiInstallAsRemovable = true;
   };
 
   networking = {
     hostName = "Lynx";
-    #useDHCP = false;
-    #interfaces = {
-      #enp4s0 = {
-        #useDHCP = true;
-      #};
-      #wlp5s0 = {
-        #useDHCP = false;
-      #};
-    #};
-    #hostId = "666dc31b";
+    useDHCP = false;
+    interfaces = {
+      ens3 = {
+        useDHCP = true;
+      };
+    };
+    hostId = "666dc31b";
     #firewall = {
       #enable = true;
       #allowedTCPPorts = [ 32400 21063 6123 8123 21064 ];
