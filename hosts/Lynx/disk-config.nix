@@ -1,54 +1,43 @@
+{lib, ...}:
+
 {
-  # example "/dev/sda"
-  disk = "/dev/vda";
-
   disko.devices = {
-    # boot
-    disk = {
-      type = "disk";
-      device = disk;
-      content = {
-        type = "gpt";
-        partitions = {
-          esp = {
-            size = "512MiB";
-            type = "EF00";
-            name = "boot";
-            bootable = true;
-            filesystem = {
-              type = "vfat";
-              mountpoint = "/boot";
-              label = "boot";
+    disk.main = {
+        device = lib.mkDefault "/dev/vda";
+        type = "disk";
+        content = {
+          type = "gpt";
+          partitions = {
+            boot = {
+              name = "boot";
+              size = "1M";
+              type = "EF02"; # for grub MBR
             };
-          };
 
-          # nixos root
-          nixos = {
-            start = "512MiB";
-            end = "-200MiB";
-            type = "8300";
-            name = "nixos";
-            filesystem = {
-              type = "ext4";
-              mountpoint = "/mnt";
-              label = "nixos";
+            esp = {
+              name ="ESP";
+              size = "1G";
+              type = "EF00";
+              content = {
+                type = "filesystem";
+                format = "vfat";
+                mountpoint = "/boot";
+                mountOptions = [ "umask=0077" ];
+              };
             };
-          };
 
-          # swap partition
-          swap = {
-            start = "-200MiB";
-            end = "100%";
-            type = "8200";
-            name = "swap";
-            filesystem = {
-              type = "swap";
-              label = "swap";
+            root = {
+              name = "root";
+              size = "100%";
+              content = {
+                type = "filesystem";
+                format = "ext4";
+                mountpoint = "/";
+              };
             };
-          };
 
+          };
         };
-      };
     };
   };
 }

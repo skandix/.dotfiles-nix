@@ -10,7 +10,11 @@
 }:
 
 {
-  imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
+  imports = [
+    (modulesPath + "/installer/scan/not-detected.nix")
+    (modulesPath + "/profiles/qemu-guest.nix")
+    ./disk-config.nix
+  ];
 
   boot.initrd.availableKernelModules = [
     "nvme"
@@ -25,16 +29,16 @@
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "zfs" ];
 
-  fileSystems."/" = {
-    device = "/dev/disk/by-label/nixos";
-    fsType = "ext4";
-  };
+  #fileSystems."/" = {
+    #device = "/dev/disk/by-label/nixos";
+    #fsType = "ext4";
+  #};
 
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-label/boot";
-    fsType = "vfat";
-  };
-  swapDevices = [ { device = "/dev/disk/by-label/swap"; } ];
+  #fileSystems."/boot" = {
+    #device = "/dev/disk/by-label/boot";
+    #fsType = "vfat";
+  #};
+  #swapDevices = [ { device = "/dev/disk/by-label/swap"; } ];
 
   nixpkgs.hostPlatform = "x86_64-linux";
 }

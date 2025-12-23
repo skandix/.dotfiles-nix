@@ -28,8 +28,11 @@
     ../../common/exporters.nix
   ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = false;
+  boot.loader.grub = {
+    enable = true;
+    efiSupport = true;
+    efiInstallAsRemovable = true;
+  };
 
   programs.dconf.enable = true; # TODO: hvorfor trenger jeg denne her?
 
@@ -53,9 +56,6 @@
       allowedUDPPorts = [ 5353 1900 ];
     };
   };
-
-  #services.vscode-server.enable = true;
-  #services.vscode-server.enableFHS = true;
 
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
