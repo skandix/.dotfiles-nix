@@ -1,6 +1,14 @@
-{ home-manager, pkgs, ... }:
+{ config, home-manager, pkgs, ... }:
 
 {
+
+  time.timeZone = "Europe/Oslo";
+
+  i18n.defaultLocale = "en_GB.UTF-8";
+  console = {
+    keyMap = "no";
+  };
+
   users.groups.hx.gid = 1000;
   users.users.hx = {
     isNormalUser = true;
@@ -33,4 +41,5 @@
   home-manager.users = {
     hx = (import ./hx/home.nix);
   };
+  programs.dconf.enable = true;
 }

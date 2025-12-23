@@ -28,17 +28,10 @@
     ../../common/autoUpgrade.nix
   ];
 
-  boot = {
-    loader.grub = {
-      enable = true;
-      efiSupport = true;
-      efiInstallAsRemovable = true;
-
-    };
-    tmp = {
-      useZram = true;
-      cleanOnBoot = true;
-    };
+  boot.loader.grub = {
+    enable = true;
+    efiSupport = true;
+    efiInstallAsRemovable = true;
   };
 
   zramSwap = {
@@ -61,17 +54,11 @@
     #};
   };
 
-  i18n.defaultLocale = "en_GB.UTF-8";
-  console = {
-    keyMap = "no";
-  };
-
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
 
-  time.timeZone = "Europe/Oslo";
   home-manager.users.hx.home.stateVersion = "25.11";
   system.stateVersion = "25.11";
 }

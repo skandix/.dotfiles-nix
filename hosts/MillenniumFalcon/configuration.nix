@@ -1,5 +1,4 @@
 {
-  #config.vm.box = "ubuntu/lunar64"
   config,
   pkgs,
   lib,
@@ -30,14 +29,16 @@
     ../../common/autoUpgrade.nix
   ];
 
-  services.vscode-server.enable = true;
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub = {
+    enable = true;
+    efiSupport = true;
+    efiInstallAsRemovable = true;
+  };
 
-  programs.dconf.enable = true; # TODO: hvorfor trenger jeg denne her?
+  zramSwap = {
+    enable = true;
+  };
 
-  systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.
-  systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
   networking = {
     hostName = "MillenniumFalcon";
     hostId = "876927e2";
@@ -45,16 +46,11 @@
     interfaces.eno1.useDHCP = true;
   };
 
-  i18n.defaultLocale = "en_GB.UTF-8";
-  console = {
-    keyMap = "no";
-  };
-
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
-  time.timeZone = "Europe/Oslo";
+
   home-manager.users.hx.home.stateVersion = "25.11";
   system.stateVersion = "25.11";
 }

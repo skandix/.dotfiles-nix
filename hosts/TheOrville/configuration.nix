@@ -41,7 +41,6 @@
     ../../common/storage-devices.nix
   ];
 
-  nixpkgs.config.allowUnfree = true;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -59,18 +58,11 @@
     };
   };
 
-  programs.dconf.enable = true; # TODO: hvorfor trenger jeg denne her?
-
-  i18n.defaultLocale = "en_GB.UTF-8";
-  console = {
-    keyMap = "no";
-  };
-
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
-  time.timeZone = "Europe/Oslo";
+
   home-manager.users.hx.home.stateVersion = "25.11";
   system.stateVersion = "25.11";
 }
