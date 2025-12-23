@@ -77,8 +77,8 @@
             inherit unstable;
           };
           modules = [
-            ./hosts/Lynx/configuration.nix
             disko.nixosModules.disko
+            ./hosts/Lynx/configuration.nix
             inputs.home-manager.nixosModules.default
             nix-index-db.nixosModules.nix-index
           ];

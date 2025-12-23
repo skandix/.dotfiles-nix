@@ -28,6 +28,10 @@
     ../../common/exporters.nix
   ];
 
+  services.disko = {
+    enable = true;
+  };
+
   boot.loader.grub = {
     enable = true;
     efiSupport = true;
