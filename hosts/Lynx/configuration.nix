@@ -8,6 +8,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./disk-config.nix
 
     ../../home
     ../../home/hx
@@ -28,10 +29,6 @@
     ../../common/exporters.nix
   ];
 
-  services.disko = {
-    enable = true;
-  };
-
   boot.loader.grub = {
     enable = true;
     efiSupport = true;
@@ -44,21 +41,21 @@
   systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
   networking = {
     hostName = "Lynx";
-    useDHCP = false;
-    interfaces = {
-      enp4s0 = {
-        useDHCP = true;
-      };
-      wlp5s0 = {
-        useDHCP = false;
-      };
-    };
-    hostId = "666dc31b";
-    firewall = {
-      enable = true;
-      allowedTCPPorts = [ 32400 21063 6123 8123 21064 ];
-      allowedUDPPorts = [ 5353 1900 ];
-    };
+    #useDHCP = false;
+    #interfaces = {
+      #enp4s0 = {
+        #useDHCP = true;
+      #};
+      #wlp5s0 = {
+        #useDHCP = false;
+      #};
+    #};
+    #hostId = "666dc31b";
+    #firewall = {
+      #enable = true;
+      #allowedTCPPorts = [ 32400 21063 6123 8123 21064 ];
+      #allowedUDPPorts = [ 5353 1900 ];
+    #};
   };
 
   i18n.defaultLocale = "en_GB.UTF-8";
