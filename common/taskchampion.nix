@@ -8,6 +8,5 @@
         };
         openFirewall = true;
         host = "127.0.0.1";
-        dataDir = "/home/hx/taskChampion";
     };
 }
