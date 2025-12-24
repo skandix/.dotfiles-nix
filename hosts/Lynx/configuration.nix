@@ -26,6 +26,7 @@
     ../../common/ssh-client.nix
     ../../common/sshd.nix
     ../../common/autoUpgrade.nix
+    ../../common/taskchampion.nix
   ];
 
   boot.loader.grub = {
