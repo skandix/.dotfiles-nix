@@ -50,19 +50,19 @@
           #addresses = "";
           #prefixLength = 64;
         #}];
-        ipv4.addresses = [{
-          address = "192.168.0.42";
-          prefixLength = 24;
-        }];
+        #ipv4.addresses = [{
+          #address = "192.168.0.42";
+          #prefixLength = 24;
+        #}];
       };
         #defaultGateway6 = {
           #address = "";
           #interface = "eno1";
         #};
-        defaultGateway = {
-          address = "192.168.0.1";
-          interface = "eno1";
-        };
+        #defaultGateway = {
+          #address = "192.168.0.1";
+          #interface = "eno1";
+        #};
 
     firewall = {
       enable = true;
