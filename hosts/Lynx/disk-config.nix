@@ -7,21 +7,25 @@
         type = "disk";
         content = {
           type = "gpt";
+
           partitions = {
-            esp = {
-              name ="ESP";
+            boot = {
+              size = "16M";
+              type = "EF20";
+              priority = 1;
+            };
+
+            ESP = {
               size = "1G";
               type = "EF00";
               content = {
                 type = "filesystem";
                 format = "vfat";
                 mountpoint = "/boot";
-                mountOptions = [ "umask=0077" ];
               };
             };
 
             root = {
-              name = "root";
               size = "100%";
               content = {
                 type = "filesystem";
@@ -29,7 +33,6 @@
                 mountpoint = "/";
               };
             };
-
           };
         };
     };
