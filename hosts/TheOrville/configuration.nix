@@ -41,8 +41,19 @@
     ../../common/storage-devices.nix
   ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    systemd-boot = {
+      enable = true;
+      editor = false;
+    };
+    efi = {
+      canTouchEfiVariables = false;
+    };
+  };
+
+  zramSwap = {
+    enable = true;
+  };
 
   systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.
   systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;

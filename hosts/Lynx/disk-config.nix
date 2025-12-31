@@ -8,12 +8,6 @@
         content = {
           type = "gpt";
           partitions = {
-            boot = {
-              name = "boot";
-              size = "1M";
-              type = "EF02"; # for grub MBR
-            };
-
             esp = {
               name ="ESP";
               size = "1G";
