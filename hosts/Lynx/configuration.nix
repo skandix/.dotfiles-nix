@@ -29,10 +29,15 @@
     #../../common/taskchampion.nix
   ];
 
-  boot.loader.grub = {
+  #boot.loader.grub = {
+    #enable = true;
+    #efiSupport = true;
+    #efiInstallAsRemovable = true;
+  #};
+
+  boot.loader.systemd-boot = {
     enable = true;
-    efiSupport = true;
-    efiInstallAsRemovable = true;
+    editor = false;
   };
 
   zramSwap = {
