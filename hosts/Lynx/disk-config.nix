@@ -12,11 +12,10 @@
             boot = {
               size = "16M";
               type = "EF20";
-              priority = 1;
             };
 
             ESP = {
-              size = "1G";
+              size = "512M";
               type = "EF00";
               content = {
                 type = "filesystem";

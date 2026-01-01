@@ -8,7 +8,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./disk-config.nix
+    #./disk-config.nix
 
     ../../home
     ../../home/hx
