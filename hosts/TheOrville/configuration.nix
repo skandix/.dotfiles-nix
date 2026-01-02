@@ -37,6 +37,7 @@
     ../../common/ssh-client.nix
     ../../common/autoUpgrade.nix
     ../../common/ctf.nix
+    ../../common/vj.nix
     ../../common/printing.nix
     ../../common/storage-devices.nix
   ];

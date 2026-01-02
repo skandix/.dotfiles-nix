@@ -5,15 +5,15 @@
   programs.obs-studio = {
     enable = true;
 
-    enableVirtualCamera = true;
+    enablevirtualcamera = true;
 
     plugins = with unstable.obs-studio-plugins; [
       distroav
-      obs-vaapi #optional AMD hardware acceleration
+      obs-vaapi #optional amd hardware acceleration
     ];
   };
 
-  environment.systemPackages = with pkgs; [
+  environment.systempackages = with pkgs; [
     unstable.ndi-6
   ];
 }
