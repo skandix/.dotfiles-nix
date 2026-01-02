@@ -9,6 +9,10 @@
 
   environment.systemPackages = with pkgs; [
     gnumake
+    libgcc
+    gcc
+    cmake
+    extra-cmake-modules
     act
   ];
 }
