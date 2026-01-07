@@ -8,7 +8,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    #./disk-config.nix
+    ./disk-config.nix
 
     ../../home
     ../../home/hx
@@ -26,17 +26,23 @@
     ../../common/ssh-client.nix
     ../../common/sshd.nix
     ../../common/autoUpgrade.nix
-    #../../common/taskchampion.nix
   ];
 
   boot.loader = {
-    systemd-boot = {
+    grub = {
       enable = true;
-      editor = false;
+      efiSupport = true;
+      efiInstallAsRemovable = true;
+      devices = [ "/dev/vda" ];
     };
-    efi = {
-      canTouchEfiVariables = false;
-    };
+    #systemd-boot = {
+      #enable = true;
+      #editor = false;
+
+    #};
+    #efi = {
+      #canTouchEfiVariables = false;
+    #};
   };
 
   zramSwap = {
