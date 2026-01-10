@@ -32,6 +32,7 @@
       sonic-pi
       xscreensaver
       inkscape
+      unstable.google-chrome
     ];
   };
 }
