@@ -17,6 +17,7 @@
       nf = "cd $HOME/.dotfiles-nix && vim && make sw && cd -";
       gname = "head -c 5 /dev/urandom | md5sum";
       cat = "bat --decorations never";
+      gg = "lazygit";
     };
     # # Colors for shell, not sure if this is the prefered way to do it
     loginShellInit = ''
