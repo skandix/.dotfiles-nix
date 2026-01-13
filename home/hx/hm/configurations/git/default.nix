@@ -1,7 +1,6 @@
 { pkgs, ... }:
 
 {
-  #home-manager.users.hx = {
   programs.git = {
     package = pkgs.gitFull;
     enable = true;
@@ -23,5 +22,6 @@
       };
     };
   };
-  #};
+
+  home.packages = with pkgs; [ lazygit ];
 }
