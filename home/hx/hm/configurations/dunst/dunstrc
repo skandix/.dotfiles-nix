@@ -1,10 +1,8 @@
-
-
 [global]
     # Display
     monitor = 0
     follow = mouse
-    geometry = "320x6-35+35"      # fixed width avoids buggy huge/black boxes
+    origin = top-right
     indicate_hidden = yes
     shrink = yes
     transparency = 0
@@ -19,7 +17,7 @@
     idle_threshold = 120
 
     # Text
-    font = Fira Code 12
+    font = Monospace 12
     line_height = 0
     markup = full
     format = "%s %p\n%b"
@@ -45,14 +43,12 @@
     history_length = 200
 
     # Misc
-    dmenu = /usr/bin/dmenu -p dunst:
-    # Use a real browser binary here or leave blank; your previous path looked wrong
+    #dmenu = /usr/bin/dmenu -p dunst:
     # browser = /usr/bin/librewolf -new-tab
     always_run_script = false
     title = Dunst
     class = Dunst
-    startup_notification = false
-    verbosity = mesg
+    startup_notification = true
     corner_radius = 0
     ignore_dbusclose = false
 
@@ -60,7 +56,7 @@
     force_xinerama = false
 
 [experimental]
-    per_monitor_dpi = true
+    per_monitor_dpi = false
     # If you’re on Wayland and see issues, try one of these (only one should be set):
     # force_xwayland = true   # Force XWayland backend on Wayland sessions
     # force_wayland = true    # Force native Wayland backend (if supported)

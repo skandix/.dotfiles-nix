@@ -33,6 +33,7 @@
       xscreensaver
       inkscape
       unstable.google-chrome
+      talhelper
     ];
   };
 }
