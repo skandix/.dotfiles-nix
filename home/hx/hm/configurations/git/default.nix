@@ -1,4 +1,4 @@
-{ pkgs, unstable, ... }:
+{ pkgs, ... }:
 
 {
   programs = {
@@ -26,7 +26,7 @@
 
     lazygit = {
       enable = true;
-      package = unstable.lazygit;
+      #package = unstable.lazygit;
       #settings = {
         #nerdFontsVersion="3";
       #};
