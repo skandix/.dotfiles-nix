@@ -35,7 +35,6 @@
     wine-staging # wine
     winePackages.stagingFull # wine
     gamemode # Optimise Linux system performance on demand
-    mangohud # A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
     r2modman # risk of rain 2 mod manager
     protontricks # winetricks but with proton
     prismlauncher # minecraft launcher
