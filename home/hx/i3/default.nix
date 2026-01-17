@@ -10,6 +10,7 @@
     ./../hm/configurations/mpv
     ./../hm/configurations/discord
     ./../hm/configurations/vim
+    ./../hm/configurations/mangohud
     ./../hm/configurations/tmux
     ./../hm/configurations/udiskie
     ./../hm/go.nix
