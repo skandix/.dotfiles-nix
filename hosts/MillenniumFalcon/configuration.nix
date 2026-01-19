@@ -30,6 +30,10 @@
   ];
 
 
+  environment.systemPackages = with pkgs; [
+    chromium # needed to export slides
+  ];
+
   boot.loader = {
     systemd-boot = {
       enable = true;
