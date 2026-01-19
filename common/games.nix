@@ -41,6 +41,7 @@
     wowup-cf # wow addoon manager
     protonplus # proton manager
     wivrn
+    osu-lazer-bin
   ];
 
   services.wivrn = {
