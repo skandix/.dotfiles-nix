@@ -13,7 +13,6 @@
       tor-browser
       unstable.mumble
       slack
-      vscode
       plexamp
       wireshark
       plex-desktop
