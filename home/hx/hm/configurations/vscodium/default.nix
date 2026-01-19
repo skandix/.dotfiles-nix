@@ -1,11 +1,10 @@
 {pkgs, ...}:
 
 {
-  environment.systemPackages = with pkgs; [
-    vscodium
-
-    vscode-extensions = [
-
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscodium;
+    extensions = with pkgs.vscode-extensions; [
       ### SLIDES
       marp-team.marp-vscode
 
@@ -46,6 +45,15 @@
       pkief.material-icon-theme
       oderwat.indent-rainbow
       catppuccin.catppuccin-vsc
+
+      ### have this here until i or someone add opentofu to nixpkgs
+      (vscode-utils.extensionFromVscodeMarketplace {
+        name = "opentofu.vscode-opentofu";
+        publisher = "opentofu";
+        version = "0.6.0";      # must be exact
+        sha256 = "sha256-…";    # obtain via `nix-prefetch` or from build error
+      })
+
     ];
-  ];
-};
+  };
+}
