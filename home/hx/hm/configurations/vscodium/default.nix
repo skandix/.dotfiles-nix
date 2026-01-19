@@ -8,7 +8,7 @@
       ### SLIDES
       marp-team.marp-vscode
 
-      ### REMOTE SSH
+      ### REMOTE SSHv
       ms-vscode-remote.remote-ssh
       ms-vscode-remote.remote-ssh-edit
 
@@ -47,12 +47,12 @@
       catppuccin.catppuccin-vsc
 
       ### have this here until i or someone add opentofu to nixpkgs
-      (vscode-utils.extensionFromVscodeMarketplace {
-        name = "opentofu.vscode-opentofu";
-        publisher = "opentofu";
-        version = "0.6.0";      # must be exact
-        sha256 = "sha256-…";    # obtain via `nix-prefetch` or from build error
-      })
+      # (vscode-utils.extensionFromVscodeMarketplace {
+      #   name = "opentofu.vscode-opentofu";
+      #   publisher = "opentofu";
+      #   version = "0.6.0";      # must be exact
+      #   sha256 = "sha256-…";    # obtain via `nix-prefetch` or from build error
+      # })
 
     ];
   };
