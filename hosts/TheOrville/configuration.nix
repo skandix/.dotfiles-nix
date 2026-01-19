@@ -40,7 +40,6 @@
     ../../common/vj.nix
     ../../common/printing.nix
     ../../common/storage-devices.nix
-    ../../common/vscodium.nix
   ];
 
   boot.loader = {

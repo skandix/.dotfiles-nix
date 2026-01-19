@@ -35,7 +35,6 @@
     ../../common/health.nix
     ../../common/autoUpgrade.nix
     ../../common/storage-devices.nix
-    ../../common/vscodium.nix
   ];
 
   boot.loader = {
