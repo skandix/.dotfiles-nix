@@ -9,6 +9,7 @@
   imports = [
     ./hm/configurations/vim
     ./hm/configurations/tmux
+    ./hm/configurations/k9s
   ];
 
   programs.nix-index-database.comma.enable = true;
@@ -31,7 +32,6 @@
       talosctl
       kubectl
       kubecolor
-      k9s
       opentofu
       ansible
       openstackclient
