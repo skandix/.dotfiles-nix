@@ -23,6 +23,7 @@
       sublime3
       librewolf
       chromium #needed to export pdf from marp
+      vscode
       teams-for-linux
       zotero
       typst

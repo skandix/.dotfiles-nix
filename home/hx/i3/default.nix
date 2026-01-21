@@ -13,7 +13,7 @@
     ./../hm/configurations/mangohud
     ./../hm/configurations/tmux
     ./../hm/configurations/udiskie
-    ./../hm/configurations/vscodium
+    #./../hm/configurations/vscodium
     ./../hm/go.nix
     ./../hm/python.nix
     ./../hm/rust.nix

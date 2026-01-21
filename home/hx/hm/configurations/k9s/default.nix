@@ -1,6 +1,7 @@
 { pkgs, configs, ... }:
 
 {
+  home-manager.users.hx = {
     programs.k9s = {
         enable = true;
         plugins = {
@@ -13,10 +14,20 @@
                 background = false;
                 confirm = true;
                 args = [
-                  "- -c"
-                  "- "kubectl debug -it --context $CONTEXT -n=$NAMESPACE $POD --target=$NAME --image=nicolaka/netshoot:v0.14 --profile=sysadmin --share-processes -- bash""
+                  "-c"
+                  "kubectl debug"
+                  "-it"
+                  "--context $CONTEXT"
+                  "-n=$NAMESPACE $POD"
+                  "--target=$NAME"
+                  "--image=nicolaka/netshoot:v0.14"
+                  "--profile=sysadmin"
+                  "--share-processes"
+                  "--"
+                  "bash"
                 ];
-            }
-        }
+            };
+        };
+    };
   };
 }
