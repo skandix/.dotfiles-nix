@@ -28,6 +28,7 @@
     ../../common/virtualization.nix
     ../../common/health.nix
     ../../common/autoUpgrade.nix
+    ../../common/vscode-server.nix
   ];
 
 

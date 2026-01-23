@@ -26,6 +26,7 @@
     ../../common/sshd.nix
     ../../common/autoUpgrade.nix
     ../../common/exporters.nix
+    ../../common/vscode-server.nix
   ];
 
   boot.loader = {

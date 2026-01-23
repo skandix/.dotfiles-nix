@@ -81,6 +81,7 @@
             disko.nixosModules.disko
             inputs.home-manager.nixosModules.default
             nix-index-db.nixosModules.nix-index
+            vscode-server.nixosModules.default
           ];
         };
 
