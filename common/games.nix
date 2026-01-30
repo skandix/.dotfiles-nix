@@ -54,7 +54,7 @@
     r2modman # risk of rain 2 mod manager
     protontricks # winetricks but with proton
     prismlauncher # minecraft launcher
-    wowup-cf # wow addoon manager
+    unstable.wowup-cf # wow addoon manager
     protonplus # proton manager
     wivrn
     osu-lazer-bin
