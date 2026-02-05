@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{pkgs, unstable, ...}:
 
 {
   imports = [
@@ -14,5 +14,7 @@
     cmake
     extra-cmake-modules
     act
+    nodejs_24
+    yarn
   ];
 }
