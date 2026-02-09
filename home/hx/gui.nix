@@ -35,6 +35,7 @@
       unstable.google-chrome
       talhelper
       anydesk
+      thunderbird
     ];
   };
 }
