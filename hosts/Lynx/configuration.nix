@@ -22,7 +22,7 @@
     ../../common/nix-pkg-allow.nix
     ../../common/nix-tweakz.nix
     ../../common/ctf.nix
-    ../../common/virtualbox.nix
+    #../../common/virtualbox.nix
     ../../common/ssh-client.nix
     ../../common/sshd.nix
     ../../common/autoUpgrade.nix
@@ -44,6 +44,16 @@
     #efi = {
       #canTouchEfiVariables = false;
     #};
+  };
+
+  users.users.birch = {
+    isNormalUser = true;
+    extraGroups = [
+      "wheel"
+      "docker"
+      "podman"
+    ];
+    initialPassword = "hunter2k"; # used for build-vm and init deployment of nixos-anywhere
   };
 
   zramSwap = {
