@@ -16,5 +16,6 @@
     act
     nodejs_24
     yarn
+    shellcheck
   ];
 }
