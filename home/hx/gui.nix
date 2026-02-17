@@ -36,6 +36,7 @@
       talhelper
       anydesk
       thunderbird
+      typst
     ];
   };
 }
