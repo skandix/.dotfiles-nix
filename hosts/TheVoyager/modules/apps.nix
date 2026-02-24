@@ -78,6 +78,7 @@
       "marp-cli"
       "uv"
       "ruff"
+      "mole"
     ];
 
     # `brew install --cask`
@@ -94,8 +95,6 @@
       "visual-studio-code"
       "plex"
       "wireshark-app"
-      "vagrant"
-      "virtualbox"
       "steam"
       "obsidian"
       "plexamp"
