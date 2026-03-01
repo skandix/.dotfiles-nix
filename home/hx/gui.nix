@@ -37,6 +37,7 @@
       anydesk
       thunderbird
       typst
+      keepassxc
     ];
   };
 }
