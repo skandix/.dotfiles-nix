@@ -15,8 +15,8 @@
       env.GOPATH = "/home/hx/.go";
       package = unstable.go;
     };
-    home.packages = with unstable; [
-      gccgo
-    ];
+    #home.packages = with unstable; [
+      #gccgo
+    #];
   };
 }
