@@ -108,6 +108,7 @@
       #"firefox"
       "blender"
       "macfuse"
+      "1password"
     ];
 
      masApps = {
