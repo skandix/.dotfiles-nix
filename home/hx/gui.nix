@@ -24,20 +24,19 @@
       librewolf
       chromium #needed to export pdf from marp
       vscode
-      teams-for-linux
+      #teams-for-linux
       zotero
       typst
-      spotify
+      #spotify
       unstable.cider-2
-      sonic-pi
+      #sonic-pi
       xscreensaver
-      inkscape
-      unstable.google-chrome
-      talhelper
+      #inkscape
+      #unstable.google-chrome
       anydesk
       thunderbird
       typst
-      keepassxc
+      _1password-gui-beta
     ];
   };
 }
