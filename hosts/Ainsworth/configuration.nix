@@ -25,8 +25,8 @@
     ../../common/ssh-client.nix
     ../../common/sshd.nix
     ../../common/autoUpgrade.nix
-    ../../common/incus.nix
-    ../../common/exporters.nix
+    #../../common/incus.nix
+    #../../common/exporters.nix
     ../../common/vscode-server.nix
   ];
 
