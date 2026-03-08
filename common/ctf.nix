@@ -11,5 +11,6 @@
     jadx
     quark-engine
     binaryninja-free
+    volatility3
   ];
 }

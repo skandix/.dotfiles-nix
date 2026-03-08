@@ -27,6 +27,7 @@
       bat
       ripgrep
       marp-cli
+      makemkv
 
       # SRE
       talosctl
