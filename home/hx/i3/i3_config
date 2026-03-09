@@ -161,8 +161,8 @@ exec_always --no-startup-id setxkbmap no
 # Start only once when i3 is started
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
-exec --no-startup-id discord --start-minimized
 exec --no-startup-id slack --startup
+exec --no-startup-id discord --start-minimized
 
 # Assign sw to workspaces
 assign [class="Slack"] $ws1

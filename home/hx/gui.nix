@@ -27,7 +27,7 @@
       #teams-for-linux
       zotero
       typst
-      #spotify
+      spotify
       unstable.cider-2
       #sonic-pi
       xscreensaver
@@ -36,7 +36,7 @@
       anydesk
       thunderbird
       typst
-      _1password-gui-beta
+      unstable._1password-gui-beta
     ];
   };
 }
