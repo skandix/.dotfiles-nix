@@ -20,7 +20,7 @@
       obsidian
       zathura
       netflix
-      sublime3
+      unstable.sublime3
       librewolf
       chromium #needed to export pdf from marp
       vscode

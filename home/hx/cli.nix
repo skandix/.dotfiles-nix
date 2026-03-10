@@ -25,9 +25,10 @@
       ntfs3g
       ranger
       bat
-      ripgrep
+      #ripgrep
       marp-cli
       makemkv
+      qrencode
 
       # SRE
       talosctl
