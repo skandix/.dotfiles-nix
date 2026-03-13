@@ -28,9 +28,11 @@
       #ripgrep
       marp-cli
       makemkv
-      qrencode
-      zbar
       xclip
+      #qrencode
+      #zbar
+      taskwarrior3
+      taskwarrior-tui
 
       # SRE
       talosctl
@@ -43,7 +45,6 @@
       kubeseal
       packer
       cilium-cli
-      taskwarrior3
     ];
   };
 }
