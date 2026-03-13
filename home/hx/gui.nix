@@ -8,7 +8,7 @@
 {
   home-manager.users.hx = {
     home.packages = with pkgs; [
-      telegram-desktop
+      unstable.telegram-desktop
       unstable.signal-desktop
       tor-browser
       unstable.mumble

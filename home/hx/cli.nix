@@ -29,6 +29,7 @@
       marp-cli
       makemkv
       qrencode
+      zbar
 
       # SRE
       talosctl
@@ -41,6 +42,7 @@
       kubeseal
       packer
       cilium-cli
+      taskwarrior3
     ];
   };
 }
