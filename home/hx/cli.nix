@@ -30,6 +30,7 @@
       makemkv
       qrencode
       zbar
+      xclip
 
       # SRE
       talosctl
