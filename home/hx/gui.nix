@@ -37,6 +37,7 @@
       thunderbird
       typst
       unstable._1password-gui-beta
+      gajim
     ];
   };
 }
