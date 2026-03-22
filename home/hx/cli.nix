@@ -25,12 +25,9 @@
       ntfs3g
       ranger
       bat
-      #ripgrep
       marp-cli
       makemkv
       xclip
-      #qrencode
-      #zbar
       taskwarrior3
       taskwarrior-tui
 

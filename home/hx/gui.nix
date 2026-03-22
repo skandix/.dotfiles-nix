@@ -22,19 +22,18 @@
       netflix
       unstable.sublime3
       librewolf
-      chromium #needed to export pdf from marp
       vscode
       #teams-for-linux
       zotero
       typst
-      spotify
+      #spotify
       unstable.cider-2
       #sonic-pi
       xscreensaver
       #inkscape
       #unstable.google-chrome
       anydesk
-      thunderbird
+      #thunderbird
       typst
       unstable._1password-gui-beta
       gajim
