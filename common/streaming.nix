@@ -2,18 +2,17 @@
 
 
 {
-  programs.obs-studio = {
-    enable = true;
+  #programs.obs-studio = {
+    #enable = true;
 
-    enablevirtualcamera = true;
+    #enablevirtualcamera = true;
 
-    plugins = with unstable.obs-studio-plugins; [
-      distroav
-      obs-vaapi #optional amd hardware acceleration
-    ];
-  };
+    #plugins = with unstable.obs-studio-plugins; [
+      #obs-vaapi #optional amd hardware acceleration
+    #];
+  #};
 
   environment.systempackages = with pkgs; [
-    unstable.ndi-6
+    unstable.mediamtx
   ];
 }

@@ -11,6 +11,7 @@
       #];
     #};
     enableOnBoot = true;
+    liveRestore = true;
   };
 
   environment.systemPackages = with pkgs; [ unstable.docker-compose ];

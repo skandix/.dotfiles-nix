@@ -47,7 +47,7 @@
 
   # OTHER
   environment.systemPackages = with pkgs; [
-    lutris
+    unstable.lutris
     winetricks # wine
     wine-staging # wine
     winePackages.stagingFull # wine
@@ -56,8 +56,8 @@
     prismlauncher # minecraft launcher
     unstable.wowup-cf # wow addoon manager
     protonplus # proton manager
-    wivrn
-    osu-lazer-bin
+    #wivrn
+    #osu-lazer-bin
   ];
 
   # services.wivrn = {
