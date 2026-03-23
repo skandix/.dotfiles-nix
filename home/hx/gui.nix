@@ -21,7 +21,7 @@
       zathura
       netflix
       unstable.sublime3
-      librewolf
+      #librewolf
       vscode
       #teams-for-linux
       zotero

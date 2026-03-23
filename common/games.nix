@@ -47,7 +47,7 @@
 
   # OTHER
   environment.systemPackages = with pkgs; [
-    unstable.lutris
+    lutris
     winetricks # wine
     wine-staging # wine
     winePackages.stagingFull # wine
