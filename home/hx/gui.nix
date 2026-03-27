@@ -30,7 +30,7 @@
       unstable.cider-2
       #sonic-pi
       xscreensaver
-      #inkscape
+      inkscape
       #unstable.google-chrome
       anydesk
       #thunderbird
