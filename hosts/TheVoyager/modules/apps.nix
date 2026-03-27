@@ -103,6 +103,7 @@
       "container"
       "rectangle"
       "google-chrome"
+      "inkscape"
       "gimp"
       "zotero"
       #"firefox"
