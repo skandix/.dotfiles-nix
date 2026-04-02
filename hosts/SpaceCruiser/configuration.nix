@@ -27,7 +27,7 @@
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
     ../../common/ssh-client.nix
-    ../../common/autoUpgrade.nix
+    #../../common/autoUpgrade.nix
     ../../common/ctf.nix
     ../../common/storage-devices.nix
   ];

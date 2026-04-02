@@ -26,8 +26,17 @@
       autorun = true;
       xkb.layout = "no";
 
-      displayManager.lightdm = {
-        enable = true;
+      displayManager = {
+        lightdm = {
+          enable = true;
+        };
+
+        sessionCommands = ''
+          xset -dpms
+          xset s off
+          xset s noblank
+          '';
+
       };
 
       windowManager.i3 = {

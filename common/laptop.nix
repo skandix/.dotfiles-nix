@@ -40,8 +40,10 @@
       settings = {
         Login = {
           HandleLidSwitchDocked = "ignore";
-          HandleLidSwitchExternalPower = "suspend";
-          HandleLidSwitch = "suspend";
+          HandleLidSwitchExternalPower = "ignore";
+          HandleLidSwitch = "ignore";
+          IdleAction = "ignore";
+          IdleActionsec = 0;
         };
       };
     };
