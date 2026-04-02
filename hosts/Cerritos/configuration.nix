@@ -24,7 +24,7 @@
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
     ../../common/sshd.nix
-    ../../common/autoUpgrade.nix
+    #../../common/autoUpgrade.nix # turn of auto upgrade whiel at tghack stand
     ../../common/vscode-server.nix
   ];
 
@@ -41,6 +41,11 @@
   zramSwap = {
     enable = true;
   };
+
+   environment.systemPackages = [
+    pkgs.weechat
+    pkgs.cron
+  ];
 
   networking = {
     hostName = "Cerritos";
