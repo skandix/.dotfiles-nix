@@ -15,28 +15,33 @@
 
     # Common
     ../../common/intelcpu.nix
-    ../../common/fingerprint.nix
+    #../../common/fingerprint.nix
     ../../common/laptop.nix
     ../../common/intelgpu.nix
     ../../common/tailscale.nix
-    ../../common/docker.nix
+    #../../common/docker.nix
     ../../common/fonts.nix
     ../../common/networkmanager.nix
     ../../common/pipewire.nix
-    ../../common/nix-tweakz.nix
-    ../../common/nix-pkg-allow.nix
-    ../../common/fwupd.nix
+    #../../common/nix-tweakz.nix
+    #../../common/nix-pkg-allow.nix
+    #../../common/fwupd.nix
     ../../common/ssh-client.nix
     #../../common/autoUpgrade.nix
-    ../../common/ctf.nix
-    ../../common/storage-devices.nix
+    #../../common/ctf.nix
+    #../../common/storage-devices.nix
   ];
+
+  powerManagement.enable = true;
+  systemd.targets.sleep.enable = true;
+  systemd.targets.suspend.enable = true;
 
   boot.loader = {
     systemd-boot = {
       enable = true;
       editor = false;
     };
+
     efi = {
       canTouchEfiVariables = false;
     };

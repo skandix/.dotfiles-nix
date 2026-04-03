@@ -12,8 +12,8 @@
       unstable.signal-desktop
       tor-browser
       unstable.mumble
-      slack
-      plexamp
+      unstable.slack
+      unstable.plexamp
       wireshark
       plex-desktop
       seahorse
