@@ -47,7 +47,7 @@
     # };
   };
   environment.systemPackages = with pkgs; [
-    helvum
+    #helvum
     pamixer
     pasystray
     pulseaudio

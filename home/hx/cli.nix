@@ -7,7 +7,7 @@
 
 {
   imports = [
-    ./hm/configurations/vim
+    #./hm/configurations/vim
     ./hm/configurations/tmux
     ./hm/configurations/k9s
   ];
@@ -25,23 +25,23 @@
       ntfs3g
       ranger
       bat
-      marp-cli
-      makemkv
-      xclip
-      taskwarrior3
-      taskwarrior-tui
+      #marp-cli
+      #makemkv
+      #xclip
+      #taskwarrior3
+      #taskwarrior-tui
 
       # SRE
-      talosctl
-      kubectl
-      kubecolor
-      opentofu
-      ansible
-      openstackclient
-      kubernetes-helm
-      kubeseal
-      packer
-      cilium-cli
+      #talosctl
+      #kubectl
+      #kubecolor
+      #opentofu
+      #ansible
+      #openstackclient
+      #kubernetes-helm
+      #kubeseal
+      #packer
+      #cilium-cli
     ];
   };
 }

@@ -1,13 +1,13 @@
 { config, ... }:
 
 {
-  programs.light = {
-    enable = true;
-    brightnessKeys = {
-      enable = true;
-      step = 5;
-    };
-  };
+  #programs.light = {
+    #enable = true;
+    #brightnessKeys = {
+      #enable = true;
+      #step = 5;
+    #};
+  #};
 
   services = {
     libinput = {
