@@ -22,7 +22,7 @@
       #netflix
       unstable.sublime3
       #librewolf
-      vscode
+      unstable.vscode
       #teams-for-linux
       #zotero
       #typst
