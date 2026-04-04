@@ -8,35 +8,35 @@
 {
   home-manager.users.hx = {
     home.packages = with pkgs; [
-      unstable.telegram-desktop
-      unstable.signal-desktop
-      tor-browser
-      unstable.mumble
-      unstable.slack
-      unstable.plexamp
+      #unstable.telegram-desktop
+      #unstable.signal-desktop
+      #tor-browser
+      #unstable.mumble
+      #unstable.slack
+      #unstable.plexamp
       wireshark
-      plex-desktop
+      #uplex-desktop
       seahorse
-      obsidian
+      #obsidian
       zathura
-      netflix
+      #netflix
       unstable.sublime3
       #librewolf
       vscode
       #teams-for-linux
-      zotero
-      typst
+      #zotero
+      #typst
       #spotify
-      unstable.cider-2
+      #unstable.cider-2
       #sonic-pi
-      xscreensaver
-      inkscape
+      #xscreensaver
+      #inkscape
       #unstable.google-chrome
-      anydesk
+      #anydesk
       #thunderbird
-      typst
+      #typst
       unstable._1password-gui-beta
-      gajim
+      #gajim
     ];
   };
 }
