@@ -12,5 +12,7 @@
     quark-engine
     binaryninja-free
     volatility3
+    ltrace
+    strace
   ];
 }

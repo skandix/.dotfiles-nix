@@ -5,7 +5,9 @@
     home.packages = with pkgs; [
       unstable.uv
       unstable.ruff
-      python314
+      python313
+      python313Packages.pycryptodome
+      python313Packages.cryptography
     ];
   };
   programs = {

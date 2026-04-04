@@ -28,7 +28,7 @@
     #../../common/fwupd.nix
     ../../common/ssh-client.nix
     #../../common/autoUpgrade.nix
-    #../../common/ctf.nix
+    ../../common/ctf.nix
     #../../common/storage-devices.nix
   ];
 
