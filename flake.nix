@@ -110,18 +110,18 @@
           ];
         };
 
-        Cerritos = nixpkgs.lib.nixosSystem {
-          specialArgs = {
-            inherit inputs;
-            inherit unstable;
-          };
-          modules = [
-            ./hosts/Cerritos/configuration.nix
-            inputs.home-manager.nixosModules.default
-            nix-index-db.nixosModules.nix-index
-            vscode-server.nixosModules.default
-          ];
-        };
+        #Cerritos = nixpkgs.lib.nixosSystem {
+          #specialArgs = {
+            #inherit inputs;
+            #inherit unstable;
+          #};
+          #modules = [
+            #./hosts/Cerritos/configuration.nix
+            #inputs.home-manager.nixosModules.default
+            #nix-index-db.nixosModules.nix-index
+            #vscode-server.nixosModules.default
+          #];
+        #};
 
         TheOrville = nixpkgs.lib.nixosSystem {
           specialArgs = {
@@ -135,17 +135,17 @@
           ];
         };
 
-        SpaceCruiser = nixpkgs.lib.nixosSystem {
-          specialArgs = {
-            inherit inputs;
-            inherit unstable;
-          };
-          modules = [
-            ./hosts/SpaceCruiser/configuration.nix
-            inputs.home-manager.nixosModules.default
-            nix-index-db.nixosModules.nix-index
-          ];
-        };
+        #SpaceCruiser = nixpkgs.lib.nixosSystem {
+          #specialArgs = {
+            #inherit inputs;
+            #inherit unstable;
+          #};
+          #modules = [
+            #./hosts/SpaceCruiser/configuration.nix
+            #inputs.home-manager.nixosModules.default
+            #nix-index-db.nixosModules.nix-index
+          #];
+        #};
       };
 
       darwinConfigurations = {

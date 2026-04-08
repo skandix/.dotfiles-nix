@@ -15,7 +15,7 @@
       unstable.slack
       unstable.plexamp
       wireshark
-      plex-desktop
+      unstable.plex-desktop
       seahorse
       obsidian
       zathura
