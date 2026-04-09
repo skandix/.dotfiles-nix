@@ -35,6 +35,7 @@
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
     ../../common/ssh-client.nix
+    ../../common/streamdeck.nix
     #../../common/autoUpgrade.nix
     ../../common/ctf.nix
     ../../common/vj.nix
