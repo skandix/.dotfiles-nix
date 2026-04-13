@@ -25,7 +25,6 @@
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
     ../../common/virtualbox.nix
-    ../../common/virtualization.nix
     ../../common/health.nix
     ../../common/autoUpgrade.nix
     ../../common/vscode-server.nix
