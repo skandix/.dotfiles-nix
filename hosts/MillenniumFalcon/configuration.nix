@@ -40,6 +40,7 @@
 \____|__  /__|____/____/\___  >___|  /___|  /__|____/|__|_|  /\___  /  (____  /____/\___  >____/|___|  /
         \/                  \/     \/     \/               \/     \/        \/          \/           \/ 
 ";
+};
   environment.systemPackages = with pkgs; [
     chromium # needed to export slides
   ];
