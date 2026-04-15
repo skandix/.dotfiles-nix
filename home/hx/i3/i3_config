@@ -165,10 +165,9 @@ exec --no-startup-id slack --startup
 exec --no-startup-id discord --start-minimized
 
 # Assign sw to workspaces
-assign [class="Slack"] $ws1
-assign [class="Discord"] $ws1
+assign [class="Slack"] $ws2
+assign [class="Discord"] $ws2
 assign [class="plexamp"] $ws10
-assign [class="io.github.alainm23.planify"] $ws9
 
 # WINDOWS RULES
 for_window [class="Pavucontrol"] floating enable
