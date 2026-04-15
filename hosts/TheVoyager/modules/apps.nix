@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ unstable, ... }:
 
 {
   #options: https://daiderd.com/nix-darwin/manual/index.html
@@ -8,12 +8,10 @@
     browser = "librewolf";
   };
 
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with unstable; [
     git
-    pfetch
-    neofetch
     talosctl
-    docker_28
+    docker
   ];
 
   nix-homebrew = {
@@ -23,7 +21,6 @@
     mutableTaps = true;
     autoMigrate = true;
   };
-  # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
   homebrew = {
     enable = true;
 
@@ -98,15 +95,12 @@
       "steam"
       "obsidian"
       "plexamp"
-      "bitwarden"
-      #"thunderbird"
       "container"
       "rectangle"
       "google-chrome"
       "inkscape"
       "gimp"
       "zotero"
-      #"firefox"
       "blender"
       "macfuse"
       "1password"

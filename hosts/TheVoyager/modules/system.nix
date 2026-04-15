@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 # options: https://daiderd.com/nix-darwin/manual/index.html#sec-options
 {
@@ -21,7 +21,7 @@
 
 
       trackpad = {
-	ActuationStrength = 0;
+	    ActuationStrength = 0;
       };
 
 

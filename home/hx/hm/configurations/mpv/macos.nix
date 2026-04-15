@@ -1,9 +1,9 @@
 
-{ pkgs, ... }:
+{ unstable, ... }:
 
 {
 
-  home.packages = with pkgs; [
+  home.packages = with unstable; [
     mpv
     streamlink
     ffmpeg
