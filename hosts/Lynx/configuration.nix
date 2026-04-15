@@ -29,6 +29,16 @@
     ../../common/vscode-server.nix
   ];
 
+  services.openssh = {
+    banner = "
+.____                          
+|    |    ___.__. ____ ___  ___
+|    |   <   |  |/    \\  \/  /
+|    |___ \___  |   |  \>    < 
+|_______ \/ ____|___|  /__/\_ \
+        \/\/         \/      \/
+";
+
   boot.loader = {
     grub = {
       enable = true;
