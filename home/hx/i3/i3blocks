@@ -1,6 +1,6 @@
 [uptime]
-command=uptime | awk -F'( |,|:)+' '{print $6,$7",",$8,"hours,",$9,"minutes."}'
-interval=60
+command=uptime | cut -d' ' -f2
+interval=1
 
 #[battery]
 #command=cat /sys/class/power_supply/BAT0/capacity
