@@ -24,7 +24,7 @@
     ../../common/fwupd.nix
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
-    ../../common/virtualisation.nix
+    ../../common/virtualization.nix
     ../../common/health.nix
     ../../common/autoUpgrade.nix
     ../../common/vscode-server.nix
