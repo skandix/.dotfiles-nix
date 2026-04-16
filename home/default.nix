@@ -23,9 +23,9 @@
       "scanner"
       "networkmanager"
       "wireshark"
-      "vboxusers"
+      #"vboxusers"
       #"podman"
-      "incus-admin"
+      #"incus-admin"
     ];
     group = "hx";
     shell = pkgs.fish;
