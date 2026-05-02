@@ -34,6 +34,7 @@
       #unstable.google-chrome
       anydesk
       #thunderbird
+      chromium
       typst
       unstable._1password-gui-beta
       gajim
