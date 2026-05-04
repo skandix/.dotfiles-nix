@@ -8,10 +8,10 @@
       onShutdown = "shutdown";
     };
 
-    qemu = {
-      package = pkgs.qemu_kvm;
-      runAsRoot = true;
-    };
+    #qemu = {
+      #package = pkgs.qemu_kvm;
+      #runAsRoot = true;
+    #};
   };
 
 
