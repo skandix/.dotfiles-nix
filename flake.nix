@@ -19,6 +19,11 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
+    # Mango
+    mangowm = {
+      url = "github:mangowm/mango";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
 
     # Home-Manager
     home-manager = {

@@ -17,7 +17,7 @@
     ../../home/hx/gui.nix
     ../../home/hx/cli.nix
     ../../home/hx/dev.nix
-    ../../home/hx/i3
+    ../../home/hx/mango
     #../../home/hx/sway # 7.december, not in the mood to fix bugs and issues, lets try this another time
 
     # Common
