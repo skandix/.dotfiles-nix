@@ -14,7 +14,6 @@
     ./../hm/configurations/tmux
     ./../hm/configurations/udiskie
     ./../hm/configurations/librewolf
-    #./../hm/configurations/vscodium
     ./../hm/go.nix
     ./../hm/python.nix
     ./../hm/rust.nix
