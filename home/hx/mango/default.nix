@@ -18,6 +18,10 @@
     ./../hm/rust.nix
   ];
 
+  programs.mango = {
+    enable = true;
+  };
+
     services.greetd = {
       enable = true;
       settings = {
@@ -26,7 +30,7 @@
           user = "hx"; # auto-login on first start, no password required
         };
         default_session = {
-          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd mango";
+          command = "${pkgs.tuigreet}/bin/tuigreet --cmd mango";
           user = "greeter";
         };
       };
