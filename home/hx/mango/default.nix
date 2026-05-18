@@ -13,11 +13,17 @@
     ./../hm/configurations/mpv
     ./../hm/configurations/discord
     ./../hm/configurations/udiskie
+    ./../hm/configurations/mako
     ./../hm/configurations/vim
     ./../hm/configurations/tmux
     ./../hm/go.nix
     ./../hm/python.nix
     ./../hm/rust.nix
+  ];
+
+  environment.systemPackages = with pkgs; [
+    grim
+    swaylock
   ];
 
   programs.mango = {
@@ -28,7 +34,6 @@
       dbus = {
         enable = true;
       };
-
       greetd = {
         enable = true;
         settings = {
@@ -38,7 +43,6 @@
           };
         };
       };
-
     };
 
   xdg.portal = {

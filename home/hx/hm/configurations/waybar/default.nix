@@ -106,7 +106,7 @@
           };
 
           pulseaudio = {
-            format = "{volume}%";
+            format = "Volume: {volume}%";
             format-muted = "Volume muted";
             on-click = "pavucontrol";
           };
@@ -155,7 +155,7 @@
 
           cpu = {
             interval = 10;
-            format = "{}% ";
+            format = "CPU: {}%";
             max-length = 10;
           };
 
