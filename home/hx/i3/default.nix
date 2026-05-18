@@ -50,6 +50,7 @@
           xsecurelock
           libnotify
           inotify-tools
+          xscreensaver
         ];
       };
     };

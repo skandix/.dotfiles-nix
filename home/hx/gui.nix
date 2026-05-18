@@ -10,35 +10,25 @@
     home.packages = with pkgs; [
       unstable.telegram-desktop
       unstable.signal-desktop
-      tor-browser
       unstable.mumble
       unstable.slack
       unstable.plexamp
-      wireshark
+      unstable.sublime3
       unstable.plex-desktop
+      unstable.remmina
+      unstable._1password-gui-beta
+      unstable.cider-2
+
+      wireshark
       seahorse
       obsidian
-      zathura
       netflix
-      unstable.sublime3
-      #librewolf
       vscode
-      #teams-for-linux
       zotero
       typst
-      #spotify
-      unstable.cider-2
-      #sonic-pi
-      xscreensaver
-      inkscape
-      #unstable.google-chrome
       anydesk
-      #thunderbird
-      chromium
       typst
-      unstable._1password-gui-beta
       gajim
-      unstable.remmina
     ];
   };
 }

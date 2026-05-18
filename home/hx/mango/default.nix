@@ -23,7 +23,8 @@
 
   environment.systemPackages = with pkgs; [
     grim
-    swaylock
+    wdisplays
+    waylock
   ];
 
   programs.mango = {
