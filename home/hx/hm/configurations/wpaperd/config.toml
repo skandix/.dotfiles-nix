@@ -1,6 +1,6 @@
 [default]
 path = "/home/hx/.dotfiles-nix/home/hx/wall/"
-duration = "1m"
+duration = "60m"
 sorting = "random"
 
 [default.transition.hexagonalize]

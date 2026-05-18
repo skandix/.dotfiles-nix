@@ -24,18 +24,21 @@
     enable = true;
   };
 
-    services.greetd = {
-      enable = true;
-      settings = {
-        # initial_session = {
-        #   command = "mango";
-        #   user = "hx"; # auto-login on first start, no password required
-        # };
-        default_session = {
-          command = "${pkgs.tuigreet}/bin/tuigreet --cmd mango";
-          user = "greeter";
+    services = {
+      dbus = {
+        enable = true;
+      };
+
+      greetd = {
+        enable = true;
+        settings = {
+          default_session = {
+            command = "${pkgs.tuigreet}/bin/tuigreet --cmd dbus-run-session mango";
+            user = "greeter";
+          };
         };
       };
+
     };
 
   xdg.portal = {
