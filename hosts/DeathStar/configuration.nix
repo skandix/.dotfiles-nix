@@ -16,7 +16,7 @@
     ../../home/hx/gui.nix
     ../../home/hx/cli.nix
     ../../home/hx/dev.nix
-    ../../home/hx/i3
+    ../../home/hx/mango
 
     # Common
     ../../common/intelcpu.nix

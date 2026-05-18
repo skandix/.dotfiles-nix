@@ -20,7 +20,7 @@
         .modules-left > widget,
         .modules-center > widget,
         .modules-right > widget {
-            padding: 0 6px;
+            padding: 0 12px;
         }
 
         #tags button {
@@ -29,13 +29,16 @@
             background: transparent;
             border-bottom: 2px solid transparent;
         }
+
         #tags button.occupied {
             color: #ffffff;
         }
+
         #tags button.focused {
             color: #ffffff;
             border-bottom: 2px solid #ff00ff;
         }
+
         #tags button.urgent {
             color: #ff0000;
         }
@@ -45,7 +48,6 @@
             font-style: italic;
         }
 
-
         #custom-public-ip {
             color: #ff0000;
         }
@@ -54,44 +56,40 @@
             color: #00ff00;
         }
 
-        #disk,
-        #memory {
-            color: #ff00ff;
-        }
-
         #custom-weather {
             color: #A4C2F4;
         }
 
-        #clock {
-            color: #ff00ff;
-        }
-
         #pulseaudio.muted {
-            color: #888888;
+            color: #ff0000;
         }
 
         #tray {
-            padding: 0 4px;
+            padding: 0 8px;
         }
+        #privacy-item {
+          color: #ff0000;
+          }
       '';
+
       settings = {
         mainBar = {
           layer = "top";
           position = "top";
           height = 28;
-          spacing = 4;
+          spacing = 24;
 
           modules-left = [ "dwl/tags" "dwl/window" ];
           modules-center = [ "custom/beats" ];
           modules-right = [
-            "custom/uptime"
+            "privacy"
             "pulseaudio"
             "custom/public-ip"
             "network"
-            "custom/load"
-            "disk"
+            "load"
+            "cpu"
             "memory"
+            "disk"
             "custom/weather"
             "clock"
             "tray"
@@ -107,65 +105,86 @@
             tooltip = false;
           };
 
-          "custom/uptime" = {
-            exec = "uptime | cut -d' ' -f2";
-            interval = 60;
-            format = "up {}";
-            tooltip = false;
-          };
-
           pulseaudio = {
-            format = "Volume {volume}%";
+            format = "{volume}%";
             format-muted = "Volume muted";
             on-click = "pavucontrol";
           };
 
+          privacy = {
+            icon-spacing = 4;
+            icon-size = 18;
+            transition-duration = 250;
+            modules = [
+              {
+			    type = "screenshare";
+			    tooltip = true;
+			    tooltip-icon-size = 24;
+        	  }
+		      {
+			    type = "audio-out";
+			    tooltip = true;
+			    tooltip-icon-size = 24;
+		      }
+		      {
+			    type = "audio-in";
+			    tooltip = true;
+		    	tooltip-icon-size = 24;
+              }
+        ];
+      };
+
           "custom/public-ip" = {
             exec = "${pkgs.curl}/bin/curl -s https://icanhazip.com";
             interval = 300;
-            format = "public {}";
+            format = "{}";
             tooltip = false;
+          };
+
+          load = {
+            interval = 1;
+            format = "1m:{load1} 5m:{load5} 15m:{load15}";
           };
 
           network = {
             format-ethernet = "{ipaddr}";
             format-wifi = "{ipaddr}";
-            format-disconnected = "no network";
+            format-disconnected = "NO NETWORK 👀";
             tooltip-format = "{ifname} — {ipaddr}/{cidr}";
           };
 
-          "custom/load" = {
-            exec = "uptime | awk -F'load average:' '{print $2}' | xargs";
-            interval = 5;
-            tooltip = false;
+          cpu = {
+            interval = 10;
+            format = "{}% ";
+            max-length = 10;
           };
 
           disk = {
             interval = 30;
-            format = "Disk: {free}/{total}";
-            path = "/";
+            format = "DISK: {free}/{total}";
           };
 
           memory = {
             interval = 5;
-            format = "RAM: {used:0.1f}G/{total:0.1f}G";
+            format = "MEM: {used:0.1f}G/{total:0.1f}G";
           };
 
           "custom/weather" = {
             exec = "${pkgs.curl}/bin/curl -Ss 'https://wttr.in/Grimstad?format=2'";
-            interval = 1800;
+            interval = 60;
             tooltip = false;
           };
 
           clock = {
             format = " {:%a, %d %b - %H:%M:%S} ";
             interval = 1;
-            tooltip-format = "<tt><small>{calendar}</small></tt>";
+            tooltip-format = "<tt><medium>{calendar}</medium></tt>";
+            timezone = "Europe/Oslo";
           };
 
           tray = {
-            icon-size = 18;
-            spacing = 8;
+            icon-size = 24;
+            spacing = 12;
           };
         };
       };
