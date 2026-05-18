@@ -6,7 +6,7 @@
       enable = true;
       settings = {
         "actionable=true" = {
-          anchor = "top-left";
+          anchor = "top-right";
         };
 
         actions = true;
