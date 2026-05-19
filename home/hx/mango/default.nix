@@ -4,8 +4,8 @@
   imports = [
     inputs.mangowm.nixosModules.mango
 
-    ./../hm/configurations/satty
     ./../hm/configurations/waybar
+    ./../hm/configurations/flameshot
     ./../hm/configurations/rofi
     ./../hm/configurations/wpaperd
     ./../hm/configurations/librewolf
@@ -22,7 +22,6 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    grim
     wdisplays
     waylock
   ];
@@ -35,6 +34,7 @@
       dbus = {
         enable = true;
       };
+
       greetd = {
         enable = true;
         settings = {
@@ -44,6 +44,7 @@
           };
         };
       };
+
     };
 
   xdg.portal = {

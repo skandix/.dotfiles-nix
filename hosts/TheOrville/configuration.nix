@@ -55,6 +55,8 @@
 
   zramSwap = {
     enable = true;
+    algorithm = "zstd";
+    memoryPercent = 50;
   };
 
   systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.

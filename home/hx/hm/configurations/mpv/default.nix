@@ -3,8 +3,13 @@
 {
 
 home-manager.users.hx = {
+  programs.mpv = {
+    enable = true;
+  };
+
+
+  # TODO: add config inline
   home.packages = with pkgs; [
-    mpv
     yt-dlp
     streamlink
     ffmpeg
