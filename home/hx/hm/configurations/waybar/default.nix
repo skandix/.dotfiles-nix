@@ -136,7 +136,7 @@
 
           "custom/public-ip" = {
             exec = "${pkgs.curl}/bin/curl -s https://icanhazip.com";
-            interval = 300;
+            interval = 1;
             format = "{}";
             tooltip = false;
           };
@@ -151,6 +151,7 @@
             format-wifi = "{ipaddr}";
             format-disconnected = "NO NETWORK 👀";
             tooltip-format = "{ifname} — {ipaddr}/{cidr}";
+            interval = 1;
           };
 
           cpu = {
