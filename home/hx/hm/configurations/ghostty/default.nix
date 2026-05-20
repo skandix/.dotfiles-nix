@@ -14,7 +14,7 @@
 
       settings = {
         keybind = [
-         "alt+b=toggle_tab_overview"
+          "alt+b=toggle_tab_overview"
           "ctrl+t=new_tab"
           "ctrl+shift+w=close_tab"
           "ctrl+n=toggle_quick_terminal"

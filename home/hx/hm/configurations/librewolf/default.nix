@@ -6,7 +6,7 @@
       enable = true;
       package = unstable.librewolf;
       settings = {
-        "webgl.disabled" = true;
+        "webgl.disabled" = false;
         "privacy.resistFingerprinting" = false;
         "privacy.clearOnShutdown.history" = true;
         "privacy.clearOnShutdown.cookies" = false;

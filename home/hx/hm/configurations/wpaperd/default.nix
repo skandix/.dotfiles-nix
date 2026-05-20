@@ -2,7 +2,19 @@
 
 {
   home-manager.users.hx = {
-    home.packages = with pkgs; [ wpaperd ];
-    xdg.configFile = { "wpaperd/config.toml".source = ./config.toml; };
+    services.wpaperd = {
+      enable = true;
+      settings = {
+        default = {
+          path = "/home/hx/.dotfiles-nix/home/hx/wall/";
+          duration = "60m";
+          sorting = "random";
+        };
+        default.transition.hexagonalize = {
+          steps = 50;
+          horizontal-hexagons = 20.0;
+        };
+      };
+    };
   };
 }

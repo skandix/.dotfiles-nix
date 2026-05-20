@@ -6,8 +6,7 @@
       enable = true;
       style = ''
         * {
-            font-family: "Terminus", monospace;
-            font-size: 12px;
+            font-size: 16px;
             min-height: 0;
         }
 
@@ -24,7 +23,7 @@
         }
 
         #tags button {
-            padding: 0 6px;
+            padding: 0 4px;
             color: #888;
             background: transparent;
             border-bottom: 2px solid transparent;
@@ -56,17 +55,14 @@
             color: #00ff00;
         }
 
-        #custom-weather {
-            color: #A4C2F4;
-        }
-
         #pulseaudio.muted {
             color: #ff0000;
         }
 
         #tray {
-            padding: 0 8px;
+            padding: 0 4px;
         }
+
         #privacy-item {
           color: #ff0000;
           }
@@ -76,8 +72,8 @@
         mainBar = {
           layer = "top";
           position = "top";
-          height = 28;
-          spacing = 24;
+          height = 24;
+          spacing = 6;
 
           modules-left = [ "dwl/tags" "dwl/window" ];
           modules-center = [ "custom/beats" ];
@@ -86,11 +82,9 @@
             "pulseaudio"
             "custom/public-ip"
             "network"
-            "load"
             "cpu"
             "memory"
             "disk"
-            "custom/weather"
             "clock"
             "tray"
           ];
@@ -112,7 +106,7 @@
           };
 
           privacy = {
-            icon-spacing = 4;
+            icon-spacing = 2;
             icon-size = 18;
             transition-duration = 250;
             modules = [
@@ -141,11 +135,6 @@
             tooltip = false;
           };
 
-          load = {
-            interval = 1;
-            format = "1m:{load1} 5m:{load5} 15m:{load15}";
-          };
-
           network = {
             format-ethernet = "{ipaddr}";
             format-wifi = "{ipaddr}";
@@ -170,12 +159,6 @@
             format = "MEM: {used:0.1f}G/{total:0.1f}G";
           };
 
-          "custom/weather" = {
-            exec = "${pkgs.curl}/bin/curl -Ss 'https://wttr.in/Grimstad?format=2'";
-            interval = 60;
-            tooltip = false;
-          };
-
           clock = {
             format = " {:%a, %d %b - %H:%M:%S} ";
             interval = 1;
@@ -184,8 +167,8 @@
           };
 
           tray = {
-            icon-size = 24;
-            spacing = 12;
+            icon-size = 12;
+            spacing = 6;
           };
         };
       };

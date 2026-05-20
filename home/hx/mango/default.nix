@@ -12,6 +12,7 @@
     ./../hm/configurations/ghostty
     ./../hm/configurations/mpv
     ./../hm/configurations/discord
+    ./../hm/configurations/swaylock
     ./../hm/configurations/udiskie
     ./../hm/configurations/mako
     ./../hm/configurations/vim
