@@ -1,9 +1,10 @@
-{ pkgs, ... }:
+{ unstable, pkgs, ... }:
 
 {
   home-manager.users.hx = {
     services.flameshot = {
       enable = true;
+      package = pkgs.unstable.flameshot.override { enableWlrSupport = true; };
       settings = {
         General = {
           disabledTrayIcon = true;
