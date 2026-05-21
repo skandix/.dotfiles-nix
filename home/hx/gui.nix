@@ -29,6 +29,7 @@
       anydesk
       typst
       gajim
+      xournalpp
     ];
   };
 }
