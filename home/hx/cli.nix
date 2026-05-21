@@ -30,6 +30,9 @@
       xclip
       taskwarrior3
       taskwarrior-tui
+      wshowkeys
+      wf-recorder
+      playerctl
 
       # SRE
       talosctl

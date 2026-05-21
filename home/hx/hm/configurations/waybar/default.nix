@@ -19,7 +19,7 @@
         .modules-left > widget,
         .modules-center > widget,
         .modules-right > widget {
-            padding: 0 12px;
+            padding: 0 0px;
         }
 
         #tags button {
@@ -35,7 +35,7 @@
 
         #tags button.focused {
             color: #ffffff;
-            border-bottom: 2px solid #ff00ff;
+            border-bottom: 4px solid #ff00ff;
         }
 
         #tags button.urgent {
@@ -65,7 +65,15 @@
 
         #privacy-item {
           color: #ff0000;
-          }
+        }
+
+        #custom-seperator {
+          color: #ff00ff;
+        }
+
+        .modules-right > widget > * {
+          margin-right: 10px;
+        }
       '';
 
       settings = {
@@ -73,29 +81,45 @@
           layer = "top";
           position = "top";
           height = 24;
-          spacing = 6;
+          spacing = 2;
 
-          modules-left = [ "dwl/tags" "dwl/window" ];
-          modules-center = [ "custom/beats" ];
+          modules-left = [ "dwl/tags" ];
+          modules-center = [ "custom/seperator" "custom/beats" "custom/seperator" ];
           modules-right = [
+            "custom/seperator"
             "privacy"
+            "custom/seperator"
             "pulseaudio"
+            "custom/seperator"
             "custom/public-ip"
+            "custom/seperator"
             "network"
+            "custom/seperator"
             "cpu"
+            "custom/seperator"
             "memory"
+            "custom/seperator"
             "disk"
+            "custom/seperator"
             "clock"
+            "custom/seperator"
             "tray"
           ];
 
           "dwl/tags" = { num-tags = 9; };
-          "dwl/window" = { max-length = 60; };
+          #"dwl/window" = { max-length = 0; };
 
           "custom/beats" = {
-            exec = ''echo "$(${pkgs.playerctl}/bin/playerctl metadata artist 2>/dev/null) - $(${pkgs.playerctl}/bin/playerctl metadata title 2>/dev/null)"'';
+            exec = ''echo "$(playerctl metadata artist 2>/dev/null) - $(playerctl metadata title 2>/dev/null)"'';
             interval = 2;
             max-length = 60;
+            tooltip = false;
+          };
+
+          # OMEGA HACKY; but if anyone know how to fix, plz show me
+          "custom/seperator" = {
+            format = "λ";
+            interval = "once";
             tooltip = false;
           };
 
@@ -107,7 +131,6 @@
 
           privacy = {
             icon-spacing = 2;
-            icon-size = 18;
             transition-duration = 250;
             modules = [
               {
@@ -129,7 +152,7 @@
       };
 
           "custom/public-ip" = {
-            exec = "${pkgs.curl}/bin/curl -s https://icanhazip.com";
+            exec = "curl -s https://icanhazip.com";
             interval = 1;
             format = "{}";
             tooltip = false;
@@ -145,18 +168,18 @@
 
           cpu = {
             interval = 10;
-            format = "CPU: {}%";
+            format = "🧠: {}%";
             max-length = 10;
           };
 
           disk = {
             interval = 30;
-            format = "DISK: {free}/{total}";
+            format = "💾: {free}";
           };
 
           memory = {
             interval = 5;
-            format = "MEM: {used:0.1f}G/{total:0.1f}G";
+            format = ":🐏: {used:0.1f}G";
           };
 
           clock = {
@@ -167,8 +190,8 @@
           };
 
           tray = {
-            icon-size = 12;
-            spacing = 6;
+            icon-size = 24;
+            spacing = 12;
           };
         };
       };
