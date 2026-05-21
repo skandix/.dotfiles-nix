@@ -4,11 +4,9 @@
   home-manager.users.hx = {
     services.flameshot = {
       enable = true;
-      package = unstable.flameshot.override { enableWlrSupport = true; };
+      package = pkgs.unstable.flameshot.override { enableWlrSupport = true; };
       settings = {
         General = {
-          useGrimAdapter = true;
-          disabledGrimWarning = true;
           disabledTrayIcon = true;
           contrastOpacity = 204;
           drawThickness = 10;
