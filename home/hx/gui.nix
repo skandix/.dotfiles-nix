@@ -29,7 +29,7 @@
       anydesk
       typst
       gajim
-      xournalpp
+      kdePackages.okular
     ];
   };
 }
