@@ -27,7 +27,7 @@
     ../../common/virtualization.nix
     ../../common/health.nix
     ../../common/autoUpgrade.nix
-    ../../common/vscode-server.nix
+    #../../common/vscode-server.nix
   ];
 
   environment.etc."ssh/banner".source = ./ssh_banner;

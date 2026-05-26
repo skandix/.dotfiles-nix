@@ -25,7 +25,7 @@
     ../../common/ssh-client.nix
     ../../common/sshd.nix
     ../../common/autoUpgrade.nix
-    ../../common/vscode-server.nix
+    #../../common/vscode-server.nix
   ];
 
   environment.etc."ssh/banner".source = ./ssh_banner;
