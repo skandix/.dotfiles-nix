@@ -65,6 +65,6 @@
     "flakes"
   ];
 
-  home-manager.users.hx.home.stateVersion = "25.11";
-  system.stateVersion = "25.11";
+  home-manager.users.hx.home.stateVersion = "26.05";
+  system.stateVersion = "26.05";
 }

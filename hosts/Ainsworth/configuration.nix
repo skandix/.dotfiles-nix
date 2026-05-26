@@ -28,22 +28,24 @@
     ../../common/vscode-server.nix
   ];
 
-  services.openssh = {
-    banner = "
- ▗▄▖ ▗▄▄▄▖▗▖  ▗▖ ▗▄▄▖▗▖ ▗▖ ▗▄▖ ▗▄▄▖▗▄▄▄▖▗▖ ▗▖
-▐▌ ▐▌  █  ▐▛▚▖▐▌▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌ ▐▌ █  ▐▌ ▐▌
-▐▛▀▜▌  █  ▐▌ ▝▜▌ ▝▀▚▖▐▌ ▐▌▐▌ ▐▌▐▛▀▚▖ █  ▐▛▀▜▌
-▐▌ ▐▌▗▄█▄▖▐▌  ▐▌▗▄▄▞▘▐▙█▟▌▝▚▄▞▘▐▌ ▐▌ █  ▐▌ ▐▌
-";
-};
-  boot.loader = {
-    systemd-boot = {
-      enable = true;
-      editor = false;
+  environment.etc."ssh/banner".source = ./ssh_banner;
+  services.openssh.settings.Banner = "/etc/ssh/banner";
+
+
+  boot = {
+    zfs = {
+      forceImportRoot = false;
     };
 
-    efi = {
-      canTouchEfiVariables = false;
+    loader = {
+      systemd-boot = {
+        enable = true;
+        editor = false;
+      };
+
+      efi = {
+        canTouchEfiVariables = false;
+      };
     };
   };
 
@@ -77,6 +79,6 @@
     "flakes"
   ];
 
-  home-manager.users.hx.home.stateVersion = "25.11";
-  system.stateVersion = "25.11";
+  home-manager.users.hx.home.stateVersion = "26.05";
+  system.stateVersion = "26.05";
 }

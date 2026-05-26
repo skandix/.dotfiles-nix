@@ -12,7 +12,6 @@
     libgcc
     gcc
     cmake
-    extra-cmake-modules
     act
     nodejs_24
     yarn
