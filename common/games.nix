@@ -6,6 +6,12 @@
 }:
 
 {
+  # fix openldap issue with lutris
+  nixpkgs.overlays = [
+    (final: prev: {
+      openldap = prev.openldap.overrideAttrs (_: { doCheck = false; });
+    })
+  ];
 
   hardware.graphics = {
     enable = true;

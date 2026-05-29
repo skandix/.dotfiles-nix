@@ -20,7 +20,7 @@
 
   };
   environment.systemPackages = with pkgs; [
-    helvum
+    crosspipe
     pamixer
     pasystray
     pulseaudio
