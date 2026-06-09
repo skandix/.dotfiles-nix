@@ -32,7 +32,6 @@
     ../../common/ssh-client.nix
     ../../common/virtualization.nix
     ../../common/health.nix
-    ../../common/autoUpgrade.nix
     ../../common/storage-devices.nix
   ];
 
