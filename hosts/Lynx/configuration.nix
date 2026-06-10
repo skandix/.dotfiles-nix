@@ -74,11 +74,11 @@
       };
     };
     hostId = "666dc31b";
-    #firewall = {
-      #enable = true;
-      #allowedTCPPorts = [ 32400 21063 6123 8123 21064 ];
-      #allowedUDPPorts = [ 5353 1900 ];
-    #};
+    firewall = {
+      enable = true;
+      allowedTCPPorts = [ 80 443 22 ];
+      allowedUDPPorts = [ 80 443 ];
+    };
   };
 
   nix.settings.experimental-features = [
