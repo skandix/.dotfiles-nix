@@ -10,6 +10,7 @@
     ../../../home/hx/hm/configurations/vim/macos.nix
   ];
 
+
   programs = {
     home-manager = {
       enable = true;

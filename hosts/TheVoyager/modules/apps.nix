@@ -60,22 +60,19 @@
       "kubernetes-cli"
       "k9s"
       "openstackclient"
-      "poetry"
       "kubecolor"
       "netcat"
       "nmap"
       "tcpdump"
       "speedtest-cli"
-      "uv"
       "zsh"
       "neovim"
       "tmux"
       "go"
-      "rustup"
+      #"rustup"
       "marp-cli"
       "uv"
       "ruff"
-      "mole"
     ];
 
     # `brew install --cask`
@@ -95,19 +92,19 @@
       "steam"
       "obsidian"
       "plexamp"
-      "container"
+      #"container"
       "rectangle"
-      "google-chrome"
-      "inkscape"
-      "gimp"
+      #"google-chrome"
+      #"inkscape"
+      #"gimp"
       "zotero"
-      "blender"
-      "macfuse"
+      #"blender"
+      #"macfuse"
       "1password"
     ];
 
      masApps = {
-       Amphetamine = 937984704;
+       #Amphetamine = 937984704;
        Wireguard = 1451685025;
        Tailscale = 1475387142;
        Telegram = 747648890;
