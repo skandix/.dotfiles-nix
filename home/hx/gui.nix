@@ -25,7 +25,6 @@
       netflix
       vscode
       zotero
-      typst
       anydesk
       typst
       gajim
