@@ -25,6 +25,7 @@
   environment.systemPackages = with pkgs; [
     wdisplays
     waylock
+    wlr-randr
   ];
 
   programs.mango = {
