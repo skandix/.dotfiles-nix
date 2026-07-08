@@ -24,7 +24,7 @@ in
         vim-gitgutter
         telescope-nvim
         ansible-vim
-        vim-polyglot
+        #vim-polyglot
         rainbow
         nvim-lspconfig
       ];
