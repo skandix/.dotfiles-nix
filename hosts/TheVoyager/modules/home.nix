@@ -25,7 +25,7 @@
     sessionVariables = {
       PAGER = "less";
       BROWSER = "librewolf";
-      EDITOR = "vim";
+      #EDITOR = "vim";
       SHELL = "zsh";
       TERMINAL = "ghostty";
     };
