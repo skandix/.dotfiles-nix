@@ -26,7 +26,7 @@
       ranger
       bat
       marp-cli
-      makemkv
+      #makemkv
       xclip
       taskwarrior3
       taskwarrior-tui
