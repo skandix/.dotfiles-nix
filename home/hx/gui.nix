@@ -19,6 +19,7 @@
       unstable._1password-gui-beta
       unstable.cider-2
 
+      spotify
       wireshark
       seahorse
       obsidian
@@ -29,6 +30,9 @@
       typst
       gajim
       kdePackages.okular
+      qgis
+      qFlipper
+      imhex
     ];
   };
 }
