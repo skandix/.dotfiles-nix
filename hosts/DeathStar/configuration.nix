@@ -33,6 +33,7 @@
     ../../common/virtualization.nix
     ../../common/health.nix
     ../../common/storage-devices.nix
+    ../../common/games.nix
   ];
 
   boot.loader = {
