@@ -7,8 +7,8 @@
       package = unstable.flameshot.override { enableWlrSupport = true; };
       settings = {
         General = {
-          useGrimAdapter = true;
-          disabledGrimWarning = true;
+          #useGrimAdapter = true;
+          #disabledGrimWarning = true;
           disabledTrayIcon = true;
           contrastOpacity = 204;
           drawThickness = 10;
