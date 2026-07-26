@@ -36,6 +36,7 @@
       # SRE
       talosctl
       kubectl
+      krew
       kubecolor
       opentofu
       ansible
