@@ -25,6 +25,7 @@
     ../../common/ssh-client.nix
     ../../common/sshd.nix
     ../../common/autoUpgrade.nix
+    ../../common/virtualization.nix
     #../../common/vscode-server.nix
   ];
 
