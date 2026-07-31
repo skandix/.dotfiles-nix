@@ -1,11 +1,15 @@
 { config, unstable, pkgs, ... }:
 
 {
-  virtualisation = {
-    cores = 4;
-    useEFIBoot = true;
+  programs = {
+    virt-manager = {
+      enable = true;
+    };
+  };
 
-    spiceUSBRedirection.enable = true;
+  virtualisation = {
+    #useEFIBoot = true;
+    #spiceUSBRedirection.enable = true;
 
     libvirtd = {
       enable = true;
@@ -13,14 +17,10 @@
       onShutdown = "shutdown";
     };
 
-    virt-manager = {
-      enable = true;
-    };
 
-    qemu = {
-      package = unstable.qemu_kvm;
-      foreceAccel = true;
-    };
+    #qemu = {
+      #foreceAccel = true;
+    #};
   };
 
   services = {
