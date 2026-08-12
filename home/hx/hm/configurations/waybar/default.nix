@@ -83,7 +83,7 @@
           height = 24;
           spacing = 2;
 
-          modules-left = [ "dwl/tags" ];
+          modules-left = [ "mango/workspaces" ];
           modules-center = [ "custom/seperator" "custom/beats" "custom/seperator" ];
           modules-right = [
             "custom/seperator"
@@ -106,8 +106,14 @@
             "tray"
           ];
 
-          "dwl/tags" = { num-tags = 9; };
-          #"dwl/window" = { max-length = 0; };
+
+          "mango/workspaces" = {
+              format = "{icon}";
+              hide-empty = true;
+              on-click = "activate";
+              on-click-right = "toggle";
+              overview-label = "OVERVIEW";
+          };
 
           "custom/beats" = {
             exec = ''echo "$(playerctl metadata artist 2>/dev/null) - $(playerctl metadata title 2>/dev/null)"'';
@@ -185,7 +191,7 @@
           clock = {
             format = " {:%a, %d %b - %H:%M:%S} ";
             interval = 1;
-            tooltip-format = "<tt><medium>{calendar}</medium></tt>";
+            tooltip-format = "<tt><span weight='medium'>{calendar}</span></tt>";
             timezone = "Europe/Oslo";
           };
 
