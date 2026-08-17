@@ -16,5 +16,6 @@
     nodejs_24
     yarn
     shellcheck
+    platformio-core
   ];
 }
