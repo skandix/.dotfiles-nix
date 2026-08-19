@@ -9,6 +9,7 @@
           path = "/home/hx/.dotfiles-nix/home/hx/wall/";
           duration = "60m";
           sorting = "random";
+          mode = "center";
         };
         default.transition.hexagonalize = {
           steps = 50;
