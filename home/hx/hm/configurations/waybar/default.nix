@@ -22,23 +22,23 @@
             padding: 0 0px;
         }
 
-        #tags button {
+        #workspaces button {
             padding: 0 4px;
             color: #888;
             background: transparent;
             border-bottom: 2px solid transparent;
         }
 
-        #tags button.occupied {
+        #workspaces button.occupied {
             color: #ffffff;
         }
 
-        #tags button.focused {
+        #workspaces button.focused {
             color: #ffffff;
             border-bottom: 4px solid #ff00ff;
         }
 
-        #tags button.urgent {
+        #workspaces button.urgent {
             color: #ff0000;
         }
 
@@ -83,7 +83,7 @@
           height = 24;
           spacing = 2;
 
-          modules-left = [ "mango/workspaces" ];
+          modules-left = [ "ext/workspaces" ];
           modules-center = [ "custom/seperator" "custom/beats" "custom/seperator" ];
           modules-right = [
             "custom/seperator"
