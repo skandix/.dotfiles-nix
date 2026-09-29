@@ -30,10 +30,10 @@
     fsType = "ext4";
   };
 
-  fileSystems."/mnt/slush" = {
-    device = "slush";
-    fsType = "zfs";
-  };
+  #fileSystems."/mnt/slush" = {
+    #device = "slush";
+    #fsType = "zfs";
+  #};
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";
