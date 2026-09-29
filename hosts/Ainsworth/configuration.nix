@@ -21,6 +21,7 @@
     ../../common/tailscale.nix
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
+    ../../common/health.nix
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
     ../../common/sshd.nix
@@ -32,12 +33,23 @@
   environment.etc."ssh/banner".source = ./ssh_banner;
   services.openssh.settings.Banner = "/etc/ssh/banner";
 
-
-  boot = {
-    zfs = {
-      forceImportRoot = false;
+  services.zfs = {
+    autoScrub = {
+      enable = true;
+      interval = "monthly";
     };
 
+    trim = {
+      enable = true;
+    };
+  };
+
+  systemd.services.docker = {
+    after = [ "zfs-mount.service" ];
+    wants = [ "zfs-mount.service" ];
+  };
+
+  boot = {
     loader = {
       systemd-boot = {
         enable = true;

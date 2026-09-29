@@ -24,16 +24,12 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "zfs" ];
+  boot.zfs.extraPools = [ "slush" ];
 
   fileSystems."/mnt/cache" = {
     device = "/dev/disk/by-uuid/1b7259e4-c118-4c05-a219-4ecf5ea8f69d";
     fsType = "ext4";
   };
-
-  #fileSystems."/mnt/slush" = {
-    #device = "slush";
-    #fsType = "zfs";
-  #};
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";
