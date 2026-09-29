@@ -24,7 +24,10 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "zfs" ];
-  boot.zfs.extraPools = [ "slush" ];
+  boot.zfs = {
+    extraPools = [ "slush" ];
+    forceImportRoot = false;
+  };
 
   fileSystems."/mnt/cache" = {
     device = "/dev/disk/by-uuid/1b7259e4-c118-4c05-a219-4ecf5ea8f69d";
