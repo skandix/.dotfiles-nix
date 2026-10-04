@@ -1,21 +1,15 @@
-{ unstable, config, pkgs, ... }:
+{ ... }:
 
 {
-
   imports = [
-    ../../../home/hx/hm/configurations/fish
+    ../../../home/hx/hm/configurations/zsh
     ../../../home/hx/hm/configurations/git
-    ../../../home/hx/hm/configurations/mpv/macos.nix
-    ../../../home/hx/hm/configurations/tmux/macos.nix
-    ../../../home/hx/hm/configurations/vim/macos.nix
+    ../../../home/hx/hm/configurations/mpv
+    ../../../home/hx/hm/configurations/tmux
+    ../../../home/hx/hm/configurations/vim
   ];
 
-
-  programs = {
-    home-manager = {
-      enable = true;
-    };
-  };
+  programs.home-manager.enable = true;
 
   home = {
     username = "hx";
@@ -25,7 +19,6 @@
     sessionVariables = {
       PAGER = "less";
       BROWSER = "librewolf";
-      #EDITOR = "vim";
       SHELL = "zsh";
       TERMINAL = "ghostty";
     };
