@@ -12,7 +12,6 @@
 
     home.packages = with pkgs; [
       p7zip
-      gnome-keyring
       jq
       htop
       wget
@@ -21,8 +20,6 @@
       ranger
       bat
       marp-cli
-      xclip
-      playerctl
       typst
 
       # SRE

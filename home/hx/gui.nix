@@ -6,7 +6,6 @@
 }:
 
 {
-
   home-manager.users.hx = {
     imports = [
       ./hm/configurations/librewolf
@@ -14,6 +13,14 @@
       ./hm/configurations/mpv
       ./hm/configurations/discord
     ];
+
+    gtk = {
+      enable = true;
+      theme = {
+        name = "Adwaita-dark";
+        package = pkgs.gnome-themes-extra;
+      };
+    };
 
     home.packages = with pkgs; [
       unstable.telegram-desktop
@@ -26,7 +33,9 @@
       unstable._1password-gui-beta
       unstable.cider-2
 
-      wireshark
+      playerctl
+      xclip
+      gnome-keyring
       seahorse
       obsidian
       vscode
@@ -38,5 +47,11 @@
       qFlipper
       imhex
     ];
+  };
+
+
+  programs.wireshark = {
+    enable = true;
+    package = pkgs.wireshark;
   };
 }
