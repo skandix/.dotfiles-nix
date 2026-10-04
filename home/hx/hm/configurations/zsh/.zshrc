@@ -17,8 +17,16 @@ zinit wait lucid for \
 
 ## KEY ##
 bindkey -e
-bindkey '^[[H'    beginning-of-line   # Home
-bindkey '^[[F'    end-of-line         # End
+
+bindkey '^[[H'    beginning-of-line   # Home (normal mode)
+bindkey '^[OH'    beginning-of-line   # Home (application mode)
+bindkey '^[[1~'   beginning-of-line   # Home (tmux)
+bindkey '^[[7~'   beginning-of-line   # Home (rxvt)
+bindkey '^[[F'    end-of-line         # End (normal mode)
+bindkey '^[OF'    end-of-line         # End (application mode)
+bindkey '^[[4~'   end-of-line         # End (tmux)
+bindkey '^[[8~'   end-of-line         # End (rxvt)
+
 bindkey '^[[3~'   delete-char         # Delete
 bindkey '^[[1;5C' forward-word        # Ctrl+Right
 bindkey '^[[1;5D' backward-word       # Ctrl+Left
@@ -30,7 +38,6 @@ setopt auto_pushd
 setopt pushd_ignore_dups
 setopt AUTO_CD
 setopt CORRECT
-setopt CORRECT_ALL
 
 ## TAB COMP ##
 zstyle ':completion:*' menu select
