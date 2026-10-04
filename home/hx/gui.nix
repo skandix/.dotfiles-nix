@@ -10,7 +10,6 @@
       ./modules/librewolf
       ./modules/ghostty
       ./modules/mpv
-      ./modules/discord
     ];
 
     gtk = {
