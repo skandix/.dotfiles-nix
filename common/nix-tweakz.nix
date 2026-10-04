@@ -13,13 +13,15 @@
 
   nix = {
     settings = {
-      auto-optimise-store = true;
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
       trusted-users = [
         "root"
         "hx"
       ];
       extra-substituters = [
-        "https://cache.nixos.org"
         "https://nix-community.cachix.org"
         "https://nix-gaming.cachix.org"
       ];
@@ -39,10 +41,8 @@
       automatic = true;
     };
   };
+
   security.pam = {
-    krb5 = {
-      enable = true;
-    };
     loginLimits = [
       {
         domain = "*";

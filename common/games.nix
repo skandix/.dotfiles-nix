@@ -20,10 +20,7 @@
     enable32Bit = true;
   };
 
-  services = {
-    pulseaudio.support32Bit = true;
-    flatpak.enable = true;
-  };
+  services.flatpak.enable = true;
 
   programs.steam = {
     enable = true;
@@ -57,10 +54,8 @@
   environment.systemPackages = with pkgs; [
     lutris
     winetricks # wine
-    wine-staging # wine
     winePackages.stagingFull # wine
     r2modman # risk of rain 2 mod manager
-    protontricks # winetricks but with proton
     prismlauncher # minecraft launcher
     unstable.wowup-cf # wow addoon manager
     protonplus # proton manager
