@@ -40,9 +40,6 @@
     # Nix-Homebrew Darwin
     nix-homebrew = { url = "github:zhaofengli/nix-homebrew"; };
 
-    # Nix-Flatpak
-    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.6.0";
-
     # Vscode Server
     vscode-server.url = "github:nix-community/nixos-vscode-server";
 
@@ -54,19 +51,21 @@
   };
 
   outputs = inputs@{ self, nixpkgs, disko, nix-index-db, nixpkgs-unstable
-    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, nix-flatpak, vscode-server, default-browser, nixos-fonts, ... }:
+    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, vscode-server, default-browser, nixos-fonts, ... }:
 
     let
-      system = "x86_64-linux";
-      #unstable = nixpkgs-unstable.legacyPackages.${system};
-      unstable = import nixpkgs-unstable { inherit system;  config.allowUnfree = true; };
+      mkUnstable = system: import nixpkgs-unstable {
+        inherit system;
+        config.allowUnfree = true;
+      };
+
     in {
       nixosConfigurations = {
 
         Ainsworth = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;
-            inherit unstable;
+            unstable = mkUnstable "x86_64-linux";
           };
           modules = [
             ./hosts/Ainsworth/configuration.nix
@@ -79,7 +78,7 @@
         Lynx = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;
-            inherit unstable;
+            unstable = mkUnstable "x86_64-linux";
           };
           modules = [
             ./hosts/Lynx/configuration.nix
@@ -93,7 +92,7 @@
         MillenniumFalcon = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;
-            inherit unstable;
+            unstable = mkUnstable "x86_64-linux";
           };
           modules = [
             ./hosts/MillenniumFalcon/configuration.nix
@@ -106,7 +105,7 @@
         DeathStar = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;
-            inherit unstable;
+            unstable = mkUnstable "x86_64-linux";
           };
           modules = [
             ./hosts/DeathStar/configuration.nix
@@ -118,7 +117,7 @@
         #Cerritos = nixpkgs.lib.nixosSystem {
           #specialArgs = {
             #inherit inputs;
-            #inherit unstable;
+            #unstable = mkUnstable "x86_64-linux";
           #};
           #modules = [
             #./hosts/Cerritos/configuration.nix
@@ -131,7 +130,7 @@
         TheOrville = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;
-            inherit unstable;
+            unstable = mkUnstable "x86_64-linux";
           };
           modules = [
             ./hosts/TheOrville/configuration.nix
@@ -140,25 +139,14 @@
           ];
         };
 
-        #SpaceCruiser = nixpkgs.lib.nixosSystem {
-          #specialArgs = {
-            #inherit inputs;
-            #inherit unstable;
-          #};
-          #modules = [
-            #./hosts/SpaceCruiser/configuration.nix
-            #inputs.home-manager.nixosModules.default
-            #nix-index-db.nixosModules.nix-index
-          #];
-        #};
       };
 
+      ### MACOS ###
       darwinConfigurations = {
         TheVoyager = nix-darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
           specialArgs = {
             inherit inputs;
-            inherit unstable;
+            unstable = mkUnstable "aarch64-darwin";
           };
           modules = [
             ./hosts/TheVoyager/modules/system.nix
