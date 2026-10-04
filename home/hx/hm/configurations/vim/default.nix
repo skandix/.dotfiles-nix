@@ -1,6 +1,9 @@
 { pkgs, ... }:
 
 {
+
+  imports = [ ./lsp.nix ];
+
   programs.neovim = {
     enable = true;
     vimAlias = true;
@@ -28,7 +31,6 @@
       vim-better-whitespace
 
       # GIT AND LINTING
-      ale
       vim-gitgutter
 
       # TREESITTER
