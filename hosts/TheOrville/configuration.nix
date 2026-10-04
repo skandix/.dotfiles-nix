@@ -57,9 +57,7 @@
     memoryPercent = 50;
   };
 
-  systemd.network.wait-online.enable = lib.mkForce false; # to avoid iface or vbox waiting for connection.
   systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
-  systemd.network.netdevs.wlp6s0.enable = false;
 
   networking = {
     hostName = "TheOrville";
@@ -70,11 +68,6 @@
       wlp6s0.useDHCP = lib.mkForce false;
     };
   };
-
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
 
   home-manager.users.hx.home.stateVersion = "26.05";
   system.stateVersion = "26.05";

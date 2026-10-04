@@ -59,6 +59,7 @@
     home = "/home/birch";
     initialPassword = "hunter2k"; # used for build-vm and init deployment of nixos-anywhere
   };
+  services.qemuGuest.enable = true;
 
   zramSwap = {
     enable = true;
@@ -88,11 +89,6 @@
       ];
     };
   };
-
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
 
   home-manager.users.hx.home.stateVersion = "26.05";
   system.stateVersion = "26.05";

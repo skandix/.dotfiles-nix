@@ -77,11 +77,6 @@
     };
   };
 
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
-
   home-manager.users.hx.home.stateVersion = "25.11";
   system.stateVersion = "25.11";
 }
