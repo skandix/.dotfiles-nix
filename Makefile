@@ -26,7 +26,7 @@ fmt:
 
 ## macos: build macos nix-config
 macos:
-	sudo darwin-rebuild switch --flake .
+	sudo darwin-rebuild switch --flake .#TheVoyager
 
 ## vm: Build a QEMU VM that runs the new configuration.
 vm:

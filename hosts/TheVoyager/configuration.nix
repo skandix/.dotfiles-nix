@@ -14,7 +14,7 @@
     inputs.default-browser.darwinModules.default-browser
   ];
 
-  home-mananger = {
+  home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
     extraSpecialArgs = { inherit inputs unstable; };
