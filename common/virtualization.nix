@@ -8,19 +8,11 @@
   };
 
   virtualisation = {
-    #useEFIBoot = true;
-    #spiceUSBRedirection.enable = true;
-
     libvirtd = {
       enable = true;
       onBoot = "ignore";
       onShutdown = "shutdown";
     };
-
-
-    #qemu = {
-      #foreceAccel = true;
-    #};
   };
 
   environment.systemPackages = with pkgs; [
