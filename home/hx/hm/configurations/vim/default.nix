@@ -12,7 +12,6 @@
     defaultEditor = true;
     plugins = with pkgs.vimPlugins; [
       # LOOK AND FEEL
-      srcery-vim
       lightline-vim
       rainbow
 
@@ -99,12 +98,12 @@
       nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
       syntax enable
-      colorscheme srcery
+      colorscheme retrobox
 
       hi! Normal ctermbg=NONE guibg=NONE
       hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
-      let g:lightline = {'colorscheme': 'seoul256',}
+      let g:lightline = {'colorscheme': 'deus',}
 
       hi Normal     ctermbg=NONE guibg=NONE
       hi LineNr     ctermbg=NONE guibg=NONE
