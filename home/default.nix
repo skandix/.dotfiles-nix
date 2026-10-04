@@ -36,6 +36,7 @@
   };
 
   programs.zsh.enable = true;
+  programs.zsh.enableGlobalCompInit = false;
   #users.users.hx.ignoreShellProgramCheck = true;
 
   home-manager.users = {

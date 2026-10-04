@@ -3,27 +3,25 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 source "${ZINIT_HOME}/zinit.zsh" &> /dev/null
-zstyle :compinstall filename '$HOME/.zshrc'
-autoload -Uz compinit
-compinit
+
+zinit light trapd00r/LS_COLORS
 
 ## Plugins ##
-zinit light trapd00r/LS_COLORS
-zinit load zdharma-continuum/history-search-multi-word
-zinit light zsh-users/zsh-autosuggestions
-zinit light zdharma-continuum/fast-syntax-highlighting
-
-
-## COLORS ##
-#(cat ~/.cache/wal/sequences &) &>/dev/null
-#source ~/.cache/wal/colors-tty.sh &>/dev/null
+zinit wait lucid for \
+  atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
+    zdharma-continuum/fast-syntax-highlighting \
+  atload"_zsh_autosuggest_start" \
+    zsh-users/zsh-autosuggestions \
+    zsh-users/zsh-history-substring-search \
+  zdharma-continuum/history-search-multi-word
 
 ## KEY ##
-bindkey '^?' backward-delete-char
-bindkey '^H' backward-delete-char
-
-## VIM MODE ##
-bindkey -v
+bindkey -e
+bindkey '^[[H'    beginning-of-line   # Home
+bindkey '^[[F'    end-of-line         # End
+bindkey '^[[3~'   delete-char         # Delete
+bindkey '^[[1;5C' forward-word        # Ctrl+Right
+bindkey '^[[1;5D' backward-word       # Ctrl+Left
 
 ## NAVIGATION ##
 typeset -U path
@@ -72,40 +70,22 @@ alias tf="tofu"
 alias dc="docker compose"
 
 ### MISC ###
-alias nf="cd $HOME/.dotfiles-nix && nvim . && cd -"
 alias gname="head -c 100 /dev/urandom | md5sum"
-
-## BINDKEY ###
-bindkey  "^[[H"   beginning-of-line
-bindkey  "^[[F"   end-of-line
-bindkey  "^[[3~"  delete-char
-bindkey "^[[1;5C" forward-word
-bindkey "^[[1;5D" backward-word
-
-### NAVIGATION ###
-bindkey '^A' beginning-of-line
-bindkey '^E' end-of-line
-bindkey '^F' forward-char
-bindkey '^B' backward-char
-bindkey '^[f' forward-word
-bindkey '^[b' backward-word
-
-### EDITING ###
-bindkey '^D' delete-char
-bindkey '^?' backward-delete-char
-bindkey '^H' backward-delete-char
-bindkey '^W' backward-kill-word
-bindkey '^U' backward-kill-line
-bindkey '^K' kill-line
+alias gg="lazygit"
 
 ### HISTORY ###
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
 
-
 ## EXPORT ##
-#export TERM=xterm-256color
 export REPORTTIME=10
 export COLORTERM=truecolor
-PS1='%F{pink}%n@%m %F{green}%~%f %F{purple}λ%f '
-PS1="%n@%m λ " # shell prompt
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+_host_colors=(196 202 208 214 118 46 48 51 45 39 33 27 87 123)
+_sum=0
+for _c in ${(s::)HOST}; do (( _sum += #_c )); done
+_host_color=${_host_colors[$(( _sum % ${#_host_colors} + 1 ))]}
+unset _sum _c
+
+PS1="%F{#ff10f0}%n%F{yellow}@%F{${_host_color}}%m %B%F{#cc00ff}λ%f%b "
