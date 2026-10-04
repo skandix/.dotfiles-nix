@@ -9,7 +9,6 @@
   };
 
   environment.systemPackages = with unstable; [
-    git
     talosctl
     docker
   ];
@@ -44,15 +43,12 @@
     brews = [
       "mas"
       "p7zip"
-      "git"
       "jq"
       "wget"
       "ranger"
       "htop"
       "bat"
-      "ffmpeg"
       "wireguard-tools"
-      "docker"
       "docker-compose"
       "opentofu"
       "kubeseal"
@@ -65,9 +61,6 @@
       "nmap"
       "tcpdump"
       "speedtest-cli"
-      "zsh"
-      "neovim"
-      "tmux"
       "go"
       #"rustup"
       "marp-cli"

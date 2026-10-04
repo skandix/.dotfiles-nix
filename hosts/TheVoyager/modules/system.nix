@@ -4,7 +4,12 @@
 {
   ids.uids.nixbld = 350;
   security.pam.services.sudo_local.touchIdAuth = true;
-  programs.zsh.enable = true;
+
+  programs.zsh = {
+    enable = true;
+    enableGlobalCompInit = false;
+  };
+
   system = {
     startup.chime = false;
     stateVersion = 5;
@@ -13,7 +18,7 @@
     defaults = {
       menuExtraClock.Show24Hour = true; # show 24 hour clock
       screencapture.location = "$HOME/Pictures/screenshots";
-      loginwindow.LoginwindowText = "If lost, call +47 99 22 70 30 or email bendik.dyrli@gmail.com";
+      loginwindow.LoginwindowText = "If lost, call +47 99 22 70 30 or email bendik@hjkl.no";
 
       finder = {
         AppleShowAllExtensions = true;

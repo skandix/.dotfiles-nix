@@ -3,35 +3,23 @@
 {
   nixpkgs = {
     hostPlatform = "aarch64-darwin";
-    config = {
-      allowUnfree = true;
-      allowUnfreePredicate = (_: true);
-    };
+    config.allowUnfree = true;
   };
 
   nix = {
     package = pkgs.nix;
-    linux-builder = {
-      enable = false;
-    };
-
-    extraOptions = ''
-      auto-optimise-store = true
-      extra-platforms = aarch64-darwin
-    '';
-
+    linux-builder.enable = false;
+    optimise.automatic = true;
     settings = {
       experimental-features = [
         "nix-command"
         "flakes"
       ];
+
       max-jobs = "auto";
       builders-use-substitutes = true;
     };
+
     gc.automatic = true;
-
   };
-
-  environment.systemPackages = with pkgs; [
-  ];
 }

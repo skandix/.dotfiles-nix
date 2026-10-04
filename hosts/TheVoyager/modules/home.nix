@@ -19,7 +19,6 @@
     sessionVariables = {
       PAGER = "less";
       BROWSER = "librewolf";
-      SHELL = "zsh";
       TERMINAL = "ghostty";
     };
   };
