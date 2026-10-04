@@ -2,18 +2,19 @@
 
 {
   imports = [
-    ../../../home/hx/modules/zsh
-    ../../../home/hx/modules/git
-    ../../../home/hx/modules/mpv
-    ../../../home/hx/modules/tmux
-    ../../../home/hx/modules/vim
     ../../../home/hx/modules/ghostty
+    ../../../home/hx/modules/mpv
+    ../../../home/hx/modules/go.nix
+    ../../../home/hx/modules/python.nix
+    ../../../home/hx/modules/rust.nix
   ];
 
   home = {
     username = "hx";
     homeDirectory = "/Users/hx";
     stateVersion = "26.05";
+
+    sessionPath = [ "$HOME/.local/bin" ];
 
     sessionVariables = {
       PAGER = "less";

@@ -9,15 +9,15 @@
   };
 
   environment.systemPackages = with unstable; [
-    talosctl
     docker
+    docker-compose
   ];
 
   nix-homebrew = {
     enable = true;
     enableRosetta = false;
     user = "hx";
-    mutableTaps = true;
+    mutableTaps = false;
     autoMigrate = true;
   };
   homebrew = {
@@ -25,7 +25,7 @@
 
     onActivation = {
       autoUpdate = true;
-      cleanup = "uninstall";
+      cleanup = "zap";
       upgrade = true;
     };
 
@@ -42,30 +42,9 @@
     # `brew install`
     brews = [
       "mas"
-      "p7zip"
-      "jq"
-      "wget"
-      "ranger"
-      "htop"
-      "bat"
       "wireguard-tools"
-      "docker-compose"
-      "opentofu"
-      "kubeseal"
-      "ansible"
-      "kubernetes-cli"
-      "k9s"
-      "openstackclient"
-      "kubecolor"
-      "netcat"
       "nmap"
-      "tcpdump"
       "speedtest-cli"
-      "go"
-      #"rustup"
-      "marp-cli"
-      "uv"
-      "ruff"
     ];
 
     # `brew install --cask`
@@ -85,22 +64,14 @@
       "steam"
       "obsidian"
       "plexamp"
-      #"container"
       "rectangle"
-      #"google-chrome"
-      #"inkscape"
-      #"gimp"
       "zotero"
-      #"blender"
-      #"macfuse"
       "1password"
     ];
 
     masApps = {
-      #Amphetamine = 937984704;
       Wireguard = 1451685025;
       Tailscale = 1475387142;
-      Telegram = 747648890;
     };
   };
 }

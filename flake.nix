@@ -118,23 +118,7 @@
             inherit inputs;
             unstable = mkUnstable "aarch64-darwin";
           };
-          modules = [
-            ./hosts/TheVoyager/modules/system.nix
-            ./hosts/TheVoyager/modules/apps.nix
-            ./hosts/TheVoyager/modules/host-users.nix
-            ./hosts/TheVoyager/modules/nix-core.nix
-            inputs.nix-index-db.darwinModules.nix-index
-            inputs.home-manager.darwinModules.home-manager
-            inputs.nix-homebrew.darwinModules.nix-homebrew
-            inputs.default-browser.darwinModules.default-browser
-
-            ({ unstable, ... }: {
-              home-manager.useUserPackages = true;
-              home-manager.extraSpecialArgs = { inherit inputs unstable; };
-              home-manager.backupFileExtension = "hm-backup";
-              home-manager.users.hx.imports = [ ./hosts/TheVoyager/modules/home.nix ];
-            })
-          ];
+          modules = [ ./hosts/TheVoyager/configuration.nix ];
         };
       };
       formatter = {
