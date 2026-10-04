@@ -12,16 +12,9 @@
     extraSpecialArgs = { inherit inputs unstable; };
     backupFileExtension = "hm-backup";
 
-    users.hx = {
-      imports = [
-        ./modules/git
-        ./modules/zsh
-      ];
-
-      home.sessionPath = [
-        "$HOME/.local/bin"
-      ];
-    };
+    users.hx.home.sessionPath = [
+      "$HOME/.local/bin"
+    ];
   };
 
   time.timeZone = "Europe/Oslo";
@@ -50,6 +43,7 @@
     initialPassword = "hunter2k"; # used for build-vm and init deployment of nixos-anywhere
   };
 
+  # config gets imported in cli.nix
   programs = {
     zsh = {
       enable = true;

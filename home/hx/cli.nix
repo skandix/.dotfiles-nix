@@ -8,6 +8,8 @@
       ./modules/vim
       ./modules/tmux
       ./modules/k9s
+      ./modules/git
+      ./modules/zsh
     ];
 
     home.packages = with pkgs; [
@@ -16,7 +18,6 @@
       htop
       wget
       ncdu
-      ntfs3g
       ranger
       bat
       marp-cli
