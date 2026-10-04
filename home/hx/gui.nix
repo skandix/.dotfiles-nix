@@ -1,11 +1,14 @@
-{
-  config,
-  pkgs,
-  unstable,
-  ...
-}:
+{ config, pkgs, unstable, ... }:
 
 {
+
+  home-manager.users.hx.imports = [
+    ./hm/configurations/librewolf
+    ./hm/configurations/ghostty
+    ./hm/configurations/mpv
+    ./hm/configurations/discord
+  ];
+
   home-manager.users.hx = {
     home.packages = with pkgs; [
       unstable.telegram-desktop
@@ -15,7 +18,6 @@
       unstable.plexamp
       unstable.sublime3
       unstable.plex-desktop
-      unstable.remmina
       unstable._1password-gui-beta
       unstable.cider-2
 
@@ -27,7 +29,6 @@
       vscode
       zotero
       anydesk
-      typst
       gajim
       kdePackages.okular
       qgis

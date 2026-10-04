@@ -1,11 +1,9 @@
 
-{ pkgs, configs, unstable, ... }:
+{ unstable, ... }:
 
 {
-  home-manager.users.hx = {
-      programs.thunderbird = {
-          enable = true;
-          package = unstable.thunderbird;
-      };
-  };
+    programs.thunderbird = {
+        enable = true;
+        package = unstable.thunderbird;
+    };
 }

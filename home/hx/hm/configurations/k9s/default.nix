@@ -1,33 +1,22 @@
-{ pkgs, configs, ... }:
+{ ... }:
 
 {
-  home-manager.users.hx = {
-    programs.k9s = {
-        enable = true;
-        plugins = {
-            debug = {
-                shortCut= "Shift-D";
-                description = "Add debug container";
-                dangerous = true;
-                scopes = [ "containers" ];
-                command = "bash";
-                background = false;
-                confirm = true;
-                args = [
-                  "-c"
-                  "kubectl debug"
-                  "-it"
-                  "--context $CONTEXT"
-                  "-n=$NAMESPACE $POD"
-                  "--target=$NAME"
-                  "--image=nicolaka/netshoot:v0.14"
-                  "--profile=sysadmin"
-                  "--share-processes"
-                  "--"
-                  "bash"
-                ];
-            };
-        };
-    };
+  programs.k9s = {
+      enable = true;
+      plugins = {
+          debug = {
+              shortCut= "Shift-D";
+              description = "Add debug container";
+              dangerous = true;
+              scopes = [ "containers" ];
+              command = "bash";
+              background = false;
+              confirm = true;
+              args = [
+                "-c"
+                "kubectl debug -it --context $CONTEXT -n=$NAMESPACE $POD --target=$NAME --image=nicolaka/netshoot:v0.14 --profile=sysadmin --share-processes -- bash"
+              ];
+          };
+      };
   };
 }

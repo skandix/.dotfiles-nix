@@ -1,11 +1,14 @@
 {pkgs, unstable, ...}:
 
 {
-  imports = [
+
+  home-manager.users.hx.imports = [
     ./hm/go.nix
     ./hm/python.nix
-    #./hm/rust.nix
+    ./hm/rust.nix
   ];
+
+  programs.nix-ld.enable = true;
 
   environment.systemPackages = with pkgs; [
     gnumake

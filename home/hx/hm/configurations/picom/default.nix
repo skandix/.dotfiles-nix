@@ -1,7 +1,5 @@
 { pkgs, ... }:
 
 {
-  home-manager.users.hx = {
-    home.packages = with pkgs; [ fastcompmgr ];
-  };
+  home.packages = with pkgs; [ fastcompmgr ];
 }

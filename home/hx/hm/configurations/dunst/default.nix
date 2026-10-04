@@ -1,13 +1,11 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
-  home-manager.users.hx = {
-    services.dunst = {
-      enable = true;
-    };
+  services.dunst = {
+    enable = true;
+  };
 
-    xdg.configFile = {
-      "dunst/dunstrc".source = ./dunstrc;
-    };
+  xdg.configFile = {
+    "dunst/dunstrc".source = ./dunstrc;
   };
 }
