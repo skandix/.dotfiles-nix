@@ -3,9 +3,8 @@
 
   inputs = {
     # Nixpkgs
-    nixpkgs = { url = "github:nixos/nixpkgs/nixos-26.05"; };
-    nixpkgs-unstable = { url = "github:nixos/nixpkgs/nixos-unstable"; };
-    nixos-hardware = { url = "github:NixOS/nixos-hardware"; };
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # Disko - disk partition the nixos way
     disko = {
@@ -38,20 +37,30 @@
     };
 
     # Nix-Homebrew Darwin
-    nix-homebrew = { url = "github:zhaofengli/nix-homebrew"; };
+    nix-homebrew = {
+      url = "github:zhaofengli/nix-homebrew";
+    };
 
     # Vscode Server
-    vscode-server.url = "github:nix-community/nixos-vscode-server";
+    vscode-server = {
+      url = "github:nix-community/nixos-vscode-server";
+    };
 
     # default browser nix-darwin
-    default-browser.url = "github:szympajka/nix-browser";
+    default-browser = {
+      url = "github:szympajka/nix-browser";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Missings Fonts
-    nixos-fonts.url = "github:Takamatsu-Naoki/nixos-fonts";
+    nixos-fonts = {
+      url = "github:Takamatsu-Naoki/nixos-fonts";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
-  outputs = inputs@{ self, nixpkgs, disko, nix-index-db, nixpkgs-unstable
-    , nixos-hardware, home-manager, nix-darwin, nix-homebrew, vscode-server, default-browser, nixos-fonts, ... }:
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, ... }:
 
     let
       mkUnstable = system: import nixpkgs-unstable {
@@ -59,91 +68,38 @@
         config.allowUnfree = true;
       };
 
+      unstable_ = mkUnstable "x86_64-linux";
+
+      commonModules = [
+        inputs.home-manager.nixosModules.default
+        inputs.nix-index-db.nixosModules.nix-index
+        inputs.vscode-server.nixosModules.default
+      ];
+
+      mkHost = name: extraModules: nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit inputs;
+          unstable = unstable_;
+        };
+        modules = commonModules ++ extraModules ++ [
+          ./hosts/${name}/configuration.nix
+        ];
+      };
+
     in {
       nixosConfigurations = {
-
-        Ainsworth = nixpkgs.lib.nixosSystem {
-          specialArgs = {
-            inherit inputs;
-            unstable = mkUnstable "x86_64-linux";
-          };
-          modules = [
-            ./hosts/Ainsworth/configuration.nix
-            inputs.home-manager.nixosModules.default
-            nix-index-db.nixosModules.nix-index
-            vscode-server.nixosModules.default
-          ];
-        };
-
-        Lynx = nixpkgs.lib.nixosSystem {
-          specialArgs = {
-            inherit inputs;
-            unstable = mkUnstable "x86_64-linux";
-          };
-          modules = [
-            ./hosts/Lynx/configuration.nix
-            disko.nixosModules.disko
-            inputs.home-manager.nixosModules.default
-            nix-index-db.nixosModules.nix-index
-            vscode-server.nixosModules.default
-          ];
-        };
-
-        MillenniumFalcon = nixpkgs.lib.nixosSystem {
-          specialArgs = {
-            inherit inputs;
-            unstable = mkUnstable "x86_64-linux";
-          };
-          modules = [
-            ./hosts/MillenniumFalcon/configuration.nix
-            inputs.home-manager.nixosModules.default
-            nix-index-db.nixosModules.nix-index
-            vscode-server.nixosModules.default
-          ];
-        };
-
-        DeathStar = nixpkgs.lib.nixosSystem {
-          specialArgs = {
-            inherit inputs;
-            unstable = mkUnstable "x86_64-linux";
-          };
-          modules = [
-            ./hosts/DeathStar/configuration.nix
-            inputs.home-manager.nixosModules.default
-            nix-index-db.nixosModules.nix-index
-          ];
-        };
-
-        #Cerritos = nixpkgs.lib.nixosSystem {
-          #specialArgs = {
-            #inherit inputs;
-            #unstable = mkUnstable "x86_64-linux";
-          #};
-          #modules = [
-            #./hosts/Cerritos/configuration.nix
-            #inputs.home-manager.nixosModules.default
-            #nix-index-db.nixosModules.nix-index
-            #vscode-server.nixosModules.default
-          #];
-        #};
-
-        TheOrville = nixpkgs.lib.nixosSystem {
-          specialArgs = {
-            inherit inputs;
-            unstable = mkUnstable "x86_64-linux";
-          };
-          modules = [
-            ./hosts/TheOrville/configuration.nix
-            inputs.home-manager.nixosModules.default
-            nix-index-db.nixosModules.nix-index
-          ];
-        };
+        Ainsworth        = mkHost "Ainsworth" [  ];
+        Lynx             = mkHost "Lynx" [ inputs.disko.nixosModules.disko ];
+        MillenniumFalcon = mkHost "MillenniumFalcon" [  ];
+        DeathStar        = mkHost "DeathStar" [  ];
+        TheOrville       = mkHost "TheOrville" [  ];
+        # Cerritos       = mkHost "Cerritos" [  ];
 
       };
 
       ### MACOS ###
       darwinConfigurations = {
-        TheVoyager = nix-darwin.lib.darwinSystem {
+        TheVoyager = inputs.nix-darwin.lib.darwinSystem {
           specialArgs = {
             inherit inputs;
             unstable = mkUnstable "aarch64-darwin";
@@ -153,17 +109,23 @@
             ./hosts/TheVoyager/modules/apps.nix
             ./hosts/TheVoyager/modules/host-users.nix
             ./hosts/TheVoyager/modules/nix-core.nix
-            nix-index-db.darwinModules.nix-index
-            home-manager.darwinModules.home-manager
-            nix-homebrew.darwinModules.nix-homebrew
-            default-browser.darwinModules.default-browser
-            {
-              #home-manager.useGlobalPkgs = true;
+            inputs.nix-index-db.darwinModules.nix-index
+            inputs.home-manager.darwinModules.home-manager
+            inputs.nix-homebrew.darwinModules.nix-homebrew
+            inputs.default-browser.darwinModules.default-browser
+
+            ({unstable, ...}: {
               home-manager.useUserPackages = true;
-              home-manager.users.hx =
-                import ./hosts/TheVoyager/modules/home.nix;
-            }
+              home-manager.extraSpecialArgs = { inherit inputs unstable; };
+              home-manager.backupFileExtension = "hm-backup";
+              home-manager.users.hx.imports = [ ./hosts/TheVoyager/modules/home.nix ];
+            })
           ];
+        };
+
+        formatter = {
+          x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-tree;
+          aarch64-darwin = nixpkgs.legacyPackages.aarch64-darwin.nixfmt-tree;
         };
       };
     };
