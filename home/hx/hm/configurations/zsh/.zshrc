@@ -12,7 +12,7 @@ zinit light trapd00r/LS_COLORS
 zinit load zdharma-continuum/history-search-multi-word
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/fast-syntax-highlighting
-zinit load marzocchi/zsh-notify
+
 
 ## COLORS ##
 #(cat ~/.cache/wal/sequences &) &>/dev/null

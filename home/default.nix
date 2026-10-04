@@ -28,14 +28,15 @@
       #"incus-admin"
     ];
     group = "hx";
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH9UcMEfA479EV6PcAinoLvQHyauBSpU94VgfdBivaUB"
     ];
     initialPassword = "hunter2k"; # used for build-vm and init deployment of nixos-anywhere
   };
 
-  users.users.hx.ignoreShellProgramCheck = true;
+  programs.zsh.enable = true;
+  #users.users.hx.ignoreShellProgramCheck = true;
 
   home-manager.users = {
     hx = (import ./hx/home.nix);

@@ -47,6 +47,7 @@
       set -U fish_color_match --background=brblue
       set -U fish_color_comment FF9640
       set -x TERM xterm-256color
+      set -gx PATH (set -q KREW_ROOT; and echo $KREW_ROOT; or echo $HOME/.krew)/bin $PATH
     '';
     # interactiveShellInit = "pfetch";
   };

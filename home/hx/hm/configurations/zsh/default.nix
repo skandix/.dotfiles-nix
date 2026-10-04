@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  #programs.zsh.enable = true;
+  programs.zsh.enable = true;
 
 
   #home-manager.users.hx = {
