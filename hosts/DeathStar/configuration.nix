@@ -8,6 +8,7 @@
     ./hardware-configuration.nix
 
     # core dotfiles + graphical things
+    ../../home/hx
     ../../home/hx/gui.nix
     ../../home/hx/cli.nix
     ../../home/hx/dev.nix
