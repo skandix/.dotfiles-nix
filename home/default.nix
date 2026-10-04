@@ -1,4 +1,4 @@
-{ config, home-manager, pkgs, ... }:
+{ pkgs, inputs, unstable, ... }:
 
 {
   time.timeZone = "Europe/Oslo";
@@ -37,10 +37,16 @@
 
   programs.zsh.enable = true;
   programs.zsh.enableGlobalCompInit = false;
-  #users.users.hx.ignoreShellProgramCheck = true;
 
-  home-manager.users = {
-    hx = (import ./hx/home.nix);
-  };
   programs.dconf.enable = true;
+
+
+  home-manager = {
+    users.hx.imports = [./hx/home.nix];
+
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    extraSpecialArgs = { inherit inputs unstable; };
+    backupFileExtension = "hm-backup";
+  };
 }
