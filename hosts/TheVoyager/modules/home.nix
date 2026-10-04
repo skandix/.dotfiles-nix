@@ -7,6 +7,7 @@
     ../../../home/hx/hm/configurations/mpv
     ../../../home/hx/hm/configurations/tmux
     ../../../home/hx/hm/configurations/vim
+    ../../../home/hx/hm/configurations/ghostty
   ];
 
   programs.home-manager.enable = true;
