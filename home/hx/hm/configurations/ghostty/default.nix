@@ -13,6 +13,7 @@
       clearDefaultKeybinds = true;
 
       settings = {
+        shell-integration-features = "ssh-env, ssh-terminfo";
         keybind = [
           "alt+b=toggle_tab_overview"
           "ctrl+t=new_tab"
