@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   unstable,
   ...
@@ -8,10 +7,10 @@
 {
   home-manager.users.hx = {
     imports = [
-      ./hm/configurations/librewolf
-      ./hm/configurations/ghostty
-      ./hm/configurations/mpv
-      ./hm/configurations/discord
+      ./modules/librewolf
+      ./modules/ghostty
+      ./modules/mpv
+      ./modules/discord
     ];
 
     gtk = {
@@ -32,6 +31,7 @@
       unstable.plex-desktop
       unstable._1password-gui-beta
       unstable.cider-2
+      discord
 
       playerctl
       xclip

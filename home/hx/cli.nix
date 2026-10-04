@@ -5,9 +5,9 @@
 
   home-manager.users.hx = {
     imports = [
-      ./hm/configurations/vim
-      ./hm/configurations/tmux
-      ./hm/configurations/k9s
+      ./modules/vim
+      ./modules/tmux
+      ./modules/k9s
     ];
 
     home.packages = with pkgs; [

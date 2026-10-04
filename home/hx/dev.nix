@@ -1,11 +1,11 @@
-{ pkgs, unstable, ... }:
+{ pkgs, ... }:
 
 {
 
   home-manager.users.hx.imports = [
-    ./hm/go.nix
-    ./hm/python.nix
-    ./hm/rust.nix
+    ./modules/go.nix
+    ./modules/python.nix
+    ./modules/rust.nix
   ];
 
   programs.nix-ld.enable = true;
