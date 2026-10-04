@@ -1,13 +1,10 @@
 {
-  config,
-  pkgs,
   unstable,
-  lib,
   ...
 }:
 
 {
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = [
     unstable.blender
     unstable.unityhub
   ];

@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   unstable,
   ...
@@ -18,10 +17,6 @@
       pulse.enable = true;
       audio.enable = true;
     };
-
-    #wireplumber = {
-    #enable = true;
-    #};
 
   };
   environment.systemPackages = with pkgs; [

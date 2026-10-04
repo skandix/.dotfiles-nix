@@ -1,4 +1,4 @@
-{ config, ... }:
+{ ... }:
 
 {
   hardware.cpu.intel = {

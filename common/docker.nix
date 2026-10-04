@@ -1,6 +1,4 @@
 {
-  config,
-  pkgs,
   unstable,
   ...
 }:
@@ -9,15 +7,9 @@
   virtualisation.docker = {
     enable = true;
     package = unstable.docker;
-    #autoPrune = {
-    #enable = true;
-    #flags = [
-    #"--all"
-    #];
-    #};
     enableOnBoot = true;
     liveRestore = true;
   };
 
-  environment.systemPackages = with pkgs; [ unstable.docker-compose ];
+  environment.systemPackages = [ unstable.docker-compose ];
 }
