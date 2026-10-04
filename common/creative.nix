@@ -8,7 +8,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-      unstable.blender
-      unstable.unityhub
+    unstable.blender
+    unstable.unityhub
   ];
 }

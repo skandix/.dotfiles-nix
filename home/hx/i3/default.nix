@@ -25,7 +25,7 @@
           xset -dpms
           xset s off
           xset s noblank
-          '';
+        '';
 
       };
 
@@ -53,7 +53,6 @@
       "i3blocks/config".source = ./i3blocks;
     };
   };
-
 
   xdg.portal = {
     enable = true;

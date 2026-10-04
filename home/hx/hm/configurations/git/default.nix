@@ -22,7 +22,8 @@
           useConfigOnly = true;
         };
       };
-      includes = [{
+      includes = [
+        {
           condition = "gitdir:~/work/";
           contents = {
             user = {

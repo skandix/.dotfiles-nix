@@ -1,14 +1,19 @@
-{ config, pkgs, unstable, ... }:
+{
+  config,
+  pkgs,
+  unstable,
+  ...
+}:
 
 {
   virtualisation.docker = {
     enable = true;
     package = unstable.docker;
     #autoPrune = {
-      #enable = true;
-      #flags = [
-        #"--all"
-      #];
+    #enable = true;
+    #flags = [
+    #"--all"
+    #];
     #};
     enableOnBoot = true;
     liveRestore = true;

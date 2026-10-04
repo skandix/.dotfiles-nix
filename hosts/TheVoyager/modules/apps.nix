@@ -103,11 +103,11 @@
       "1password"
     ];
 
-     masApps = {
-       #Amphetamine = 937984704;
-       Wireguard = 1451685025;
-       Tailscale = 1475387142;
-       Telegram = 747648890;
-     };
+    masApps = {
+      #Amphetamine = 937984704;
+      Wireguard = 1451685025;
+      Tailscale = 1475387142;
+      Telegram = 747648890;
+    };
   };
 }

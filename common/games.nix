@@ -9,7 +9,9 @@
   # fix openldap issue with lutris
   nixpkgs.overlays = [
     (final: prev: {
-      openldap = prev.openldap.overrideAttrs (_: { doCheck = false; });
+      openldap = prev.openldap.overrideAttrs (_: {
+        doCheck = false;
+      });
     })
   ];
 
@@ -32,8 +34,8 @@
   };
 
   #environment.sessionVariables = {
-    #STEAM_EXTRA_COMPAT_TOOLS_PATHS =
-      #”\${HOME}/.steam/root/compatibilitytools.d”;
+  #STEAM_EXTRA_COMPAT_TOOLS_PATHS =
+  #”\${HOME}/.steam/root/compatibilitytools.d”;
   #};
 
   programs = {
@@ -50,7 +52,6 @@
 
   # Remember
   # - Bottles did not work good without flatpak, why it is not listed here
-
 
   # OTHER
   environment.systemPackages = with pkgs; [

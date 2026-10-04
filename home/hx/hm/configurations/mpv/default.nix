@@ -6,7 +6,6 @@
     enable = true;
   };
 
-
   home.packages = with pkgs; [
     yt-dlp
     streamlink

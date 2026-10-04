@@ -60,13 +60,21 @@
 
   };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, ... }:
+  outputs =
+    inputs@{
+      self,
+      nixpkgs,
+      nixpkgs-unstable,
+      ...
+    }:
 
     let
-      mkUnstable = system: import nixpkgs-unstable {
-        inherit system;
-        config.allowUnfree = true;
-      };
+      mkUnstable =
+        system:
+        import nixpkgs-unstable {
+          inherit system;
+          config.allowUnfree = true;
+        };
 
       unstable_ = mkUnstable "x86_64-linux";
 
@@ -76,23 +84,29 @@
         inputs.vscode-server.nixosModules.default
       ];
 
-      mkHost = name: extraModules: nixpkgs.lib.nixosSystem {
-        specialArgs = {
-          inherit inputs;
-          unstable = unstable_;
+      mkHost =
+        name: extraModules:
+        nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs;
+            unstable = unstable_;
+          };
+          modules =
+            commonModules
+            ++ extraModules
+            ++ [
+              ./hosts/${name}/configuration.nix
+            ];
         };
-        modules = commonModules ++ extraModules ++ [
-          ./hosts/${name}/configuration.nix
-        ];
-      };
 
-    in {
+    in
+    {
       nixosConfigurations = {
-        Ainsworth        = mkHost "Ainsworth" [  ];
-        Lynx             = mkHost "Lynx" [ inputs.disko.nixosModules.disko ];
-        MillenniumFalcon = mkHost "MillenniumFalcon" [  ];
-        DeathStar        = mkHost "DeathStar" [  ];
-        TheOrville       = mkHost "TheOrville" [  ];
+        Ainsworth = mkHost "Ainsworth" [ ];
+        Lynx = mkHost "Lynx" [ inputs.disko.nixosModules.disko ];
+        MillenniumFalcon = mkHost "MillenniumFalcon" [ ];
+        DeathStar = mkHost "DeathStar" [ ];
+        TheOrville = mkHost "TheOrville" [ ];
         # Cerritos       = mkHost "Cerritos" [  ];
 
       };
@@ -114,7 +128,7 @@
             inputs.nix-homebrew.darwinModules.nix-homebrew
             inputs.default-browser.darwinModules.default-browser
 
-            ({unstable, ...}: {
+            ({ unstable, ... }: {
               home-manager.useUserPackages = true;
               home-manager.extraSpecialArgs = { inherit inputs unstable; };
               home-manager.backupFileExtension = "hm-backup";

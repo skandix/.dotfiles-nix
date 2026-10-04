@@ -7,7 +7,7 @@
     newSession = true;
     secureSocket = true;
     clock24 = true;
-    plugins  = with pkgs.tmuxPlugins; [
+    plugins = with pkgs.tmuxPlugins; [
       cpu
       catppuccin
     ];

@@ -83,7 +83,11 @@
         spacing = 2;
 
         modules-left = [ "dwl/tags" ];
-        modules-center = [ "custom/seperator" "custom/beats" "custom/seperator" ];
+        modules-center = [
+          "custom/seperator"
+          "custom/beats"
+          "custom/seperator"
+        ];
         modules-right = [
           "custom/seperator"
           "privacy"
@@ -105,7 +109,9 @@
           "tray"
         ];
 
-        "dwl/tags" = { num-tags = 9; };
+        "dwl/tags" = {
+          num-tags = 9;
+        };
         #"dwl/window" = { max-length = 0; };
 
         "custom/beats" = {
@@ -147,8 +153,8 @@
               tooltip = true;
               tooltip-icon-size = 24;
             }
-      ];
-    };
+          ];
+        };
 
         "custom/public-ip" = {
           exec = "curl -s https://icanhazip.com";

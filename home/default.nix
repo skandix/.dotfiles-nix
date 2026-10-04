@@ -1,4 +1,9 @@
-{ pkgs, inputs, unstable, ... }:
+{
+  pkgs,
+  inputs,
+  unstable,
+  ...
+}:
 
 {
   time.timeZone = "Europe/Oslo";
@@ -40,9 +45,8 @@
 
   programs.dconf.enable = true;
 
-
   home-manager = {
-    users.hx.imports = [./hx/home.nix];
+    users.hx.imports = [ ./hx/home.nix ];
 
     useGlobalPkgs = true;
     useUserPackages = true;

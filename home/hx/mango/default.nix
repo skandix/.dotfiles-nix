@@ -1,4 +1,9 @@
-{ inputs, pkgs, unstable, ... }:
+{
+  inputs,
+  pkgs,
+  unstable,
+  ...
+}:
 
 {
   imports = [
@@ -25,7 +30,7 @@
       "mango/window.conf".source = ./window.conf;
     };
   };
-  security.pam.services.swaylock = {};
+  security.pam.services.swaylock = { };
 
   environment.systemPackages = with pkgs; [
     wdisplays
@@ -37,22 +42,22 @@
     enable = true;
   };
 
-    services = {
-      dbus = {
-        enable = true;
-      };
+  services = {
+    dbus = {
+      enable = true;
+    };
 
-      greetd = {
-        enable = true;
-        settings = {
-          default_session = {
-            command = "${pkgs.tuigreet}/bin/tuigreet --cmd 'dbus-run-session mango'";
-            user = "greeter";
-          };
+    greetd = {
+      enable = true;
+      settings = {
+        default_session = {
+          command = "${pkgs.tuigreet}/bin/tuigreet --cmd 'dbus-run-session mango'";
+          user = "greeter";
         };
       };
-
     };
+
+  };
 
   xdg.portal = {
     enable = true;

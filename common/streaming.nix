@@ -1,15 +1,19 @@
-{ config, pkgs, unstable, ... }:
-
+{
+  config,
+  pkgs,
+  unstable,
+  ...
+}:
 
 {
   #programs.obs-studio = {
-    #enable = true;
+  #enable = true;
 
-    #enablevirtualcamera = true;
+  #enablevirtualcamera = true;
 
-    #plugins = with unstable.obs-studio-plugins; [
-      #obs-vaapi #optional amd hardware acceleration
-    #];
+  #plugins = with unstable.obs-studio-plugins; [
+  #obs-vaapi #optional amd hardware acceleration
+  #];
   #};
 
   environment.systemPackages = with pkgs; [

@@ -42,7 +42,7 @@
     enable = true;
   };
 
-   environment.systemPackages = [
+  environment.systemPackages = [
     pkgs.weechat
     pkgs.cron
   ];
@@ -52,23 +52,23 @@
     hostId = "da3a1045";
 
     #interfaces.eno1 = {
-        #ipv6.addresses = [{
-          #address = "2a02:ed06::200";
-          #prefixLength = 64;
-        #}];
-        #ipv4.addresses = [{
-          #address = "185.35.2202.200";
-          #prefixLength = 26;
-        #}];
-      #};
-        #defaultGateway6 = {
-          #address = "20a2:ed06::1";
-          #interface = "eno1";
-        #};
-        #defaultGateway = {
-          #address = "185.35.202.193";
-          #interface = "eno1";
-        #};
+    #ipv6.addresses = [{
+    #address = "2a02:ed06::200";
+    #prefixLength = 64;
+    #}];
+    #ipv4.addresses = [{
+    #address = "185.35.2202.200";
+    #prefixLength = 26;
+    #}];
+    #};
+    #defaultGateway6 = {
+    #address = "20a2:ed06::1";
+    #interface = "eno1";
+    #};
+    #defaultGateway = {
+    #address = "185.35.202.193";
+    #interface = "eno1";
+    #};
 
     firewall = {
       enable = false;

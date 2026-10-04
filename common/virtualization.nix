@@ -1,4 +1,9 @@
-{ config, unstable, pkgs, ... }:
+{
+  config,
+  unstable,
+  pkgs,
+  ...
+}:
 
 {
   programs = {

@@ -1,4 +1,9 @@
-{ config, pkgs, unstable, ... }:
+{
+  config,
+  pkgs,
+  unstable,
+  ...
+}:
 
 {
   # rtkit is optional but recommended
@@ -15,7 +20,7 @@
     };
 
     #wireplumber = {
-      #enable = true;
+    #enable = true;
     #};
 
   };

@@ -40,12 +40,12 @@
       devices = [ "/dev/vda" ];
     };
     #systemd-boot = {
-      #enable = true;
-      #editor = false;
+    #enable = true;
+    #editor = false;
 
     #};
     #efi = {
-      #canTouchEfiVariables = false;
+    #canTouchEfiVariables = false;
     #};
   };
 
@@ -77,8 +77,15 @@
     hostId = "666dc31b";
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 80 443 22 ];
-      allowedUDPPorts = [ 80 443 ];
+      allowedTCPPorts = [
+        80
+        443
+        22
+      ];
+      allowedUDPPorts = [
+        80
+        443
+      ];
     };
   };
 

@@ -8,8 +8,8 @@
 
 {
   environment.systemPackages = with pkgs; [
-      #bambu-studio
-      openscad
-      meshlab
+    #bambu-studio
+    openscad
+    meshlab
   ];
 }

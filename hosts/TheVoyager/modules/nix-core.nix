@@ -27,7 +27,7 @@
       ];
       max-jobs = "auto";
       builders-use-substitutes = true;
-      };
+    };
     gc.automatic = true;
 
   };

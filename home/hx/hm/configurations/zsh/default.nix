@@ -8,8 +8,7 @@
     initContent = builtins.readFile ./.zshrc;
   };
 
-
-    home.packages = with pkgs; [
-      zinit
-    ];
+  home.packages = with pkgs; [
+    zinit
+  ];
 }
