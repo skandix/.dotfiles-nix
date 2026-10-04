@@ -22,7 +22,7 @@ tmux:
 
 ## fmt: format nix files
 fmt:
-	nixfmt *.nix # it has deprecated use of '.' but it is still possible to use with wildcard
+	nix fmt
 
 ## macos: build macos nix-config
 macos:
