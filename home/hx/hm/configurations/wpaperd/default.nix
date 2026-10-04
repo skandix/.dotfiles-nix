@@ -1,4 +1,4 @@
-{ pkgs, configs, ... }:
+{ ... }:
 
 {
   services.wpaperd = {

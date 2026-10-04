@@ -2,14 +2,14 @@
 
 {
 
-  home-manager.users.hx.imports = [
-    ./hm/configurations/librewolf
-    ./hm/configurations/ghostty
-    ./hm/configurations/mpv
-    ./hm/configurations/discord
-  ];
-
   home-manager.users.hx = {
+    imports = [
+      ./hm/configurations/librewolf
+      ./hm/configurations/ghostty
+      ./hm/configurations/mpv
+      ./hm/configurations/discord
+    ];
+
     home.packages = with pkgs; [
       unstable.telegram-desktop
       unstable.signal-desktop
@@ -21,11 +21,9 @@
       unstable._1password-gui-beta
       unstable.cider-2
 
-      spotify
       wireshark
       seahorse
       obsidian
-      netflix
       vscode
       zotero
       anydesk

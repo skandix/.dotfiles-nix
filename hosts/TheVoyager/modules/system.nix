@@ -4,7 +4,7 @@
 {
   ids.uids.nixbld = 350;
   security.pam.services.sudo_local.touchIdAuth = true;
-  programs.fish.enable = true;
+  programs.zsh.enable = true;
   system = {
     startup.chime = false;
     stateVersion = 5;

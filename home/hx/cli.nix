@@ -1,4 +1,4 @@
-{ config, pkgs, unstable, ... }:
+{ pkgs, unstable, ... }:
 
 {
   programs.nix-index-database.comma.enable = true;

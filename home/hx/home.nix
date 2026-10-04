@@ -3,7 +3,6 @@
 {
   imports = [
     ./hm/configurations/git
-    #./hm/configurations/fish
     ./hm/configurations/zsh
   ];
 

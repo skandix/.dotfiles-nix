@@ -13,7 +13,7 @@
         rebase.autosquash = true;
         commit.verbose = true;
         diff.algorithm = "histogram";
-        url."git@github.com:".insteadOf = "https://github.com";
+        url."git@github.com:".insteadOf = "https://github.com/";
         rerere.enabled = true;
         # identities
         user = {
