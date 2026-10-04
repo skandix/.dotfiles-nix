@@ -104,8 +104,8 @@ bindkey '^S' history-incremental-search-forward
 
 
 ## EXPORT ##
-export TERM=xterm-256color
+#export TERM=xterm-256color
 export REPORTTIME=10
 export COLORTERM=truecolor
 PS1='%F{pink}%n@%m %F{green}%~%f %F{purple}λ%f '
-#PS1="%n@%m λ " # shell prompt
+PS1="%n@%m λ " # shell prompt

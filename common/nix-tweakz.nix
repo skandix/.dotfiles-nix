@@ -48,7 +48,7 @@
         domain = "*";
         type = "soft";
         item = "nofile";
-        value = "unlimited";
+        value = "1048576";
       }
     ];
   };

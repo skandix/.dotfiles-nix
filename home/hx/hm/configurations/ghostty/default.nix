@@ -9,7 +9,7 @@
       };
       installVimSyntax = true;
       installBatSyntax = true;
-      enableFishIntegration = true;
+      enableZshIntegration = true;
       clearDefaultKeybinds = true;
 
       settings = {

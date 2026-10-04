@@ -13,7 +13,7 @@
       mplus-outline-fonts.githubRelease
       dina-font
       proggyfonts
-    ] ++ (with inputs.nixos-fonts.packages.x86_64-linux; [
+    ] ++ (with inputs.nixos-fonts.packages.${pkgs.stdenv.hostPlatform.system}; [
       anzu-moji
       azukifont
       rii-tegaki-fude

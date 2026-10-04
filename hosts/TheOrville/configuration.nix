@@ -39,7 +39,6 @@
     ../../common/vj.nix
     ../../common/printing.nix
     ../../common/storage-devices.nix
-    ../../common/zsh.nix
   ];
 
   boot.loader = {

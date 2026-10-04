@@ -2,7 +2,7 @@
 
 {
   # rtkit is optional but recommended
-  security.rtkit.enable = false;
+  security.rtkit.enable = true;
 
   services = {
     pipewire = {
