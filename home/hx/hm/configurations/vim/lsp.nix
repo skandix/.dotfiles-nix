@@ -44,7 +44,7 @@
             analyses = { unusedparams = true },
           },
         },
-      }),
+      })
 
       vim.lsp.config("rust_analyzer", {
         settings = {
