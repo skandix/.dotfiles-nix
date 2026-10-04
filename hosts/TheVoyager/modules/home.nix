@@ -2,15 +2,13 @@
 
 {
   imports = [
-    ../../../home/hx/hm/configurations/zsh
-    ../../../home/hx/hm/configurations/git
-    ../../../home/hx/hm/configurations/mpv
-    ../../../home/hx/hm/configurations/tmux
-    ../../../home/hx/hm/configurations/vim
-    ../../../home/hx/hm/configurations/ghostty
+    ../../../home/hx/modules/zsh
+    ../../../home/hx/modules/git
+    ../../../home/hx/modules/mpv
+    ../../../home/hx/modules/tmux
+    ../../../home/hx/modules/vim
+    ../../../home/hx/modules/ghostty
   ];
-
-  programs.home-manager.enable = true;
 
   home = {
     username = "hx";

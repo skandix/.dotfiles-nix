@@ -1,7 +1,4 @@
 {
-  config,
-  pkgs,
-  lib,
   ...
 }:
 
@@ -11,12 +8,10 @@
     ./hardware-configuration.nix
 
     # core dotfiles + graphical things
-    ../../home
-    ../../home/hx
     ../../home/hx/gui.nix
     ../../home/hx/cli.nix
     ../../home/hx/dev.nix
-    ../../home/hx/mango
+    ../../home/hx/wm/mango
 
     # Common
     ../../common/intelcpu.nix
@@ -30,10 +25,8 @@
     ../../common/fwupd.nix
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
-    ../../common/virtualization.nix
     ../../common/health.nix
     ../../common/storage-devices.nix
-    ../../common/games.nix
   ];
 
   boot.loader = {

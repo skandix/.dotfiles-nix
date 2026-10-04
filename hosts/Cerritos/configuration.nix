@@ -9,7 +9,6 @@
   imports = [
     ./hardware-configuration.nix
 
-    ../../home
     ../../home/hx
     ../../home/hx/cli.nix
     ../../home/hx/dev.nix
@@ -24,8 +23,6 @@
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
     ../../common/sshd.nix
-    #../../common/autoUpgrade.nix # turn of auto upgrade whiel at tghack stand
-    ../../common/vscode-server.nix
   ];
 
   boot.loader = {

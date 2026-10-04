@@ -1,7 +1,5 @@
 {
-  config,
   pkgs,
-  lib,
   ...
 }:
 
@@ -9,7 +7,6 @@
   imports = [
     ./hardware-configuration.nix
 
-    ../../home
     ../../home/hx
     ../../home/hx/cli.nix
     ../../home/hx/dev.nix
@@ -24,10 +21,8 @@
     ../../common/fwupd.nix
     ../../common/nix-tweakz.nix
     ../../common/ssh-client.nix
-    ../../common/virtualization.nix
     ../../common/health.nix
     ../../common/autoUpgrade.nix
-    #../../common/vscode-server.nix
   ];
 
   environment.etc."ssh/banner".source = ./ssh_banner;

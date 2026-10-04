@@ -1,7 +1,4 @@
 {
-  config,
-  pkgs,
-  lib,
   ...
 }:
 
@@ -10,7 +7,6 @@
     ./hardware-configuration.nix
     ./disk-config.nix
 
-    ../../home
     ../../home/hx
     ../../home/hx/cli.nix
     ../../home/hx/dev.nix
@@ -25,12 +21,14 @@
     ../../common/ssh-client.nix
     ../../common/sshd.nix
     ../../common/autoUpgrade.nix
-    ../../common/virtualization.nix
-    #../../common/vscode-server.nix
   ];
 
   environment.etc."ssh/banner".source = ./ssh_banner;
-  services.openssh.settings.Banner = "/etc/ssh/banner";
+
+  services = {
+    openssh.settings.Banner = "/etc/ssh/banner";
+    qemuGuest.enable = true;
+  };
 
   boot.loader = {
     grub = {
@@ -54,12 +52,10 @@
     extraGroups = [
       "wheel"
       "docker"
-      "podman"
     ];
     home = "/home/birch";
     initialPassword = "hunter2k"; # used for build-vm and init deployment of nixos-anywhere
   };
-  services.qemuGuest.enable = true;
 
   zramSwap = {
     enable = true;

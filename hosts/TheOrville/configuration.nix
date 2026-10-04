@@ -12,12 +12,11 @@
     ./hardware-configuration.nix
 
     # core dotfiles + graphical things
-    ../../home
     ../../home/hx
     ../../home/hx/gui.nix
     ../../home/hx/cli.nix
     ../../home/hx/dev.nix
-    ../../home/hx/mango
+    ../../home/hx/wm/mango
 
     # Common
     ../../common/amdcpu.nix
@@ -33,11 +32,6 @@
     ../../common/nix-pkg-allow.nix
     ../../common/fwupd.nix
     ../../common/ssh-client.nix
-    ../../common/streamdeck.nix
-    ../../common/virtualization.nix
-    ../../common/ctf.nix
-    ../../common/vj.nix
-    ../../common/printing.nix
     ../../common/storage-devices.nix
   ];
 
