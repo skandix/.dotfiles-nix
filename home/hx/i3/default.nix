@@ -1,22 +1,13 @@
 { pkgs, ... }:
 
 {
-  imports = [
+  home-manager.users.hx.imports = [
     ./../hm/configurations/dunst
     ./../hm/configurations/flameshot
     ./../hm/configurations/picom
     ./../hm/configurations/rofi
-    ./../hm/configurations/ghostty
-    ./../hm/configurations/mpv
-    ./../hm/configurations/discord
-    ./../hm/configurations/vim
     ./../hm/configurations/mangohud
-    ./../hm/configurations/tmux
     ./../hm/configurations/udiskie
-    ./../hm/configurations/librewolf
-    ./../hm/go.nix
-    ./../hm/python.nix
-    ./../hm/rust.nix
   ];
 
   services = {
