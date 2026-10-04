@@ -32,7 +32,7 @@
       vim-gitgutter
 
       # TREESITTER
-      (nvim-treesitter.withPlugins (p:[
+      (nvim-treesitter.withPlugins (p: [
         p.nix
         p.bash
         p.python
