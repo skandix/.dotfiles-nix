@@ -88,7 +88,7 @@
         },
       })
 
-      # ENABLE LSP
+      -- ENABLE LSP
       vim.lsp.enable({
         "gopls",
         "rust_analyzer",
@@ -118,7 +118,7 @@
         end,
       })
 
-      # ONS AVE FORMAT !
+      -- ONS AVE FORMAT !
       vim.api.nvim_create_autocmd("BufWritePre", {
         pattern = { "*.go", "*.rs", "*.py", "*.nix" },
         callback = function()
