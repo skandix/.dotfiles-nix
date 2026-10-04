@@ -22,7 +22,6 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
-  boot.blacklistedKernelModules = [ "kvm" "kvm_intel" ];
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";
