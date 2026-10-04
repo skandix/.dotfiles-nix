@@ -20,17 +20,12 @@
       "docker"
       "audio"
       "video"
-      "screen"
-      "plugdev"
       "libvirtd"
       "input"
       "lp"
       "scanner"
       "networkmanager"
       "wireshark"
-      #"vboxusers"
-      #"podman"
-      #"incus-admin"
     ];
     group = "hx";
     shell = pkgs.zsh;
