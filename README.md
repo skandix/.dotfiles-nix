@@ -10,16 +10,14 @@
 * ``TheOrville`` - Home
 * ``TheVoyager`` - Macos
 * ``Ainsworth`` - Server
-* ``Cerritos`` - Server
 * ``MillenniumFalcon`` - Server
 * ``Lynx`` - Server
-* ``SpaceCruiser`` - Laptop
 
 # Install
 
 ## Nixos
 ```bash
-nixos-install --flake github:skandix/.nix-conf#(DeathStar|TheOrville)
+nixos-install --flake github:skandix/.dotfiles-nix#(DeathStar|TheOrville)
 ```
 
 ## Nixos Anywhere
