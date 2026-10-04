@@ -137,6 +137,8 @@
       set wildmenu            		" visual autocomplete for command men
       set hlsearch            		" highlight matches
       set autoread 					" checks if file has changed externally
+      set noswapfile
+      set undofile
       set showcmd                     " show command in bottom bar
       set number              		" show line numbers
       set rnu							" Relative line numbering

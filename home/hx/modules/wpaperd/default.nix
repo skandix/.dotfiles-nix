@@ -5,7 +5,7 @@
     enable = true;
     settings = {
       default = {
-        path = "${../../../wall}";
+        path = "${../../wallpapers}";
         duration = "60m";
         sorting = "random";
       };
