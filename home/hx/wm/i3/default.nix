@@ -2,12 +2,12 @@
 
 {
   home-manager.users.hx.imports = [
-    ./../hm/configurations/dunst
-    ./../hm/configurations/flameshot
-    ./../hm/configurations/picom
-    ./../hm/configurations/rofi
-    ./../hm/configurations/mangohud
-    ./../hm/configurations/udiskie
+    ../../modules/dunst
+    ../../modules/flameshot
+    ../../modules/picom
+    ../../modules/rofi
+    ../../modules/mangohud
+    ../../modules/udiskie
   ];
 
   services = {

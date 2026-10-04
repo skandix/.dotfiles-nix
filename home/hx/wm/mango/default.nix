@@ -1,7 +1,6 @@
 {
   inputs,
   pkgs,
-  unstable,
   ...
 }:
 
@@ -12,13 +11,13 @@
 
   home-manager.users.hx = {
     imports = [
-      ./../hm/configurations/waybar
-      ./../hm/configurations/flameshot
-      ./../hm/configurations/rofi
-      ./../hm/configurations/wpaperd
-      ./../hm/configurations/swaylock
-      ./../hm/configurations/udiskie
-      ./../hm/configurations/mako
+      ../../modules/waybar
+      ../../modules/flameshot
+      ../../modules/rofi
+      ../../modules/wpaperd
+      ../../modules/swaylock
+      ../../modules/udiskie
+      ../../modules/mako
     ];
 
     xdg.configFile = {
