@@ -2,57 +2,43 @@
   description = "Cornflakes, probably have not heard this before huehuehue";
 
   inputs = {
-    # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    # Disko - disk partition the nixos way
     disko = {
       url = "github:nix-community/disko/latest";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Comma
     nix-index-db = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
-    # Mango
     mangowm = {
-      url = "github:mangowm/mango";
+      url = "github:mangowm/mango/0.17.5";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
-    # Home-Manager
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Nix-Darwin
     nix-darwin = {
       url = "github:LnL7/nix-darwin/nix-darwin-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Nix-Homebrew Darwin
     nix-homebrew = {
       url = "github:zhaofengli/nix-homebrew";
     };
 
-    # Vscode Server
-    vscode-server = {
-      url = "github:nix-community/nixos-vscode-server";
-    };
-
-    # default browser nix-darwin
     default-browser = {
       url = "github:szympajka/nix-browser";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Missings Fonts
     nixos-fonts = {
       url = "github:Takamatsu-Naoki/nixos-fonts";
       inputs.nixpkgs.follows = "nixpkgs";
