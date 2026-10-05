@@ -13,6 +13,11 @@
     docker-compose
   ];
 
+  services.tailscale = {
+    enable = true;
+    package = unstable.tailscale; # same version line as the Linux machines
+  };
+
   nix-homebrew = {
     enable = true;
     enableRosetta = false;
@@ -62,10 +67,5 @@
       "zotero"
       "1password"
     ];
-
-    masApps = {
-      Wireguard = 1451685025;
-      Tailscale = 1475387142;
-    };
   };
 }
