@@ -67,7 +67,6 @@
       commonModules = [
         inputs.home-manager.nixosModules.default
         inputs.nix-index-db.nixosModules.nix-index
-        inputs.vscode-server.nixosModules.default
       ];
 
       mkHost =
