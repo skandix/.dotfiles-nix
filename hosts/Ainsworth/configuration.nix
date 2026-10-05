@@ -11,7 +11,6 @@
     ../../home/hx/dev.nix
 
     ../../common/amdcpu.nix
-    ../../common/amdgpu.nix
     ../../common/docker.nix
     ../../common/networkmanager.nix
     ../../common/tailscale.nix
