@@ -39,7 +39,6 @@
       "scanner"
       "networkmanager"
       "wireshark"
-      "gamemode"
     ];
     initialPassword = "hunter2k"; # used for build-vm and init deployment of nixos-anywhere
   };
