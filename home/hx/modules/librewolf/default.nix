@@ -1,7 +1,8 @@
-{ ... }:
+{ pkgs, lib, ... }:
 let
   isDarwin = pkgs.stdenv.hostPlatform.isDarwin;
 in
+
 {
   programs.librewolf = {
     enable = true;
