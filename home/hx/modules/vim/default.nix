@@ -142,6 +142,7 @@
       set showcmd                     " show command in bottom bar
       set number              		" show line numbers
       set rnu							" Relative line numbering
+      set nobomb
 
 
       """ COMMMANDS (taken from lasseh .vimrc)
