@@ -1,8 +1,11 @@
 { ... }:
-
+let
+  isDarwin = pkgs.stdenv.hostPlatform.isDarwin;
+in
 {
   programs.librewolf = {
     enable = true;
+    package = lib.mkIf isDarwin null;
     settings = {
       "webgl.disabled" = false;
       "privacy.resistFingerprinting" = false;

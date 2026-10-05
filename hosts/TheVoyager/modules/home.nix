@@ -4,6 +4,7 @@
   imports = [
     ../../../home/hx/modules/ghostty
     ../../../home/hx/modules/mpv
+    ../../../home/hx/modules/librewolf
     ../../../home/hx/modules/go.nix
     ../../../home/hx/modules/python.nix
     ../../../home/hx/modules/rust.nix
