@@ -1,11 +1,12 @@
 {
-  config,
-  lib,
-  pkgs,
   ...
 }:
 
 {
+
+  services.fstrim.enable = true;
+  documentation.nixos.enable = false;
+
   boot.tmp = {
     useTmpfs = true;
     cleanOnBoot = true;

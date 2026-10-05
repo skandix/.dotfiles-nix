@@ -29,6 +29,7 @@
     extraCompatPackages = with pkgs; [ proton-ge-bin ];
   };
 
+  users.users.hx.extraGroups = [ "gamemode" ];
   programs = {
     gamemode = {
       enable = true;

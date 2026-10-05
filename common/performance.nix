@@ -3,7 +3,6 @@
 {
 
   virtualisation.docker.enableOnBoot = false;
-  documentation.nixos.enable = false;
 
   # zram tweaks
   boot = {
@@ -30,9 +29,6 @@
     scx = {
       enable = true;
       scheduler = "scx_lavd";
-    };
-    fstrim = {
-      enable = true;
     };
   };
 }
