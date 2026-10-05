@@ -7,7 +7,7 @@
   virtualisation.docker = {
     enable = true;
     package = unstable.docker;
-    enableOnBoot = true;
+    enableOnBoot = false;
     liveRestore = true;
   };
 

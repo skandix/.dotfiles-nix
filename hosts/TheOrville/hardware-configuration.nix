@@ -2,9 +2,9 @@
 # and may be overwritten by future invocations.  Please make changes
 # to /etc/nixos/configuration.nix instead.
 {
+  pkgs,
   config,
   lib,
-  pkgs,
   modulesPath,
   ...
 }:
@@ -22,19 +22,9 @@
   boot.initrd.kernelModules = [ "amdgpu" ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
-  boot.kernelParams = [ ];
-  #boot.kernelPatches = [
-  #{
-  #name = "amdgpu-ignore-ctx-privileges";
-  #patch = pkgs.fetchpatch {
-  #name = "cap_sys_nice_begone.patch";
-  #url = "https://github.com/Frogging-Family/community-patches/raw/master/linux61-tkg/cap_sys_nice_begone.mypatch";
-  #hash = "sha256-Y3a0+x2xvHsfLax/uwycdJf3xLxvVfkfDVqjkxNaYEo=";
-  #};
-  #}
-  #];
-
-  #boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelParams = [ "quite" ];
+  boot.initrd.verbose = false;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";

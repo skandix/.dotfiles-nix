@@ -33,6 +33,7 @@
     ../../common/fwupd.nix
     ../../common/ssh-client.nix
     ../../common/storage-devices.nix
+    ../../common/performance.nix
   ];
 
   boot.loader = {

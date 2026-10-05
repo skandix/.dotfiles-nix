@@ -2,9 +2,6 @@
 # and may be overwritten by future invocations.  Please make changes
 # to /etc/nixos/configuration.nix instead.
 {
-  config,
-  lib,
-  pkgs,
   modulesPath,
   ...
 }:
@@ -22,6 +19,8 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
+  boot.kernelParams = [ "quite" ];
+  boot.initrd.verbose = false;
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";

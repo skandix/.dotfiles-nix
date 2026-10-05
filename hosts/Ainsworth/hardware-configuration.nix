@@ -2,9 +2,6 @@
 # and may be overwritten by future invocations.  Please make changes
 # to /etc/nixos/configuration.nix instead.
 {
-  config,
-  lib,
-  pkgs,
   modulesPath,
   ...
 }:
@@ -24,6 +21,8 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "zfs" ];
+  boot.kernelParams = [ "quite" ];
+  boot.initrd.verbose = false;
   boot.zfs = {
     extraPools = [ "slush" ];
     forceImportRoot = false;

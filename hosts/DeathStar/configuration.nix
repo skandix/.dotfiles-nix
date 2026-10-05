@@ -28,6 +28,7 @@
     ../../common/ssh-client.nix
     ../../common/health.nix
     ../../common/storage-devices.nix
+    ../../common/performance.nix
   ];
 
   boot.loader = {
@@ -49,8 +50,6 @@
   networking = {
     hostName = "DeathStar";
     hostId = "c464a368";
-
-    interfaces.eno1.useDHCP = true;
   };
 
   home-manager.users.hx.home.stateVersion = "26.05";
