@@ -6,7 +6,7 @@
     enable32Bit = true;
   };
 
-  hardware.nvidia-container-toolkit.enable = true;
+  hardware.nvidia-container-toolkit.enable = false;
   services.xserver.videoDrivers = [ "nvidia" ];
 
   hardware.nvidia = {

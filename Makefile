@@ -34,7 +34,7 @@ vm:
 
 ## gc: garbage collect old unused nix paths
 gc:
-	nix-collect-garbage -d
+	sudo nix-collect-garbage -d
 
 ## debug: debug home-manager when it is failing to see what it causing it not to switch config properly
 debug:

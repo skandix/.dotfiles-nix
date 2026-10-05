@@ -52,16 +52,9 @@
     memoryPercent = 50;
   };
 
-  systemd.services.NetworkManager-wait-online.enable = lib.mkForce false;
-
   networking = {
     hostName = "TheOrville";
     hostId = "ec097b34";
-
-    interfaces = {
-      enp5s0.useDHCP = true;
-      wlp6s0.useDHCP = lib.mkForce false;
-    };
   };
 
   home-manager.users.hx.home.stateVersion = "26.05";
