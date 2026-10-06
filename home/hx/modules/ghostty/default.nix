@@ -6,7 +6,7 @@ in
 {
   programs.ghostty = {
     enable = true;
-    package = lib.mkIf isDarwin null;
+    package = lib.mkIf isDarwin null; # installs ghostty not form brew, check if still works
     systemd.enable = !isDarwin;
     installVimSyntax = !isDarwin;
     installBatSyntax = !isDarwin;
@@ -32,6 +32,9 @@ in
         "super+w=close_surface"
         "super+t=new_tab"
         "super+n=new_window"
+        "super++=increase_font_size:1"
+        "super+-=decrease_font_size:1"
+        "super+0=reset_font_size"
       ];
       clipboard-read = "allow";
       clipboard-write = "allow";
