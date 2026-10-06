@@ -21,7 +21,7 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "zfs" ];
-  boot.kernelParams = [ "quite" ];
+  boot.kernelParams = [ "quiet" ];
   boot.initrd.verbose = false;
   boot.zfs = {
     extraPools = [ "slush" ];

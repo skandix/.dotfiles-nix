@@ -22,7 +22,7 @@
   boot.initrd.kernelModules = [ "amdgpu" ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
-  boot.kernelParams = [ "quite" ];
+  boot.kernelParams = [ "quiet" ];
   boot.initrd.verbose = false;
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
@@ -37,7 +37,6 @@
   };
 
   swapDevices = [ { device = "/dev/disk/by-label/swap"; } ];
-  # nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   nixpkgs.hostPlatform = "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }

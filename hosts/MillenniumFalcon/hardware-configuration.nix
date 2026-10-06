@@ -19,7 +19,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
-  boot.kernelParams = [ "quite" ];
+  boot.kernelParams = [ "quiet" ];
   boot.initrd.verbose = false;
 
   fileSystems."/" = {

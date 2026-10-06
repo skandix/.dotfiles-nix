@@ -23,7 +23,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
-  boot.kernelParams = [ "quite" ];
+  boot.kernelParams = [ "quiet" ];
   boot.initrd.verbose = false;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";

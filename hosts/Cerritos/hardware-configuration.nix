@@ -22,6 +22,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
+  #boot.kernelParams = [ "quiet" ];
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";
