@@ -43,8 +43,8 @@ in
       font-size = 12;
       focus-follows-mouse = true;
       gtk-titlebar = false;
-      macos-titlebar-style = "hidden";
-      macos-window-shadow = false;
+      #macos-titlebar-style = "hidden";
+      #macos-window-shadow = false;
     };
   };
 }
