@@ -14,6 +14,7 @@
       ../../modules/waybar
       ../../modules/flameshot
       ../../modules/rofi
+      ../../modules/mangohud
       ../../modules/wpaperd
       ../../modules/swaylock
       ../../modules/udiskie
