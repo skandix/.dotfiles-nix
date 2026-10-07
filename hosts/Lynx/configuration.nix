@@ -76,9 +76,11 @@
       enable = true;
       allowedTCPPorts = [
         443
+        8448
       ];
       allowedUDPPorts = [
         443
+        8448
       ];
     };
   };
