@@ -32,6 +32,7 @@
       openstackclient
       kubernetes-helm
       kubeseal
+      kubecolor
       packer
       cilium-cli
     ];
