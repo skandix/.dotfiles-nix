@@ -12,9 +12,15 @@
     extraSpecialArgs = { inherit inputs unstable; };
     backupFileExtension = "hm-backup";
 
-    users.hx.home.sessionPath = [
-      "$HOME/.local/bin"
-    ];
+    users.hx = {
+      xdg.enable = true;
+      home = {
+        preferXdgDirectories = true;
+        sessionPath = [
+          "$HOME/.local/bin"
+        ];
+      };
+    };
   };
 
   time.timeZone = "Europe/Oslo";

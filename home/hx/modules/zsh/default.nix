@@ -5,6 +5,7 @@
     enable = true;
     enableZshIntegration = true;
   };
+
   programs.zsh = {
     enable = true;
     enableCompletion = false;
@@ -14,8 +15,12 @@
       enable = true;
       plugins = [
         "trapd00r/LS_COLORS"
+        "zsh-users/zsh-completions path:src kind:fpath"
+        "chisui/zsh-nix-shell"
+        "Aloxaf/fzf-tab kind:defer"
         "zsh-users/zsh-autosuggestions kind:defer post:_zsh_autosuggest_start"
         "zsh-users/zsh-history-substring-search kind:defer"
+        "MichaelAquilina/zsh-you-should-use kind:defer"
         "zdharma-continuum/fast-syntax-highlighting kind:defer"
       ];
     };
@@ -66,7 +71,7 @@
     localVariables = {
       REPORTTIME = 10;
     };
-    initContent = ''
+    initContent = /* vim */ ''
       bindkey '^[[H'    beginning-of-line
       bindkey '^[OH'    beginning-of-line
       bindkey '^[[1~'   beginning-of-line
@@ -81,14 +86,13 @@
       bindkey '^[[1;5D' backward-word
 
       zstyle ':completion:*' menu select
-      zstyle ':completion:*' list-colors "''${("s.:.") LS_COLORS}"
+      zstyle ':completion:*' list-colors "''${(s.:.) LS_COLORS}"
       zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
       _host_colors=(196 202 208 214 118 46 48 51 45 39 33 27 87 123)
-      _sum=0
-      for _c in ''${(s::)HOST}; do (( _sum += #_c )); done
-      _host_color=''${_host_colors[$(( _sum % ''${#_host_colors} + 1 ))]}
-      unset _sum _c
+      _host=''${HOST%%.*}
+      _host_color=''${_host_colors[$(( ''${#_host} % ''${#_host_colors} + 1 ))]}
+      unset _host
 
       PS1="%F{#ff10f0}%n%F{yellow}@%F{''${_host_color}}%m %B%F{#cc00ff}λ%f%b "
     '';
