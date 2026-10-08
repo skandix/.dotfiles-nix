@@ -20,8 +20,8 @@
       vim-nix
 
       # SNIPPETS
-      ultisnips
-      friendly-snippets
+      # ultisnips
+      # friendly-snippets
 
       # NAVIGATION
       nvim-tree-lua
@@ -63,7 +63,7 @@
       })
     '';
     extraConfig = /* lua */ ''
-      --- Set custom config for files
+      " Set custom config for files
       au BufNewFile,BufRead *.py
           \ set tabstop=4
           \| set softtabstop=4
@@ -89,7 +89,7 @@
       let g:UltiSnipsJumpForwardTrigger="<c-b>"
       let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
-      --- Remapp
+      " Remapp
       nnoremap <F1> :set hlsearch!<CR>
       nnoremap <F2> :StripWhitespace<CR>
 
@@ -160,11 +160,11 @@
       set nobomb
 
 
-      --- COMMMANDS (taken from lasseh .vimrc)
+      " COMMMANDS (taken from lasseh .vimrc)
       command! Q q
       command! W w
 
-      --- unbinde the fucking arrow keys also they are broken on my cooler master keyboard ;_;
+      " unbinde the fucking arrow keys also they are broken on my cooler master keyboard ;_;
       noremap <Up> <Nop>
       noremap <Down> <Nop>
       noremap <Left> <Nop>
