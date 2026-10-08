@@ -19,6 +19,10 @@
       ansible-vim
       vim-nix
 
+      # SNIPPETS
+      ultisnips
+      friendly-snippets
+
       # NAVIGATION
       nvim-tree-lua
       telescope-nvim
@@ -59,6 +63,7 @@
       })
     '';
     extraConfig = /* lua */ ''
+      --- Set custom config for files
       au BufNewFile,BufRead *.py
           \ set tabstop=4
           \| set softtabstop=4
@@ -72,9 +77,19 @@
           \| set softtabstop=2
           \| set shiftwidth=2
 
-      let mapleader=" "
-      let g:rainbow_active = 1
+      au BufNewFile,BufRead *.yml,*.yaml
+          \ set tabstop=2
+          \| set softtabstop=2
+          \| set shiftwidth=2
 
+      let mapleader=" "
+
+      let g:rainbow_active = 1
+      let g:UltiSnipsExpandTrigger="<tab>"
+      let g:UltiSnipsJumpForwardTrigger="<c-b>"
+      let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+      --- Remapp
       nnoremap <F1> :set hlsearch!<CR>
       nnoremap <F2> :StripWhitespace<CR>
 
@@ -111,45 +126,45 @@
 
       let g:startify_session_dir = '~/.vim/session'
 
-      set wildmode=list:longest,full	" Show vim completion menu
-      set undolevels=256				" how many times one can undo
-      set updatetime=250				" Faster update of internals
-      set numberwidth=6				" with of the 'gutter' col for numbering
+      set wildmode=list:longest,full
+      set undolevels=256
+      set updatetime=250
+      set numberwidth=6
       set foldmethod=indent
       set foldlevel=99
       set backspace=indent,eol,start
       set matchpairs+=<:>
       set splitright
       set textwidth=128
-      set laststatus=2				" Display statusline
-      set cmdheight=1					" Height of the command bar
-      set history=256					" How much history to save.
-      set noshowmode 					" Lightline handle this
-      set autoindent					" copies indent from prev line, to next new line
-      set cursorline          		" highlight current line
-      set ignorecase					" Ignore case when searching.
-      set smartcase					" Dont ignore case if there is capitals in the search pattern
-      set showmatch           		" highlight matching [{()}]
-      set incsearch           		" search as characters are entered
+      set laststatus=2
+      set cmdheight=1
+      set history=256
+      set noshowmode
+      set autoindent
+      set cursorline
+      set ignorecase
+      set smartcase
+      set showmatch
+      set incsearch
       set tabstop=4
       set shiftwidth=4
       set expandtab
-      set wildmenu            		" visual autocomplete for command men
-      set hlsearch            		" highlight matches
-      set autoread 					" checks if file has changed externally
+      set wildmenu
+      set hlsearch
+      set autoread
       set noswapfile
       set undofile
-      set showcmd                     " show command in bottom bar
-      set number              		" show line numbers
-      set rnu							" Relative line numbering
+      set showcmd
+      set number
+      set rnu
       set nobomb
 
 
-      """ COMMMANDS (taken from lasseh .vimrc)
+      --- COMMMANDS (taken from lasseh .vimrc)
       command! Q q
       command! W w
 
-      """ unbinde the fucking arrow keys also they are broken on my cooler master keyboard ;_;
+      --- unbinde the fucking arrow keys also they are broken on my cooler master keyboard ;_;
       noremap <Up> <Nop>
       noremap <Down> <Nop>
       noremap <Left> <Nop>

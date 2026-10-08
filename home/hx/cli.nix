@@ -27,7 +27,6 @@
       talosctl
       kubectl
       krew
-      kubecolor
       opentofu
       ansible
       openstackclient
