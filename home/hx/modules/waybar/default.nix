@@ -9,7 +9,7 @@
     enable = true;
     systemd = {
       enable = true;
-      target = [ "mango-session.target" ];
+      targets = [ "mango-session.target" ];
     };
     style = ''
       * {
