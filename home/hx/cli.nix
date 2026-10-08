@@ -38,31 +38,4 @@
     ];
   };
 
-  # CLEANUP LINUX
-  systemd.user.tmpfiles.rules = lib.mkIf pkgs.stdenv.isLinux [
-    "e %h/.cache - - - 30d"
-    "e %h/.local/share/Trash - - - 30d"
-  ];
-
-  # CLEANUP MACOS
-  launchd.agents.clean-cache = lib.mkIf pkgs.stdenv.isDarwin {
-    enable = true;
-    config = {
-      ProgramArguments = [
-        "/bin/sh"
-        "-c"
-        ''
-          /usr/bin/find "$HOME/.cache" -mindepth 1 -mtime +30 -delete 2>/dev/null
-          /usr/bin/find "$HOME/.cache" -mindepth 1 -type d -empty -delete 2>/dev/null
-          true
-        ''
-      ];
-      StartCalendarInterval = [
-        {
-          Hour = 12;
-          Minute = 0;
-        }
-      ];
-    };
-  };
 }

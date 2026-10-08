@@ -8,7 +8,7 @@
 
   programs.zsh = {
     enable = true;
-    enableCompletion = false;
+    enableCompletion = true;
     defaultKeymap = "emacs";
 
     antidote = {
@@ -50,7 +50,6 @@
       # COLORS
       ip = "ip -c";
       ls = "ls --color";
-      sl = "ls --color";
       cat = "bat --decorations never";
       grep = "grep --color=auto";
       egrep = "egrep --color=auto";
@@ -72,6 +71,7 @@
       REPORTTIME = 10;
     };
     initContent = /* vim */ ''
+
       bindkey '^[[H'    beginning-of-line
       bindkey '^[OH'    beginning-of-line
       bindkey '^[[1~'   beginning-of-line
@@ -86,8 +86,9 @@
       bindkey '^[[1;5D' backward-word
 
       zstyle ':completion:*' menu select
-      zstyle ':completion:*' list-colors "''${(s.:.) LS_COLORS}"
+      zstyle ':completion:*' list-colors "''${(s.:.)LS_COLORS}"
       zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+      compdef kubecolor=kubectl
 
       _host_colors=(196 202 208 214 118 46 48 51 45 39 33 27 87 123)
       _host=''${HOST%%.*}

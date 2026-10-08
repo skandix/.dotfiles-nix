@@ -6,6 +6,12 @@
 }:
 
 {
+
+  systemd.user.tmpfiles.rules = [
+    "e %h/.cache - - - 30d"
+    "e %h/.local/share/Trash - - - 30d"
+  ];
+
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
