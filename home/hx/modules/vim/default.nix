@@ -6,10 +6,14 @@
 
   programs.neovim = {
     enable = true;
-    vimAlias = true;
     viAlias = true;
     vimdiffAlias = true;
     defaultEditor = true;
+    extraPackages = with pkgs; [
+      ripgrep
+      fd
+      treesitter
+    ];
     plugins = with pkgs.vimPlugins; [
       # LOOK AND FEEL
       lightline-vim
@@ -20,8 +24,7 @@
       vim-nix
 
       # SNIPPETS
-      # ultisnips
-      # friendly-snippets
+      friendly-snippets
 
       # NAVIGATION
       nvim-tree-lua
@@ -62,8 +65,9 @@
         end,
       })
     '';
-    extraConfig = /* lua */ ''
+    extraConfig = /* vim */ ''
       " Set custom config for files
+
       au BufNewFile,BufRead *.py
           \ set tabstop=4
           \| set softtabstop=4
@@ -83,11 +87,7 @@
           \| set shiftwidth=2
 
       let mapleader=" "
-
       let g:rainbow_active = 1
-      let g:UltiSnipsExpandTrigger="<tab>"
-      let g:UltiSnipsJumpForwardTrigger="<c-b>"
-      let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
       " Remapp
       nnoremap <F1> :set hlsearch!<CR>

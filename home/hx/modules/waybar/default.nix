@@ -1,8 +1,16 @@
-{ pkgs, ... }:
+{ config, ... }:
 
 {
+  systemd.user.services.waybar.Unit.X-Restart-Triggers = [
+    "${config.xdg.configFile."waybar/config".source}"
+  ];
+
   programs.waybar = {
     enable = true;
+    systemd = {
+      enable = true;
+      target = [ "mango-session.target" ];
+    };
     style = ''
       * {
           font-size: 16px;
@@ -82,7 +90,7 @@
         height = 24;
         spacing = 2;
 
-        modules-left = [ "dwl/tags" ];
+        modules-left = [ "ext/workspaces" ];
         modules-center = [
           "custom/seperator"
           "custom/beats"
@@ -190,7 +198,7 @@
         clock = {
           format = " {:%a, %d %b - %H:%M:%S} ";
           interval = 1;
-          tooltip-format = "<tt><medium>{calendar}</medium></tt>";
+          tooltip-format = "<tt><span size='medium'>{calendar}</span></tt>";
           timezone = "Europe/Oslo";
         };
 
