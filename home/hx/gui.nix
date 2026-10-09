@@ -45,6 +45,7 @@
       qgis
       qFlipper
       imhex
+      keymapp
     ];
   };
 

@@ -19,7 +19,12 @@
     enable32Bit = true;
   };
 
-  services.flatpak.enable = true;
+  services = {
+    flatpak.enable = true;
+    ratbagd = {
+      enable = true;
+    };
+  };
 
   programs.steam = {
     enable = true;
@@ -55,6 +60,7 @@
     prismlauncher
     unstable.wowup-cf
     protonplus
+    piper
   ];
 
 }
