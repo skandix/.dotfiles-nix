@@ -41,7 +41,7 @@ in
       copy-on-select = true;
       window-save-state = "always";
       window-theme = "dark";
-      theme = "iTerm2 Smoooooth";
+      theme = "Gruvbox Dark";
       cursor-style = "block";
       font-size = 12;
       focus-follows-mouse = true;
