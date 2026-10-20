@@ -102,6 +102,8 @@
           "custom/seperator"
           "pulseaudio"
           "custom/seperator"
+          "custom/mouse"
+          "custom/seperator"
           "custom/public-ip"
           "custom/seperator"
           "network"
@@ -133,6 +135,13 @@
         "custom/seperator" = {
           format = "λ";
           interval = "once";
+          tooltip = false;
+        };
+
+        "custom/mouse" = {
+          exec = "./home/hx/.dotfiles-nix/home/hx/modules/waybar/mouse-bat.sh";
+          interval = 300;
+          max-length = 60;
           tooltip = false;
         };
 
