@@ -1,6 +1,6 @@
 {
   pkgs,
-  unstable,
+  #unstable,
   ...
 }:
 
@@ -11,7 +11,7 @@
   services = {
     pipewire = {
       enable = true;
-      package = unstable.pipewire;
+      #package = unstable.pipewire;
       alsa.enable = true;
       alsa.support32Bit = true;
       pulse.enable = true;
