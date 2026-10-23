@@ -31,6 +31,7 @@
     ../../common/performance.nix
   ];
 
+  hardware.keyboard.zsa.enable = true;
   boot.loader = {
     systemd-boot = {
       enable = true;
