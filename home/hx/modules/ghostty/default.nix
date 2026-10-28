@@ -19,6 +19,8 @@ in
         "alt+b=toggle_tab_overview"
         "ctrl+t=new_tab"
         "ctrl+shift+w=close_tab"
+        "ctrl+c=copy_to_clipboard"
+        "ctrl+v=paste_from_clipboard"
         "ctrl+n=toggle_quick_terminal"
         "ctrl+tab=next_tab"
         "ctrl++=increase_font_size:1"
@@ -26,11 +28,12 @@ in
         "ctrl+0=reset_font_size"
       ]
       ++ lib.optionals isDarwin [
+        "super+b=toggle_tab_overview"
+        "super+t=new_tab"
+        "super+w=close_surface"
         "super+c=copy_to_clipboard"
         "super+v=paste_from_clipboard"
         "super+q=quit"
-        "super+w=close_surface"
-        "super+t=new_tab"
         "super+n=new_window"
         "super++=increase_font_size:1"
         "super+-=decrease_font_size:1"
