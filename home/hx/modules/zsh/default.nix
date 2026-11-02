@@ -38,7 +38,6 @@
       "AUTO_CD"
       "AUTO_PUSHD"
       "PUSHD_IGNORE_DUPS"
-      "CORRECT"
     ];
     shellAliases = {
       # INTERACTION
