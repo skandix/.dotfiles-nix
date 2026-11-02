@@ -25,6 +25,9 @@
         sessionPath = [
           "$HOME/.local/bin"
         ];
+        seesionVariables = {
+          MOZ_CRASHREPORTER_DISABLE = "1";
+        };
       };
     };
   };
