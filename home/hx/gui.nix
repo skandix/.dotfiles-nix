@@ -8,7 +8,6 @@
   home-manager.users.hx = {
     imports = [
       ./modules/librewolf
-      ./modules/firefox
       ./modules/ghostty
       ./modules/mpv
     ];
