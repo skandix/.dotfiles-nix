@@ -47,7 +47,7 @@
       qFlipper
       imhex
       keymapp
-      lmstudio
+      unstable.lmstudio
     ];
   };
 
