@@ -22,6 +22,7 @@
       bat
       marp-cli
       typst
+      wl-clipboard
 
       # SRE
       talosctl
