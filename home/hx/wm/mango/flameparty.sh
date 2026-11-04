@@ -17,8 +17,8 @@ else
 fi
 
 if [[ -n "$WAYLAND_DISPLAY" ]]; then
-    flameshot gui -s -r | curl -sS -T- "$COPYPARTY_URL$FILENAME?pw=$PASSWORD" | tail -n 1 | wl-copy
+    flameshot gui -r | curl -sS -T- "$COPYPARTY_URL$FILENAME?pw=$PASSWORD" | tail -n 1 | wl-copy
 else
-    flameshot gui -s -r | curl -sS -T- "$COPYPARTY_URL$FILENAME?pw=$PASSWORD" | tail -n 1 | xsel -ib
+    flameshot gui -r | curl -sS -T- "$COPYPARTY_URL$FILENAME?pw=$PASSWORD" | tail -n 1 | xsel -ib
 fi
 
