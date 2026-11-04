@@ -26,7 +26,12 @@
   environment.etc."ssh/banner".source = ./ssh_banner;
 
   services = {
-    openssh.settings.Banner = "/etc/ssh/banner";
+    openssh = {
+      settings.Banner = "/etc/ssh/banner";
+      ports = [
+        3301
+      ];
+    };
     qemuGuest.enable = true;
   };
 
@@ -77,10 +82,12 @@
       allowedTCPPorts = [
         443
         8448
+        22
       ];
       allowedUDPPorts = [
         443
         8448
+        22
       ];
     };
   };
